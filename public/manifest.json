@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fuel LK App",
+  "name": "App for checking where to buy fuel",
   "icons": [
     {
       "src": "favicon.ico",
