@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import HomePage from "./stateful/pages/HomePage.js";
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+import HomePage from "./view/organisms/HomePage.js";
 
 export default class App extends Component {
   render() {

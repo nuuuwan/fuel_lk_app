@@ -1,23 +1,24 @@
 import React, { useState } from "react";
+
 import IconButton from "@mui/material/IconButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const MENU_ITEM_LIST = [
   {
     name: "Help",
-    url: "https://twitter.com/nuuuwan/status/1522912345256865795",
+    url: "https://twitter.com/nuuuwan",
     details: "Help, Examples and Usage",
     Icon: HelpIcon,
   },
   {
     name: "Code",
-    url: "http://github.com/nuuuwan",
+    url: "http://github.com/nuuuwan/fuel_lk_app",
     details: "Visualization, Design and App by @nuuuwan",
     Icon: GitHubIcon,
   },
