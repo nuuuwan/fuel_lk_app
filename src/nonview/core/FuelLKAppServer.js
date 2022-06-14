@@ -1,4 +1,5 @@
-import FuelInfo from "../../nonview/core/FuelInfo";
+import Shed from "../../nonview/core/Shed";
+import ShedBasic from "../../nonview/core/ShedBasic";
 
 const JSON_HEADERS = {
   headers: {
@@ -25,7 +26,6 @@ export default class FuelLKAppServer {
       FuelLKAppServer.getURLLambda() +
       "?payload_json_base64=" +
       payloadJSONB64Encoded;
-    console.debug({ url });
 
     const response = await jsonNonCache(url);
     if (response["exception"]) {
@@ -34,16 +34,28 @@ export default class FuelLKAppServer {
     return response;
   }
 
-  static async multiGetFuelInfoList(province, district, fuelType) {
+  static async getShed(shedID) {
     const payload = {
-      cmd: "search",
+      cmd: "get_shed",
+      shed_id: shedID,
+    };
+    const rawShed = await FuelLKAppServer.genericRequest(payload);
+    return Shed.fromDict(rawShed);
+  }
+
+  static async multigetShedBasics(province, district, fuelType) {
+    const payload = {
+      cmd: "multiget_sheds",
       province,
       district,
       fuel_type: fuelType,
     };
-    const rawFuelInfoList = await FuelLKAppServer.genericRequest(payload);
-    return rawFuelInfoList.map(function (rawFuelInfo) {
-      return new FuelInfo(rawFuelInfo);
+    const rawShedBasics = await FuelLKAppServer.genericRequest(payload);
+    const unsortedShedBasics = rawShedBasics.map(function (rawShedBasic) {
+      return ShedBasic.fromDict(rawShedBasic);
+    });
+    return unsortedShedBasics.sort(function (shedA, shedB) {
+      return shedB.lastUpdateByShedUT - shedA.lastUpdateByShedUT;
     });
   }
 }

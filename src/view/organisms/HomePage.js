@@ -1,13 +1,14 @@
-import { Component } from "react";
 import * as React from "react";
+import { Component } from "react";
 
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 
+import FuelLKAppServer from "../../nonview/core/FuelLKAppServer";
+
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
-import FuelLKAppServer from "../../nonview/core/FuelLKAppServer";
-import FuelInfoListView from "../../view/molecules/FuelInfoListView";
+import ShedsView from "../../view/molecules/ShedsView";
 
 const STYLE = {
   margin: 4,
@@ -18,17 +19,17 @@ const STYLE = {
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.state = { fuelInfoList: null };
+    this.state = { shedBasics: null };
   }
 
   async componentDidMount() {
     const [province, district, fuelType] = [1, 1, "p92"];
-    const fuelInfoList = await FuelLKAppServer.multiGetFuelInfoList(
+    const shedBasics = await FuelLKAppServer.multigetShedBasics(
       province,
       district,
       fuelType
     );
-    this.setState({ fuelInfoList });
+    this.setState({ shedBasics });
   }
 
   onClickBack() {
@@ -37,15 +38,15 @@ export default class HomePage extends Component {
   }
 
   render() {
-    const { fuelInfoList } = this.state;
-    if (!fuelInfoList) {
+    const { shedBasics } = this.state;
+    if (!shedBasics) {
       return <CircularProgress />;
     }
 
     return (
       <Box sx={STYLE}>
         <CustomAppBar />
-        <FuelInfoListView fuelInfoList={fuelInfoList} />
+        <ShedsView shedBasics={shedBasics} />
         <CustomBottomNavigation onClickBack={this.onClickBack.bind(this)} />
       </Box>
     );
