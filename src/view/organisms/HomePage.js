@@ -9,12 +9,16 @@ import FuelLKAppServer from "../../nonview/core/FuelLKAppServer";
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import ShedsView from "../../view/molecules/ShedsView";
+import GeoMap from "../../view/organisms/GeoMap"
 
 const STYLE = {
   margin: 4,
   marginTop: 10,
   marginBottom: 10,
 };
+
+const DEFAULT_CENTER = [6.914795590744974, 79.87756643209595];
+const DEFAULT_ZOOM = 10;
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -24,12 +28,28 @@ export default class HomePage extends Component {
 
   async componentDidMount() {
     const [province, district, fuelType] = [1, 1, "p92"];
-    const shedBasics = await FuelLKAppServer.multigetShedBasics(
+    const shedBasicsAll = await FuelLKAppServer.multigetShedBasics(
       province,
       district,
       fuelType
     );
-    this.setState({ shedBasics });
+    const shedBasics = shedBasicsAll.filter(
+      function(shedBasic) {
+        return shedBasic.shedownerupdatetoday;
+      }
+    ).splice(0, 5);
+    console.debug(shedBasics[0]);
+
+    const sheds = await Promise.all(
+      shedBasics.map(
+        async function(shedBasic) {
+          return await FuelLKAppServer.getShed(shedBasic.shedId);
+        },
+      )
+    );
+    console.debug(sheds[0]);
+
+    this.setState({ shedBasics, sheds });
   }
 
   onClickBack() {
@@ -46,6 +66,7 @@ export default class HomePage extends Component {
     return (
       <Box sx={STYLE}>
         <CustomAppBar />
+        <GeoMap center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} />
         <ShedsView shedBasics={shedBasics} />
         <CustomBottomNavigation onClickBack={this.onClickBack.bind(this)} />
       </Box>

@@ -6,7 +6,7 @@ export default class Shed {
     eta,
     fuelCapacity,
     fuelType,
-    lastUpdateByShed,
+    lastupdatebyshed,
     shedOwnerUpdateToday
   ) {
     this.shedId = shedId;
@@ -15,15 +15,15 @@ export default class Shed {
     this.eta = eta;
     this.fuelCapacity = fuelCapacity;
     this.fuelType = fuelType;
-    this.lastUpdateByShed = lastUpdateByShed;
-    this.lastUpdateByShedDate = new Date(this.lastUpdateByShed);
+    this.lastupdatebyshed = lastupdatebyshed;
+    this.shedownerupdatetoday = shedOwnerUpdateToday;
+
+    this.lastUpdateByShedDate = new Date(this.lastupdatebyshed);
     this.lastUpdateByShedUT = this.lastUpdateByShedDate / 1_000.0;
 
-    this.shedOwnerUpdateToday = shedOwnerUpdateToday;
   }
 
   static fromDict(d) {
-    console.debug(d);
     return new Shed(
       d.shedId,
       d.shedName,

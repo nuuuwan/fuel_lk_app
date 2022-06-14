@@ -34,10 +34,10 @@ export default class FuelLKAppServer {
     return response;
   }
 
-  static async getShed(shedID) {
+  static async getShed(shedId) {
     const payload = {
       cmd: "get_shed",
-      shed_id: shedID,
+      shed_id: shedId,
     };
     const rawShed = await FuelLKAppServer.genericRequest(payload);
     return Shed.fromDict(rawShed);
