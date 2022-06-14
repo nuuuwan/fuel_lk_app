@@ -19,6 +19,7 @@ export default class Shed {
     sdavailablity,
     sdcapacity,
     shedCode,
+    shedName,
     shedownerupdatetoday,
   ) {
     this.address = address;
@@ -40,9 +41,10 @@ export default class Shed {
     this.sdavailablity = sdavailablity;
     this.sdcapacity = sdcapacity;
     this.shedCode = shedCode;
+    this.shedName = shedName;
     this.shedownerupdatetoday = shedownerupdatetoday;
 
-    this.latLng = [parseFloat(this.latitude), parseFloat(this.longitude)];
+    this.latLng = [parseFloat(this.longitude), parseFloat(this.latitude)];
   }
 
   static fromDict(d) {
@@ -66,6 +68,7 @@ export default class Shed {
       d.sdavailablity,
       d.sdcapacity,
       d.shedCode,
+      d.shedName,
       d.shedownerupdatetoday,
     );
   }

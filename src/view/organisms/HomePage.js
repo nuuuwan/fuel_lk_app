@@ -2,14 +2,12 @@ import { Component } from "react";
 import * as React from "react";
 
 import Box from "@mui/material/Box";
-import CircularProgress from "@mui/material/CircularProgress";
 
 import FuelLKAppServer from "../../nonview/core/FuelLKAppServer";
-
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
-import ShedsView from "../../view/molecules/ShedsView";
 import GeoMap from "../../view/organisms/GeoMap"
+import ShedView from "../../view/organisms/ShedView"
 
 const STYLE = {
   margin: 4,
@@ -37,19 +35,9 @@ export default class HomePage extends Component {
       function(shedBasic) {
         return shedBasic.shedownerupdatetoday;
       }
-    ).splice(0, 5);
-    console.debug(shedBasics[0]);
-
-    const sheds = await Promise.all(
-      shedBasics.map(
-        async function(shedBasic) {
-          return await FuelLKAppServer.getShed(shedBasic.shedId);
-        },
-      )
     );
-    console.debug(sheds[0]);
 
-    this.setState({ shedBasics, sheds });
+    this.setState({ shedBasics });
   }
 
   onClickBack() {
@@ -57,17 +45,28 @@ export default class HomePage extends Component {
     window.location.reload(true);
   }
 
-  render() {
+
+  renderInner() {
     const { shedBasics } = this.state;
     if (!shedBasics) {
-      return <CircularProgress />;
+      return null;
     }
+    return shedBasics.map(
+      function(shedBasic, iShed) {
+        return (
+          <ShedView key={"shed-" + iShed} shedBasic={shedBasic} />
+        );
+      }
+    );
+  }
 
+  render() {
     return (
       <Box sx={STYLE}>
         <CustomAppBar />
-        <GeoMap center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} />
-        <ShedsView shedBasics={shedBasics} />
+        <GeoMap center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM}>
+          {this.renderInner()}
+        </GeoMap>
         <CustomBottomNavigation onClickBack={this.onClickBack.bind(this)} />
       </Box>
     );
