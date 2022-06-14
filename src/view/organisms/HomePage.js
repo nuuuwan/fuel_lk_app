@@ -1,12 +1,13 @@
-import * as React from "react";
 import { Component } from "react";
+import * as React from "react";
 
 import Box from "@mui/material/Box";
+import CircularProgress from "@mui/material/CircularProgress";
 
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
-
-// import ReactGA from "react-ga";
+import FuelLKAppServer from "../../nonview/core/FuelLKAppServer";
+import FuelInfoListView from "../../view/molecules/FuelInfoListView";
 
 const STYLE = {
   margin: 4,
@@ -15,8 +16,19 @@ const STYLE = {
 };
 
 export default class HomePage extends Component {
-  componentDidMount() {
-    // ReactGA.pageview(window.location.pathname);
+  constructor(props) {
+    super(props);
+    this.state = { fuelInfoList: null };
+  }
+
+  async componentDidMount() {
+    const [province, district, fuelType] = [1, 1, "p92"];
+    const fuelInfoList = await FuelLKAppServer.multiGetFuelInfoList(
+      province,
+      district,
+      fuelType
+    );
+    this.setState({ fuelInfoList });
   }
 
   onClickBack() {
@@ -25,9 +37,15 @@ export default class HomePage extends Component {
   }
 
   render() {
+    const { fuelInfoList } = this.state;
+    if (!fuelInfoList) {
+      return <CircularProgress />;
+    }
+
     return (
       <Box sx={STYLE}>
         <CustomAppBar />
+        <FuelInfoListView fuelInfoList={fuelInfoList} />
         <CustomBottomNavigation onClickBack={this.onClickBack.bind(this)} />
       </Box>
     );
