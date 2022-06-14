@@ -16,11 +16,10 @@ export default class Shed {
     this.fuelCapacity = fuelCapacity;
     this.fuelType = fuelType;
     this.lastUpdateByShed = lastUpdateByShed;
-    this.lastUpdateByShedDate = new Date(this.lastUpdateByShed)
-    this.lastUpdateByShedUT = (this.lastUpdateByShedDate / 1_000.0);
+    this.lastUpdateByShedDate = new Date(this.lastUpdateByShed);
+    this.lastUpdateByShedUT = this.lastUpdateByShedDate / 1_000.0;
 
     this.shedOwnerUpdateToday = shedOwnerUpdateToday;
-
   }
 
   static fromDict(d) {

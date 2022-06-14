@@ -17,7 +17,7 @@ export default function ShedView({ shedBasic }) {
         </ListItemAvatar>
         <ListItemText
           primary={shedBasic.shedName}
-          secondary={shedBasic.lastUpdateByShedDate.toLocaleString('en-GB')}
+          secondary={shedBasic.lastUpdateByShedDate.toLocaleString("en-GB")}
         />
       </ListItem>
     </div>
