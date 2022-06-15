@@ -14,7 +14,7 @@ import LabelledBox from "../../view/molecules/LabelledBox";
 const DEFAULT_CIRLE_RADIUS = 10;
 const STYLE_CIRCLE = {
   stroke: true,
-  color: 'black',
+  color: "black",
   fillOpacity: 0.8,
   zIndex: 2000,
 };

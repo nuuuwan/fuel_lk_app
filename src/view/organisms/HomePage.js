@@ -38,13 +38,11 @@ export default class HomePage extends Component {
   }
 
   async getGeoLocation() {
-    return new Promise ((resolve, reject) => {
-      navigator.geolocation.getCurrentPosition(
-        function(position) {
-          resolve([position.coords.latitude, position.coords.longitude]);
-        },
-      )
-    })
+    return new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        resolve([position.coords.latitude, position.coords.longitude]);
+      });
+    });
   }
 
   onClickRefresh() {
