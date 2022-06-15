@@ -3,9 +3,13 @@ import Avatar from "@mui/material/Avatar";
 const DIM = 24;
 export default function ShedAvatar({ shedStatus }) {
   const shedType = shedStatus["shed_type"];
+
+  if (!shedType) {
+    return null;
+  }
+
   let src = null;
   let alt = null;
-
   if (shedType === 1) {
     src = "cpetco.png";
     alt = "CPETCO";
