@@ -24,21 +24,27 @@ export default class Shed {
   ) {
     this.address = address;
     this.bowserDispatch = bowserDispatch;
+
     this.davailablity = davailablity;
     this.dcapacity = dcapacity;
+
     this.dispatchSheduleList = dispatchSheduleList;
+
     this.ikavailablity = ikavailablity;
     this.ikcapacity = ikcapacity;
     this.kavailablity = kavailablity;
     this.kcapacity = kcapacity;
+
     this.lastupdateddate = lastupdateddate;
     this.latitude = latitude;
     this.longitude = longitude;
+
     this.p92Availablity = p92Availablity;
     this.p92Capacity = p92Capacity;
     this.p95Availablity = p95Availablity;
     this.p95Capacity = p95Capacity;
     this.sdavailablity = sdavailablity;
+
     this.sdcapacity = sdcapacity;
     this.shedCode = shedCode;
     this.shedName = shedName;
@@ -46,6 +52,29 @@ export default class Shed {
 
     this.latLng = [parseFloat(this.longitude), parseFloat(this.latitude)];
     this.lastUpdateTimeDate = new Date(this.lastupdateddate);
+
+    this.fuels = {
+      petrol92: {
+        isAvailable: this.p92Availablity,
+        capacity: this.p92Capacity,
+      },
+      petrol95: {
+        isAvailable: this.p92Availablity,
+        capacity: this.p92Capacity,
+      },
+      diesel: {
+        isAvailable: this.davailablity,
+        capacity: this.dcapacity,
+      },
+      superDiesel: {
+        isAvailable: this.sdavailablity,
+        capacity: this.sdcapacity,
+      },
+      kerosene: {
+        isAvailable: this.kavailablity,
+        capacity: this.kcapacity,
+      },
+    };
   }
 
   static fromDict(d) {
