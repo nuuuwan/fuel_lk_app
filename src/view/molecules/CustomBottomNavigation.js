@@ -5,10 +5,12 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Paper from "@mui/material/Paper";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import RefreshIcon from "@mui/icons-material/Refresh";
+import ZoomOutMapIcon from '@mui/icons-material/ZoomOutMap';
 
 export default function CustomBottomNavigation({
   onClickRefresh,
   onClickNearby,
+  onClickZoomOut,
 }) {
   return (
     <Paper
@@ -20,6 +22,11 @@ export default function CustomBottomNavigation({
           label={"Refresh"}
           icon={<RefreshIcon />}
           onClick={onClickRefresh}
+        />
+        <BottomNavigationAction
+          label={"Zoom Out"}
+          icon={<ZoomOutMapIcon />}
+          onClick={onClickZoomOut}
         />
         <BottomNavigationAction
           label={"Nearby"}
