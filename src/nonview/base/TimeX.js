@@ -4,6 +4,17 @@ export const SECONDS_IN = {
   DAY: 86_400,
 };
 
+const DATE_FORMAT_LOCALE = "en-GB";
+const DATE_FORMAT_OPTIONS = {
+  weekday: "short",
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+  hour: "numeric",
+  minute: "numeric",
+  hour12: true,
+};
+
 export default class TimeX {
   static getUnixTime() {
     return new Date() / 1_000.0;
@@ -14,10 +25,21 @@ export default class TimeX {
   }
 
   static formatTime(ut) {
-    return new Date(ut * 1_000.0).toLocaleString("en-GB");
+    if (ut < SECONDS_IN.DAY) {
+      return "";
+    }
+
+    return new Date(ut * 1_000.0).toLocaleString(
+      DATE_FORMAT_LOCALE,
+      DATE_FORMAT_OPTIONS
+    );
   }
 
   static getHumanTime(ut) {
+    if (ut < SECONDS_IN.DAY) {
+      return "Never";
+    }
+
     const delta = ut - TimeX.getUnixTime();
     const absStr = TimeX.getHumanTimeAbs(delta);
     if (delta > 0) {
