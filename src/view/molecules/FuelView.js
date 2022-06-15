@@ -22,7 +22,7 @@ export default function FuelView({
   }
 
   return (
-    <Paper sx={{ m: 1, p: 1, width: "80%" }}>
+    <Paper elevation={2} sx={{ m: 1, p: 1, width: "80%" }}>
       <AlignCenter>
         <LocalGasStationIcon sx={{ color }} />
         <Typography variant="subtitle1" sx={{ color }}>
