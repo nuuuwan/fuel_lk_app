@@ -1,4 +1,4 @@
-import SriLankaColors from "../../nonview/constants/SriLankaColors"
+import SriLankaColors from "../../nonview/constants/SriLankaColors";
 
 export default class Fuel {
   constructor(name, color) {

@@ -8,7 +8,7 @@ import MenuItem from "@mui/material/MenuItem";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
 import MenuIcon from "@mui/icons-material/Menu";
-import SourceIcon from '@mui/icons-material/Source';
+import SourceIcon from "@mui/icons-material/Source";
 
 const MENU_ITEM_LIST = [
   {

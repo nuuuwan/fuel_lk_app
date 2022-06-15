@@ -1,4 +1,4 @@
-const URL_DATA_ROOT = 'https://raw.githubusercontent.com/nuuuwan/fuel_lk/data';
+const URL_DATA_ROOT = "https://raw.githubusercontent.com/nuuuwan/fuel_lk/data";
 
 const JSON_HEADERS = {
   headers: {
@@ -14,7 +14,7 @@ async function jsonNonCache(url) {
 
 export default class FuelData {
   static async multigetShedStatusList() {
-    const url = URL_DATA_ROOT + '/latest/shed_status_list.all.json';
+    const url = URL_DATA_ROOT + "/latest/shed_status_list.all.json";
     return await jsonNonCache(url);
   }
 }

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import HomePage from "./view/organisms/HomePage.js";
-import SriLankaColors from "./nonview/constants/SriLankaColors"
+import SriLankaColors from "./nonview/constants/SriLankaColors";
 
 const THEME = createTheme({
   palette: {
@@ -25,7 +25,6 @@ const THEME = createTheme({
     fontSize: 12,
   },
 });
-
 
 export default class App extends Component {
   render() {
