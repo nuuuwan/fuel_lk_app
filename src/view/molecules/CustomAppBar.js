@@ -1,25 +1,25 @@
 import React from "react";
 
-import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 
 import CustomAppBarMenu from "./CustomAppBarMenu.js";
 
 const STYLE = {
-  backgroundColor: "lightgray",
   position: "fixed",
   top: 0,
   left: 0,
   right: 0,
   height: 50,
+  zIndex: 1000,
 };
 
 export default function CustomAppBar() {
   return (
-    <AppBar sx={STYLE}>
+    <Box sx={STYLE}>
       <Toolbar variant="dense">
         <CustomAppBarMenu />
       </Toolbar>
-    </AppBar>
+    </Box>
   );
 }
