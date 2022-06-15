@@ -1,27 +1,27 @@
 import { Component } from "react";
-
-import Typography from '@mui/material/Typography';
 import { CircleMarker, Popup } from "react-leaflet";
+
+import Typography from "@mui/material/Typography";
 
 import FuelLKAppServer from "../../nonview/core/FuelLKAppServer";
 
 const DEFAULT_CIRLE_RADIUS = 10;
 
-
 export default class ShedView extends Component {
   constructor(props) {
     super(props);
-    this.state = {shed: null};
+    this.state = { shed: null };
   }
 
   async componentDidMount() {
-    const {shedBasic} = this.props;
+    const { shedBasic, onLoad } = this.props;
     const shed = await FuelLKAppServer.getShed(shedBasic.shedId);
-    this.setState({shed});
+    onLoad(shedBasic.shedId);
+    this.setState({ shed });
   }
 
   render() {
-    const {shed} = this.state;
+    const { shed } = this.state;
     if (!shed) {
       return null;
     }
@@ -29,13 +29,12 @@ export default class ShedView extends Component {
       <CircleMarker
         center={shed.latLng}
         radius={DEFAULT_CIRLE_RADIUS}
-        pathOptions={{ color: 'red', stroke: null, fillOpacity: 0.5 }}
+        pathOptions={{ color: "red", stroke: null, fillOpacity: 0.5 }}
       >
-      <Popup>
-        <Typography variant="h6">{shed.shedName}</Typography>
-        <Typography variant="body1">{shed.address}</Typography>
-
-      </Popup>
+        <Popup>
+          <Typography variant="h6">{shed.shedName}</Typography>
+          <Typography variant="body1">{shed.address}</Typography>
+        </Popup>
       </CircleMarker>
     );
   }
