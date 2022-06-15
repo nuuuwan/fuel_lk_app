@@ -58,9 +58,6 @@ export default function ShedView({ shedStatus }) {
     >
       <Popup closeButton={false}>
         <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
-          <LabelledBox label="Last Updated by Shed">
-            <HumanTime ut={shedStatus["time_last_updated_by_shed_ut"]} />
-          </LabelledBox>
           <AlignCenter>
             <ShedAvatar shedStatus={shedStatus} />
             <Typography variant="subtitle1">
@@ -68,8 +65,10 @@ export default function ShedView({ shedStatus }) {
             </Typography>
           </AlignCenter>
           <Typography variant="caption">{shedStatus["address"]}</Typography>
-
           <FuelsView shedStatus={shedStatus} />
+          <LabelledBox label="Last Updated by Shed">
+            <HumanTime ut={shedStatus["time_last_updated_by_shed_ut"]} />
+          </LabelledBox>          
         </Box>
       </Popup>
     </CircleMarker>
