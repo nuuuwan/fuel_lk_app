@@ -1,7 +1,8 @@
-import * as React from "react";
 import { Component } from "react";
+import * as React from "react";
 
 import Box from "@mui/material/Box";
+import MyLocationIcon from "@mui/icons-material/MyLocation";
 
 import FuelData from "../../nonview/core/FuelData";
 
@@ -16,8 +17,14 @@ const STYLE = {
   marginBottom: 10,
 };
 
-const DEFAULT_CENTER = [6.914795590744974, 79.87756643209595];
-const DEFAULT_ZOOM = 9;
+const STYLE_MY_LOCATION = {
+  position: "fixed",
+  top: "47.5vh",
+  left: "47.5%",
+};
+
+const DEFAULT_CENTER = [7.6, 80.7]; // Dambulla
+const DEFAULT_ZOOM = 7;
 const DEFAULT_ZOOM_NEARBY = 13;
 
 export default class HomePage extends Component {
@@ -72,6 +79,7 @@ export default class HomePage extends Component {
           onClickRefresh={this.onClickRefresh.bind(this)}
           onClickNearby={this.onClickNearby.bind(this)}
         />
+        <MyLocationIcon style={STYLE_MY_LOCATION} />
       </Box>
     );
   }
