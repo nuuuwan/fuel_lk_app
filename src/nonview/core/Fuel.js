@@ -1,5 +1,3 @@
-import SriLankaColors from "../../nonview/constants/SriLankaColors";
-
 export default class Fuel {
   constructor(name, color) {
     this.name = name;
@@ -8,10 +6,10 @@ export default class Fuel {
 }
 
 export const FUEL_IDX = {
-  p92: new Fuel("Petrol-92", SriLankaColors.Sinhala),
-  p95: new Fuel("Petrol-95", SriLankaColors.Sinhala),
-  d: new Fuel("Diesel", SriLankaColors.Muslim),
-  sd: new Fuel("Super-Diesel", SriLankaColors.Muslim),
-  k: new Fuel("Kerosene", SriLankaColors.Tamil),
+  p92: new Fuel("Petrol-92", "red"),
+  p95: new Fuel("Petrol-95", "red"),
+  d: new Fuel("Diesel", "maroon"),
+  sd: new Fuel("Super-Diesel", "maroon"),
+  k: new Fuel("Kerosene", "blue"),
   // ik: new Fuel("ik???", SriLankaColors.Tamil),
 };
