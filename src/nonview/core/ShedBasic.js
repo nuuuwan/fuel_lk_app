@@ -20,7 +20,6 @@ export default class Shed {
 
     this.lastUpdateByShedDate = new Date(this.lastupdatebyshed);
     this.lastUpdateByShedUT = this.lastUpdateByShedDate / 1_000.0;
-
   }
 
   static fromDict(d) {
