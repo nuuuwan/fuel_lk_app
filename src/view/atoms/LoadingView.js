@@ -16,9 +16,9 @@ export default function LoadingView({ nShedsTotal, nShedsLoaded }) {
 
   let label;
   if (nShedsLoaded) {
-    label = `Loaded ${nShedsLoaded} of ${nShedsTotal} sheds...`;
+    label = `Loaded ${nShedsLoaded} of ${nShedsTotal} sheds... `;
   } else {
-    label = `Loading...`;
+    label = `Loading... `;
   }
 
   return (
