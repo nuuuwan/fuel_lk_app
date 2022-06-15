@@ -21,12 +21,12 @@ export default function FuelView({
     <Paper sx={{ m: 1, p: 1 }}>
       <Typography variant="subtitle1">{label}</Typography>
       <LabelledBox label="Opening Stock">
-        <FuelQuantity quantity={capacity} />
+        <FuelQuantity quantity={capacity} color="orange" />
       </LabelledBox>
 
       {recentDispatch ? (
         <LabelledBox label="Recent Dispatch">
-          <FuelQuantity quantity={recentDispatch["amount"]} />
+          <FuelQuantity quantity={recentDispatch["amount"]} color="green"/>
           <Place name={recentDispatch["plant_name"]} />
           <HumanTime ut={recentDispatch["time_eta_ut"]} />
         </LabelledBox>
