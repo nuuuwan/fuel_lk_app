@@ -8,9 +8,10 @@ export default class Fuel {
 }
 
 export const FUEL_IDX = {
-  petrol92: new Fuel("Petrol-92", SriLankaColors.Sinhala),
-  petrol95: new Fuel("Petrol-95", SriLankaColors.Sinhala),
-  diesel: new Fuel("Diesel", SriLankaColors.Muslim),
-  superDiesel: new Fuel("Super-Diesel", SriLankaColors.Muslim),
-  kerosene: new Fuel("Kerosene", SriLankaColors.Tamil),
+  p92: new Fuel("Petrol-92", SriLankaColors.Sinhala),
+  p95: new Fuel("Petrol-95", SriLankaColors.Sinhala),
+  d: new Fuel("Diesel", SriLankaColors.Muslim),
+  sd: new Fuel("Super-Diesel", SriLankaColors.Muslim),
+  k: new Fuel("Kerosene", SriLankaColors.Tamil),
+  ik: new Fuel("ik???", SriLankaColors.Tamil),
 };
