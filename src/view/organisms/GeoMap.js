@@ -24,7 +24,6 @@ export default class GeoMap extends Component {
         style={STYLE_MAP}
       >
         <TileLayer url={URL_FORMAT} />
-        <ZoomControl zoom={zoom} position="bottomright" />
         {this.props.children}
       </MapContainer>
     );
