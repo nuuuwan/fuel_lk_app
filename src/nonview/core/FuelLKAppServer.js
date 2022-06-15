@@ -18,7 +18,7 @@ export default class FuelLKAppServer {
     return process.env.REACT_APP_URL_LAMBDA;
   }
 
-  static async genericRequest(payload) {
+  static async genericRequestNoCache(payload) {
     const payloadJSON = JSON.stringify(payload);
     const payloadJSONB64 = btoa(payloadJSON);
     const payloadJSONB64Encoded = encodeURIComponent(payloadJSONB64);
@@ -32,6 +32,20 @@ export default class FuelLKAppServer {
       console.error(response);
     }
     return response;
+  }
+
+  static async genericRequest(payload) {
+    const cacheKey = JSON.stringify(payload);
+    const dataJSONCold = localStorage.getItem(cacheKey);
+    if (dataJSONCold && dataJSONCold !== "null") {
+      const dataCold = JSON.parse(dataJSONCold);
+      return dataCold;
+    }
+
+    const dataHot = await FuelLKAppServer.genericRequestNoCache(payload);
+    const dataJSONHot = JSON.stringify(dataHot);
+    localStorage.setItem(cacheKey, dataJSONHot);
+    return dataHot;
   }
 
   static async getShed(shedId) {
