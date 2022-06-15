@@ -1,14 +1,15 @@
 import { CircleMarker, Popup } from "react-leaflet";
 
-import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
+
+import AlignCenter from "../../view/atoms/AlignCenter";
 import HumanTime from "../../view/atoms/HumanTime";
+import ShedAvatar from "../../view/atoms/ShedAvatar";
 import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
-import ShedAvatar from "../../view/atoms/ShedAvatar";
-import AlignCenter from "../../view/atoms/AlignCenter";
 
 const DEFAULT_CIRLE_RADIUS = 10;
 const STYLE_CIRCLE = { stroke: null, fillOpacity: 0.8, zIndex: 2000 };
@@ -51,9 +52,9 @@ export default function ShedView({ shedStatus }) {
       pathOptions={{ ...STYLE_CIRCLE, ...{ color } }}
     >
       <Popup closeButton={false}>
-        <Box sx={{ maxHeight: "50vh", overflow: "scroll", minWidth: 200 }}>
-          <LabelledBox label="Last Updated">
-            <HumanTime ut={shedStatus["time_last_updated_ut"]} />
+        <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
+          <LabelledBox label="Last Updated by Shed">
+            <HumanTime ut={shedStatus["time_last_updated_by_shed_ut"]} />
           </LabelledBox>
           <AlignCenter>
             <ShedAvatar shedStatus={shedStatus} />
