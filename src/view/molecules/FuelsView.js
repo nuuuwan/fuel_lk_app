@@ -27,7 +27,7 @@ export default function FuelsView({ shedStatus }) {
           <FuelView
             key={"fuel-" + fuelId}
             label={fuel.name}
-            availlability={shedFuel["is_available"]}
+            isAvailable={shedFuel["is_available"]}
             capacity={shedFuel.capacity}
             recentDispatch={recentDispatch}
             color={fuel.color}
