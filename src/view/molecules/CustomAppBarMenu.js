@@ -7,7 +7,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
-import MenuIcon from "@mui/icons-material/Menu";
+import SettingsIcon from "@mui/icons-material/Settings";
 import SourceIcon from "@mui/icons-material/Source";
 
 const MENU_ITEM_LIST = [
@@ -49,7 +49,7 @@ export default function CustomAppBarMenu() {
         aria-label="menu"
         onClick={onClick}
       >
-        <MenuIcon />
+        <SettingsIcon />
       </IconButton>
       <Menu
         id="basic-menu"
