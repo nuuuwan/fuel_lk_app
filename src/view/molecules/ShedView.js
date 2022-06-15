@@ -11,11 +11,10 @@ import ShedAvatar from "../../view/atoms/ShedAvatar";
 import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
 
-const DEFAULT_CIRLE_RADIUS = 10;
+const DEFAULT_CIRLE_RADIUS = 15;
 const STYLE_CIRCLE = {
   stroke: true,
-  color: "black",
-  fillOpacity: 0.8,
+  fillOpacity: 0.4,
   zIndex: 2000,
 };
 const MAX_RECENCY_HOURS = 12;
@@ -50,17 +49,19 @@ export default function ShedView({ shedStatus }) {
     fillColor = "orange";
   }
 
+  const color = shedStatus['shed_type'] === 1 ? 'black' : 'gray';
+
   return (
     <CircleMarker
       center={shedStatus["lat_lng"]}
       radius={DEFAULT_CIRLE_RADIUS}
-      pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor } }}
+      pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor, color } }}
     >
       <Popup closeButton={false}>
         <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
           <AlignCenter>
             <ShedAvatar shedStatus={shedStatus} />
-            <Typography variant="subtitle1">
+            <Typography variant="subtitle2">
               {shedStatus["shed_name"]}
             </Typography>
           </AlignCenter>
@@ -68,7 +69,7 @@ export default function ShedView({ shedStatus }) {
           <FuelsView shedStatus={shedStatus} />
           <LabelledBox label="Last Updated by Shed">
             <HumanTime ut={shedStatus["time_last_updated_by_shed_ut"]} />
-          </LabelledBox>          
+          </LabelledBox>
         </Box>
       </Popup>
     </CircleMarker>
