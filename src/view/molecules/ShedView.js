@@ -1,12 +1,14 @@
 import { CircleMarker, Popup } from "react-leaflet";
 
-import TimeX, {SECONDS_IN} from "../../nonview/base/TimeX"
+import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 import HumanTime from "../../view/atoms/HumanTime";
 import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
+import ShedAvatar from "../../view/atoms/ShedAvatar";
+import AlignCenter from "../../view/atoms/AlignCenter";
 
 const DEFAULT_CIRLE_RADIUS = 10;
 const STYLE_CIRCLE = { stroke: null, fillOpacity: 0.8, zIndex: 2000 };
@@ -23,7 +25,7 @@ function getHasRecentDispatch(shedStatus) {
 }
 
 function getHasListedStock(shedStatus) {
-  for (let value of Object.values(shedStatus['fuel_status_idx'])) {
+  for (let value of Object.values(shedStatus["fuel_status_idx"])) {
     if (value.capacity > 0) {
       return true;
     }
@@ -49,11 +51,16 @@ export default function ShedView({ shedStatus }) {
       pathOptions={{ ...STYLE_CIRCLE, ...{ color } }}
     >
       <Popup closeButton={false}>
-        <Box sx={{ maxHeight: "67vh", overflow: "scroll" }}>
+        <Box sx={{ maxHeight: "50vh", overflow: "scroll", minWidth: 200 }}>
           <LabelledBox label="Last Updated">
             <HumanTime ut={shedStatus["time_last_updated_ut"]} />
           </LabelledBox>
-          <Typography variant="subtitle1">{shedStatus["shed_name"]}</Typography>
+          <AlignCenter>
+            <ShedAvatar shedStatus={shedStatus} />
+            <Typography variant="subtitle1">
+              {shedStatus["shed_name"]}
+            </Typography>
+          </AlignCenter>
           <Typography variant="caption">{shedStatus["address"]}</Typography>
 
           <FuelsView shedStatus={shedStatus} />
