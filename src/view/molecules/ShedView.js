@@ -6,13 +6,14 @@ import Typography from "@mui/material/Typography";
 import FuelsView from "../../view/molecules/FuelsView";
 
 const DEFAULT_CIRLE_RADIUS = 10;
+const STYLE_CIRCLE = { color: "red", stroke: null, fillOpacity: 0.75 };
 
 export default function ShedView({ shedStatus }) {
   return (
     <CircleMarker
       center={shedStatus["lat_lng"]}
       radius={DEFAULT_CIRLE_RADIUS}
-      pathOptions={{ color: "red", stroke: null, fillOpacity: 0.5 }}
+      pathOptions={STYLE_CIRCLE}
     >
       <Popup closeButton={false}>
         <Box sx={{ maxHeight: "67vh", overflow: "scroll" }}>
