@@ -1,10 +1,11 @@
 import { Component } from "react";
 import * as React from "react";
 
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 import FuelLKAppServer from "../../nonview/core/FuelLKAppServer";
+
+import LoadingView from "../../view/atoms/LoadingView";
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import GeoMap from "../../view/organisms/GeoMap";
@@ -76,14 +77,13 @@ export default class HomePage extends Component {
     return (
       <Box sx={STYLE}>
         <CustomAppBar nShedsLoaded={nShedsLoaded} />
-        <Typography>{nShedsLoaded}</Typography>
         <GeoMap center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM}>
           {this.renderInner()}
         </GeoMap>
+        <LoadingView nShedsLoaded={nShedsLoaded} nShedsTotal={nShedsTotal} />
+
         <CustomBottomNavigation
           onClickRefresh={this.onClickRefresh.bind(this)}
-          nShedsTotal={nShedsTotal}
-          nShedsLoaded={nShedsLoaded}
         />
       </Box>
     );
