@@ -13,5 +13,5 @@ export const FUEL_IDX = {
   d: new Fuel("Diesel", SriLankaColors.Muslim),
   sd: new Fuel("Super-Diesel", SriLankaColors.Muslim),
   k: new Fuel("Kerosene", SriLankaColors.Tamil),
-  ik: new Fuel("ik???", SriLankaColors.Tamil),
+  // ik: new Fuel("ik???", SriLankaColors.Tamil),
 };
