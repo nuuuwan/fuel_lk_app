@@ -1,23 +1,23 @@
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
+import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import OilBarrelIcon from "@mui/icons-material/OilBarrel";
 
+import AlignCenter from "../../view/atoms/AlignCenter";
 import FuelQuantity from "../../view/atoms/FuelQuantity";
 import HumanTime from "../../view/atoms/HumanTime";
 import Place from "../../view/atoms/Place";
 import LabelledBox from "../../view/molecules/LabelledBox";
-import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
-import AlignCenter from "../../view/atoms/AlignCenter";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import OilBarrelIcon from "@mui/icons-material/OilBarrel";
 
 export default function FuelView({
   label,
-  availlability,
+  isAvailable,
   capacity,
   recentDispatch,
   color,
 }) {
-  if (!availlability) {
+  if (!isAvailable && !recentDispatch) {
     return null;
   }
 
@@ -25,7 +25,9 @@ export default function FuelView({
     <Paper sx={{ m: 1, p: 1, width: "80%" }}>
       <AlignCenter>
         <LocalGasStationIcon sx={{ color }} />
-        <Typography variant="subtitle1">{label}</Typography>
+        <Typography variant="subtitle1" sx={{ color }}>
+          {label}
+        </Typography>
       </AlignCenter>
       {capacity ? (
         <LabelledBox
