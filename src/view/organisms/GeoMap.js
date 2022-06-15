@@ -3,7 +3,6 @@ import {
   MapContainer,
   TileLayer,
   ZoomControl,
-  useMapEvents,
 } from "react-leaflet";
 
 const URL_FORMAT = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
