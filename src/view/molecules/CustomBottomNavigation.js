@@ -3,45 +3,20 @@ import React from "react";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Paper from "@mui/material/Paper";
-import Tooltip from "@mui/material/Tooltip";
-import Typography from "@mui/material/Typography";
-import UndoIcon from "@mui/icons-material/Undo";
+import RefreshIcon from "@mui/icons-material/Refresh";
 
-export default function CustomBottomNavigation({ onClickBack }) {
-  const navigationItems = [
-    {
-      name: "Back",
-      details: "Go back to previous page",
-      Icon: UndoIcon,
-      onClick: onClickBack,
-    },
-  ];
-
+export default function CustomBottomNavigation({ onClickRefresh }) {
   return (
     <Paper
       sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
       elevation={3}
     >
       <BottomNavigation showLabels>
-        {navigationItems.map(function (item, i) {
-          const key = "data-" + i;
-          const Icon = item.Icon;
-          const onClick = item.onClick;
-          return (
-            <Tooltip
-              key={key}
-              title={
-                <Typography variant="subtitle1">{item.details}</Typography>
-              }
-            >
-              <BottomNavigationAction
-                label={item.name}
-                icon={<Icon />}
-                onClick={onClick}
-              />
-            </Tooltip>
-          );
-        })}
+        <BottomNavigationAction
+          label={"Refresh"}
+          icon={<RefreshIcon />}
+          onClick={onClickRefresh}
+        />
       </BottomNavigation>
     </Paper>
   );
