@@ -13,7 +13,7 @@ import SourceIcon from "@mui/icons-material/Source";
 const MENU_ITEM_LIST = [
   {
     name: "Help",
-    url: "https://twitter.com/nuuuwan",
+    url: "https://twitter.com/nuuuwan/status/1537072079786369025",
     Icon: HelpIcon,
   },
   {
