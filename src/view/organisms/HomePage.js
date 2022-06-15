@@ -1,5 +1,5 @@
-import { Component } from "react";
 import * as React from "react";
+import { Component } from "react";
 
 import Box from "@mui/material/Box";
 
@@ -33,6 +33,7 @@ export default class HomePage extends Component {
   async componentDidMount() {
     const shedStatusList = await FuelData.multigetShedStatusList();
     this.setState({ shedStatusList });
+    this.onClickNearby();    
   }
 
   onClickRefresh() {
