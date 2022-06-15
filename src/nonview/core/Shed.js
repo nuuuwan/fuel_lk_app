@@ -20,7 +20,7 @@ export default class Shed {
     sdcapacity,
     shedCode,
     shedName,
-    shedownerupdatetoday,
+    shedownerupdatetoday
   ) {
     this.address = address;
     this.bowserDispatch = bowserDispatch;
@@ -69,7 +69,7 @@ export default class Shed {
       d.sdcapacity,
       d.shedCode,
       d.shedName,
-      d.shedownerupdatetoday,
+      d.shedownerupdatetoday
     );
   }
 }
