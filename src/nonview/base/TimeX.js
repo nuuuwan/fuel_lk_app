@@ -6,8 +6,7 @@ export const SECONDS_IN = {
 
 const DATE_FORMAT_LOCALE = "en-GB";
 const DATE_FORMAT_OPTIONS = {
-  weekday: "short",
-  year: "numeric",
+  weekday: "short",      
   month: "short",
   day: "numeric",
   hour: "numeric",
