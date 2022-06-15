@@ -45,6 +45,7 @@ export default class Shed {
     this.shedownerupdatetoday = shedownerupdatetoday;
 
     this.latLng = [parseFloat(this.longitude), parseFloat(this.latitude)];
+    this.lastUpdateTimeDate = new Date(this.lastupdateddate);
   }
 
   static fromDict(d) {
