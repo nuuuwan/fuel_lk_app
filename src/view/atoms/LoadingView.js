@@ -7,6 +7,7 @@ const STYLE = {
   left: "2%",
   backgroundColor: "rgba(255, 255, 255, 0.5)",
   zIndex: 1000,
+  padding: "1%",
 };
 
 export default function LoadingView({ nShedsTotal, nShedsLoaded }) {
