@@ -1,5 +1,6 @@
 import { CircleMarker, Popup } from "react-leaflet";
 
+import TimeX, {SECONDS_IN} from "../../nonview/base/TimeX"
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
@@ -8,19 +9,38 @@ import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
 
 const DEFAULT_CIRLE_RADIUS = 10;
-const STYLE_CIRCLE = { stroke: null, fillOpacity: 0.6, zIndex: 2000 };
-
-export default function ShedView({ shedStatus }) {
-  const currentTime = parseInt(new Date() / 1_000.0);
-  let hasRecentDispatch = false;
+const STYLE_CIRCLE = { stroke: null, fillOpacity: 0.8, zIndex: 2000 };
+const MAX_RECENCY_HOURS = 12;
+function getHasRecentDispatch(shedStatus) {
+  const currentTime = TimeX.getUnixTime();
   for (let dispatch of shedStatus["dispatch_schedule_list"]) {
     const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
-    if (deltaToDispatch > -3600 * 6) {
-      hasRecentDispatch = true;
+    if (deltaToDispatch > -MAX_RECENCY_HOURS * SECONDS_IN.HOUR) {
+      return true;
     }
   }
+  return false;
+}
 
-  const color = hasRecentDispatch ? "green" : "red";
+function getHasListedStock(shedStatus) {
+  for (let value of Object.values(shedStatus['fuel_status_idx'])) {
+    if (value.capacity > 0) {
+      return true;
+    }
+  }
+  return false;
+}
+
+export default function ShedView({ shedStatus }) {
+  const hasRecentDispatch = getHasRecentDispatch(shedStatus);
+  const hasListedStock = getHasListedStock(shedStatus);
+
+  let color = "red";
+  if (hasRecentDispatch) {
+    color = "green";
+  } else if (hasListedStock) {
+    color = "orange";
+  }
 
   return (
     <CircleMarker
