@@ -2,7 +2,6 @@ import * as React from "react";
 import { Component } from "react";
 
 import Box from "@mui/material/Box";
-import MyLocationIcon from "@mui/icons-material/MyLocation";
 
 import FuelData from "../../nonview/core/FuelData";
 
@@ -15,12 +14,6 @@ const STYLE = {
   margin: 4,
   marginTop: 10,
   marginBottom: 10,
-};
-
-const STYLE_MY_LOCATION = {
-  position: "fixed",
-  top: "47.5vh",
-  left: "47.5%",
 };
 
 const DEFAULT_CENTER = [7.6, 80.7]; // Dambulla
@@ -79,7 +72,6 @@ export default class HomePage extends Component {
           onClickRefresh={this.onClickRefresh.bind(this)}
           onClickNearby={this.onClickNearby.bind(this)}
         />
-        <MyLocationIcon style={STYLE_MY_LOCATION} />
       </Box>
     );
   }
