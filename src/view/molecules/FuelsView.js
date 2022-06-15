@@ -4,7 +4,7 @@ import { FUEL_IDX } from "../../nonview/core/Fuel";
 
 import FuelView from "../../view/molecules/FuelView";
 
-import TimeX, {SECONDS_IN} from "../../nonview/base/TimeX"
+import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 
 export default function FuelsView({ shedStatus }) {
   const currentTime = TimeX.getUnixTime();
@@ -19,7 +19,7 @@ export default function FuelsView({ shedStatus }) {
             continue;
           }
           const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
-          if (deltaToDispatch > -SECONDS_IN.HOUR * 6) {
+          if (deltaToDispatch > -SECONDS_IN.DAY) {
             recentDispatch = dispatch;
           }
         }
