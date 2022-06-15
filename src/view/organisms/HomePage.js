@@ -3,11 +3,12 @@ import { Component } from "react";
 
 import Box from "@mui/material/Box";
 
+import FuelData from "../../nonview/core/FuelData";
+
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
-import GeoMap from "../../view/organisms/GeoMap";
 import ShedView from "../../view/molecules/ShedView";
-import FuelData from "../../nonview/core/FuelData";
+import GeoMap from "../../view/organisms/GeoMap";
 
 const STYLE = {
   margin: 4,
@@ -17,11 +18,16 @@ const STYLE = {
 
 const DEFAULT_CENTER = [6.914795590744974, 79.87756643209595];
 const DEFAULT_ZOOM = 9;
+const DEFAULT_ZOOM_NEARBY = 13;
 
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.state = { shedStatusList: undefined };
+    this.state = {
+      shedStatusList: undefined,
+      center: DEFAULT_CENTER,
+      zoom: DEFAULT_ZOOM,
+    };
   }
 
   async componentDidMount() {
@@ -32,6 +38,15 @@ export default class HomePage extends Component {
   onClickRefresh() {
     localStorage.clear();
     window.location.reload(true);
+  }
+
+  onClickNearby() {
+    const onShowPosition = function (position) {
+      const center = [position.coords.latitude, position.coords.longitude];
+      const zoom = DEFAULT_ZOOM_NEARBY;
+      this.setState({ center, zoom });
+    }.bind(this);
+    navigator.geolocation.getCurrentPosition(onShowPosition);
   }
 
   renderInner() {
@@ -45,14 +60,17 @@ export default class HomePage extends Component {
   }
 
   render() {
+    const { center, zoom } = this.state;
+    const key = "geo-map-" + center + zoom;
     return (
       <Box sx={STYLE}>
         <CustomAppBar />
-        <GeoMap center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM}>
+        <GeoMap key={key} center={center} zoom={zoom}>
           {this.renderInner()}
         </GeoMap>
         <CustomBottomNavigation
           onClickRefresh={this.onClickRefresh.bind(this)}
+          onClickNearby={this.onClickNearby.bind(this)}
         />
       </Box>
     );
