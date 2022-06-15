@@ -12,7 +12,12 @@ import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
 
 const DEFAULT_CIRLE_RADIUS = 10;
-const STYLE_CIRCLE = { stroke: null, fillOpacity: 0.8, zIndex: 2000 };
+const STYLE_CIRCLE = {
+  stroke: true,
+  color: 'black',
+  fillOpacity: 0.8,
+  zIndex: 2000,
+};
 const MAX_RECENCY_HOURS = 12;
 function getHasRecentDispatch(shedStatus) {
   const currentTime = TimeX.getUnixTime();
@@ -38,18 +43,18 @@ export default function ShedView({ shedStatus }) {
   const hasRecentDispatch = getHasRecentDispatch(shedStatus);
   const hasListedStock = getHasListedStock(shedStatus);
 
-  let color = "red";
+  let fillColor = "red";
   if (hasRecentDispatch) {
-    color = "green";
+    fillColor = "green";
   } else if (hasListedStock) {
-    color = "orange";
+    fillColor = "orange";
   }
 
   return (
     <CircleMarker
       center={shedStatus["lat_lng"]}
       radius={DEFAULT_CIRLE_RADIUS}
-      pathOptions={{ ...STYLE_CIRCLE, ...{ color } }}
+      pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor } }}
     >
       <Popup closeButton={false}>
         <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
