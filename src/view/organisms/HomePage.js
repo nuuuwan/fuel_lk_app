@@ -3,14 +3,11 @@ import { Component } from "react";
 
 import Box from "@mui/material/Box";
 
-import FuelLKAppServer from "../../nonview/core/FuelLKAppServer";
-
-import LoadingView from "../../view/atoms/LoadingView";
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import GeoMap from "../../view/organisms/GeoMap";
-import ShedView from "../../view/organisms/ShedView";
-import FuelData from "../../nonview/core/FuelData"
+import ShedView from "../../view/molecules/ShedView";
+import FuelData from "../../nonview/core/FuelData";
 
 const STYLE = {
   margin: 4,
@@ -42,16 +39,9 @@ export default class HomePage extends Component {
     if (!shedStatusList) {
       return null;
     }
-    return shedStatusList.map(
-      function (shedStatus, iShed) {
-        return (
-          <ShedView
-            key={"shed-" + iShed}
-            shedStatus={shedStatus}
-          />
-        );
-      }.bind(this)
-    );
+    return shedStatusList.map(function (shedStatus, iShed) {
+      return <ShedView key={"shed-" + iShed} shedStatus={shedStatus} />;
+    });
   }
 
   render() {
