@@ -19,7 +19,7 @@ export default class ShedView extends Component {
   async componentDidMount() {
     const { shedBasic, onLoad } = this.props;
     const shed = await FuelLKAppServer.getShed(shedBasic.shedId);
-    onLoad(shedBasic.shedId);
+    onLoad(shed);
     this.setState({ shed });
   }
 
