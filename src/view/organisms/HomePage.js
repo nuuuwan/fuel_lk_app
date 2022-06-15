@@ -25,15 +25,26 @@ export default class HomePage extends Component {
     super(props);
     this.state = {
       shedStatusList: undefined,
-      center: DEFAULT_CENTER,
-      zoom: DEFAULT_ZOOM,
+      center: undefined,
+      zoom: undefined,
     };
   }
 
   async componentDidMount() {
+    const center = await this.getGeoLocation();
+    const zoom = DEFAULT_ZOOM_NEARBY;
     const shedStatusList = await FuelData.multigetShedStatusList();
-    this.setState({ shedStatusList });
-    this.onClickNearby();    
+    this.setState({ center, zoom, shedStatusList });
+  }
+
+  async getGeoLocation() {
+    return new Promise ((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(
+        function(position) {
+          resolve([position.coords.latitude, position.coords.longitude]);
+        },
+      )
+    })
   }
 
   onClickRefresh() {
@@ -41,13 +52,17 @@ export default class HomePage extends Component {
     window.location.reload(true);
   }
 
-  onClickNearby() {
-    const onShowPosition = function (position) {
-      const center = [position.coords.latitude, position.coords.longitude];
-      const zoom = DEFAULT_ZOOM_NEARBY;
-      this.setState({ center, zoom });
-    }.bind(this);
-    navigator.geolocation.getCurrentPosition(onShowPosition);
+  async onClickZoomOut() {
+    const center = DEFAULT_CENTER;
+    const zoom = DEFAULT_ZOOM;
+    const shedStatusList = await FuelData.multigetShedStatusList();
+    this.setState({ center, zoom, shedStatusList });
+  }
+
+  async onClickNearby() {
+    const center = await this.getGeoLocation();
+    const zoom = DEFAULT_ZOOM_NEARBY;
+    this.setState({ center, zoom });
   }
 
   renderInner() {
@@ -72,6 +87,7 @@ export default class HomePage extends Component {
         <CustomBottomNavigation
           onClickRefresh={this.onClickRefresh.bind(this)}
           onClickNearby={this.onClickNearby.bind(this)}
+          onClickZoomOut={this.onClickZoomOut.bind(this)}
         />
       </Box>
     );
