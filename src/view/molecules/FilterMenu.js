@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import Tooltip from '@mui/material/Tooltip';
 import IconButton from "@mui/material/IconButton";
 import ListItemText from "@mui/material/ListItemText";
 import Menu from "@mui/material/Menu";
@@ -33,7 +34,9 @@ export default function FilterMenu({
   return (
     <div>
       <IconButton size="large" onClick={onClick}>
-        <FilterAltIcon sx={{ color: iconColor }} />
+        <Tooltip title="Filter by Fuel Type">
+          <FilterAltIcon sx={{ color: iconColor }} />
+        </Tooltip>
         <FilterDetails selectedFuelTypeList={selectedFuelTypeList} />
       </IconButton>
       <Menu
