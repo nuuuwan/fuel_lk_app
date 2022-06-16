@@ -1,6 +1,7 @@
 import List from "@mui/material/List";
 
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
+import { MAX_RECENCY_HOURS } from "../../nonview/constants/Constants.js";
 import { FUEL_IDX } from "../../nonview/core/Fuel";
 
 import FuelView from "../../view/molecules/FuelView";
@@ -18,7 +19,7 @@ export default function FuelsView({ extendedShed }) {
             continue;
           }
           const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
-          if (deltaToDispatch > -SECONDS_IN.DAY) {
+          if (deltaToDispatch > -SECONDS_IN.HOUR * MAX_RECENCY_HOURS) {
             recentDispatch = dispatch;
           }
         }

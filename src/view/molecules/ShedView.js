@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
+import { MAX_RECENCY_HOURS } from "../../nonview/constants/Constants.js";
 
 import AlignCenter from "../../view/atoms/AlignCenter";
 import HumanTime from "../../view/atoms/HumanTime";
@@ -17,7 +18,7 @@ const STYLE_CIRCLE = {
   fillOpacity: 0.4,
   zIndex: 2000,
 };
-const MAX_RECENCY_HOURS = 12;
+
 function getHasRecentDispatch(extendedShed) {
   const currentTime = TimeX.getUnixTime();
   for (let dispatch of extendedShed["dispatch_schedule_list"]) {
