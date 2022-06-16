@@ -53,7 +53,7 @@ export default class HomePage extends Component {
   async onClickZoomOut() {
     const center = DEFAULT_CENTER;
     const zoom = DEFAULT_ZOOM;
-    const extendedShedList = await FuelData.multigetShedStatusList();
+    const extendedShedList = await FuelData.multigetExtendedShedList();
     this.setState({ center, zoom, extendedShedList });
   }
 
