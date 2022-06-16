@@ -30,11 +30,15 @@ export default class HomePage extends Component {
     };
   }
 
-  async componentDidMount() {
+  async reload() {
     const center = await this.getGeoLocation();
     const zoom = DEFAULT_ZOOM_NEARBY;
     const extendedShedList = await FuelData.multigetExtendedShedList();
     this.setState({ center, zoom, extendedShedList });
+  }
+
+  async componentDidMount() {
+    await this.reload();
   }
 
   async getGeoLocation() {
@@ -45,10 +49,6 @@ export default class HomePage extends Component {
     });
   }
 
-  onClickRefresh() {
-    localStorage.clear();
-    window.location.reload(true);
-  }
 
   async onClickZoomOut() {
     const center = DEFAULT_CENTER;
@@ -58,9 +58,7 @@ export default class HomePage extends Component {
   }
 
   async onClickNearby() {
-    const center = await this.getGeoLocation();
-    const zoom = DEFAULT_ZOOM_NEARBY;
-    this.setState({ center, zoom });
+    await this.reload();
   }
 
   renderInner() {
@@ -83,9 +81,8 @@ export default class HomePage extends Component {
           {this.renderInner()}
         </GeoMap>
         <CustomBottomNavigation
-          onClickRefresh={this.onClickRefresh.bind(this)}
-          onClickNearby={this.onClickNearby.bind(this)}
           onClickZoomOut={this.onClickZoomOut.bind(this)}
+          onClickNearby={this.onClickNearby.bind(this)}
         />
       </Box>
     );
