@@ -42,13 +42,7 @@ export default function SettingsMenu() {
 
   return (
     <div>
-      <IconButton
-        size="large"
-        edge="start"
-        color="inherit"
-        aria-label="menu"
-        onClick={onClick}
-      >
+      <IconButton onClick={onClick}>
         <SettingsIcon />
       </IconButton>
       <Menu
