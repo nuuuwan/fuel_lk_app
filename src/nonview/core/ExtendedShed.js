@@ -21,4 +21,10 @@ export default class ExtendedShed {
     }
     return false;
   }
+
+  static deltaTimeSinceLastUpdate(extendedShed) {
+    const timeLastUpdated = extendedShed["time_last_updated_by_shed_ut"];
+    const currentUT = TimeX.getUnixTime();
+    return currentUT - timeLastUpdated;
+  }
 }
