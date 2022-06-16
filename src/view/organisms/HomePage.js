@@ -49,7 +49,6 @@ export default class HomePage extends Component {
     });
   }
 
-
   async onClickZoomOut() {
     const center = DEFAULT_CENTER;
     const zoom = DEFAULT_ZOOM;
@@ -58,6 +57,7 @@ export default class HomePage extends Component {
   }
 
   async onClickNearby() {
+    localStorage.clear();
     await this.reload();
   }
 
