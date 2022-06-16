@@ -71,6 +71,10 @@ export default function ShedView({ extendedShed, fuelTypeList }) {
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
   const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);
 
+  String.prototype.toProperCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+  };
+
   return (
     <CircleMarker
       center={extendedShed["lat_lng"]}
@@ -85,7 +89,7 @@ export default function ShedView({ extendedShed, fuelTypeList }) {
           <AlignCenter>
             <ShedAvatar extendedShed={extendedShed} />
             <Typography variant="subtitle2">
-              {extendedShed["shed_name"]}
+              {extendedShed["shed_name"].toProperCase()}
             </Typography>
           </AlignCenter>
           <Link href={gmapsURL}>
