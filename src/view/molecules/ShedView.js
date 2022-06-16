@@ -16,7 +16,7 @@ import LabelledBox from "../../view/molecules/LabelledBox";
 const DEFAULT_CIRLE_RADIUS = 15;
 const STYLE_CIRCLE = {
   stroke: true,
-  fillOpacity: 0.4,
+  fillOpacity: 0.7,
   zIndex: 2000,
 };
 
@@ -38,8 +38,10 @@ function getFillColor(extendedShed, fuelTypeList) {
     if (hasListedStock) {
       return "orange";
     }
+    return "red";
   }
-  return "red";
+
+  return "gray";
 }
 
 function getStrokeOpacity(extendedShed) {
