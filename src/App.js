@@ -2,23 +2,21 @@ import React, { Component } from "react";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import SriLankaColors from "./nonview/constants/SriLankaColors";
-
 import HomePage from "./view/organisms/HomePage.js";
 
 const THEME = createTheme({
   palette: {
     primary: {
-      main: SriLankaColors.Sinhala,
+      main: "#c00",
     },
     secondary: {
-      main: SriLankaColors.Tamil,
+      main: "#f80",
     },
     success: {
-      main: SriLankaColors.Muslim,
+      main: "#080",
     },
     info: {
-      main: SriLankaColors.Buddhist,
+      main: "#cc0",
     },
   },
   typography: {
