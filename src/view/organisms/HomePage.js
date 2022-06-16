@@ -18,7 +18,7 @@ const STYLE = {
 
 const DEFAULT_CENTER = [7.6, 80.7]; // Dambulla
 const DEFAULT_ZOOM = 7;
-const DEFAULT_ZOOM_NEARBY = 14;
+const DEFAULT_ZOOM_NEARBY = 15;
 
 export default class HomePage extends Component {
   constructor(props) {
