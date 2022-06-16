@@ -49,7 +49,7 @@ export default function ShedView({ shedStatus }) {
     fillColor = "orange";
   }
 
-  const color = shedStatus['shed_type'] === 1 ? 'black' : 'gray';
+  const color = shedStatus["shed_type"] === 1 ? "black" : "gray";
 
   return (
     <CircleMarker
