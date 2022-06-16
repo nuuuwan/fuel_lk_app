@@ -6,15 +6,20 @@ import Paper from "@mui/material/Paper";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 
+const STYLE = {
+  position: "fixed",
+  bottom: 0,
+  left: 0,
+  right: 0,
+  zIndex: 1000,
+};
+
 export default function CustomBottomNavigation({
   onClickNearby,
   onClickZoomOut,
 }) {
   return (
-    <Paper
-      sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
-      elevation={3}
-    >
+    <Paper sx={STYLE}>
       <BottomNavigation showLabels>
         <BottomNavigationAction
           label={"Zoom Out"}
