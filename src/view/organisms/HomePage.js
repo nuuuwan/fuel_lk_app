@@ -12,6 +12,7 @@ import ShedView from "../../view/molecules/ShedView";
 import GeoMap from "../../view/organisms/GeoMap";
 
 const DEFAULT_CENTER = [7.6, 80.7]; // Dambulla
+const DEFAULT_CENTER_NEARBY = [6.911363266102478, 79.877423368697]; // Town Hall
 const DEFAULT_ZOOM = 7;
 const DEFAULT_ZOOM_NEARBY = 14;
 const DEFAULT_FUEL_TYPE_LIST = FUEL_TYPE_GROUP_IDX["All Fuels"];
@@ -27,6 +28,13 @@ export default class HomePage extends Component {
     };
   }
 
+  async reloadDefault() {
+    const center = DEFAULT_CENTER_NEARBY;
+    const zoom = DEFAULT_ZOOM_NEARBY;
+    const extendedShedList = await FuelData.multigetExtendedShedList();
+    this.setState({ center, zoom, extendedShedList });
+  }
+
   async reload() {
     const center = await this.getGeoLocation();
     const zoom = DEFAULT_ZOOM_NEARBY;
@@ -35,13 +43,18 @@ export default class HomePage extends Component {
   }
 
   async componentDidMount() {
+    await this.reloadDefault();
     await this.reload();
   }
 
   async getGeoLocation() {
-    return new Promise((resolve, reject) => {
-      navigator.geolocation.getCurrentPosition(function (position) {
-        resolve([position.coords.latitude, position.coords.longitude]);
+    return new Promise(function (resolve, reject) {
+      navigator.geolocation.getCurrentPosition(function (position, error) {
+        if (error) {
+          resolve(DEFAULT_CENTER_NEARBY);
+        } else {
+          resolve([position.coords.latitude, position.coords.longitude]);
+        }
       });
     });
   }
