@@ -6,9 +6,9 @@ import Typography from "@mui/material/Typography";
 import { SECONDS_IN } from "../../nonview/base/TimeX";
 import ExtendedShed from "../../nonview/core/ExtendedShed";
 
-import Link from "../../view/atoms/Link";
 import AlignCenter from "../../view/atoms/AlignCenter";
 import HumanTime from "../../view/atoms/HumanTime";
+import Link from "../../view/atoms/Link";
 import ShedAvatar from "../../view/atoms/ShedAvatar";
 import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
