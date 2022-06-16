@@ -6,9 +6,9 @@ const URL_FORMAT = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 const STYLE_MAP = {
   zIndex: -1000,
   position: "fixed",
-  top: 0,
+  top: 50,
+  bottom: 50,
   left: 0,
-  bottom: 0,
   right: 0,
 };
 
