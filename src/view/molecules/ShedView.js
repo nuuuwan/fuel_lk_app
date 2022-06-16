@@ -56,6 +56,8 @@ export default function ShedView({ extendedShed }) {
   const fillColor = getFillColor(extendedShed);
   const strokeOpacity = getStrokeOpacity(extendedShed);
 
+  const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
+
   return (
     <CircleMarker
       center={extendedShed["lat_lng"]}
@@ -73,7 +75,7 @@ export default function ShedView({ extendedShed }) {
               {extendedShed["shed_name"]}
             </Typography>
           </AlignCenter>
-          <Typography variant="caption">{extendedShed["address"]}</Typography>
+          <Typography variant="caption">{displayAddress}</Typography>
           <FuelsView extendedShed={extendedShed} />
           <LabelledBox label="Last Updated by Shed">
             <HumanTime ut={extendedShed["time_last_updated_by_shed_ut"]} />
