@@ -15,6 +15,15 @@ async function jsonNonCache(url) {
 export default class FuelData {
   static async multigetExtendedShedList() {
     const url = URL_DATA_ROOT + "/latest/extended_shed_list.json";
-    return await jsonNonCache(url);
+    const rawDataList = await jsonNonCache(url);
+    return rawDataList.sort(function (a, b) {
+      const ta = a["time_last_updated_by_shed_ut"];
+      const tb = b["time_last_updated_by_shed_ut"];
+
+      if (ta && tb) {
+        return ta - tb;
+      }
+      return a["shed_id"] - b["shed_id"];
+    });
   }
 }
