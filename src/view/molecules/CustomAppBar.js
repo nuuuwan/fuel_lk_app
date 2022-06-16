@@ -1,20 +1,20 @@
 import React from "react";
 
-import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import FilterDetails from "../../view/atoms/FilterDetails";
 
-import SettingsMenu from "./SettingsMenu.js";
+import FilterDetails from "../../view/atoms/FilterDetails";
 import FilterMenu from "./FilterMenu.js";
+import SettingsMenu from "./SettingsMenu.js";
 
 export default function CustomAppBar({
   onSelectFuelTypeList,
   selectedFuelTypeList,
 }) {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="transparent">
+    <Box>
+      <AppBar position="static" style={{ background: "white" }}>
         <Toolbar>
           <SettingsMenu />
           <FilterMenu
