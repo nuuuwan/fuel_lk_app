@@ -5,12 +5,10 @@ const URL_FORMAT = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 
 const STYLE_MAP = {
   zIndex: 0,
-  width: "100%",
-  height: "100vh",
   position: "fixed",
-  top: 0,
+  top: 50,
   left: 0,
-  bottom: 0,
+  bottom: 50,
   right: 0,
 };
 
