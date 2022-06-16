@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 
+import StringX from "../../nonview/base/StringX";
 import { SECONDS_IN } from "../../nonview/base/TimeX";
 import ExtendedShed from "../../nonview/core/ExtendedShed";
 
@@ -71,17 +72,13 @@ export default function ShedView({ extendedShed, fuelTypeList }) {
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
   const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);
 
-  String.prototype.toProperCase = function () {
-    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-  };
-
   return (
     <CircleMarker
       center={extendedShed["lat_lng"]}
       radius={DEFAULT_CIRLE_RADIUS}
       pathOptions={{
         ...STYLE_CIRCLE,
-        ...{ fillColor, color: "gray", opacity: strokeOpacity },
+        ...{ fillColor, color: "black", opacity: strokeOpacity },
       }}
     >
       <Popup closeButton={false}>
@@ -89,7 +86,7 @@ export default function ShedView({ extendedShed, fuelTypeList }) {
           <AlignCenter>
             <ShedAvatar extendedShed={extendedShed} />
             <Typography variant="subtitle2">
-              {extendedShed["shed_name"].toProperCase()}
+              {StringX.toTitleCase(extendedShed["shed_name"])}
             </Typography>
           </AlignCenter>
           <Link href={gmapsURL}>
