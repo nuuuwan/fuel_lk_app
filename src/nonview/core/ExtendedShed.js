@@ -4,9 +4,12 @@ import { MAX_RECENCY_HOURS } from "../../nonview/constants/Constants.js";
 const MAX_RECENCY_SECONDS = MAX_RECENCY_HOURS * SECONDS_IN.HOUR;
 
 export default class ExtendedShed {
-  static getHasRecentDispatch(extendedShed) {
+  static getHasRecentDispatch(extendedShed, fuelTypeList) {
     const currentTime = TimeX.getUnixTime();
     for (let dispatch of extendedShed["dispatch_schedule_list"]) {
+      if (!fuelTypeList.includes(dispatch["fuel_type"])) {
+        continue;
+      }
       const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
       if (deltaToDispatch > -MAX_RECENCY_SECONDS) {
         return true;
@@ -15,9 +18,14 @@ export default class ExtendedShed {
     return false;
   }
 
-  static getHasListedStock(extendedShed) {
-    for (let value of Object.values(extendedShed["fuel_status_idx"])) {
-      if (value.capacity > 0) {
+  static getHasListedStock(extendedShed, fuelTypeList) {
+    for (let [fuelType, status] of Object.entries(
+      extendedShed["fuel_status_idx"]
+    )) {
+      if (!fuelTypeList.includes(fuelType)) {
+        continue;
+      }
+      if (status.capacity > 0) {
         return true;
       }
     }

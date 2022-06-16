@@ -20,10 +20,16 @@ const STYLE_CIRCLE = {
   zIndex: 2000,
 };
 
-function getFillColor(extendedShed) {
+function getFillColor(extendedShed, fuelTypeList) {
   const hasRecentUpdate = ExtendedShed.getHasRecentUpdate(extendedShed);
-  const hasRecentDispatch = ExtendedShed.getHasRecentDispatch(extendedShed);
-  const hasListedStock = ExtendedShed.getHasListedStock(extendedShed);
+  const hasRecentDispatch = ExtendedShed.getHasRecentDispatch(
+    extendedShed,
+    fuelTypeList
+  );
+  const hasListedStock = ExtendedShed.getHasListedStock(
+    extendedShed,
+    fuelTypeList
+  );
 
   if (hasRecentUpdate || hasRecentDispatch) {
     if (hasRecentDispatch) {
@@ -53,8 +59,8 @@ function getStrokeOpacity(extendedShed) {
   return 0;
 }
 
-export default function ShedView({ extendedShed }) {
-  const fillColor = getFillColor(extendedShed);
+export default function ShedView({ extendedShed, fuelTypeList }) {
+  const fillColor = getFillColor(extendedShed, fuelTypeList);
   const strokeOpacity = getStrokeOpacity(extendedShed);
 
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);

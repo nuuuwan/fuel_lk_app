@@ -1,5 +1,5 @@
-import { Component } from "react";
 import * as React from "react";
+import { Component } from "react";
 
 import Box from "@mui/material/Box";
 
@@ -19,6 +19,7 @@ const STYLE = {
 const DEFAULT_CENTER = [7.6, 80.7]; // Dambulla
 const DEFAULT_ZOOM = 7;
 const DEFAULT_ZOOM_NEARBY = 15;
+const DEFAULT_FUEL_TYPE_LIST = ["p92"];
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ export default class HomePage extends Component {
       extendedShedList: undefined,
       center: undefined,
       zoom: undefined,
+      fuelTypeList: DEFAULT_FUEL_TYPE_LIST,
     };
   }
 
@@ -58,16 +60,22 @@ export default class HomePage extends Component {
 
   async onClickNearby() {
     localStorage.clear();
-    window.location.reload(); 
+    window.location.reload();
   }
 
   renderInner() {
-    const { extendedShedList } = this.state;
+    const { extendedShedList, fuelTypeList } = this.state;
     if (!extendedShedList) {
       return null;
     }
     return extendedShedList.map(function (extendedShed, iShed) {
-      return <ShedView key={"shed-" + iShed} extendedShed={extendedShed} />;
+      return (
+        <ShedView
+          key={"shed-" + iShed}
+          extendedShed={extendedShed}
+          fuelTypeList={fuelTypeList}
+        />
+      );
     });
   }
 
