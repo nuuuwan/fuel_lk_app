@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { SECONDS_IN } from "../../nonview/base/TimeX";
 import ExtendedShed from "../../nonview/core/ExtendedShed";
 
+import Link from "../../view/atoms/Link";
 import AlignCenter from "../../view/atoms/AlignCenter";
 import HumanTime from "../../view/atoms/HumanTime";
 import ShedAvatar from "../../view/atoms/ShedAvatar";
@@ -57,6 +58,7 @@ export default function ShedView({ extendedShed }) {
   const strokeOpacity = getStrokeOpacity(extendedShed);
 
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
+  const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);
 
   return (
     <CircleMarker
@@ -75,7 +77,9 @@ export default function ShedView({ extendedShed }) {
               {extendedShed["shed_name"]}
             </Typography>
           </AlignCenter>
-          <Typography variant="caption">{displayAddress}</Typography>
+          <Link href={gmapsURL}>
+            <Typography variant="caption">{displayAddress}</Typography>
+          </Link>
           <FuelsView extendedShed={extendedShed} />
           <LabelledBox label="Last Updated by Shed">
             <HumanTime ut={extendedShed["time_last_updated_by_shed_ut"]} />
