@@ -3,7 +3,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 
-import CustomAppBarMenu from "./CustomAppBarMenu.js";
+import SettingsMenu from "./SettingsMenu.js";
 
 const STYLE = {
   position: "fixed",
@@ -18,7 +18,7 @@ export default function CustomAppBar() {
   return (
     <Box sx={STYLE}>
       <Toolbar variant="dense">
-        <CustomAppBarMenu />
+        <SettingsMenu />
       </Toolbar>
     </Box>
   );

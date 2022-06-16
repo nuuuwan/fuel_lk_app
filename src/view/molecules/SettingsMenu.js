@@ -28,7 +28,7 @@ const MENU_ITEM_LIST = [
   },
 ];
 
-export default function CustomAppBarMenu() {
+export default function SettingsMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
