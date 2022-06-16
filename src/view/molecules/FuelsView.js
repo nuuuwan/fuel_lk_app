@@ -5,15 +5,15 @@ import { FUEL_IDX } from "../../nonview/core/Fuel";
 
 import FuelView from "../../view/molecules/FuelView";
 
-export default function FuelsView({ shedStatus }) {
+export default function FuelsView({ extendedShed }) {
   const currentTime = TimeX.getUnixTime();
   return (
     <List>
       {Object.entries(FUEL_IDX).map(function ([fuelId, fuel]) {
-        const shedFuel = shedStatus["fuel_status_idx"][fuelId];
+        const shedFuel = extendedShed["fuel_status_idx"][fuelId];
 
         let recentDispatch = null;
-        for (let dispatch of shedStatus["dispatch_schedule_list"]) {
+        for (let dispatch of extendedShed["dispatch_schedule_list"]) {
           if (dispatch["fuel_type"] !== fuelId) {
             continue;
           }

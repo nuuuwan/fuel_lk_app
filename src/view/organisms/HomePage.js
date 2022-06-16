@@ -24,7 +24,7 @@ export default class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      shedStatusList: undefined,
+      extendedShedList: undefined,
       center: undefined,
       zoom: undefined,
     };
@@ -33,8 +33,8 @@ export default class HomePage extends Component {
   async componentDidMount() {
     const center = await this.getGeoLocation();
     const zoom = DEFAULT_ZOOM_NEARBY;
-    const shedStatusList = await FuelData.multigetExtendedShedList();
-    this.setState({ center, zoom, shedStatusList });
+    const extendedShedList = await FuelData.multigetExtendedShedList();
+    this.setState({ center, zoom, extendedShedList });
   }
 
   async getGeoLocation() {
@@ -53,8 +53,8 @@ export default class HomePage extends Component {
   async onClickZoomOut() {
     const center = DEFAULT_CENTER;
     const zoom = DEFAULT_ZOOM;
-    const shedStatusList = await FuelData.multigetShedStatusList();
-    this.setState({ center, zoom, shedStatusList });
+    const extendedShedList = await FuelData.multigetShedStatusList();
+    this.setState({ center, zoom, extendedShedList });
   }
 
   async onClickNearby() {
@@ -64,12 +64,12 @@ export default class HomePage extends Component {
   }
 
   renderInner() {
-    const { shedStatusList } = this.state;
-    if (!shedStatusList) {
+    const { extendedShedList } = this.state;
+    if (!extendedShedList) {
       return null;
     }
-    return shedStatusList.map(function (shedStatus, iShed) {
-      return <ShedView key={"shed-" + iShed} shedStatus={shedStatus} />;
+    return extendedShedList.map(function (extendedShed, iShed) {
+      return <ShedView key={"shed-" + iShed} extendedShed={extendedShed} />;
     });
   }
 

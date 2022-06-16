@@ -1,8 +1,8 @@
 import Avatar from "@mui/material/Avatar";
 
 const DIM = 24;
-export default function ShedAvatar({ shedStatus }) {
-  const shedType = shedStatus["shed_type"];
+export default function ShedAvatar({ extendedShed }) {
+  const shedType = extendedShed["shed_type"];
 
   if (!shedType) {
     return null;

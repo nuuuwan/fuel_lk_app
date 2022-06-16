@@ -18,9 +18,9 @@ const STYLE_CIRCLE = {
   zIndex: 2000,
 };
 const MAX_RECENCY_HOURS = 12;
-function getHasRecentDispatch(shedStatus) {
+function getHasRecentDispatch(extendedShed) {
   const currentTime = TimeX.getUnixTime();
-  for (let dispatch of shedStatus["dispatch_schedule_list"]) {
+  for (let dispatch of extendedShed["dispatch_schedule_list"]) {
     const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
     if (deltaToDispatch > -MAX_RECENCY_HOURS * SECONDS_IN.HOUR) {
       return true;
@@ -29,8 +29,8 @@ function getHasRecentDispatch(shedStatus) {
   return false;
 }
 
-function getHasListedStock(shedStatus) {
-  for (let value of Object.values(shedStatus["fuel_status_idx"])) {
+function getHasListedStock(extendedShed) {
+  for (let value of Object.values(extendedShed["fuel_status_idx"])) {
     if (value.capacity > 0) {
       return true;
     }
@@ -38,9 +38,9 @@ function getHasListedStock(shedStatus) {
   return false;
 }
 
-export default function ShedView({ shedStatus }) {
-  const hasRecentDispatch = getHasRecentDispatch(shedStatus);
-  const hasListedStock = getHasListedStock(shedStatus);
+export default function ShedView({ extendedShed }) {
+  const hasRecentDispatch = getHasRecentDispatch(extendedShed);
+  const hasListedStock = getHasListedStock(extendedShed);
 
   let fillColor = "red";
   if (hasRecentDispatch) {
@@ -49,26 +49,26 @@ export default function ShedView({ shedStatus }) {
     fillColor = "orange";
   }
 
-  const color = shedStatus["shed_type"] === 1 ? "black" : "gray";
+  const color = extendedShed["shed_type"] === 1 ? "black" : "gray";
 
   return (
     <CircleMarker
-      center={shedStatus["lat_lng"]}
+      center={extendedShed["lat_lng"]}
       radius={DEFAULT_CIRLE_RADIUS}
       pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor, color } }}
     >
       <Popup closeButton={false}>
         <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
           <AlignCenter>
-            <ShedAvatar shedStatus={shedStatus} />
+            <ShedAvatar extendedShed={extendedShed} />
             <Typography variant="subtitle2">
-              {shedStatus["shed_name"]}
+              {extendedShed["shed_name"]}
             </Typography>
           </AlignCenter>
-          <Typography variant="caption">{shedStatus["address"]}</Typography>
-          <FuelsView shedStatus={shedStatus} />
+          <Typography variant="caption">{extendedShed["address"]}</Typography>
+          <FuelsView extendedShed={extendedShed} />
           <LabelledBox label="Last Updated by Shed">
-            <HumanTime ut={shedStatus["time_last_updated_by_shed_ut"]} />
+            <HumanTime ut={extendedShed["time_last_updated_by_shed_ut"]} />
           </LabelledBox>
         </Box>
       </Popup>
