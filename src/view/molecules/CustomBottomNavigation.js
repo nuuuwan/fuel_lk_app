@@ -22,12 +22,10 @@ export default function CustomBottomNavigation({
     <Paper sx={STYLE}>
       <BottomNavigation showLabels>
         <BottomNavigationAction
-          label={"Zoom Out"}
           icon={<ZoomOutMapIcon />}
           onClick={onClickZoomOut}
         />
         <BottomNavigationAction
-          label={"Nearby"}
           icon={<MyLocationIcon />}
           onClick={onClickNearby}
         />
