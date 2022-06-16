@@ -57,6 +57,7 @@ export default class HomePage extends Component {
   }
 
   async onClickNearby() {
+    await this.reload(DEFAULT_CENTER, DEFAULT_ZOOM_NEARBY);
     const center = await this.getGeoLocation();
     await this.reload(center, DEFAULT_ZOOM_NEARBY);
   }
