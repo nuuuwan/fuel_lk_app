@@ -8,6 +8,8 @@ import FilterAltIcon from "@mui/icons-material/FilterAlt";
 
 import Fuel, { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 
+import FilterDetails from "../../view/atoms/FilterDetails";
+
 export default function FilterMenu({
   onSelectFuelTypeList,
   selectedFuelTypeList,
@@ -32,6 +34,7 @@ export default function FilterMenu({
     <div>
       <IconButton size="large" onClick={onClick}>
         <FilterAltIcon sx={{ color: iconColor }} />
+        <FilterDetails selectedFuelTypeList={selectedFuelTypeList} />
       </IconButton>
       <Menu
         id="basic-menu"
