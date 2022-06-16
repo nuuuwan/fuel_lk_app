@@ -3,6 +3,7 @@ import { CircleMarker, Popup } from "react-leaflet";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+import { SECONDS_IN } from "../../nonview/base/TimeX";
 import ExtendedShed from "../../nonview/core/ExtendedShed";
 
 import AlignCenter from "../../view/atoms/AlignCenter";
@@ -18,24 +19,45 @@ const STYLE_CIRCLE = {
   zIndex: 2000,
 };
 
-export default function ShedView({ extendedShed }) {
+function getFillColor(extendedShed) {
   const hasRecentDispatch = ExtendedShed.getHasRecentDispatch(extendedShed);
   const hasListedStock = ExtendedShed.getHasListedStock(extendedShed);
 
-  let fillColor = "red";
   if (hasRecentDispatch) {
-    fillColor = "green";
-  } else if (hasListedStock) {
-    fillColor = "orange";
+    return "green";
   }
+  if (hasListedStock) {
+    return "orange";
+  }
+  return "red";
+}
 
-  const color = extendedShed["shed_type"] === 1 ? "black" : "gray";
+function getStrokeColor(extendedShed) {
+  const deltaTimeSinceLastUpdate =
+    ExtendedShed.deltaTimeSinceLastUpdate(extendedShed);
+
+  for (let [delta, color] of [
+    [SECONDS_IN.HOUR, "#000"],
+    [SECONDS_IN.HOUR * 3, "#444"],
+    [SECONDS_IN.HOUR * 6, "#888"],
+    [SECONDS_IN.HOUR * 12, "#ccc"],
+  ]) {
+    if (deltaTimeSinceLastUpdate < delta) {
+      return color;
+    }
+  }
+  return "#fff";
+}
+
+export default function ShedView({ extendedShed }) {
+  const fillColor = getFillColor(extendedShed);
+  const strokeColor = getStrokeColor(extendedShed);
 
   return (
     <CircleMarker
       center={extendedShed["lat_lng"]}
       radius={DEFAULT_CIRLE_RADIUS}
-      pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor, color } }}
+      pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor, color: strokeColor } }}
     >
       <Popup closeButton={false}>
         <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
