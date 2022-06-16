@@ -38,11 +38,17 @@ export default class ExtendedShed {
 
   static getDisplayAddress(extendedShed) {
     if (extendedShed["gmaps_address"]) {
-      return extendedShed["gmaps_address"];
+      return extendedShed["gmaps_address"].replace(", Sri Lanka", "");
     }
     if (extendedShed["address"]) {
       return extendedShed["address"];
     }
     return "Unknown";
+  }
+
+  static getURLGmaps(extendedShed) {
+    const URL_GMAPS_PREFIX = "https://www.google.com/maps/place";
+    const [lat, lng] = extendedShed["lat_lng"];
+    return `${URL_GMAPS_PREFIX}/${lat},${lng}`;
   }
 }
