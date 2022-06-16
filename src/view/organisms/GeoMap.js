@@ -7,7 +7,7 @@ const STYLE_MAP = {
   zIndex: -1000,
   position: "fixed",
   top: 50,
-  bottom: 50,
+  bottom: 40,
   left: 0,
   right: 0,
 };
