@@ -2,6 +2,7 @@ import { CircleMarker, Popup } from "react-leaflet";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
 
 import { SECONDS_IN } from "../../nonview/base/TimeX";
 import ExtendedShed from "../../nonview/core/ExtendedShed";
@@ -12,7 +13,6 @@ import Link from "../../view/atoms/Link";
 import ShedAvatar from "../../view/atoms/ShedAvatar";
 import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
-import { useTheme } from "@mui/material/styles";
 
 const DEFAULT_CIRLE_RADIUS = 15;
 const STYLE_CIRCLE = {
@@ -32,7 +32,6 @@ function getFillColor(extendedShed, fuelTypeList, theme) {
     fuelTypeList
   );
 
-
   if (hasRecentUpdate || hasRecentDispatch) {
     if (hasRecentDispatch) {
       return theme.palette.success.main;
@@ -43,7 +42,7 @@ function getFillColor(extendedShed, fuelTypeList, theme) {
     return theme.palette.primary.main;
   }
 
-  return "neutral";
+  return "gray";
 }
 
 function getStrokeOpacity(extendedShed) {
@@ -78,7 +77,7 @@ export default function ShedView({ extendedShed, fuelTypeList }) {
       radius={DEFAULT_CIRLE_RADIUS}
       pathOptions={{
         ...STYLE_CIRCLE,
-        ...{ fillColor, color: "black", opacity: strokeOpacity },
+        ...{ fillColor, color: "gray", opacity: strokeOpacity },
       }}
     >
       <Popup closeButton={false}>
