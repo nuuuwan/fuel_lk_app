@@ -6,6 +6,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Tooltip from "@mui/material/Tooltip";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import { useTheme } from "@mui/material/styles";
 
 import Fuel, { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 
@@ -18,7 +19,9 @@ export default function FilterMenu({
   const selectedLFuelTypeGroupLabel =
     Fuel.getFuelTypeGroupLabel(selectedFuelTypeList);
   const isAll = selectedLFuelTypeGroupLabel === "All Fuels";
-  const iconColor = isAll ? "gray" : "orange";
+
+  const theme = useTheme();
+  const iconColor = isAll ? "neutral" : theme.palette.secondary.main;
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -58,7 +61,7 @@ export default function FilterMenu({
             onSelectFuelTypeList(fuelTypeList);
           };
           const isSelected = selectedLFuelTypeGroupLabel === label;
-          const color = isSelected ? "black" : "gray";
+          const color = isSelected ? theme.palette.secondary.main : "neutral";
           return (
             <MenuItem key={key} onClick={onClickInner}>
               <ListItemText sx={{ color }}>{label}</ListItemText>
