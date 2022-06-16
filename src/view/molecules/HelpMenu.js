@@ -7,6 +7,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
+import RefreshIcon from "@mui/icons-material/Refresh";
 import SourceIcon from "@mui/icons-material/Source";
 
 const MENU_ITEM_LIST = [
@@ -37,6 +38,10 @@ export default function HelpMenu() {
 
   const onClose = function () {
     setAnchorEl(null);
+  };
+
+  const onClickRefresh = function () {
+    window.location.reload();
   };
 
   return (
@@ -70,6 +75,12 @@ export default function HelpMenu() {
             </MenuItem>
           );
         })}
+        <MenuItem onClick={onClickRefresh}>
+          <ListItemIcon>
+            <RefreshIcon />
+          </ListItemIcon>
+          <ListItemText>Refresh App</ListItemText>
+        </MenuItem>
       </Menu>
     </div>
   );
