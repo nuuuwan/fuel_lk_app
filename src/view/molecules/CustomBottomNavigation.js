@@ -1,5 +1,6 @@
 import React from "react";
 
+import Tooltip from '@mui/material/Tooltip';
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Paper from "@mui/material/Paper";
@@ -21,14 +22,18 @@ export default function CustomBottomNavigation({
   return (
     <Paper sx={STYLE}>
       <BottomNavigation showLabels>
-        <BottomNavigationAction
-          icon={<ZoomOutMapIcon />}
-          onClick={onClickZoomOut}
-        />
-        <BottomNavigationAction
-          icon={<MyLocationIcon />}
-          onClick={onClickNearby}
-        />
+        <Tooltip title="Zoom Out">
+          <BottomNavigationAction
+            icon={<ZoomOutMapIcon />}
+            onClick={onClickZoomOut}
+          />
+        </Tooltip>
+        <Tooltip title="Nearby">
+          <BottomNavigationAction
+            icon={<MyLocationIcon />}
+            onClick={onClickNearby}
+          />
+        </Tooltip>
       </BottomNavigation>
     </Paper>
   );
