@@ -57,7 +57,10 @@ export default function ShedView({ extendedShed }) {
     <CircleMarker
       center={extendedShed["lat_lng"]}
       radius={DEFAULT_CIRLE_RADIUS}
-      pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor, color: "black", opacity: strokeOpacity } }}
+      pathOptions={{
+        ...STYLE_CIRCLE,
+        ...{ fillColor, color: "black", opacity: strokeOpacity },
+      }}
     >
       <Popup closeButton={false}>
         <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
