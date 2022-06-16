@@ -12,6 +12,7 @@ import Link from "../../view/atoms/Link";
 import ShedAvatar from "../../view/atoms/ShedAvatar";
 import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
+import { useTheme } from "@mui/material/styles";
 
 const DEFAULT_CIRLE_RADIUS = 15;
 const STYLE_CIRCLE = {
@@ -20,7 +21,7 @@ const STYLE_CIRCLE = {
   zIndex: 2000,
 };
 
-function getFillColor(extendedShed, fuelTypeList) {
+function getFillColor(extendedShed, fuelTypeList, theme) {
   const hasRecentUpdate = ExtendedShed.getHasRecentUpdate(extendedShed);
   const hasRecentDispatch = ExtendedShed.getHasRecentDispatch(
     extendedShed,
@@ -31,17 +32,18 @@ function getFillColor(extendedShed, fuelTypeList) {
     fuelTypeList
   );
 
+
   if (hasRecentUpdate || hasRecentDispatch) {
     if (hasRecentDispatch) {
-      return "green";
+      return theme.palette.success.main;
     }
     if (hasListedStock) {
-      return "orange";
+      return theme.palette.secondary.main;
     }
-    return "red";
+    return theme.palette.primary.main;
   }
 
-  return "gray";
+  return "neutral";
 }
 
 function getStrokeOpacity(extendedShed) {
@@ -62,7 +64,9 @@ function getStrokeOpacity(extendedShed) {
 }
 
 export default function ShedView({ extendedShed, fuelTypeList }) {
-  const fillColor = getFillColor(extendedShed, fuelTypeList);
+  const theme = useTheme();
+
+  const fillColor = getFillColor(extendedShed, fuelTypeList, theme);
   const strokeOpacity = getStrokeOpacity(extendedShed);
 
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
