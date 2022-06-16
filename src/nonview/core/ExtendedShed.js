@@ -1,12 +1,14 @@
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 import { MAX_RECENCY_HOURS } from "../../nonview/constants/Constants.js";
 
+const MAX_RECENCY_SECONDS = MAX_RECENCY_HOURS * SECONDS_IN.HOUR;
+
 export default class ExtendedShed {
   static getHasRecentDispatch(extendedShed) {
     const currentTime = TimeX.getUnixTime();
     for (let dispatch of extendedShed["dispatch_schedule_list"]) {
       const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
-      if (deltaToDispatch > -MAX_RECENCY_HOURS * SECONDS_IN.HOUR) {
+      if (deltaToDispatch > -MAX_RECENCY_SECONDS) {
         return true;
       }
     }
@@ -22,9 +24,15 @@ export default class ExtendedShed {
     return false;
   }
 
-  static deltaTimeSinceLastUpdate(extendedShed) {
+  static getDeltaTimeSinceLastUpdate(extendedShed) {
     const timeLastUpdated = extendedShed["time_last_updated_by_shed_ut"];
     const currentUT = TimeX.getUnixTime();
     return currentUT - timeLastUpdated;
+  }
+
+  static getHasRecentUpdate(extendedShed) {
+    const deltaTimeSinceLastUpdate =
+      ExtendedShed.getDeltaTimeSinceLastUpdate(extendedShed);
+    return deltaTimeSinceLastUpdate < MAX_RECENCY_SECONDS;
   }
 }

@@ -20,33 +20,36 @@ const STYLE_CIRCLE = {
 };
 
 function getFillColor(extendedShed) {
+  const hasRecentUpdate = ExtendedShed.getHasRecentUpdate(extendedShed);
   const hasRecentDispatch = ExtendedShed.getHasRecentDispatch(extendedShed);
   const hasListedStock = ExtendedShed.getHasListedStock(extendedShed);
 
-  if (hasRecentDispatch) {
-    return "green";
-  }
-  if (hasListedStock) {
-    return "orange";
+  if (hasRecentUpdate || hasRecentDispatch) {
+    if (hasRecentDispatch) {
+      return "green";
+    }
+    if (hasListedStock) {
+      return "orange";
+    }
   }
   return "red";
 }
 
 function getStrokeOpacity(extendedShed) {
   const deltaTimeSinceLastUpdate =
-    ExtendedShed.deltaTimeSinceLastUpdate(extendedShed);
+    ExtendedShed.getDeltaTimeSinceLastUpdate(extendedShed);
 
   for (let [delta, color] of [
     [SECONDS_IN.HOUR, 1],
-    [SECONDS_IN.HOUR * 3, 0.8],
-    [SECONDS_IN.HOUR * 6, 0.6],
-    [SECONDS_IN.HOUR * 12, 0.4],
+    [SECONDS_IN.HOUR * 3, 0.75],
+    [SECONDS_IN.HOUR * 6, 0.5],
+    [SECONDS_IN.HOUR * 12, 0.25],
   ]) {
     if (deltaTimeSinceLastUpdate < delta) {
       return color;
     }
   }
-  return 0.2;
+  return 0;
 }
 
 export default function ShedView({ extendedShed }) {
