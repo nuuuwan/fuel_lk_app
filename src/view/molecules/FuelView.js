@@ -1,5 +1,6 @@
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/material/styles";
 import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import OilBarrelIcon from "@mui/icons-material/OilBarrel";
@@ -17,6 +18,7 @@ export default function FuelView({
   recentDispatch,
   color,
 }) {
+  const theme = useTheme();
   if (!isAvailable && !recentDispatch) {
     return null;
   }
@@ -35,12 +37,19 @@ export default function FuelView({
             <AlignCenter>
               Opening Stock
               <OilBarrelIcon
-                sx={{ paddingLeft: 0.5, fontSize: "small", color: "orange" }}
+                sx={{
+                  paddingLeft: 0.5,
+                  fontSize: "small",
+                  color: theme.palette.secondary.main,
+                }}
               />
             </AlignCenter>
           }
         >
-          <FuelQuantity quantity={capacity} color="orange" />
+          <FuelQuantity
+            quantity={capacity}
+            color={theme.palette.secondary.main}
+          />
         </LabelledBox>
       ) : null}
 
@@ -50,12 +59,19 @@ export default function FuelView({
             <AlignCenter>
               Recent Dispatch
               <LocalShippingIcon
-                sx={{ paddingLeft: 0.5, fontSize: "small", color: "green" }}
+                sx={{
+                  paddingLeft: 0.5,
+                  fontSize: "small",
+                  color: theme.palette.success.main,
+                }}
               />
             </AlignCenter>
           }
         >
-          <FuelQuantity quantity={recentDispatch["amount"]} color="green" />
+          <FuelQuantity
+            quantity={recentDispatch["amount"]}
+            color={theme.palette.success.main}
+          />
           <Place name={recentDispatch["plant_name"]} />
           <HumanTime ut={recentDispatch["time_eta_ut"]} />
         </LabelledBox>
