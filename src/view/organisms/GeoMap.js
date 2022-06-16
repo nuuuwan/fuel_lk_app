@@ -4,11 +4,11 @@ import { MapContainer, TileLayer, useMapEvent } from "react-leaflet";
 const URL_FORMAT = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 
 const STYLE_MAP = {
-  zIndex: 0,
+  zIndex: -1000,
   position: "fixed",
-  top: 50,
+  top: 0,
   left: 0,
-  bottom: 50,
+  bottom: 0,
   right: 0,
 };
 
