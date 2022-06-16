@@ -58,7 +58,7 @@ export default class HomePage extends Component {
 
   async onClickNearby() {
     localStorage.clear();
-    await this.reload();
+    window.location.reload(); 
   }
 
   renderInner() {
