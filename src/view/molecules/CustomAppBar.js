@@ -16,17 +16,17 @@ export default function CustomAppBar({
     <Box>
       <AppBar position="static" style={{ background: "white" }}>
         <Toolbar>
-          <HelpMenu />
+          <Typography variant="body1" sx={{ color: "black" }}>
+            #FuelLKApp
+          </Typography>
+          <Typography variant="body1" sx={{ flexGrow: 1 }}>
+            {" "}
+          </Typography>
           <FilterMenu
             onSelectFuelTypeList={onSelectFuelTypeList}
             selectedFuelTypeList={selectedFuelTypeList}
           />
-          <Typography variant="body1" sx={{ flexGrow: 1 }}>
-            {" "}
-          </Typography>
-          <Typography variant="body1" sx={{ color: "black" }}>
-            #FuelLKApp
-          </Typography>
+          <HelpMenu />
         </Toolbar>
       </AppBar>
     </Box>

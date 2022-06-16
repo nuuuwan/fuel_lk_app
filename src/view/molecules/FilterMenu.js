@@ -34,10 +34,10 @@ export default function FilterMenu({
   return (
     <div>
       <IconButton size="large" onClick={onClick}>
+        <FilterDetails selectedFuelTypeList={selectedFuelTypeList} />
         <Tooltip title="Filter by Fuel Type">
           <FilterAltIcon sx={{ color: iconColor }} />
         </Tooltip>
-        <FilterDetails selectedFuelTypeList={selectedFuelTypeList} />
       </IconButton>
       <Menu
         id="basic-menu"
