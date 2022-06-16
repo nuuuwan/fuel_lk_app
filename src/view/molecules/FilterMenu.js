@@ -14,6 +14,8 @@ export default function FilterMenu({
 }) {
   const selectedLFuelTypeGroupLabel =
     Fuel.getFuelTypeGroupLabel(selectedFuelTypeList);
+  const isAll = selectedLFuelTypeGroupLabel === "All Fuels";
+  const iconColor = isAll ? "gray" : "orange";
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -29,7 +31,7 @@ export default function FilterMenu({
   return (
     <div>
       <IconButton size="large" onClick={onClick}>
-        <FilterAltIcon />
+        <FilterAltIcon sx={{ color: iconColor }} />
       </IconButton>
       <Menu
         id="basic-menu"
