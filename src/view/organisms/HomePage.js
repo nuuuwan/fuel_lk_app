@@ -5,21 +5,16 @@ import Box from "@mui/material/Box";
 
 import FuelData from "../../nonview/core/FuelData";
 
+import { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import ShedView from "../../view/molecules/ShedView";
 import GeoMap from "../../view/organisms/GeoMap";
 
-const STYLE = {
-  margin: 4,
-  marginTop: 10,
-  marginBottom: 10,
-};
-
 const DEFAULT_CENTER = [7.6, 80.7]; // Dambulla
 const DEFAULT_ZOOM = 7;
-const DEFAULT_ZOOM_NEARBY = 15;
-const DEFAULT_FUEL_TYPE_LIST = ["p92"];
+const DEFAULT_ZOOM_NEARBY = 14;
+const DEFAULT_FUEL_TYPE_LIST = FUEL_TYPE_GROUP_IDX["All Fuels"];
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -63,6 +58,10 @@ export default class HomePage extends Component {
     window.location.reload();
   }
 
+  onSelectFuelTypeList(fuelTypeList) {
+    this.setState({ fuelTypeList });
+  }
+
   renderInner() {
     const { extendedShedList, fuelTypeList } = this.state;
     if (!extendedShedList) {
@@ -80,14 +79,19 @@ export default class HomePage extends Component {
   }
 
   render() {
-    const { center, zoom } = this.state;
+    const { center, zoom, fuelTypeList } = this.state;
     const key = "geo-map-" + center + zoom;
     return (
-      <Box sx={STYLE}>
-        <CustomAppBar />
+      <Box>
+        <CustomAppBar
+          onSelectFuelTypeList={this.onSelectFuelTypeList.bind(this)}
+          selectedFuelTypeList={fuelTypeList}
+        />
+
         <GeoMap key={key} center={center} zoom={zoom}>
           {this.renderInner()}
         </GeoMap>
+
         <CustomBottomNavigation
           onClickZoomOut={this.onClickZoomOut.bind(this)}
           onClickNearby={this.onClickNearby.bind(this)}
