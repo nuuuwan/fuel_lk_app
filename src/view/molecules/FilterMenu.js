@@ -5,8 +5,8 @@ import ListItemText from "@mui/material/ListItemText";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Tooltip from "@mui/material/Tooltip";
-import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import { useTheme } from "@mui/material/styles";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
 
 import Fuel, { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 
