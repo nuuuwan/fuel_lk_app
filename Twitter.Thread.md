@@ -1,5 +1,9 @@
 #FuelLKApp
 
+* https://www.linkedin.com/feed/update/urn:li:activity:6942838783734091776/
+
+...
+
 1/ Did you find @ICTA_SriLanka's https://fuel.gov.lk/ a bit hard to navigate?
 
 I know some of you did and so did I.
@@ -55,5 +59,16 @@ And I agree - wrappers are not ideal. So, it would be  awesome if the original w
 ---
 
 7/ As always, I'd appreciate comments, concerns and suggestions. And please report any bugs!
+
+#SriLanka #FuelLKApp
+
+
+---
+
+8/ UPDATE (Jun 16)
+
+🆕  By #PopularDemand, added "Filter by Fuel Type" feature
+
+🆕 "Greyed out" fuel sheds that haven't updated data in 24 hours.
 
 #SriLanka #FuelLKApp
