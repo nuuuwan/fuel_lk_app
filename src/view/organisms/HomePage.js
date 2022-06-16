@@ -45,10 +45,6 @@ export default class HomePage extends Component {
     });
   }
 
-  onClickRefresh() {
-    localStorage.clear();
-    window.location.reload(true);
-  }
 
   async onClickZoomOut() {
     const center = DEFAULT_CENTER;
@@ -58,9 +54,8 @@ export default class HomePage extends Component {
   }
 
   async onClickNearby() {
-    const center = await this.getGeoLocation();
-    const zoom = DEFAULT_ZOOM_NEARBY;
-    this.setState({ center, zoom });
+    localStorage.clear();
+    window.location.reload(true);
   }
 
   renderInner() {
@@ -83,9 +78,8 @@ export default class HomePage extends Component {
           {this.renderInner()}
         </GeoMap>
         <CustomBottomNavigation
-          onClickRefresh={this.onClickRefresh.bind(this)}
-          onClickNearby={this.onClickNearby.bind(this)}
           onClickZoomOut={this.onClickZoomOut.bind(this)}
+          onClickNearby={this.onClickNearby.bind(this)}
         />
       </Box>
     );

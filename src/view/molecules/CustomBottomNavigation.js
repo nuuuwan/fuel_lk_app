@@ -8,7 +8,6 @@ import RefreshIcon from "@mui/icons-material/Refresh";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 
 export default function CustomBottomNavigation({
-  onClickRefresh,
   onClickNearby,
   onClickZoomOut,
 }) {
@@ -18,11 +17,6 @@ export default function CustomBottomNavigation({
       elevation={3}
     >
       <BottomNavigation showLabels>
-        <BottomNavigationAction
-          label={"Refresh"}
-          icon={<RefreshIcon />}
-          onClick={onClickRefresh}
-        />
         <BottomNavigationAction
           label={"Zoom Out"}
           icon={<ZoomOutMapIcon />}
