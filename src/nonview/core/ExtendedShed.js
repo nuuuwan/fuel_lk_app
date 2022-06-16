@@ -35,4 +35,14 @@ export default class ExtendedShed {
       ExtendedShed.getDeltaTimeSinceLastUpdate(extendedShed);
     return deltaTimeSinceLastUpdate < MAX_RECENCY_SECONDS;
   }
+
+  static getDisplayAddress(extendedShed) {
+    if (extendedShed["gmaps_address"]) {
+      return extendedShed["gmaps_address"];
+    }
+    if (extendedShed["address"]) {
+      return extendedShed["address"];
+    }
+    return "Unknown";
+  }
 }
