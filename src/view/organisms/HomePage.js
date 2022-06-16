@@ -11,10 +11,14 @@ import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.
 import ShedView from "../../view/molecules/ShedView";
 import GeoMap from "../../view/organisms/GeoMap";
 
-const DEFAULT_CENTER = [7.6, 80.7]; // Dambulla
-const DEFAULT_CENTER_NEARBY = [6.911363266102478, 79.877423368697]; // Town Hall
-const DEFAULT_ZOOM = 7;
-const DEFAULT_ZOOM_NEARBY = 14;
+const DEFAULT_CENTER = [6.9, 79.9]; // Nawala
+const DEFAULT_ZOOM = 12;
+
+const DEFAULT_CENTER_ZOOM_OUT = [7.6, 80.7]; // Dambulla
+const DEFAULT_ZOOM_ZOOM_OUT = 7;
+
+const DEFAULT_ZOOM_NEARBY = 15;
+
 const DEFAULT_FUEL_TYPE_LIST = FUEL_TYPE_GROUP_IDX["All Fuels"];
 
 export default class HomePage extends Component {
@@ -28,30 +32,20 @@ export default class HomePage extends Component {
     };
   }
 
-  async reloadDefault() {
-    const center = DEFAULT_CENTER_NEARBY;
-    const zoom = DEFAULT_ZOOM_NEARBY;
-    const extendedShedList = await FuelData.multigetExtendedShedList();
-    this.setState({ center, zoom, extendedShedList });
-  }
-
-  async reload() {
-    const center = await this.getGeoLocation();
-    const zoom = DEFAULT_ZOOM_NEARBY;
+  async reload(center, zoom) {
     const extendedShedList = await FuelData.multigetExtendedShedList();
     this.setState({ center, zoom, extendedShedList });
   }
 
   async componentDidMount() {
-    await this.reloadDefault();
-    await this.reload();
+    await this.reload(DEFAULT_CENTER, DEFAULT_ZOOM);
   }
 
   async getGeoLocation() {
     return new Promise(function (resolve, reject) {
       navigator.geolocation.getCurrentPosition(function (position, error) {
         if (error) {
-          resolve(DEFAULT_CENTER_NEARBY);
+          resolve(DEFAULT_CENTER);
         } else {
           resolve([position.coords.latitude, position.coords.longitude]);
         }
@@ -60,15 +54,12 @@ export default class HomePage extends Component {
   }
 
   async onClickZoomOut() {
-    const center = DEFAULT_CENTER;
-    const zoom = DEFAULT_ZOOM;
-    const extendedShedList = await FuelData.multigetExtendedShedList();
-    this.setState({ center, zoom, extendedShedList });
+    await this.reload(DEFAULT_CENTER_ZOOM_OUT, DEFAULT_ZOOM_ZOOM_OUT);
   }
 
   async onClickNearby() {
-    localStorage.clear();
-    window.location.reload();
+    const center = await this.getGeoLocation();
+    await this.reload(center, DEFAULT_ZOOM_NEARBY);
   }
 
   onSelectFuelTypeList(fuelTypeList) {
