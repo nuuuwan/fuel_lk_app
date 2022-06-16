@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 
 import FilterDetails from "../../view/atoms/FilterDetails";
 import FilterMenu from "./FilterMenu.js";
-import SettingsMenu from "./SettingsMenu.js";
+import HelpMenu from "./HelpMenu.js";
 
 export default function CustomAppBar({
   onSelectFuelTypeList,
@@ -16,7 +16,7 @@ export default function CustomAppBar({
     <Box>
       <AppBar position="static" style={{ background: "white" }}>
         <Toolbar>
-          <SettingsMenu />
+          <HelpMenu />
           <FilterMenu
             onSelectFuelTypeList={onSelectFuelTypeList}
             selectedFuelTypeList={selectedFuelTypeList}

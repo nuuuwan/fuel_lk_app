@@ -7,7 +7,6 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
-import SettingsIcon from "@mui/icons-material/Settings";
 import SourceIcon from "@mui/icons-material/Source";
 
 const MENU_ITEM_LIST = [
@@ -28,7 +27,7 @@ const MENU_ITEM_LIST = [
   },
 ];
 
-export default function SettingsMenu() {
+export default function HelpMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
@@ -43,7 +42,7 @@ export default function SettingsMenu() {
   return (
     <div>
       <IconButton onClick={onClick}>
-        <SettingsIcon />
+        <HelpIcon />
       </IconButton>
       <Menu
         id="basic-menu"
