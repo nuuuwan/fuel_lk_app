@@ -3,9 +3,9 @@ import { Component } from "react";
 
 import Box from "@mui/material/Box";
 
+import { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 import FuelData from "../../nonview/core/FuelData";
 
-import { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import ShedView from "../../view/molecules/ShedView";
