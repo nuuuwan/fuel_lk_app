@@ -3,8 +3,7 @@ import { CircleMarker, Popup } from "react-leaflet";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
-import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
-import { MAX_RECENCY_HOURS } from "../../nonview/constants/Constants.js";
+import ExtendedShed from "../../nonview/core/ExtendedShed";
 
 import AlignCenter from "../../view/atoms/AlignCenter";
 import HumanTime from "../../view/atoms/HumanTime";
@@ -19,29 +18,9 @@ const STYLE_CIRCLE = {
   zIndex: 2000,
 };
 
-function getHasRecentDispatch(extendedShed) {
-  const currentTime = TimeX.getUnixTime();
-  for (let dispatch of extendedShed["dispatch_schedule_list"]) {
-    const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
-    if (deltaToDispatch > -MAX_RECENCY_HOURS * SECONDS_IN.HOUR) {
-      return true;
-    }
-  }
-  return false;
-}
-
-function getHasListedStock(extendedShed) {
-  for (let value of Object.values(extendedShed["fuel_status_idx"])) {
-    if (value.capacity > 0) {
-      return true;
-    }
-  }
-  return false;
-}
-
 export default function ShedView({ extendedShed }) {
-  const hasRecentDispatch = getHasRecentDispatch(extendedShed);
-  const hasListedStock = getHasListedStock(extendedShed);
+  const hasRecentDispatch = ExtendedShed.getHasRecentDispatch(extendedShed);
+  const hasListedStock = ExtendedShed.getHasListedStock(extendedShed);
 
   let fillColor = "red";
   if (hasRecentDispatch) {
