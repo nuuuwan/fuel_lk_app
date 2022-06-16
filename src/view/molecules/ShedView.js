@@ -32,32 +32,32 @@ function getFillColor(extendedShed) {
   return "red";
 }
 
-function getStrokeColor(extendedShed) {
+function getStrokeOpacity(extendedShed) {
   const deltaTimeSinceLastUpdate =
     ExtendedShed.deltaTimeSinceLastUpdate(extendedShed);
 
   for (let [delta, color] of [
-    [SECONDS_IN.HOUR, "#000"],
-    [SECONDS_IN.HOUR * 3, "#444"],
-    [SECONDS_IN.HOUR * 6, "#888"],
-    [SECONDS_IN.HOUR * 12, "#ccc"],
+    [SECONDS_IN.HOUR, 1],
+    [SECONDS_IN.HOUR * 3, 0.8],
+    [SECONDS_IN.HOUR * 6, 0.6],
+    [SECONDS_IN.HOUR * 12, 0.4],
   ]) {
     if (deltaTimeSinceLastUpdate < delta) {
       return color;
     }
   }
-  return "#fff";
+  return 0.2;
 }
 
 export default function ShedView({ extendedShed }) {
   const fillColor = getFillColor(extendedShed);
-  const strokeColor = getStrokeColor(extendedShed);
+  const strokeOpacity = getStrokeOpacity(extendedShed);
 
   return (
     <CircleMarker
       center={extendedShed["lat_lng"]}
       radius={DEFAULT_CIRLE_RADIUS}
-      pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor, color: strokeColor } }}
+      pathOptions={{ ...STYLE_CIRCLE, ...{ fillColor, color: "black", opacity: strokeOpacity } }}
     >
       <Popup closeButton={false}>
         <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
