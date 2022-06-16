@@ -20,7 +20,7 @@ const THEME = createTheme({
     },
   },
   typography: {
-    fontFamily: ["Nunito Sans", "sans-serif"].join(","),
+    fontFamily: ["Ubuntu", "sans-serif"].join(","),
     fontSize: 12,
   },
 });
