@@ -33,7 +33,7 @@ export default class HomePage extends Component {
   async componentDidMount() {
     const center = await this.getGeoLocation();
     const zoom = DEFAULT_ZOOM_NEARBY;
-    const shedStatusList = await FuelData.multigetShedStatusList();
+    const shedStatusList = await FuelData.multigetExtendedShedList();
     this.setState({ center, zoom, shedStatusList });
   }
 

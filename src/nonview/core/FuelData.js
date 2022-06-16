@@ -13,8 +13,8 @@ async function jsonNonCache(url) {
 }
 
 export default class FuelData {
-  static async multigetShedStatusList() {
-    const url = URL_DATA_ROOT + "/latest/shed_status_list.all.json";
+  static async multigetExtendedShedList() {
+    const url = URL_DATA_ROOT + "/latest/extended_shed_list.json";
     return await jsonNonCache(url);
   }
 }
