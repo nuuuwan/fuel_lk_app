@@ -12,7 +12,7 @@ import ShedView from "../../view/molecules/ShedView";
 import GeoMap from "../../view/organisms/GeoMap";
 
 const DEFAULT_CENTER = [6.9172, 79.8648]; // Town Hall
-const DEFAULT_ZOOM = 12;
+const DEFAULT_ZOOM = 15;
 
 const DEFAULT_CENTER_ZOOM_OUT = [7.6, 80.7]; // Dambulla
 const DEFAULT_ZOOM_ZOOM_OUT = 7;
