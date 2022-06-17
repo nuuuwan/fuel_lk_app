@@ -32,7 +32,7 @@ const TIME_UPDATED_LIST = [
   },
 ];
 
-export default function FilterFuelTypeMenu({
+export default function FilterTimeUpdateMenu({
   onSelectMaxDisplayRecencyHours,
   selectedMaxDisplayRecencyHours,
 }) {
