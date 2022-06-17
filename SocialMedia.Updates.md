@@ -7,9 +7,20 @@
 
 ---
 
+
+10/ UPDATE (Jun 17 Evening)
+
+🆕 Added a Basic "Community Feedback" feature, for users to share information about the state of fuel sheds
+
+We'll decide how to develop this, based on feedback & responses. 
+
+#SriLanka #FuelLKApp
+
+---
+
 9/ UPDATE (Jun 17)
 
-🆕 Added "Filter by Time Updated" feature. You can now filter sheds with recent updates. "Outdated" sheds will be ⚪ "Grey" circles. 
+🆕 Added "Filter by Time Updated" feature. You can now filter sheds with recent updates. "Outdated" sheds will be ⚪ "Grey" circles.
 
 (Many sheds post updates in the morning)
 
