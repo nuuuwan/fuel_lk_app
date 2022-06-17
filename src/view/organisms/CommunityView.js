@@ -4,8 +4,8 @@ import Box from "@mui/material/Box";
 
 import PollWaitingTime from "../../nonview/core/PollWaitingTime";
 
-import CommunityViewModal from "../../view/molecules/CommunityViewModal";
 import CommunityFeedback from "../../view/molecules/CommunityFeedback";
+import CommunityViewModal from "../../view/molecules/CommunityViewModal";
 
 export default class CommunityView extends Component {
   constructor(props) {
