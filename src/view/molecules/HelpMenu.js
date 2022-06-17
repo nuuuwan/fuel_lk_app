@@ -10,6 +10,7 @@ import HelpIcon from "@mui/icons-material/Help";
 import LanguageIcon from "@mui/icons-material/Language";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { t } from "../../nonview/base/I18N";
 
 const MENU_ITEM_LIST = [
   {
@@ -78,7 +79,7 @@ export default function HelpMenu() {
               <ListItemIcon>
                 <Icon />
               </ListItemIcon>
-              <ListItemText>{menuItem.name}</ListItemText>
+              <ListItemText>{t(menuItem.name)}</ListItemText>
             </MenuItem>
           );
         })}
@@ -86,7 +87,7 @@ export default function HelpMenu() {
           <ListItemIcon>
             <RefreshIcon />
           </ListItemIcon>
-          <ListItemText>Refresh App</ListItemText>
+          <ListItemText>{t("Refresh App")}</ListItemText>
         </MenuItem>
       </Menu>
     </div>

@@ -8,6 +8,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import {t} from "../../nonview/base/I18N"
 
 const TIME_UPDATED_LIST = [
   {
@@ -99,7 +100,7 @@ export default function FilterTimeUpdateMenu({
           const color = isSelected ? theme.palette.success.main : "neutral";
           return (
             <MenuItem key={key} onClick={onClickInner}>
-              <ListItemText sx={{ color }}>{item.label}</ListItemText>
+              <ListItemText sx={{ color }}>{t(item.label)}</ListItemText>
             </MenuItem>
           );
         })}
