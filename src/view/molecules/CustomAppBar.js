@@ -19,7 +19,7 @@ export default function CustomAppBar({
         <Toolbar>
           <LogoAvatar />
           <Typography variant="subtitle1" sx={{ color: "black" }}>
-            Fuel in Sri Lanka
+            Fuel in SL
           </Typography>
           <Typography variant="body1" sx={{ flexGrow: 1 }}>
             {" "}
