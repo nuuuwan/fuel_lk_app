@@ -1,21 +1,33 @@
-import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
-import { MAX_RECENCY_HOURS } from "../../nonview/constants/Constants.js";
-
-const MAX_RECENCY_SECONDS = MAX_RECENCY_HOURS * SECONDS_IN.HOUR;
-
 export default class ExtendedShed {
-  static getHasRecentDispatch(extendedShed, fuelTypeList) {
-    const currentTime = TimeX.getUnixTime();
+  static getLastDispatchTime(extendedShed, fuelTypeList) {
+    let lastUpdateTime = undefined;
     for (let dispatch of extendedShed["dispatch_schedule_list"]) {
       if (!fuelTypeList.includes(dispatch["fuel_type"])) {
         continue;
       }
-      const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
-      if (deltaToDispatch > -MAX_RECENCY_SECONDS) {
-        return true;
+      if (!lastUpdateTime || lastUpdateTime < dispatch["time_eta_ut"]) {
+        lastUpdateTime = dispatch["time_eta_ut"];
       }
     }
-    return false;
+    return lastUpdateTime;
+  }
+
+  static getLastUpdateTime(extendedShed, fuelTypeList) {
+    const lastUpdateTimeOnly = extendedShed["time_last_updated_by_shed_ut"];
+    const lastDispatchTime = ExtendedShed.getLastDispatchTime(
+      extendedShed,
+      fuelTypeList
+    );
+    if (lastDispatchTime && lastUpdateTimeOnly) {
+      return Math.max(lastDispatchTime, lastUpdateTimeOnly);
+    }
+    if (lastDispatchTime) {
+      return lastDispatchTime;
+    }
+    if (lastUpdateTimeOnly) {
+      return lastUpdateTimeOnly;
+    }
+    return undefined;
   }
 
   static getHasListedStock(extendedShed, fuelTypeList) {
@@ -30,18 +42,6 @@ export default class ExtendedShed {
       }
     }
     return false;
-  }
-
-  static getDeltaTimeSinceLastUpdate(extendedShed) {
-    const timeLastUpdated = extendedShed["time_last_updated_by_shed_ut"];
-    const currentUT = TimeX.getUnixTime();
-    return currentUT - timeLastUpdated;
-  }
-
-  static getHasRecentUpdate(extendedShed) {
-    const deltaTimeSinceLastUpdate =
-      ExtendedShed.getDeltaTimeSinceLastUpdate(extendedShed);
-    return deltaTimeSinceLastUpdate < MAX_RECENCY_SECONDS;
   }
 
   static getDisplayAddress(extendedShed) {
