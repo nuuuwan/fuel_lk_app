@@ -22,8 +22,13 @@ const MENU_ITEM_LIST = [
     Icon: SourceIcon,
   },
   {
-    name: "Code",
+    name: "Code - React App",
     url: "http://github.com/nuuuwan/fuel_lk_app",
+    Icon: GitHubIcon,
+  },
+  {
+    name: "Code - Data",
+    url: "http://github.com/nuuuwan/fuel_lk",
     Icon: GitHubIcon,
   },
 ];
@@ -41,6 +46,7 @@ export default function HelpMenu() {
   };
 
   const onClickRefresh = function () {
+    localStorage.clear();
     window.location.reload();
   };
 
