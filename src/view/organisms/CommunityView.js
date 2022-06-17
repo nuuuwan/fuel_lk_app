@@ -56,11 +56,13 @@ export default class CommunityView extends Component {
     const onClick = function () {
       this.setState({ show: true });
     }.bind(this);
+
+    const color = "maroon"; // TODO: Use theme
     return (
-      <Box>
+      <Box display="flex" justifyContent="flex-end">
         <Tooltip title="Did you get fuel from this shed in the last 1 hour? Could you like to share your experience?">
           <IconButton onClick={onClick}>
-            <ChatBubbleOutlineIcon />
+            <ChatBubbleOutlineIcon sx={{ color }} />
           </IconButton>
         </Tooltip>
       </Box>
