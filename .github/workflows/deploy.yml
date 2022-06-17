@@ -24,6 +24,7 @@ jobs:
       run: npm run build
       env:
         REACT_APP_URL_LAMBDA: ${{ secrets.REACT_APP_URL_LAMBDA }}
+        REACT_APP_SHOW_COMMUNITY_VIEW: ${{ secrets.REACT_APP_SHOW_COMMUNITY_VIEW }}
 
 
     - name: Upload production-ready build files
