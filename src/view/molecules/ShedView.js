@@ -53,8 +53,6 @@ function getStrokeOpacity(extendedShed) {
   for (let [delta, color] of [
     [SECONDS_IN.HOUR, 1],
     [SECONDS_IN.HOUR * 3, 0.75],
-    [SECONDS_IN.HOUR * 6, 0.5],
-    [SECONDS_IN.HOUR * 12, 0.25],
   ]) {
     if (deltaTimeSinceLastUpdate < delta) {
       return color;
