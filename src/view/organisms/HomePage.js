@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 import FuelData from "../../nonview/core/FuelData";
 
+import { HOURS_IN } from "../../nonview/base/TimeX";
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import ShedView from "../../view/molecules/ShedView";
@@ -19,6 +20,7 @@ const DEFAULT_ZOOM_ZOOM_OUT = 7;
 const DEFAULT_ZOOM_NEARBY = 15;
 
 const DEFAULT_FUEL_TYPE_LIST = FUEL_TYPE_GROUP_IDX["All Fuels"];
+const DEFAUL_MAX_DISPLAY_RECENCY_HOURS = HOURS_IN.DAY;
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -28,7 +30,7 @@ export default class HomePage extends Component {
       center: undefined,
       zoom: undefined,
       fuelTypeList: DEFAULT_FUEL_TYPE_LIST,
-      maxDisplayRecencyHours: 6,
+      maxDisplayRecencyHours: DEFAUL_MAX_DISPLAY_RECENCY_HOURS,
     };
   }
 
@@ -68,8 +70,13 @@ export default class HomePage extends Component {
     this.setState({ fuelTypeList });
   }
 
+  onSelectMaxDisplayRecencyHours(maxDisplayRecencyHours) {
+    this.setState({ maxDisplayRecencyHours });
+  }
+
   renderInner() {
-    const { extendedShedList, fuelTypeList, maxDisplayRecencyHours } = this.state;
+    const { extendedShedList, fuelTypeList, maxDisplayRecencyHours } =
+      this.state;
     if (!extendedShedList) {
       return null;
     }
@@ -86,13 +93,17 @@ export default class HomePage extends Component {
   }
 
   render() {
-    const { center, zoom, fuelTypeList } = this.state;
+    const { center, zoom, fuelTypeList, maxDisplayRecencyHours } = this.state;
     const key = "geo-map-" + center + zoom;
     return (
       <Box>
         <CustomAppBar
           onSelectFuelTypeList={this.onSelectFuelTypeList.bind(this)}
           selectedFuelTypeList={fuelTypeList}
+          onSelectMaxDisplayRecencyHours={this.onSelectMaxDisplayRecencyHours.bind(
+            this
+          )}
+          selectedMaxDisplayRecencyHours={maxDisplayRecencyHours}
         />
 
         <GeoMap key={key} center={center} zoom={zoom}>
