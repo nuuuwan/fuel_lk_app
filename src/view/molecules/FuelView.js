@@ -10,6 +10,7 @@ import FuelQuantity from "../../view/atoms/FuelQuantity";
 import HumanTime from "../../view/atoms/HumanTime";
 import Place from "../../view/atoms/Place";
 import LabelledBox from "../../view/molecules/LabelledBox";
+import CommunityView from "../../view/organisms/CommunityView";
 
 export default function FuelView({
   label,
@@ -22,6 +23,8 @@ export default function FuelView({
   if (!isAvailable && !recentDispatch) {
     return null;
   }
+
+  const showCommunityView = process.env.REACT_APP_SHOW_COMMUNITY_VIEW === "1";
 
   return (
     <Paper elevation={2} sx={{ m: 1, p: 1, width: "80%" }}>
@@ -76,8 +79,7 @@ export default function FuelView({
           <HumanTime ut={recentDispatch["time_eta_ut"]} />
         </LabelledBox>
       ) : null}
+      {showCommunityView ? <CommunityView /> : null}
     </Paper>
   );
 }
-
-// import FuelTypeView from "../../view/atoms/FuelTypeView";
