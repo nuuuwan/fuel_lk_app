@@ -1,12 +1,6 @@
 import { jsonNonCache } from "../../nonview/base/CacheX";
 
 export default class NuntiusServer {
-  static getRandomID() {
-    const DIGITS = 8;
-    const x = Math.random() * 16 ** DIGITS;
-    return x.toString(16);
-  }
-
   static getURLLambda() {
     return process.env.REACT_APP_URL_LAMBDA;
   }
