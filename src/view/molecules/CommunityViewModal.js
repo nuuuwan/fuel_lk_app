@@ -1,13 +1,15 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
 import Modal from "@mui/material/Modal";
+import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
+import SentimentNeutralIcon from "@mui/icons-material/SentimentNeutral";
 
 import { POLL_OPTION_IDX } from "../../nonview/core/PollWaitingTime";
+
 import PollOptionView from "../../view/molecules/PollOptionView";
-import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton";
-import SentimentNeutralIcon from "@mui/icons-material/SentimentNeutral";
+
 const STYLE = {
   position: "absolute",
   top: "50%",
@@ -52,17 +54,17 @@ export default function CommunityViewModal({
             now?
           </Typography>
           {Object.entries(POLL_OPTION_IDX).map(function (
-            [pollID, pollOption],
+            [pollOptionID, pollOption],
             iPollOption
           ) {
             const onClick = async function () {
-              await onSelectPoll(pollID);
+              await onSelectPoll(pollOptionID);
             };
 
             return (
               <div key={"poll-option-" + iPollOption}>
                 <Button onClick={onClick} sx={{ color: pollOption.color }}>
-                  <PollOptionView pollID={pollID} />
+                  <PollOptionView pollOptionID={pollOptionID} />
                 </Button>
               </div>
             );
