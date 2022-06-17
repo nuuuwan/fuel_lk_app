@@ -21,7 +21,7 @@ const DATE_FORMAT_OPTIONS = {
 
 export default class TimeX {
   static getUnixTime() {
-    return new Date() / 1_000.0;
+    return parseInt(new Date() / 1_000.0);
   }
 
   static parseTime(timeStr) {
