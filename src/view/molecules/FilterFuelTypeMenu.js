@@ -8,10 +8,10 @@ import Tooltip from "@mui/material/Tooltip";
 import { useTheme } from "@mui/material/styles";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 
+import { t } from "../../nonview/base/I18N";
 import Fuel, { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 
 import FilterDetails from "../../view/atoms/FilterDetails";
-import { t } from "../../nonview/base/I18N";
 
 export default function FilterFuelTypeMenu({
   onSelectFuelTypeList,
