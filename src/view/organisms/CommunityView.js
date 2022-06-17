@@ -30,7 +30,7 @@ const POLL_OPTION_LIST = [
   },
   {
     Icon: CancelIcon,
-    label: "No Fuel.",
+    label: "No Fuel",
     color: "black",
   },
 ];
