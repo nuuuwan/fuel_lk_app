@@ -7,8 +7,8 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
+import LanguageIcon from "@mui/icons-material/Language";
 import RefreshIcon from "@mui/icons-material/Refresh";
-import LanguageIcon from '@mui/icons-material/Language';
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 const MENU_ITEM_LIST = [
