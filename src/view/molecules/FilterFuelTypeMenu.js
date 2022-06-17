@@ -11,6 +11,7 @@ import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import Fuel, { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 
 import FilterDetails from "../../view/atoms/FilterDetails";
+import {t} from "../../nonview/base/I18N"
 
 export default function FilterFuelTypeMenu({
   onSelectFuelTypeList,
@@ -64,7 +65,7 @@ export default function FilterFuelTypeMenu({
           const color = isSelected ? theme.palette.secondary.main : "neutral";
           return (
             <MenuItem key={key} onClick={onClickInner}>
-              <ListItemText sx={{ color }}>{label}</ListItemText>
+              <ListItemText sx={{ color }}>{t(label)}</ListItemText>
             </MenuItem>
           );
         })}

@@ -4,9 +4,17 @@
 <24 Hrs Ago
 <3 Hrs Ago
 <6 Hrs Ago
+All Fuels
+Any Diesel
+Any Petrol
 Code - Data
 Code - React App
 Fuel in SL
 Help (Twitter Thread)
+Kerosene
+Petrol-92 only
+Petrol-95 only
 Refresh App
+Regular Diesel only
+Super-Diesel only
 fuel.gov.lk
