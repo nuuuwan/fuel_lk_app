@@ -6,6 +6,9 @@ import Paper from "@mui/material/Paper";
 import Tooltip from "@mui/material/Tooltip";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+
+import {URL_APP} from "../../nonview/constants/Constants"
 
 const STYLE = {
   position: "fixed",
@@ -19,9 +22,22 @@ export default function CustomBottomNavigation({
   onClickNearby,
   onClickZoomOut,
 }) {
+
+  const onClickCopy = function() {
+    navigator.clipboard.writeText(URL_APP);
+  }
+
   return (
     <Paper sx={STYLE}>
       <BottomNavigation showLabels>
+        <Tooltip title="Copy App Link">
+          <BottomNavigationAction
+            icon={<ContentCopyIcon />}
+            onClick={onClickCopy}
+          />
+        </Tooltip>
+
+
         <Tooltip title="Zoom Out">
           <BottomNavigationAction
             icon={<ZoomOutMapIcon />}
@@ -34,6 +50,9 @@ export default function CustomBottomNavigation({
             onClick={onClickNearby}
           />
         </Tooltip>
+
+
+
       </BottomNavigation>
     </Paper>
   );
