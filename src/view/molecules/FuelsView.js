@@ -10,12 +10,12 @@ export default function FuelsView({ extendedShed }) {
   const currentTime = TimeX.getUnixTime();
   return (
     <List>
-      {Object.entries(FUEL_IDX).map(function ([fuelId, fuel]) {
-        const shedFuel = extendedShed["fuel_status_idx"][fuelId];
+      {Object.entries(FUEL_IDX).map(function ([fuelType, fuel]) {
+        const shedFuel = extendedShed["fuel_status_idx"][fuelType];
 
         let recentDispatch = null;
         for (let dispatch of extendedShed["dispatch_schedule_list"]) {
-          if (dispatch["fuel_type"] !== fuelId) {
+          if (dispatch["fuel_type"] !== fuelType) {
             continue;
           }
           const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
@@ -26,7 +26,9 @@ export default function FuelsView({ extendedShed }) {
 
         return (
           <FuelView
-            key={"fuel-" + fuelId}
+            extendedShed={extendedShed}
+            fuelType={fuelType}
+            key={"fuel-" + fuelType}
             label={fuel.name}
             isAvailable={shedFuel["is_available"]}
             capacity={shedFuel.capacity}
