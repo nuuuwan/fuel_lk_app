@@ -13,6 +13,7 @@ Any Diesel
 Any Petrol
 Code - Data
 Code - React App
+Copy App Link
 Filter by Fuel Type
 Filter by Time Updated
 Fuel in SL
@@ -23,6 +24,7 @@ Kerosene
 Last Updated by Shed
 Less than 30 minutes
 More than 3 hours
+Nearby
 Need more feedback
 No Fuel
 Not Sure or Don't Know
@@ -37,6 +39,8 @@ Recent Dispatch
 Refresh App
 Regular Diesel
 Regular Diesel only
+Share your feedback!
 Super-Diesel
 Super-Diesel only
+Zoom Out
 fuel.gov.lk

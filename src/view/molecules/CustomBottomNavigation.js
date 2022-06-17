@@ -8,6 +8,7 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 
+import { t } from "../../nonview/base/I18N";
 import { URL_APP } from "../../nonview/constants/Constants";
 
 const STYLE = {
@@ -29,20 +30,20 @@ export default function CustomBottomNavigation({
   return (
     <Paper sx={STYLE}>
       <BottomNavigation showLabels>
-        <Tooltip title="Copy App Link">
+        <Tooltip title={t("Copy App Link")}>
           <BottomNavigationAction
             icon={<ContentCopyIcon />}
             onClick={onClickCopy}
           />
         </Tooltip>
 
-        <Tooltip title="Zoom Out">
+        <Tooltip title={t("Zoom Out")}>
           <BottomNavigationAction
             icon={<ZoomOutMapIcon />}
             onClick={onClickZoomOut}
           />
         </Tooltip>
-        <Tooltip title="Nearby">
+        <Tooltip title={t("Nearby")}>
           <BottomNavigationAction
             icon={<MyLocationIcon />}
             onClick={onClickNearby}

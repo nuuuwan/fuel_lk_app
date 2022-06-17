@@ -42,7 +42,7 @@ export default function CommunityViewModal({
   return (
     <Box>
       <Box display="flex" justifyContent="flex-end">
-        <Tooltip title={<Typography>Share your feedback!</Typography>}>
+        <Tooltip title={<Typography>{t("Share your feedback!")}</Typography>}>
           <IconButton onClick={onOpenModal}>
             <SentimentNeutralIcon />
           </IconButton>

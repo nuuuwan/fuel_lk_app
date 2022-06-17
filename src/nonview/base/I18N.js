@@ -8,6 +8,9 @@ export default class I18N {
   }
 
   static translate(s) {
+    if (!s || !s.trim()) {
+      return s;
+    }
     const currentLang = I18N.getCurrentLang();
     const entry = DICTIONARY[s];
     if (!entry) {
