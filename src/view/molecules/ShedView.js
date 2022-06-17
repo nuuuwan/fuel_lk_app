@@ -18,11 +18,13 @@ import LabelledBox from "../../view/molecules/LabelledBox";
 const DEFAULT_CIRLE_RADIUS = 15;
 const STYLE_CIRCLE = {
   stroke: true,
-  fillOpacity: 0.7,
   zIndex: 2000,
 };
 
-function getFillColor(
+const FILL_OPACITY_HIDE = 0.7;
+const FILL_OPACITY_SHOW = 0.7;
+
+function getFillColorAndOpacity(
   extendedShed,
   fuelTypeList,
   maxDisplayRecencyHours,
@@ -48,18 +50,18 @@ function getFillColor(
   const timeSinceLastDispatch = currentTime - lastDispatchTime;
 
   if (!timeSinceLastUpdate || timeSinceLastUpdate > maxDisplayRecencySeconds) {
-    return "gray";
+    return ["gray", FILL_OPACITY_HIDE];
   }
 
   if (timeSinceLastDispatch < maxDisplayRecencySeconds) {
-    return theme.palette.success.main;
+    return [theme.palette.success.main, FILL_OPACITY_SHOW];
   }
 
   if (hasListedStock) {
-    return theme.palette.secondary.main;
+    return [theme.palette.secondary.main, FILL_OPACITY_SHOW];
   }
 
-  return theme.palette.primary.main;
+  return [theme.palette.primary.main, FILL_OPACITY_SHOW];
 }
 
 function getStrokeOpacity(extendedShed, fuelTypeList) {
@@ -77,7 +79,7 @@ function getStrokeOpacity(extendedShed, fuelTypeList) {
       return opacity;
     }
   }
-  return 0;
+  return 0.1;
 }
 
 export default function ShedView({
@@ -87,13 +89,13 @@ export default function ShedView({
 }) {
   const theme = useTheme();
 
-  const fillColor = getFillColor(
+  const [fillColor, fillOpacity] = getFillColorAndOpacity(
     extendedShed,
     fuelTypeList,
     maxDisplayRecencyHours,
     theme
   );
-  const strokeOpacity = getStrokeOpacity(extendedShed, fuelTypeList);
+  const opacity = getStrokeOpacity(extendedShed, fuelTypeList);
 
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
   const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);
@@ -104,7 +106,7 @@ export default function ShedView({
       radius={DEFAULT_CIRLE_RADIUS}
       pathOptions={{
         ...STYLE_CIRCLE,
-        ...{ fillColor, color: "black", opacity: strokeOpacity },
+        ...{ fillColor, fillOpacity, color: "black", opacity },
       }}
     >
       <Popup closeButton={false}>
