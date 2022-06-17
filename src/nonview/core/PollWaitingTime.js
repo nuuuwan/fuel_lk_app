@@ -47,7 +47,7 @@ export default class PollWaitingTime {
     const message = {
       messageID: NuntiusServer.getRandomID(),
       destID: PollWaitingTime.getDestID(shedCode, fuelType),
-      sourceID: "GenericUser",
+      sourceID: NuntiusServer.getRandomID(),
       messageText: pollOptionID,
       messageTimeUT: TimeX.getUnixTime(),
     };
@@ -79,16 +79,19 @@ export default class PollWaitingTime {
       pollOptionIDToSourceIDSet[pollOptionID].add(sourceID);
     }
 
-    const pollOptionIDToCount = Object.entries(
+    const sortedPollOptionIDAndCountPairs = Object.entries(
       pollOptionIDToSourceIDSet
-    ).reduce(function (pollOptionIDToCount, [pollOptionID, sourceIDSet]) {
-      pollOptionIDToCount[pollOptionID] = sourceIDSet.size;
-      return pollOptionIDToCount;
-    }, {});
+    )
+      .map(function ([pollOptionID, sourceIDSet]) {
+        return [pollOptionID, sourceIDSet.size];
+      })
+      .sort(function (a, b) {
+        return b[1] - a[1];
+      });
 
     return {
       validMessageCount: validMessages.length,
-      pollOptionIDToCount,
+      sortedPollOptionIDAndCountPairs,
     };
   }
 }
