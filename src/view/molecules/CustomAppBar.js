@@ -7,11 +7,14 @@ import Typography from "@mui/material/Typography";
 
 import LogoAvatar from "../../view/atoms/LogoAvatar";
 import FilterFuelTypeMenu from "./FilterFuelTypeMenu.js";
+import FilterTimeUpdatedMenu from "./FilterTimeUpdatedMenu.js";
 import HelpMenu from "./HelpMenu.js";
 
 export default function CustomAppBar({
   onSelectFuelTypeList,
   selectedFuelTypeList,
+  onSelectMaxDisplayRecencyHours,
+  selectedMaxDisplayRecencyHours,
 }) {
   return (
     <Box>
@@ -27,6 +30,10 @@ export default function CustomAppBar({
           <FilterFuelTypeMenu
             onSelectFuelTypeList={onSelectFuelTypeList}
             selectedFuelTypeList={selectedFuelTypeList}
+          />
+          <FilterTimeUpdatedMenu
+            onSelectMaxDisplayRecencyHours={onSelectMaxDisplayRecencyHours}
+            selectedMaxDisplayRecencyHours={selectedMaxDisplayRecencyHours}
           />
           <HelpMenu />
         </Toolbar>
