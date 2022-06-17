@@ -4,6 +4,11 @@ export const SECONDS_IN = {
   DAY: 86_400,
 };
 
+export const HOURS_IN = {
+  DAY: 24,
+  YEAR: 24 * 365.25,
+};
+
 const DATE_FORMAT_LOCALE = "en-GB";
 const DATE_FORMAT_OPTIONS = {
   weekday: "short",
