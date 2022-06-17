@@ -1,3 +1,4 @@
+import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
@@ -69,6 +70,9 @@ export default function CommunityViewModal({
               </div>
             );
           })}
+          <Alert severity="info">
+            If you have voted multiple times, your latest vote will be selected.
+          </Alert>
         </Box>
       </Modal>
     </Box>
