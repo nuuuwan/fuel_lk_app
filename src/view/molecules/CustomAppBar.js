@@ -9,6 +9,7 @@ import LogoAvatar from "../../view/atoms/LogoAvatar";
 import FilterFuelTypeMenu from "./FilterFuelTypeMenu.js";
 import FilterTimeUpdatedMenu from "./FilterTimeUpdatedMenu.js";
 import HelpMenu from "./HelpMenu.js";
+import { t } from "../../nonview/base/I18N";
 
 export default function CustomAppBar({
   onSelectFuelTypeList,
@@ -22,7 +23,7 @@ export default function CustomAppBar({
         <Toolbar>
           <LogoAvatar />
           <Typography variant="subtitle1" sx={{ color: "black" }}>
-            Fuel in SL
+            {t("Fuel in SL")}
           </Typography>
           <Typography variant="body1" sx={{ flexGrow: 1 }}>
             {" "}
