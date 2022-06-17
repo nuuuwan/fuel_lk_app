@@ -4,9 +4,9 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Paper from "@mui/material/Paper";
 import Tooltip from "@mui/material/Tooltip";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
-import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 import { URL_APP } from "../../nonview/constants/Constants";
 
