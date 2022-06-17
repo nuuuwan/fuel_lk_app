@@ -1,12 +1,11 @@
 import { Component } from "react";
 
-import PeopleIcon from "@mui/icons-material/People";
+import Box from "@mui/material/Box";
 
 import PollWaitingTime from "../../nonview/core/PollWaitingTime";
 
-import AlignCenter from "../../view/atoms/AlignCenter";
 import CommunityViewModal from "../../view/molecules/CommunityViewModal";
-import LabelledBox from "../../view/molecules/LabelledBox";
+import CommunityFeedback from "../../view/molecules/CommunityFeedback";
 
 export default class CommunityView extends Component {
   constructor(props) {
@@ -46,23 +45,12 @@ export default class CommunityView extends Component {
 
   render() {
     const { label } = this.props;
-    const { showModal } = this.state;
+    const { showModal, summaryFeedback } = this.state;
 
     return (
-      <LabelledBox
-        label={
-          <AlignCenter>
-            Community Feedback
-            <PeopleIcon
-              sx={{
-                paddingLeft: 0.5,
-                fontSize: "small",
-                color: "primary",
-              }}
-            />
-          </AlignCenter>
-        }
-      >
+      <Box>
+        <CommunityFeedback summaryFeedback={summaryFeedback} />
+
         <CommunityViewModal
           showModal={showModal}
           label={label}
@@ -70,7 +58,7 @@ export default class CommunityView extends Component {
           onCloseModal={this.onCloseModal.bind(this)}
           onSelectPoll={this.onSelectPoll.bind(this)}
         />
-      </LabelledBox>
+      </Box>
     );
   }
 }
