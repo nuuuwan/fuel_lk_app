@@ -11,7 +11,7 @@ import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import Fuel, { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 
 import FilterDetails from "../../view/atoms/FilterDetails";
-import {t} from "../../nonview/base/I18N"
+import { t } from "../../nonview/base/I18N";
 
 export default function FilterFuelTypeMenu({
   onSelectFuelTypeList,
