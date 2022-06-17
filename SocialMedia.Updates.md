@@ -1,4 +1,15 @@
-# Social Media- Updates
+# Social Media - Updates
+
+9/ UPDATE (Jun 17)
+
+🆕  Added "Filter by Time Updated" feature #PopularDemand.
+Outdated sheds will be ⚪ "Grey" circles
+
+🆕  Added "Copy App Link" button to Bottom Menu.
+
+#SriLanka #FuelLKApp
+
+---
 
 8/ UPDATE (Jun 16)
 
