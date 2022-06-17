@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 
 import StringX from "../../nonview/base/StringX";
-import { SECONDS_IN } from "../../nonview/base/TimeX";
+import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 import ExtendedShed from "../../nonview/core/ExtendedShed";
 
 import AlignCenter from "../../view/atoms/AlignCenter";
@@ -22,9 +22,17 @@ const STYLE_CIRCLE = {
   zIndex: 2000,
 };
 
-function getFillColor(extendedShed, fuelTypeList, theme) {
-  const hasRecentUpdate = ExtendedShed.getHasRecentUpdate(extendedShed);
-  const hasRecentDispatch = ExtendedShed.getHasRecentDispatch(
+function getFillColor(
+  extendedShed,
+  fuelTypeList,
+  maxDisplayRecencyHours,
+  theme
+) {
+  const lastUpdateTime = ExtendedShed.getLastUpdateTime(
+    extendedShed,
+    fuelTypeList
+  );
+  const lastDispatchTime = ExtendedShed.getLastDispatchTime(
     extendedShed,
     fuelTypeList
   );
@@ -33,48 +41,62 @@ function getFillColor(extendedShed, fuelTypeList, theme) {
     fuelTypeList
   );
 
-  if (hasRecentUpdate || hasRecentDispatch) {
-    if (hasRecentDispatch) {
-      return theme.palette.success.main;
-    }
-    if (hasListedStock) {
-      return theme.palette.secondary.main;
-    }
-    return theme.palette.primary.main;
+  const currentTime = TimeX.getUnixTime();
+  const maxDisplayRecencySeconds = maxDisplayRecencyHours * SECONDS_IN.HOUR;
+
+  const timeSinceLastUpdate = currentTime - lastUpdateTime;
+  const timeSinceLastDispatch = currentTime - lastDispatchTime;
+
+  if (!timeSinceLastUpdate || timeSinceLastUpdate > maxDisplayRecencySeconds) {
+    return "gray";
   }
 
-  return "gray";
+  if (timeSinceLastDispatch < maxDisplayRecencySeconds) {
+    return theme.palette.success.main;
+  }
+
+  if (hasListedStock) {
+    return theme.palette.secondary.main;
+  }
+
+  return theme.palette.primary.main;
 }
 
-function getStrokeOpacity(extendedShed) {
-  const deltaTimeSinceLastUpdate =
-    ExtendedShed.getDeltaTimeSinceLastUpdate(extendedShed);
+function getStrokeOpacity(extendedShed, fuelTypeList) {
+  const lastUpdateTime = ExtendedShed.getLastUpdateTime(
+    extendedShed,
+    fuelTypeList
+  );
+  const timeSinceLastUpdate = TimeX.getUnixTime() - lastUpdateTime;
 
-  for (let [delta, color] of [
+  for (let [delta, opacity] of [
     [SECONDS_IN.HOUR, 1],
     [SECONDS_IN.HOUR * 3, 0.75],
   ]) {
-    if (deltaTimeSinceLastUpdate < delta) {
-      return color;
+    if (timeSinceLastUpdate < delta) {
+      return opacity;
     }
   }
   return 0;
 }
 
-export default function ShedView({ extendedShed, fuelTypeList, maxDisplayRecencyHours }) {
+export default function ShedView({
+  extendedShed,
+  fuelTypeList,
+  maxDisplayRecencyHours,
+}) {
   const theme = useTheme();
 
-  const fillColor = getFillColor(extendedShed, fuelTypeList, theme);
-  const strokeOpacity = getStrokeOpacity(extendedShed);
+  const fillColor = getFillColor(
+    extendedShed,
+    fuelTypeList,
+    maxDisplayRecencyHours,
+    theme
+  );
+  const strokeOpacity = getStrokeOpacity(extendedShed, fuelTypeList);
 
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
   const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);
-
-  const deltaTimeSinceLastUpdate =
-    ExtendedShed.getDeltaTimeSinceLastUpdate(extendedShed);
-  if (maxDisplayRecencyHours * SECONDS_IN.HOUR < deltaTimeSinceLastUpdate) {
-    return null;
-  }
 
   return (
     <CircleMarker
