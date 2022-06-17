@@ -1,9 +1,11 @@
 import Typography from "@mui/material/Typography";
-import AlignCenter from "../../view/atoms/AlignCenter";
+
 import { POLL_OPTION_IDX } from "../../nonview/core/PollWaitingTime";
 
-export default function PollOptionView({ pollID }) {
-  const pollOption = POLL_OPTION_IDX[pollID];
+import AlignCenter from "../../view/atoms/AlignCenter";
+
+export default function PollOptionView({ pollOptionID }) {
+  const pollOption = POLL_OPTION_IDX[pollOptionID];
   if (!pollOption) {
     return null;
   }
