@@ -4,8 +4,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import HomePage from "./view/organisms/HomePage.js";
 
-console.debug(process.env);
-
 const THEME = createTheme({
   palette: {
     primary: {
