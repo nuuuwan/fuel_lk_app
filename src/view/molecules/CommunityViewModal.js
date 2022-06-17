@@ -7,11 +7,11 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import SentimentNeutralIcon from "@mui/icons-material/SentimentNeutral";
 
+import StringX from "../../nonview/base/StringX";
+import { FUEL_IDX } from "../../nonview/core/Fuel";
 import { POLL_OPTION_IDX } from "../../nonview/core/PollWaitingTime";
 
 import PollOptionView from "../../view/molecules/PollOptionView";
-import { FUEL_IDX } from "../../nonview/core/Fuel";
-import StringX from "../../nonview/base/StringX";
 
 const STYLE = {
   position: "fixed",
