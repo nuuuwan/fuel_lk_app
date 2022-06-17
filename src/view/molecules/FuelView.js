@@ -13,6 +13,8 @@ import LabelledBox from "../../view/molecules/LabelledBox";
 import CommunityView from "../../view/organisms/CommunityView";
 
 export default function FuelView({
+  extendedShed,
+  fuelType,
   label,
   isAvailable,
   capacity,
@@ -79,7 +81,13 @@ export default function FuelView({
           <HumanTime ut={recentDispatch["time_eta_ut"]} />
         </LabelledBox>
       ) : null}
-      {showCommunityView ? <CommunityView /> : null}
+      {showCommunityView ? (
+        <CommunityView
+          label={label}
+          extendedShed={extendedShed}
+          fuelType={fuelType}
+        />
+      ) : null}
     </Paper>
   );
 }
