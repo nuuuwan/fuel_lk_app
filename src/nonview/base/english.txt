@@ -14,9 +14,15 @@ Help (Twitter Thread)
 How long is the wait now?
 If you have voted multiple times, your latest vote will be selected.
 Kerosene
+Opening Stock
+Petrol-92
 Petrol-92 only
+Petrol-95
 Petrol-95 only
+Recent Dispatch
 Refresh App
+Regular Diesel
 Regular Diesel only
+Super-Diesel
 Super-Diesel only
 fuel.gov.lk

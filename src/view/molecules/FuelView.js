@@ -5,6 +5,8 @@ import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import OilBarrelIcon from "@mui/icons-material/OilBarrel";
 
+import { t } from "../../nonview/base/I18N";
+
 import AlignCenter from "../../view/atoms/AlignCenter";
 import FuelQuantity from "../../view/atoms/FuelQuantity";
 import HumanTime from "../../view/atoms/HumanTime";
@@ -33,14 +35,14 @@ export default function FuelView({
       <AlignCenter>
         <LocalGasStationIcon sx={{ color }} />
         <Typography variant="subtitle1" sx={{ color }}>
-          {label}
+          {t(label)}
         </Typography>
       </AlignCenter>
       {capacity ? (
         <LabelledBox
           label={
             <AlignCenter>
-              Opening Stock
+              {t("Opening Stock")}
               <OilBarrelIcon
                 sx={{
                   paddingLeft: 0.5,
@@ -62,7 +64,7 @@ export default function FuelView({
         <LabelledBox
           label={
             <AlignCenter>
-              Recent Dispatch
+              {t("Recent Dispatch")}
               <LocalShippingIcon
                 sx={{
                   paddingLeft: 0.5,
