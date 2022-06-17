@@ -4,6 +4,8 @@ import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
 import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
 
+import GhostUser from "../../nonview/base/GhostUser";
+import ID from "../../nonview/base/ID";
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 import NuntiusServer from "../../nonview/core/NuntiusServer";
 
@@ -44,10 +46,11 @@ export default class PollWaitingTime {
   }
 
   static async addFeedback(shedCode, fuelType, pollOptionID) {
+    const userID = await GhostUser.getUserID();
     const message = {
-      messageID: NuntiusServer.getRandomID(),
+      messageID: ID.getRandomID(),
       destID: PollWaitingTime.getDestID(shedCode, fuelType),
-      sourceID: NuntiusServer.getRandomID(),
+      sourceID: userID,
       messageText: pollOptionID,
       messageTimeUT: TimeX.getUnixTime(),
     };
@@ -67,30 +70,37 @@ export default class PollWaitingTime {
       .filter(function (message) {
         const pollOptionID = message.messageText;
         return POLL_OPTION_IDX[pollOptionID] !== null;
+      })
+      .sort(function (a, b) {
+        return a.messageTimeUT - b.messageTimeUT;
       });
 
-    let pollOptionIDToSourceIDSet = {};
+    let sourceIDToPollOptionID = {};
     for (let message of validMessages) {
       const pollOptionID = message.messageText;
       const sourceID = message.sourceID;
-      if (!pollOptionIDToSourceIDSet[pollOptionID]) {
-        pollOptionIDToSourceIDSet[pollOptionID] = new Set();
-      }
-      pollOptionIDToSourceIDSet[pollOptionID].add(sourceID);
+      sourceIDToPollOptionID[sourceID] = pollOptionID;
     }
 
+    const pollOptionIDToCount = Object.values(sourceIDToPollOptionID).reduce(
+      function (pollOptionIDToCount, pollOptionID) {
+        if (!pollOptionIDToCount[pollOptionID]) {
+          pollOptionIDToCount[pollOptionID] = 0;
+        }
+        pollOptionIDToCount[pollOptionID] += 1;
+        return pollOptionIDToCount;
+      },
+      {}
+    );
+
     const sortedPollOptionIDAndCountPairs = Object.entries(
-      pollOptionIDToSourceIDSet
-    )
-      .map(function ([pollOptionID, sourceIDSet]) {
-        return [pollOptionID, sourceIDSet.size];
-      })
-      .sort(function (a, b) {
-        return b[1] - a[1];
-      });
+      pollOptionIDToCount
+    ).sort(function (a, b) {
+      return b[1] - a[1];
+    });
 
     return {
-      validMessageCount: validMessages.length,
+      validMessageCount: Object.keys(sourceIDToPollOptionID).length,
       sortedPollOptionIDAndCountPairs,
     };
   }
