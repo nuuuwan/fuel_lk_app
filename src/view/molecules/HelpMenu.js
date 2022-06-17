@@ -9,9 +9,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
 import LanguageIcon from "@mui/icons-material/Language";
 import RefreshIcon from "@mui/icons-material/Refresh";
+import TranslateIcon from "@mui/icons-material/Translate";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-import { t } from "../../nonview/base/I18N";
+import I18N, { t, LANG_LIST } from "../../nonview/base/I18N";
 
 const MENU_ITEM_LIST = [
   {
@@ -67,6 +68,20 @@ export default function HelpMenu() {
           "aria-labelledby": "basic-button",
         }}
       >
+        {LANG_LIST.map(function (lang, iLang) {
+          const onClick = function () {
+            console.debug(lang);
+            I18N.setCurrentLang(lang);
+          };
+          return (
+            <MenuItem key={"lang-" + iLang} onClick={onClick}>
+              <ListItemIcon>
+                <TranslateIcon />
+              </ListItemIcon>
+              <ListItemText>{I18N.getLangName(lang)}</ListItemText>
+            </MenuItem>
+          );
+        })}
         {MENU_ITEM_LIST.map(function (menuItem, i) {
           const key = "app-bar-menu-item-" + i;
           const Icon = menuItem.Icon;
