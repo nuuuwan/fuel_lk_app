@@ -28,7 +28,7 @@ const MENU_ITEM_LIST = [
   },
   {
     name: "Code - Data",
-    url: "http://github.com/nuuuwan/fuel_lk",
+    url: "https://github.com/nuuuwan/fuel_lk/tree/data",
     Icon: GitHubIcon,
   },
 ];
