@@ -37,6 +37,7 @@ export default class HomePage extends Component {
   }
 
   async componentDidMount() {
+    localStorage.clear();
     await this.reload(DEFAULT_CENTER, DEFAULT_ZOOM);
   }
 
