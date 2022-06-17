@@ -8,7 +8,7 @@ import MenuItem from "@mui/material/MenuItem";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
 import RefreshIcon from "@mui/icons-material/Refresh";
-import SourceIcon from "@mui/icons-material/Source";
+import LanguageIcon from '@mui/icons-material/Language';
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 const MENU_ITEM_LIST = [
@@ -20,7 +20,7 @@ const MENU_ITEM_LIST = [
   {
     name: "fuel.gov.lk",
     url: "https://fuel.gov.lk/",
-    Icon: SourceIcon,
+    Icon: LanguageIcon,
   },
   {
     name: "Code - React App",
