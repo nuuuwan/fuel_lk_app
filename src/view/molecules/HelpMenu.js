@@ -9,15 +9,16 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import HelpIcon from "@mui/icons-material/Help";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import SourceIcon from "@mui/icons-material/Source";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const MENU_ITEM_LIST = [
   {
-    name: "Help",
+    name: "Help (Twitter Thread)",
     url: "https://twitter.com/nuuuwan/status/1537072079786369025",
-    Icon: HelpIcon,
+    Icon: TwitterIcon,
   },
   {
-    name: "Data Source",
+    name: "fuel.gov.lk",
     url: "https://fuel.gov.lk/",
     Icon: SourceIcon,
   },
