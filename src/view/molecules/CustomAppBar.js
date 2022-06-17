@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 import LogoAvatar from "../../view/atoms/LogoAvatar";
-import FilterMenu from "./FilterMenu.js";
+import FilterFuelTypeMenu from "./FilterFuelTypeMenu.js";
 import HelpMenu from "./HelpMenu.js";
 
 export default function CustomAppBar({
@@ -24,7 +24,7 @@ export default function CustomAppBar({
           <Typography variant="body1" sx={{ flexGrow: 1 }}>
             {" "}
           </Typography>
-          <FilterMenu
+          <FilterFuelTypeMenu
             onSelectFuelTypeList={onSelectFuelTypeList}
             selectedFuelTypeList={selectedFuelTypeList}
           />

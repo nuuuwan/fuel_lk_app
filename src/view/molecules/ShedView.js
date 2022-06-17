@@ -61,7 +61,7 @@ function getStrokeOpacity(extendedShed) {
   return 0;
 }
 
-export default function ShedView({ extendedShed, fuelTypeList }) {
+export default function ShedView({ extendedShed, fuelTypeList, maxDisplayRecencyHours }) {
   const theme = useTheme();
 
   const fillColor = getFillColor(extendedShed, fuelTypeList, theme);
@@ -69,6 +69,12 @@ export default function ShedView({ extendedShed, fuelTypeList }) {
 
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
   const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);
+
+  const deltaTimeSinceLastUpdate =
+    ExtendedShed.getDeltaTimeSinceLastUpdate(extendedShed);
+  if (maxDisplayRecencyHours * SECONDS_IN.HOUR < deltaTimeSinceLastUpdate) {
+    return null;
+  }
 
   return (
     <CircleMarker

@@ -12,7 +12,7 @@ import Fuel, { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 
 import FilterDetails from "../../view/atoms/FilterDetails";
 
-export default function FilterMenu({
+export default function FilterFuelTypeMenu({
   onSelectFuelTypeList,
   selectedFuelTypeList,
 }) {

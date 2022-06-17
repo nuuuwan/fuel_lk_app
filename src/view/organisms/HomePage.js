@@ -28,6 +28,7 @@ export default class HomePage extends Component {
       center: undefined,
       zoom: undefined,
       fuelTypeList: DEFAULT_FUEL_TYPE_LIST,
+      maxDisplayRecencyHours: 6,
     };
   }
 
@@ -68,7 +69,7 @@ export default class HomePage extends Component {
   }
 
   renderInner() {
-    const { extendedShedList, fuelTypeList } = this.state;
+    const { extendedShedList, fuelTypeList, maxDisplayRecencyHours } = this.state;
     if (!extendedShedList) {
       return null;
     }
@@ -78,6 +79,7 @@ export default class HomePage extends Component {
           key={"shed-" + iShed}
           extendedShed={extendedShed}
           fuelTypeList={fuelTypeList}
+          maxDisplayRecencyHours={maxDisplayRecencyHours}
         />
       );
     });
