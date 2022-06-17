@@ -1,5 +1,6 @@
 import Typography from "@mui/material/Typography";
 
+import { t } from "../../nonview/base/I18N";
 import Fuel from "../../nonview/core/Fuel";
 
 const STYLE_TEXT = {
@@ -14,7 +15,7 @@ export default function FilterDetails({ selectedFuelTypeList }) {
   }
   return (
     <Typography variant="caption" sx={STYLE_TEXT}>
-      {label}
+      {t(label)}
     </Typography>
   );
 }

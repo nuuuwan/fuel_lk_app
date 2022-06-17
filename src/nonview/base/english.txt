@@ -1,24 +1,38 @@
+30 minutes to 3 hours
+30mins - 3hrs
+< 30mins
 <1 Hr Ago
 <1 Week Ago
 <12 Hrs Ago
 <24 Hrs Ago
 <3 Hrs Ago
 <6 Hrs Ago
+> 3hrs
 All Fuels
 Any Diesel
 Any Petrol
 Code - Data
 Code - React App
+Filter by Fuel Type
+Filter by Time Updated
 Fuel in SL
 Help (Twitter Thread)
 How long is the wait now?
 If you have voted multiple times, your latest vote will be selected.
 Kerosene
+Last Updated by Shed
+Less than 30 minutes
+More than 3 hours
+Need more feedback
+No Fuel
+Not Sure or Don't Know
+Not Sure/Don't Know
 Opening Stock
 Petrol-92
 Petrol-92 only
 Petrol-95
 Petrol-95 only
+Recent Community Feedback
 Recent Dispatch
 Refresh App
 Regular Diesel

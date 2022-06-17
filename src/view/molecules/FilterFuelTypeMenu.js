@@ -39,7 +39,7 @@ export default function FilterFuelTypeMenu({
     <div>
       <IconButton size="large" onClick={onClick} sx={{ p: 1 }}>
         <FilterDetails selectedFuelTypeList={selectedFuelTypeList} />
-        <Tooltip title="Filter by Fuel Type">
+        <Tooltip title={t("Filter by Fuel Type")}>
           <FilterAltIcon sx={{ color: iconColor }} />
         </Tooltip>
       </IconButton>

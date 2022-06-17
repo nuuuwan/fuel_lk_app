@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 
+import { t } from "../../nonview/base/I18N";
 import StringX from "../../nonview/base/StringX";
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 import ExtendedShed from "../../nonview/core/ExtendedShed";
@@ -121,7 +122,7 @@ export default function ShedView({
             <Typography variant="caption">{displayAddress}</Typography>
           </Link>
           <FuelsView extendedShed={extendedShed} />
-          <LabelledBox label="Last Updated by Shed">
+          <LabelledBox label={t("Last Updated by Shed")}>
             <HumanTime ut={extendedShed["time_last_updated_by_shed_ut"]} />
           </LabelledBox>
         </Box>

@@ -12,17 +12,17 @@ import NuntiusServer from "../../nonview/core/NuntiusServer";
 export const POLL_OPTION_IDX = {
   lessThan30Mins: {
     Icon: SentimentSatisfiedAltIcon,
-    label: "< 30mins",
+    label: "Less than 30 minutes",
     color: "green",
   },
   from30MinsTo3Hrs: {
     Icon: SentimentDissatisfiedIcon,
-    label: "30mins - 3hrs",
+    label: "30 minutes to 3 hours",
     color: "orange",
   },
   moreThan3Hrs: {
     Icon: SentimentVeryDissatisfiedIcon,
-    label: "> 3hrs",
+    label: "More than 3 hours",
     color: "red",
   },
   noFuel: {
@@ -32,7 +32,7 @@ export const POLL_OPTION_IDX = {
   },
   notSure: {
     Icon: QuestionMarkIcon,
-    label: "Not Sure/Don't Know",
+    label: "Not Sure or Don't Know",
     color: "gray",
   },
 };

@@ -75,9 +75,9 @@ export default function FilterTimeUpdateMenu({
           variant="caption"
           sx={{ padding: 0.25, color: theme.palette.success.main }}
         >
-          {selectedLabel}
+          {t(selectedLabel)}
         </Typography>
-        <Tooltip title="Filter by Time Updated">
+        <Tooltip title={t("Filter by Time Updated")}>
           <AccessTimeIcon sx={{ color: iconColor }} />
         </Tooltip>
       </IconButton>

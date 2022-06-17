@@ -1,5 +1,6 @@
 import Typography from "@mui/material/Typography";
 
+import { t } from "../../nonview/base/I18N";
 import { POLL_OPTION_IDX } from "../../nonview/core/PollWaitingTime";
 
 import AlignCenter from "../../view/atoms/AlignCenter";
@@ -14,7 +15,7 @@ export default function PollOptionView({ pollOptionID }) {
     <AlignCenter>
       <Icon sx={{ color: pollOption.color }} />
       <Typography variant="caption" sx={{ color: pollOption.color }}>
-        {pollOption.label}
+        {t(pollOption.label)}
       </Typography>
     </AlignCenter>
   );

@@ -1,5 +1,7 @@
 import PeopleIcon from "@mui/icons-material/People";
 
+import { t } from "../../nonview/base/I18N";
+
 import AlignCenter from "../../view/atoms/AlignCenter";
 import LabelledBox from "../../view/molecules/LabelledBox";
 import PollOptionView from "../../view/molecules/PollOptionView";
@@ -25,7 +27,7 @@ export default function CommunityFeedback({ summaryFeedback }) {
     <LabelledBox
       label={
         <AlignCenter>
-          {`Recent Community Feedback (${validMessageCount})`}
+          {t("Recent Community Feedback") + ` (${validMessageCount})`}
           <PeopleIcon
             sx={{
               paddingLeft: 0.5,
@@ -39,7 +41,7 @@ export default function CommunityFeedback({ summaryFeedback }) {
       {isSufficient ? (
         <PollOptionView pollOptionID={topPollOptionID} />
       ) : (
-        "Need more feedback"
+        t("Need more feedback")
       )}
     </LabelledBox>
   );
