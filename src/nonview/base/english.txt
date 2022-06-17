@@ -11,6 +11,8 @@ Code - Data
 Code - React App
 Fuel in SL
 Help (Twitter Thread)
+How long is the wait now?
+If you have voted multiple times, your latest vote will be selected.
 Kerosene
 Petrol-92 only
 Petrol-95 only

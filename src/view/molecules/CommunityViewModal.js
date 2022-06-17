@@ -7,8 +7,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import SentimentNeutralIcon from "@mui/icons-material/SentimentNeutral";
 
-import StringX from "../../nonview/base/StringX";
-import { FUEL_IDX } from "../../nonview/core/Fuel";
+import { t } from "../../nonview/base/I18N";
 import { POLL_OPTION_IDX } from "../../nonview/core/PollWaitingTime";
 
 import PollOptionView from "../../view/molecules/PollOptionView";
@@ -38,7 +37,7 @@ export default function CommunityViewModal({
     onCloseModal();
   };
 
-  const fuel = FUEL_IDX[fuelType];
+  const question = "How long is the wait now?";
 
   return (
     <Box>
@@ -56,15 +55,7 @@ export default function CommunityViewModal({
         aria-describedby="modal-modal-description"
       >
         <Box sx={STYLE}>
-          <Typography variant="subtitle2">
-            How long is the wait for
-            <strong>{" " + fuel.name + " "}</strong>
-            at
-            <strong>
-              {" " + StringX.toTitleCase(extendedShed["shed_name"]) + " "}
-            </strong>
-            now?
-          </Typography>
+          <Typography variant="subtitle2">{t(question)}</Typography>
           {Object.entries(POLL_OPTION_IDX).map(function (
             [pollOptionID, pollOption],
             iPollOption
@@ -82,7 +73,9 @@ export default function CommunityViewModal({
             );
           })}
           <Alert severity="info">
-            If you have voted multiple times, your latest vote will be selected.
+            {t(
+              "If you have voted multiple times, your latest vote will be selected."
+            )}
           </Alert>
         </Box>
       </Modal>
