@@ -10,21 +10,26 @@ import SentimentNeutralIcon from "@mui/icons-material/SentimentNeutral";
 import { POLL_OPTION_IDX } from "../../nonview/core/PollWaitingTime";
 
 import PollOptionView from "../../view/molecules/PollOptionView";
+import { FUEL_IDX } from "../../nonview/core/Fuel";
+import StringX from "../../nonview/base/StringX";
 
 const STYLE = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
+  position: "fixed",
+  width: 250,
+  maxWidth: "90%",
+  height: 300,
+  maxHeight: "90vh",
 
-  maxWidth: "67%",
+  bottom: "5%",
+  right: "5%",
   bgcolor: "background.paper",
-  p: 4,
+  p: 2,
 };
 
 export default function CommunityViewModal({
   showModal,
-  label,
+  extendedShed,
+  fuelType,
   onOpenModal,
   onCloseModal,
   onSelectPoll,
@@ -32,6 +37,8 @@ export default function CommunityViewModal({
   const onClose = function () {
     onCloseModal();
   };
+
+  const fuel = FUEL_IDX[fuelType];
 
   return (
     <Box>
@@ -49,9 +56,13 @@ export default function CommunityViewModal({
         aria-describedby="modal-modal-description"
       >
         <Box sx={STYLE}>
-          <Typography variant="caption">
+          <Typography variant="subtitle2">
             How long is the wait for
-            <strong>{" " + label + " "}</strong>
+            <strong>{" " + fuel.name + " "}</strong>
+            at
+            <strong>
+              {" " + StringX.toTitleCase(extendedShed["shed_name"]) + " "}
+            </strong>
             now?
           </Typography>
           {Object.entries(POLL_OPTION_IDX).map(function (
