@@ -3,9 +3,8 @@ import Typography from "@mui/material/Typography";
 import Fuel from "../../nonview/core/Fuel";
 
 const STYLE_TEXT = {
-  borderRadius: 6,
-  padding: 0.5,
   color: "orange",
+  padding: 0.25,
 };
 
 export default function FilterDetails({ selectedFuelTypeList }) {

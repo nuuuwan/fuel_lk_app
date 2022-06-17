@@ -21,7 +21,7 @@ export default function FilterFuelTypeMenu({
   const isAll = selectedLFuelTypeGroupLabel === "All Fuels";
 
   const theme = useTheme();
-  const iconColor = isAll ? "neutral" : theme.palette.secondary.main;
+  const iconColor = isAll ? "lightgray" : theme.palette.secondary.main;
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -36,7 +36,7 @@ export default function FilterFuelTypeMenu({
 
   return (
     <div>
-      <IconButton size="large" onClick={onClick}>
+      <IconButton size="large" onClick={onClick} sx={{ p: 1 }}>
         <FilterDetails selectedFuelTypeList={selectedFuelTypeList} />
         <Tooltip title="Filter by Fuel Type">
           <FilterAltIcon sx={{ color: iconColor }} />
