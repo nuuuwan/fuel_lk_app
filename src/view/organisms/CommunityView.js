@@ -44,7 +44,7 @@ export default class CommunityView extends Component {
   }
 
   render() {
-    const { label } = this.props;
+    const { extendedShed, fuelType } = this.props;
     const { showModal, summaryFeedback } = this.state;
 
     return (
@@ -53,7 +53,8 @@ export default class CommunityView extends Component {
 
         <CommunityViewModal
           showModal={showModal}
-          label={label}
+          extendedShed={extendedShed}
+          fuelType={fuelType}
           onOpenModal={this.onOpenModal.bind(this)}
           onCloseModal={this.onCloseModal.bind(this)}
           onSelectPoll={this.onSelectPoll.bind(this)}
