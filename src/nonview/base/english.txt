@@ -14,6 +14,7 @@ Any Petrol
 Code - Data
 Code - React App
 Copy App Link
+English
 Filter by Fuel Type
 Filter by Time Updated
 Fuel in SL
@@ -21,6 +22,11 @@ Help (Twitter Thread)
 How long is the wait now?
 If you have voted multiple times, your latest vote will be selected.
 Kerosene
+Last 1 Hour
+Last 12 Hours
+Last 24 Hours
+Last 3 Hours
+Last 6 Hours
 Last Updated by Shed
 Less than 30 minutes
 More than 3 hours
@@ -44,3 +50,4 @@ Super-Diesel
 Super-Diesel only
 Zoom Out
 fuel.gov.lk
+has been temporary shut down. Since this App sources data from fuel.gov.lk, dynamic data will be out of date. Sorry
