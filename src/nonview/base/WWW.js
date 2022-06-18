@@ -21,6 +21,6 @@ export class JSONWWW extends WWW {
   async read() {
     const cacheKey = "cache-" + this.url;
     const cache = new Cache(cacheKey);
-    return await cache.get(cacheKey, this.readNoCache);
+    return await cache.get(this.readNoCache.bind(this));
   }
 }
