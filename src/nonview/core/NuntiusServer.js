@@ -1,4 +1,5 @@
 import Cache from "../../nonview/base/Cache";
+import { SECONDS_IN } from "../../nonview/base/TimeX";
 import { JSONWWW } from "../../nonview/base/WWW";
 
 export default class NuntiusServer {
@@ -21,9 +22,10 @@ export default class NuntiusServer {
     return response;
   }
 
-  static async putMessage(message) {
-    const cache = NuntiusServer.multigetMessagesCache(message.destID);
-    cache.clear();
+  // put-message
+  static async put(message) {
+    NuntiusServer.getCacheMultigetByDestID(message.destID).clear();
+    NuntiusServer.getCacheMultigetRecent().clear();
 
     return await NuntiusServer.generic({
       cmd: "put-message",
@@ -31,21 +33,42 @@ export default class NuntiusServer {
     });
   }
 
-  static async multigetMessagesNoCache(destID) {
+  // multiget-messages-by-destid
+  static async multigetByDestIDNoCache(destID) {
     return await NuntiusServer.generic({
-      cmd: "multiget-messages",
+      cmd: "multiget-messages-by-destid",
       destID: destID,
     });
   }
 
-  static multigetMessagesCache(destID) {
-    return new Cache("multigetMessages:" + destID);
+  static getCacheMultigetByDestID(destID) {
+    return new Cache("multigetByDestID:" + destID);
   }
 
-  static async multigetMessages(destID) {
-    const cache = NuntiusServer.multigetMessagesCache(destID);
+  static async multigetByDestID(destID) {
+    const cache = NuntiusServer.getCacheMultigetByDestID(destID);
     return cache.get(async function () {
-      return await NuntiusServer.multigetMessagesNoCache(destID);
+      return await NuntiusServer.multigetByDestIDNoCache(destID);
+    });
+  }
+
+  // multiget-messages-recent
+
+  static async multigetRecentNoCache() {
+    return await NuntiusServer.generic({
+      cmd: "multiget-messages-recent",
+      maxTimeElapsed: SECONDS_IN.DAY,
+    });
+  }
+
+  static getCacheMultigetRecent(destID) {
+    return new Cache("multigetRecent");
+  }
+
+  static async multigetRecent(destID) {
+    const cache = NuntiusServer.getCacheMultigetRecent(destID);
+    return cache.get(async function () {
+      return await NuntiusServer.multigetRecentNoCache(destID);
     });
   }
 }
