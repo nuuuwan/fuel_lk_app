@@ -45,6 +45,9 @@ export default class HomePage extends Component {
       context.center = context.centerStr.split(",").map((x) => parseFloat(x));
       delete context["centerStr"];
     }
+    if (context.maxDisplayRecencyHours) {
+      context.maxDisplayRecencyHours = parseInt(context.maxDisplayRecencyHours);
+    }
     return context;
   }
 
