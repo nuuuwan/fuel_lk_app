@@ -9,6 +9,8 @@ import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import ShedView from "../../view/molecules/ShedView";
 import GeoMap from "../../view/organisms/GeoMap";
+import URLContext from "../../nonview/base/URLContext";
+import I18N from "../../nonview/base/I18N";
 
 const DEFAULT_CENTER = [6.9172, 79.8648]; // Town Hall
 const DEFAULT_ZOOM = 15;
@@ -24,13 +26,23 @@ const DEFAUL_MAX_DISPLAY_RECENCY_HOURS = HOURS_IN.DAY;
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
+    const fuelGroupID = DEFAULT_FUEL_GROUP_ID;
+    const maxDisplayRecencyHours = DEFAUL_MAX_DISPLAY_RECENCY_HOURS;
+    const lang = I18N.getLang();
+
     this.state = {
       extendedShedList: undefined,
       center: undefined,
       zoom: undefined,
-      fuelGroupID: DEFAULT_FUEL_GROUP_ID,
-      maxDisplayRecencyHours: DEFAUL_MAX_DISPLAY_RECENCY_HOURS,
+      fuelGroupID,
+      maxDisplayRecencyHours,
     };
+
+    URLContext.setContext({
+      fuelGroupID,
+      maxDisplayRecencyHours,
+      lang,
+    });
   }
 
   async reload(center, zoom) {
