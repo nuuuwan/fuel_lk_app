@@ -1,7 +1,7 @@
 const DEFAULT_CENTER = [6.91, 79.86]; // Town Hall
 
 export default class Geo {
-  async getGeoLocation() {
+  static async getGeoLocation() {
     return new Promise(function (resolve, reject) {
       navigator.geolocation.getCurrentPosition(function (position, error) {
         if (error) {
