@@ -32,10 +32,6 @@ const TIME_UPDATED_LIST = [
     maxDisplayRecencyHours: 24,
     label: "<24 Hrs Ago",
   },
-  {
-    maxDisplayRecencyHours: 24 * 7,
-    label: "<1 Week Ago",
-  },
 ];
 
 export default function FilterTimeUpdateMenu({
