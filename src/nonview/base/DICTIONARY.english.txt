@@ -1702,6 +1702,7 @@ Near The Harbour Duwa,Negambo
 Nearby
 Nedunkeni
 Need more feedback
+Need more responses
 Neelagama
 Negambo
 Negambo - Colombo Main Road, Katunayaka
@@ -1723,6 +1724,7 @@ Nelliady
 Nelluwa Filling Station, B411, Neluwa
 Nelundeniya - Alawwa Rd, Nelundeniya
 Nettipolagedara
+Never
 New Kalmunai Rd, Batticaloa
 New Kandy Rd, Weliweriya
 New Lanka Filling Station, Hiripokuna
@@ -2529,6 +2531,8 @@ Wellawaya Rd, Monaragala
 Wennappuwa
 Weralabada, Chilaw
 Weweldeniya
+When was the data updated?
+When was the shed's last update?
 Wilgamuwa
 Wipula Dharmadasa
 Withikuliya Junction
