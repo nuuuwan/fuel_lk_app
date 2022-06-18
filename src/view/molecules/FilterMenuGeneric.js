@@ -4,7 +4,6 @@ import IconButton from "@mui/material/IconButton";
 import ListItemText from "@mui/material/ListItemText";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 
 import { t } from "../../nonview/base/I18N";
@@ -38,9 +37,7 @@ export default function FilterMenuGeneric({
         <Typography variant="caption" sx={{ padding: 0.25, color: colorIcon }}>
           {t(selectionOption.label)}
         </Typography>
-        <Tooltip title={t("Filter by Time Updated")}>
-          <Icon sx={{ color: colorIcon }} />
-        </Tooltip>
+        {Icon ? <Icon sx={{ color: colorIcon }} /> : null}
       </IconButton>
       <Menu
         id="basic-menu"
