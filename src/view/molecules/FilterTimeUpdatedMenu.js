@@ -11,28 +11,13 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 import { t } from "../../nonview/base/I18N";
 
-const TIME_UPDATED_LIST = [
-  {
-    maxDisplayRecencyHours: 1,
-    label: "<1 Hr Ago",
-  },
-  {
-    maxDisplayRecencyHours: 3,
-    label: "<3 Hrs Ago",
-  },
-  {
-    maxDisplayRecencyHours: 6,
-    label: "<6 Hrs Ago",
-  },
-  {
-    maxDisplayRecencyHours: 12,
-    label: "<12 Hrs Ago",
-  },
-  {
-    maxDisplayRecencyHours: 24,
-    label: "<24 Hrs Ago",
-  },
-];
+const TIME_UPDATED_IDX = {
+  1: "Last 1 Hour",
+  3: "Last 3 Hours",
+  6: "Last 6 Hours",
+  12: "Last 12 Hours",
+  24: "Last 24 Hours",
+};
 
 export default function FilterTimeUpdateMenu({
   onSelectMaxDisplayRecencyHours,
@@ -40,13 +25,8 @@ export default function FilterTimeUpdateMenu({
 }) {
   const theme = useTheme();
 
-  let selectedLabel;
-  for (let item of TIME_UPDATED_LIST) {
-    if (item.maxDisplayRecencyHours === selectedMaxDisplayRecencyHours) {
-      selectedLabel = item.label;
-      break;
-    }
-  }
+  let selectedLabel = TIME_UPDATED_IDX[selectedMaxDisplayRecencyHours];
+
   let iconColor = theme.palette.success.main;
   if (selectedMaxDisplayRecencyHours === 24) {
     selectedLabel = "";
@@ -86,18 +66,21 @@ export default function FilterTimeUpdateMenu({
           "aria-labelledby": "basic-button",
         }}
       >
-        {TIME_UPDATED_LIST.map(function (item, i) {
+        {Object.entries(TIME_UPDATED_IDX).map(function (
+          [maxDisplayRecencyHours, label],
+          i
+        ) {
           const key = "filter-menu-item-" + i;
           const onClickInner = function () {
             onClose();
-            onSelectMaxDisplayRecencyHours(item.maxDisplayRecencyHours);
+            onSelectMaxDisplayRecencyHours(maxDisplayRecencyHours);
           };
           const isSelected =
-            selectedMaxDisplayRecencyHours === item.maxDisplayRecencyHours;
+            selectedMaxDisplayRecencyHours === maxDisplayRecencyHours;
           const color = isSelected ? theme.palette.success.main : "neutral";
           return (
             <MenuItem key={key} onClick={onClickInner}>
-              <ListItemText sx={{ color }}>{t(item.label)}</ListItemText>
+              <ListItemText sx={{ color }}>{t(label)}</ListItemText>
             </MenuItem>
           );
         })}
