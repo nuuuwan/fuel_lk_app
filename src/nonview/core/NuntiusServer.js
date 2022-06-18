@@ -10,8 +10,8 @@ export default class NuntiusServer {
     const payloadJSONB64 = btoa(payloadJSON);
     const payloadJSONB64Encoded = encodeURIComponent(payloadJSONB64);
     const jsonWWW = new JSONWWW(
-        NuntiusServer.getURLLambda() +
-      `?payload_json_base64=${payloadJSONB64Encoded}`
+      NuntiusServer.getURLLambda() +
+        `?payload_json_base64=${payloadJSONB64Encoded}`
     );
     const response = await jsonWWW.read();
     if (response["exception"]) {
