@@ -8,8 +8,8 @@ import Typography from "@mui/material/Typography";
 import { t } from "../../nonview/base/I18N";
 
 import LogoAvatar from "../../view/atoms/LogoAvatar";
-import FilterFuelTypeMenu from "./FilterFuelTypeMenu.js";
-import FilterTimeUpdatedMenu from "./FilterTimeUpdatedMenu.js";
+import FilterMenuFuelGroup from "./FilterMenuFuelGroup.js";
+import FilterMenuTimeUpdated from "./FilterMenuTimeUpdated.js";
 import HelpMenu from "./HelpMenu.js";
 
 export default function CustomAppBar({
@@ -29,11 +29,11 @@ export default function CustomAppBar({
           <Typography variant="body1" sx={{ flexGrow: 1 }}>
             {" "}
           </Typography>
-          <FilterFuelTypeMenu
+          <FilterMenuFuelGroup
             onSelectFuelGroupID={onSelectFuelGroupID}
             selectedFuelGroupID={selectedFuelGroupID}
           />
-          <FilterTimeUpdatedMenu
+          <FilterMenuTimeUpdated
             onSelectMaxDisplayRecencyHours={onSelectMaxDisplayRecencyHours}
             selectedMaxDisplayRecencyHours={selectedMaxDisplayRecencyHours}
           />
