@@ -11,8 +11,8 @@ export default function ShedAvatar({ extendedShed }) {
   let src = null;
   let alt = null;
   if (shedType === 1) {
-    src = "cpetco.png";
-    alt = "CPETCO";
+    src = "ceypetco.png";
+    alt = "CEYPETCO";
   } else if (shedType === 2) {
     src = "lankaioc.png";
     alt = "Lanka IOC";
