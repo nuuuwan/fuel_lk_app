@@ -2,6 +2,7 @@ import { Component } from "react";
 
 import Box from "@mui/material/Box";
 
+import Geo from "../../nonview/base/Geo";
 import I18N from "../../nonview/base/I18N";
 import { HOURS_IN } from "../../nonview/base/TimeX";
 import URLContext from "../../nonview/base/URLContext";
@@ -70,17 +71,6 @@ export default class HomePage extends Component {
     await this.reload(DEFAULT_CENTER, DEFAULT_ZOOM);
   }
 
-  async getGeoLocation() {
-    return new Promise(function (resolve, reject) {
-      navigator.geolocation.getCurrentPosition(function (position, error) {
-        if (error) {
-          resolve(DEFAULT_CENTER);
-        } else {
-          resolve([position.coords.latitude, position.coords.longitude]);
-        }
-      });
-    });
-  }
 
   async onClickZoomOut() {
     await this.reload(DEFAULT_CENTER_ZOOM_OUT, DEFAULT_ZOOM_ZOOM_OUT);
@@ -90,6 +80,7 @@ export default class HomePage extends Component {
     await this.reload(DEFAULT_CENTER, DEFAULT_ZOOM_NEARBY);
     const center = await this.getGeoLocation();
     await this.reload(center, DEFAULT_ZOOM_NEARBY);
+    const center = await Geo.getGeoLocation();
   }
 
   onSelectFuelGroupID(fuelGroupID) {
@@ -120,7 +111,6 @@ export default class HomePage extends Component {
   }
 
   render() {
-    const { center, zoom, context } = this.state;
     const { fuelGroupID, maxDisplayRecencyHours } = context;
     const key = "geo-map-" + center + zoom;
     return (
