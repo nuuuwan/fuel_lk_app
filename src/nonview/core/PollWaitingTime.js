@@ -54,11 +54,11 @@ export default class PollWaitingTime {
       messageText: pollOptionID,
       messageTimeUT: TimeX.getUnixTime(),
     };
-    await NuntiusServer.putMessage(message);
+    await NuntiusServer.put(message);
   }
 
   static async getSummaryFeedback(shedCode, fuelType) {
-    const messages = await NuntiusServer.multigetMessages(
+    const messages = await NuntiusServer.multigetByDestID(
       PollWaitingTime.getDestID(shedCode, fuelType)
     );
 
