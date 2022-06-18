@@ -4,7 +4,7 @@ export const BASE_LANG = "en";
 const CACHE_KEY_LANG = "CACHE_KEY_LANG";
 export const LANG_LIST = ["en", "si", "ta"];
 export default class I18N {
-  static getCurrentLang() {
+  static getLang() {
     let browserLang = localStorage.getItem(CACHE_KEY_LANG);
     if (!browserLang) {
       browserLang = "en";
@@ -13,7 +13,7 @@ export default class I18N {
     return browserLang;
   }
 
-  static setCurrentLang(browserLang) {
+  static setLang(browserLang) {
     localStorage.setItem(CACHE_KEY_LANG, browserLang);
   }
 
@@ -26,7 +26,7 @@ export default class I18N {
   }
 
   static translate(s) {
-    const currentLang = I18N.getCurrentLang();
+    const currentLang = I18N.getLang();
     if (!s || !s.trim() || currentLang === BASE_LANG) {
       return s;
     }
