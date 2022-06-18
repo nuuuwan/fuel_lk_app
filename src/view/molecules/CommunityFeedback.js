@@ -41,7 +41,7 @@ export default function CommunityFeedback({ summaryFeedback }) {
       {isSufficient ? (
         <PollOptionView pollOptionID={topPollOptionID} />
       ) : (
-        t("Need more feedback")
+        t("Need more responses")
       )}
     </LabelledBox>
   );

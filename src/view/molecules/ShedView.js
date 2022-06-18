@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 
 import { t } from "../../nonview/base/I18N";
-import StringX from "../../nonview/base/StringX";
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 import ExtendedShed from "../../nonview/core/ExtendedShed";
 
@@ -115,14 +114,14 @@ export default function ShedView({
           <AlignCenter>
             <ShedAvatar extendedShed={extendedShed} />
             <Typography variant="subtitle2">
-              {StringX.toTitleCase(extendedShed["shed_name"])}
+              {t(extendedShed["shed_name"])}
             </Typography>
           </AlignCenter>
           <Link href={gmapsURL}>
-            <Typography variant="caption">{displayAddress}</Typography>
+            <Typography variant="caption">{t(displayAddress)}</Typography>
           </Link>
           <FuelsView extendedShed={extendedShed} />
-          <LabelledBox label={t("Last Updated by Shed")}>
+          <LabelledBox label={t("When was the data updated?")}>
             <HumanTime ut={extendedShed["time_last_updated_by_shed_ut"]} />
           </LabelledBox>
         </Box>

@@ -79,7 +79,7 @@ export default function FuelView({
             quantity={recentDispatch["amount"]}
             color={theme.palette.success.main}
           />
-          <Place name={recentDispatch["plant_name"]} />
+          <Place name={t(recentDispatch["plant_name"])} />
           <HumanTime ut={recentDispatch["time_eta_ut"]} />
         </LabelledBox>
       ) : null}

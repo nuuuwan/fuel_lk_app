@@ -1,12 +1,12 @@
 import Typography from "@mui/material/Typography";
 
-import TimeX from "../../nonview/base/TimeX";
+import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 
 export default function HumanTime({ ut }) {
   const timeStr = TimeX.formatTime(ut);
   const humanStr = TimeX.getHumanTime(ut);
   let label = humanStr;
-  if (humanStr !== "Never") {
+  if (ut > SECONDS_IN.DAY) {
     label += " (" + timeStr + ")";
   }
 
