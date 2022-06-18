@@ -1,24 +1,37 @@
 export default class Cache {
-  static isValidHotItem(hotItem) {
-    return hotItem && hotItem !== "" && hotItem !== null && hotItem !== "null";
+  constructor(cacheKey) {
+    this.cacheKey = cacheKey;
   }
 
-  static async get(cacheKey, asyncFallback) {
-    const hotItem = localStorage.getItem(cacheKey);
-    if (Cache.isValidHotItem(hotItem)) {
-      return JSON.parse(hotItem);
+  clear() {
+    localStorage.setItem(this.cacheKey, "");
+  }
+
+  set(item) {
+    localStorage.setItem(this.cacheKey, JSON.stringify(item));
+  }
+
+  getHot() {
+    const hotJSON = localStorage.getItem(this.cacheKey);
+    if (Cache.isValidHotItem(hotJSON)) {
+      return JSON.parse(hotJSON);
     }
-
-    const coldItem = await asyncFallback();
-    Cache.set(cacheKey, coldItem);
-    return coldItem;
+    throw Error("Item not in cache: " + this.cacheKey);
   }
 
-  static set(cacheKey, item) {
-    localStorage.setItem(cacheKey, JSON.stringify(item));
+  async get(asyncFallback) {
+    try {
+      return this.getHot();
+    } catch (e) {}
+
+    const cold = await asyncFallback();
+    Cache.set(this.cacheKey, cold);
+    return cold;
   }
 
-  static clear(cacheKey) {
-    localStorage.setItem(cacheKey, "");
+  static isValidHotItem(itemJSON) {
+    return (
+      itemJSON && itemJSON !== "" && itemJSON !== null && itemJSON !== "null"
+    );
   }
 }
