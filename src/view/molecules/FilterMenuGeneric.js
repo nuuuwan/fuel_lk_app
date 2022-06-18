@@ -15,6 +15,7 @@ export default function FilterMenuGeneric({
   optionIdx,
   Icon,
   colorSelected,
+  skipLabelTranslate,
 }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -35,7 +36,7 @@ export default function FilterMenuGeneric({
     <div>
       <IconButton size="large" onClick={onClick} sx={{ p: 1 }}>
         <Typography variant="caption" sx={{ padding: 0.25, color: colorIcon }}>
-          {t(selectionOption.label)}
+          {t(selectionOption.label, skipLabelTranslate)}
         </Typography>
         {Icon ? <Icon sx={{ color: colorIcon }} /> : null}
       </IconButton>
@@ -56,9 +57,10 @@ export default function FilterMenuGeneric({
           };
           const isSelected = selectedOptionID === optionID;
           const color = isSelected ? colorSelected : "neutral";
+          const displayLabel = t(option.label, skipLabelTranslate);
           return (
             <MenuItem key={key} onClick={onClickInner}>
-              <ListItemText sx={{ color }}>{t(option.label)}</ListItemText>
+              <ListItemText sx={{ color }}>{displayLabel}</ListItemText>
             </MenuItem>
           );
         })}
