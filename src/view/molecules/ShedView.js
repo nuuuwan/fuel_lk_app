@@ -1,4 +1,4 @@
-import { CircleMarker, Popup } from "react-leaflet";
+import { CircleMarker, Popup, Marker } from "react-leaflet";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -14,6 +14,7 @@ import Link from "../../view/atoms/Link";
 import ShedAvatar from "../../view/atoms/ShedAvatar";
 import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
+import L from "leaflet";
 
 const DEFAULT_CIRLE_RADIUS = 15;
 const STYLE_CIRCLE = {
@@ -100,32 +101,46 @@ export default function ShedView({
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
   const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);
 
+  const faceIcon = new L.Icon({
+    iconUrl: process.env.PUBLIC_URL + "/face.png",
+    iconSize: [DEFAULT_CIRLE_RADIUS, DEFAULT_CIRLE_RADIUS],
+    iconAnchor: [DEFAULT_CIRLE_RADIUS, DEFAULT_CIRLE_RADIUS],
+  });
+
+  const hasRecentMessageList = extendedShed["recentMessageList"];
+
+  const center = extendedShed["lat_lng"];
   return (
-    <CircleMarker
-      center={extendedShed["lat_lng"]}
-      radius={DEFAULT_CIRLE_RADIUS}
-      pathOptions={{
-        ...STYLE_CIRCLE,
-        ...{ fillColor, fillOpacity, color: "black", opacity },
-      }}
-    >
-      <Popup closeButton={false}>
-        <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
-          <AlignCenter>
-            <ShedAvatar extendedShed={extendedShed} />
-            <Typography variant="subtitle2">
-              {t(extendedShed["shed_name"])}
-            </Typography>
-          </AlignCenter>
-          <Link href={gmapsURL}>
-            <Typography variant="caption">{t(displayAddress)}</Typography>
-          </Link>
-          <FuelsView extendedShed={extendedShed} />
-          <LabelledBox label={t("When was the data updated?")}>
-            <HumanTime ut={extendedShed["time_last_updated_by_shed_ut"]} />
-          </LabelledBox>
-        </Box>
-      </Popup>
-    </CircleMarker>
+    <>
+      {hasRecentMessageList ? (
+        <Marker icon={faceIcon} position={center} />
+      ) : null}
+      <CircleMarker
+        center={center}
+        radius={DEFAULT_CIRLE_RADIUS}
+        pathOptions={{
+          ...STYLE_CIRCLE,
+          ...{ fillColor, fillOpacity, color: "black", opacity },
+        }}
+      >
+        <Popup closeButton={false}>
+          <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
+            <AlignCenter>
+              <ShedAvatar extendedShed={extendedShed} />
+              <Typography variant="subtitle2">
+                {t(extendedShed["shed_name"])}
+              </Typography>
+            </AlignCenter>
+            <Link href={gmapsURL}>
+              <Typography variant="caption">{t(displayAddress)}</Typography>
+            </Link>
+            <FuelsView extendedShed={extendedShed} />
+            <LabelledBox label={t("When was the data updated?")}>
+              <HumanTime ut={extendedShed["time_last_updated_by_shed_ut"]} />
+            </LabelledBox>
+          </Box>
+        </Popup>
+      </CircleMarker>
+    </>
   );
 }
