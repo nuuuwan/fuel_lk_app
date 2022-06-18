@@ -25,7 +25,7 @@ export default class Cache {
     } catch (e) {}
 
     const cold = await asyncFallback();
-    Cache.set(this.cacheKey, cold);
+    this.set(cold);
     return cold;
   }
 
