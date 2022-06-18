@@ -9,6 +9,7 @@ import { t } from "../../nonview/base/I18N";
 
 import LogoAvatar from "../../view/atoms/LogoAvatar";
 import FilterMenuFuelGroup from "./FilterMenuFuelGroup.js";
+import FilterMenuLang from "../../view/molecules/FilterMenuLang";
 import FilterMenuTimeUpdated from "./FilterMenuTimeUpdated.js";
 import HelpMenu from "./HelpMenu.js";
 
@@ -17,6 +18,8 @@ export default function CustomAppBar({
   selectedFuelGroupID,
   onSelectMaxDisplayRecencyHours,
   selectedMaxDisplayRecencyHours,
+  onSelectLang,
+  selectedLang,
 }) {
   return (
     <Box>
@@ -36,6 +39,10 @@ export default function CustomAppBar({
           <FilterMenuTimeUpdated
             onSelectMaxDisplayRecencyHours={onSelectMaxDisplayRecencyHours}
             selectedMaxDisplayRecencyHours={selectedMaxDisplayRecencyHours}
+          />
+          <FilterMenuLang
+            onSelectLang={onSelectLang}
+            selectedLang={selectedLang}
           />
           <HelpMenu />
         </Toolbar>
