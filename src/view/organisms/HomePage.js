@@ -2,8 +2,9 @@ import { Component } from "react";
 
 import Box from "@mui/material/Box";
 
+import Copy from "../../nonview/base/Copy";
 import Geo from "../../nonview/base/Geo";
-import I18N from "../../nonview/base/I18N";
+import { BASE_LANG } from "../../nonview/base/I18N";
 import { HOURS_IN } from "../../nonview/base/TimeX";
 import URLContext from "../../nonview/base/URLContext";
 import FuelData from "../../nonview/core/FuelData";
@@ -13,7 +14,7 @@ import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.
 import ShedView from "../../view/molecules/ShedView";
 import GeoMap from "../../view/organisms/GeoMap";
 
-const DEFAULT_CENTER = [6.9172, 79.8648]; // Town Hall
+const DEFAULT_CENTER = [6.91, 79.86]; // Town Hall
 const DEFAULT_ZOOM = 15;
 
 const DEFAULT_CENTER_ZOOM_OUT = [7.6, 80.7]; // Dambulla
@@ -28,16 +29,26 @@ export default class HomePage extends Component {
   constructor(props) {
     super(props);
     const context = this.getContext();
+    this.isComponentMounted = false;
     this.state = {
       extendedShedList: undefined,
-      center: undefined,
-      zoom: undefined,
       context: context,
     };
   }
 
+  getContextURL() {
+    const contextURL = URLContext.getContext();
+    let context = Copy.deepCopy(contextURL);
+    if (context.centerStr) {
+      context.center = context.centerStr.split(",").map((x) => parseFloat(x));
+      delete context["centerStr"];
+    }
+    return context;
+  }
+
   getContext() {
-    let context = URLContext.getContext();
+    const context = this.getContextURL();
+
     if (!context.fuelGroupID) {
       context.fuelGroupID = DEFAULT_FUEL_GROUP_ID;
     }
@@ -45,42 +56,61 @@ export default class HomePage extends Component {
       context.maxDisplayRecencyHours = DEFAUL_MAX_DISPLAY_RECENCY_HOURS;
     }
     if (!context.lang) {
-      context.lang = I18N.BASE_LANG;
+      context.lang = BASE_LANG;
     }
-    URLContext.setContext(context);
+    if (!context.center) {
+      context.center = DEFAULT_CENTER;
+    }
+    if (!context.zoom) {
+      context.zoom = DEFAULT_ZOOM;
+    }
     return context;
   }
 
   setContext(newContext) {
-    let context = URLContext.getContext();
+    let context = this.getContext();
     for (let [k, v] of Object.entries(newContext)) {
       context[k] = v;
     }
-    URLContext.setContext(context);
-    this.setState({ context });
-    return context;
+    if (this.isComponentMounted) {
+      this.setState({ context });
+    }
+    this.setContextURL(context);
   }
 
-  async reload(center, zoom) {
+  setContextURL(context) {
+    let contextURL = Copy.deepCopy(context);
+    if (contextURL.center) {
+      contextURL.centerStr = contextURL.center.join(",");
+    }
+    delete contextURL["center"];
+    URLContext.setContext(contextURL);
+  }
+
+  async reload() {
     const extendedShedList = await FuelData.multigetExtendedShedList();
-    this.setState({ center, zoom, extendedShedList });
+    this.setState({ extendedShedList });
   }
 
   async componentDidMount() {
     localStorage.clear();
-    await this.reload(DEFAULT_CENTER, DEFAULT_ZOOM);
+    await this.reload();
+    this.isComponentMounted = true;
   }
 
-
   async onClickZoomOut() {
-    await this.reload(DEFAULT_CENTER_ZOOM_OUT, DEFAULT_ZOOM_ZOOM_OUT);
+    this.setContext({
+      center: DEFAULT_CENTER_ZOOM_OUT,
+      zoom: DEFAULT_ZOOM_ZOOM_OUT,
+    });
   }
 
   async onClickNearby() {
-    await this.reload(DEFAULT_CENTER, DEFAULT_ZOOM_NEARBY);
-    const center = await this.getGeoLocation();
-    await this.reload(center, DEFAULT_ZOOM_NEARBY);
     const center = await Geo.getGeoLocation();
+    this.setContext({
+      center,
+      zoom: DEFAULT_ZOOM_NEARBY,
+    });
   }
 
   onSelectFuelGroupID(fuelGroupID) {
@@ -111,7 +141,9 @@ export default class HomePage extends Component {
   }
 
   render() {
-    const { fuelGroupID, maxDisplayRecencyHours } = context;
+    const { context } = this.state;
+    const { fuelGroupID, maxDisplayRecencyHours, center, zoom } = context;
+
     const key = "geo-map-" + center + zoom;
     return (
       <Box>
