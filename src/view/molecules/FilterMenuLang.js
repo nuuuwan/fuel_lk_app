@@ -17,6 +17,7 @@ export default function FilterMenuLang({ onSelectLang, selectedLang }) {
       optionIdx={LANG_IDX}
       Icon={null}
       colorSelected={theme.palette.primary.main}
+      skipLabelTranslate={true}
     />
   );
 }
