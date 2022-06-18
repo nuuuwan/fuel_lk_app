@@ -1,5 +1,5 @@
+import Cache from "../../nonview/base/Cache";
 import { JSONWWW } from "../../nonview/base/WWW";
-import Cache from "../../nonview/base/Cache"
 
 export default class NuntiusServer {
   static getURLLambda() {
@@ -44,10 +44,8 @@ export default class NuntiusServer {
 
   static async multigetMessages(destID) {
     const cache = NuntiusServer.multigetMessagesCache(destID);
-    return cache.get(
-      async function() {
-        return await NuntiusServer.multigetMessagesNoCache(destID);
-      }
-    );
+    return cache.get(async function () {
+      return await NuntiusServer.multigetMessagesNoCache(destID);
+    });
   }
 }
