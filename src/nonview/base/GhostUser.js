@@ -21,7 +21,8 @@ export default class GhostUser {
   }
 
   static async getInfo() {
-    return await Cache.get(CACHE_KEY_GHOST_USER, GhostUser.getGeoLocationInfo);
+    const cache = new Cache(CACHE_KEY_GHOST_USER);
+    return await cache.get(GhostUser.getGeoLocationInfo);
   }
 
   static async getUserID() {
