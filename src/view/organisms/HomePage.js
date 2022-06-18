@@ -35,6 +35,7 @@ export default class HomePage extends Component {
       extendedShedList: undefined,
       context: context,
     };
+    this.setContext(context);
   }
 
   getContextURL() {
