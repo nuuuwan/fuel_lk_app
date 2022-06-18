@@ -1,4 +1,4 @@
-import { jsonNonCache } from "../../nonview/base/CacheX";
+import { JSONWWW } from "../../nonview/base/WWW";
 
 export default class NuntiusServer {
   static getURLLambda() {
@@ -13,7 +13,7 @@ export default class NuntiusServer {
       NuntiusServer.getURLLambda() +
       "?payload_json_base64=" +
       payloadJSONB64Encoded;
-    const response = await jsonNonCache(url);
+    const response = await new JSONWWW(url).read();
     if (response["exception"]) {
       console.error(response);
     }
