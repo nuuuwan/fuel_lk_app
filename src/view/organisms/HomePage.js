@@ -12,6 +12,7 @@ import FuelData from "../../nonview/core/FuelData";
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import ShedView from "../../view/molecules/ShedView";
+import TempSourceIsDown from "../../view/molecules/TempSourceIsDown";
 import GeoMap from "../../view/organisms/GeoMap";
 
 const DEFAULT_CENTER = [6.91, 79.86]; // Town Hall
@@ -164,6 +165,8 @@ export default class HomePage extends Component {
           onClickZoomOut={this.onClickZoomOut.bind(this)}
           onClickNearby={this.onClickNearby.bind(this)}
         />
+
+        <TempSourceIsDown />
       </Box>
     );
   }
