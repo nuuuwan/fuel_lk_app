@@ -1,3 +1,5 @@
+import { t } from "../../nonview/base/I18N";
+
 export const SECONDS_IN = {
   MINUTE: 60,
   HOUR: 3_600,
@@ -11,12 +13,10 @@ export const HOURS_IN = {
 
 const DATE_FORMAT_LOCALE = "en-GB";
 const DATE_FORMAT_OPTIONS = {
-  weekday: "short",
-  month: "short",
+  month: "numeric",
   day: "numeric",
   hour: "numeric",
   minute: "numeric",
-  hour12: true,
 };
 
 export default class TimeX {
@@ -41,33 +41,33 @@ export default class TimeX {
 
   static getHumanTime(ut) {
     if (ut < SECONDS_IN.DAY) {
-      return "Never";
+      return t("Never");
     }
 
     const delta = ut - TimeX.getUnixTime();
     const absStr = TimeX.getHumanTimeAbs(delta);
     if (delta > 0) {
-      return `In ${absStr} time`;
+      return `${t("In")} ${absStr}`;
     }
-    return `${absStr} ago`;
+    return `${absStr} ${t("ago")}`;
   }
 
   static getHumanTimeAbs(deltaOriginal) {
     const delta = Math.abs(deltaOriginal);
     if (delta < SECONDS_IN.MINUTE * 2) {
       const x = parseInt(delta);
-      return x + " seconds";
+      return x + ` ${t("seconds")}`;
     }
     if (delta < SECONDS_IN.HOUR * 2) {
       const x = parseInt(delta / SECONDS_IN.MINUTE);
-      return x + " minutes";
+      return x + ` ${t("minutes")}`;
     }
 
     if (delta < SECONDS_IN.DAY * 2) {
       const x = parseInt(delta / SECONDS_IN.HOUR);
-      return x + " hours";
+      return x + ` ${t("hours")}`;
     }
     const x = parseInt(delta / SECONDS_IN.DAY);
-    return x + " days";
+    return x + ` ${t("days")}`;
   }
 }

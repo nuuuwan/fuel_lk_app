@@ -49,5 +49,10 @@ Share your feedback!
 Super-Diesel
 Super-Diesel only
 Zoom Out
+ago
+days
 fuel.gov.lk
 has been temporary shut down. Since this App sources data from fuel.gov.lk, dynamic data will be out of date. Sorry
+hours
+minutes
+seconds
