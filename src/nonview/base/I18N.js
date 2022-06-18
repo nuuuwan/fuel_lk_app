@@ -1,8 +1,28 @@
 import DICTIONARY from "../../nonview/base/DICTIONARY";
+import IDX from "../../nonview/base/IDX";
 
 export const BASE_LANG = "en";
 const CACHE_KEY_LANG = "CACHE_KEY_LANG";
-export const LANG_LIST = ["en", "si", "ta"];
+
+class Lang {
+  constructor(lang, label) {
+    this.lang = lang;
+    this.label = label;
+  }
+}
+
+export const LANG_LIST = [
+  new Lang("en", "English"),
+  new Lang("si", "සිංහල"),
+  new Lang("ta", "தமிழ்"),
+];
+
+export const LANG_IDX = IDX.build(
+  LANG_LIST,
+  (d) => d.lang,
+  (d) => d
+);
+
 export default class I18N {
   static getLang() {
     let browserLang = localStorage.getItem(CACHE_KEY_LANG);
@@ -15,14 +35,6 @@ export default class I18N {
 
   static setLang(browserLang) {
     localStorage.setItem(CACHE_KEY_LANG, browserLang);
-  }
-
-  static getLangName(lang) {
-    return {
-      en: "English",
-      si: "සිංහල",
-      ta: "தமிழ்",
-    }[lang];
   }
 
   static translate(s) {
