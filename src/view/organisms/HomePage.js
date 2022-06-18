@@ -2,15 +2,15 @@ import { Component } from "react";
 
 import Box from "@mui/material/Box";
 
+import I18N from "../../nonview/base/I18N";
 import { HOURS_IN } from "../../nonview/base/TimeX";
+import URLContext from "../../nonview/base/URLContext";
 import FuelData from "../../nonview/core/FuelData";
 
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
 import ShedView from "../../view/molecules/ShedView";
 import GeoMap from "../../view/organisms/GeoMap";
-import URLContext from "../../nonview/base/URLContext";
-import I18N from "../../nonview/base/I18N";
 
 const DEFAULT_CENTER = [6.9172, 79.8648]; // Town Hall
 const DEFAULT_ZOOM = 15;
@@ -26,23 +26,38 @@ const DEFAUL_MAX_DISPLAY_RECENCY_HOURS = HOURS_IN.DAY;
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
-    const fuelGroupID = DEFAULT_FUEL_GROUP_ID;
-    const maxDisplayRecencyHours = DEFAUL_MAX_DISPLAY_RECENCY_HOURS;
-    const lang = I18N.getLang();
-
+    const context = this.getContext();
     this.state = {
       extendedShedList: undefined,
       center: undefined,
       zoom: undefined,
-      fuelGroupID,
-      maxDisplayRecencyHours,
+      context: context,
     };
+  }
 
-    URLContext.setContext({
-      fuelGroupID,
-      maxDisplayRecencyHours,
-      lang,
-    });
+  getContext() {
+    let context = URLContext.getContext();
+    if (!context.fuelGroupID) {
+      context.fuelGroupID = DEFAULT_FUEL_GROUP_ID;
+    }
+    if (!context.maxDisplayRecencyHours) {
+      context.maxDisplayRecencyHours = DEFAUL_MAX_DISPLAY_RECENCY_HOURS;
+    }
+    if (!context.lang) {
+      context.lang = I18N.BASE_LANG;
+    }
+    URLContext.setContext(context);
+    return context;
+  }
+
+  setContext(newContext) {
+    let context = URLContext.getContext();
+    for (let [k, v] of Object.entries(newContext)) {
+      context[k] = v;
+    }
+    URLContext.setContext(context);
+    this.setState({ context });
+    return context;
   }
 
   async reload(center, zoom) {
@@ -78,16 +93,17 @@ export default class HomePage extends Component {
   }
 
   onSelectFuelGroupID(fuelGroupID) {
-    this.setState({ fuelGroupID });
+    this.setContext({ fuelGroupID });
   }
 
   onSelectMaxDisplayRecencyHours(maxDisplayRecencyHours) {
-    this.setState({ maxDisplayRecencyHours });
+    this.setContext({ maxDisplayRecencyHours });
   }
 
   renderInner() {
-    const { extendedShedList, fuelGroupID, maxDisplayRecencyHours } =
-      this.state;
+    const { extendedShedList, context } = this.state;
+    const { fuelGroupID, maxDisplayRecencyHours } = context;
+
     if (!extendedShedList) {
       return null;
     }
@@ -104,7 +120,8 @@ export default class HomePage extends Component {
   }
 
   render() {
-    const { center, zoom, fuelGroupID, maxDisplayRecencyHours } = this.state;
+    const { center, zoom, context } = this.state;
+    const { fuelGroupID, maxDisplayRecencyHours } = context;
     const key = "geo-map-" + center + zoom;
     return (
       <Box>
