@@ -1,37 +1,23 @@
-export const FUEL_TYPE_GROUP_IDX = {
-  "Petrol-92 only": ["p92"],
-  "Petrol-95 only": ["p95"],
-  "Any Petrol": ["p92", "p95"],
-  "Regular Diesel only": ["d"],
-  "Super-Diesel only": ["sd"],
-  "Any Diesel": ["d", "sd"],
-  Kerosene: ["k"],
-  "All Fuels": ["p92", "p95", "d", "sd", "k"],
-};
+import IDX from "../../nonview/base/IDX";
 
 export default class Fuel {
-  constructor(name, color) {
+  constructor(fuelType, name, color) {
+    this.fuelType = fuelType;
     this.name = name;
     this.color = color;
   }
-
-  static getFuelTypeGroupLabel(selectedFuelTypeList) {
-    for (let [label, fuelTypeList] of Object.entries(FUEL_TYPE_GROUP_IDX)) {
-      if (
-        JSON.stringify(selectedFuelTypeList) === JSON.stringify(fuelTypeList)
-      ) {
-        return label;
-      }
-    }
-    return undefined;
-  }
 }
 
-export const FUEL_IDX = {
-  p92: new Fuel("Petrol-92", "#444"),
-  p95: new Fuel("Petrol-95", "#444"),
-  d: new Fuel("Regular Diesel", "#888"),
-  sd: new Fuel("Super-Diesel", "#888"),
-  k: new Fuel("Kerosene", "#ccc"),
-  // ik: new Fuel("ik???", SriLankaColors.Tamil),
-};
+export const FUEL_LIST = [
+  new Fuel("p92", "Petrol-92", "#444"),
+  new Fuel("p95", "Petrol-95", "#444"),
+  new Fuel("d", "Regular Diesel", "#888"),
+  new Fuel("sd", "Super-Diesel", "#888"),
+  new Fuel("k", "Kerosene", "#ccc"),
+];
+
+export const FUEL_IDX = IDX.build(
+  FUEL_LIST,
+  (d) => d.fuelType,
+  (d) => d
+);

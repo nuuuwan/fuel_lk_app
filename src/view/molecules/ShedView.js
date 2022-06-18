@@ -27,21 +27,21 @@ const FILL_OPACITY_SHOW = 0.7;
 
 function getFillColorAndOpacity(
   extendedShed,
-  fuelTypeList,
+  fuelGroupID,
   maxDisplayRecencyHours,
   theme
 ) {
   const lastUpdateTime = ExtendedShed.getLastUpdateTime(
     extendedShed,
-    fuelTypeList
+    fuelGroupID
   );
   const lastDispatchTime = ExtendedShed.getLastDispatchTime(
     extendedShed,
-    fuelTypeList
+    fuelGroupID
   );
   const hasListedStock = ExtendedShed.getHasListedStock(
     extendedShed,
-    fuelTypeList
+    fuelGroupID
   );
 
   const currentTime = TimeX.getUnixTime();
@@ -65,10 +65,10 @@ function getFillColorAndOpacity(
   return [theme.palette.primary.main, FILL_OPACITY_SHOW];
 }
 
-function getStrokeOpacity(extendedShed, fuelTypeList) {
+function getStrokeOpacity(extendedShed, fuelGroupID) {
   const lastUpdateTime = ExtendedShed.getLastUpdateTime(
     extendedShed,
-    fuelTypeList
+    fuelGroupID
   );
   const timeSinceLastUpdate = TimeX.getUnixTime() - lastUpdateTime;
 
@@ -85,18 +85,18 @@ function getStrokeOpacity(extendedShed, fuelTypeList) {
 
 export default function ShedView({
   extendedShed,
-  fuelTypeList,
+  fuelGroupID,
   maxDisplayRecencyHours,
 }) {
   const theme = useTheme();
 
   const [fillColor, fillOpacity] = getFillColorAndOpacity(
     extendedShed,
-    fuelTypeList,
+    fuelGroupID,
     maxDisplayRecencyHours,
     theme
   );
-  const opacity = getStrokeOpacity(extendedShed, fuelTypeList);
+  const opacity = getStrokeOpacity(extendedShed, fuelGroupID);
 
   const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
   const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);

@@ -1,8 +1,12 @@
+import FuelGroup from "../../nonview/core/FuelGroup";
+
 export default class ExtendedShed {
-  static getLastDispatchTime(extendedShed, fuelTypeList) {
+  static getLastDispatchTime(extendedShed, fuelGroupID) {
+    const fuelGroup = FuelGroup.construct(fuelGroupID);
+
     let lastUpdateTime = undefined;
     for (let dispatch of extendedShed["dispatch_schedule_list"]) {
-      if (!fuelTypeList.includes(dispatch["fuel_type"])) {
+      if (!fuelGroup.includes(dispatch["fuel_type"])) {
         continue;
       }
       if (!lastUpdateTime || lastUpdateTime < dispatch["time_eta_ut"]) {
@@ -12,11 +16,11 @@ export default class ExtendedShed {
     return lastUpdateTime;
   }
 
-  static getLastUpdateTime(extendedShed, fuelTypeList) {
+  static getLastUpdateTime(extendedShed, fuelGroupID) {
     const lastUpdateTimeOnly = extendedShed["time_last_updated_by_shed_ut"];
     const lastDispatchTime = ExtendedShed.getLastDispatchTime(
       extendedShed,
-      fuelTypeList
+      fuelGroupID
     );
     if (lastDispatchTime && lastUpdateTimeOnly) {
       return Math.max(lastDispatchTime, lastUpdateTimeOnly);
@@ -30,11 +34,13 @@ export default class ExtendedShed {
     return undefined;
   }
 
-  static getHasListedStock(extendedShed, fuelTypeList) {
+  static getHasListedStock(extendedShed, fuelGroupID) {
+    const fuelGroup = FuelGroup.construct(fuelGroupID);
+
     for (let [fuelType, status] of Object.entries(
       extendedShed["fuel_status_idx"]
     )) {
-      if (!fuelTypeList.includes(fuelType)) {
+      if (!fuelGroup.includes(fuelType)) {
         continue;
       }
       if (status.capacity > 0) {

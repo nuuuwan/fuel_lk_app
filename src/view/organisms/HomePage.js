@@ -3,7 +3,6 @@ import { Component } from "react";
 import Box from "@mui/material/Box";
 
 import { HOURS_IN } from "../../nonview/base/TimeX";
-import { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
 import FuelData from "../../nonview/core/FuelData";
 
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
@@ -19,7 +18,7 @@ const DEFAULT_ZOOM_ZOOM_OUT = 7;
 
 const DEFAULT_ZOOM_NEARBY = 15;
 
-const DEFAULT_FUEL_TYPE_LIST = FUEL_TYPE_GROUP_IDX["All Fuels"];
+const DEFAULT_FUEL_GROUP_ID = "p92.p95.d.sd.k";
 const DEFAUL_MAX_DISPLAY_RECENCY_HOURS = HOURS_IN.DAY;
 
 export default class HomePage extends Component {
@@ -29,7 +28,7 @@ export default class HomePage extends Component {
       extendedShedList: undefined,
       center: undefined,
       zoom: undefined,
-      fuelTypeList: DEFAULT_FUEL_TYPE_LIST,
+      fuelGroupID: DEFAULT_FUEL_GROUP_ID,
       maxDisplayRecencyHours: DEFAUL_MAX_DISPLAY_RECENCY_HOURS,
     };
   }
@@ -66,8 +65,8 @@ export default class HomePage extends Component {
     await this.reload(center, DEFAULT_ZOOM_NEARBY);
   }
 
-  onSelectFuelTypeList(fuelTypeList) {
-    this.setState({ fuelTypeList });
+  onSelectFuelGroupID(fuelGroupID) {
+    this.setState({ fuelGroupID });
   }
 
   onSelectMaxDisplayRecencyHours(maxDisplayRecencyHours) {
@@ -75,7 +74,7 @@ export default class HomePage extends Component {
   }
 
   renderInner() {
-    const { extendedShedList, fuelTypeList, maxDisplayRecencyHours } =
+    const { extendedShedList, fuelGroupID, maxDisplayRecencyHours } =
       this.state;
     if (!extendedShedList) {
       return null;
@@ -85,7 +84,7 @@ export default class HomePage extends Component {
         <ShedView
           key={"shed-" + iShed}
           extendedShed={extendedShed}
-          fuelTypeList={fuelTypeList}
+          fuelGroupID={fuelGroupID}
           maxDisplayRecencyHours={maxDisplayRecencyHours}
         />
       );
@@ -93,13 +92,13 @@ export default class HomePage extends Component {
   }
 
   render() {
-    const { center, zoom, fuelTypeList, maxDisplayRecencyHours } = this.state;
+    const { center, zoom, fuelGroupID, maxDisplayRecencyHours } = this.state;
     const key = "geo-map-" + center + zoom;
     return (
       <Box>
         <CustomAppBar
-          onSelectFuelTypeList={this.onSelectFuelTypeList.bind(this)}
-          selectedFuelTypeList={fuelTypeList}
+          onSelectFuelGroupID={this.onSelectFuelGroupID.bind(this)}
+          selectedFuelGroupID={fuelGroupID}
           onSelectMaxDisplayRecencyHours={this.onSelectMaxDisplayRecencyHours.bind(
             this
           )}

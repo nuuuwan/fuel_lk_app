@@ -9,17 +9,18 @@ import { useTheme } from "@mui/material/styles";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 
 import { t } from "../../nonview/base/I18N";
-import Fuel, { FUEL_TYPE_GROUP_IDX } from "../../nonview/core/Fuel";
+import {
+  FUEL_GROUP_IDX,
+  ALL_FUEL_GROUP_ID,
+} from "../../nonview/core/FuelGroup";
 
 import FilterDetails from "../../view/atoms/FilterDetails";
 
 export default function FilterFuelTypeMenu({
-  onSelectFuelTypeList,
-  selectedFuelTypeList,
+  onSelectFuelGroupID,
+  selectedFuelGroupID,
 }) {
-  const selectedLFuelTypeGroupLabel =
-    Fuel.getFuelTypeGroupLabel(selectedFuelTypeList);
-  const isAll = selectedLFuelTypeGroupLabel === "All Fuels";
+  const isAll = selectedFuelGroupID === ALL_FUEL_GROUP_ID;
 
   const theme = useTheme();
   const iconColor = isAll ? "lightgray" : theme.palette.secondary.main;
@@ -38,7 +39,7 @@ export default function FilterFuelTypeMenu({
   return (
     <div>
       <IconButton size="large" onClick={onClick} sx={{ p: 1 }}>
-        <FilterDetails selectedFuelTypeList={selectedFuelTypeList} />
+        <FilterDetails selectedFuelGroupID={selectedFuelGroupID} />
         <Tooltip title={t("Filter by Fuel Type")}>
           <FilterAltIcon sx={{ color: iconColor }} />
         </Tooltip>
@@ -52,20 +53,20 @@ export default function FilterFuelTypeMenu({
           "aria-labelledby": "basic-button",
         }}
       >
-        {Object.entries(FUEL_TYPE_GROUP_IDX).map(function (
-          [label, fuelTypeList],
+        {Object.entries(FUEL_GROUP_IDX).map(function (
+          [fuelGroupID, fuelGroup],
           i
         ) {
           const key = "filter-menu-item-" + i;
           const onClickInner = function () {
             onClose();
-            onSelectFuelTypeList(fuelTypeList);
+            onSelectFuelGroupID(fuelGroupID);
           };
-          const isSelected = selectedLFuelTypeGroupLabel === label;
+          const isSelected = selectedFuelGroupID === fuelGroupID;
           const color = isSelected ? theme.palette.secondary.main : "neutral";
           return (
             <MenuItem key={key} onClick={onClickInner}>
-              <ListItemText sx={{ color }}>{t(label)}</ListItemText>
+              <ListItemText sx={{ color }}>{t(fuelGroup.label)}</ListItemText>
             </MenuItem>
           );
         })}

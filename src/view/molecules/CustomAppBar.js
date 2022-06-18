@@ -13,8 +13,8 @@ import FilterTimeUpdatedMenu from "./FilterTimeUpdatedMenu.js";
 import HelpMenu from "./HelpMenu.js";
 
 export default function CustomAppBar({
-  onSelectFuelTypeList,
-  selectedFuelTypeList,
+  onSelectFuelGroupID,
+  selectedFuelGroupID,
   onSelectMaxDisplayRecencyHours,
   selectedMaxDisplayRecencyHours,
 }) {
@@ -30,8 +30,8 @@ export default function CustomAppBar({
             {" "}
           </Typography>
           <FilterFuelTypeMenu
-            onSelectFuelTypeList={onSelectFuelTypeList}
-            selectedFuelTypeList={selectedFuelTypeList}
+            onSelectFuelGroupID={onSelectFuelGroupID}
+            selectedFuelGroupID={selectedFuelGroupID}
           />
           <FilterTimeUpdatedMenu
             onSelectMaxDisplayRecencyHours={onSelectMaxDisplayRecencyHours}
