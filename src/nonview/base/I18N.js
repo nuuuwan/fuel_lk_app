@@ -58,6 +58,9 @@ export default class I18N {
   }
 }
 
-export function t(s) {
+export function t(s, skip = false) {
+  if (skip) {
+    return s;
+  }
   return I18N.translate(s);
 }
