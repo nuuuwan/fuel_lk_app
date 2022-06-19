@@ -1,18 +1,9 @@
-import { CircleMarker, Popup, Marker } from "react-leaflet";
+import { CircleMarker, Marker } from "react-leaflet";
 
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 
-import { t } from "../../nonview/base/I18N";
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 
-import AlignCenter from "../../view/atoms/AlignCenter";
-import HumanTime from "../../view/atoms/HumanTime";
-import Link from "../../view/atoms/Link";
-import ShedAvatar from "../../view/atoms/ShedAvatar";
-import FuelsView from "../../view/molecules/FuelsView";
-import LabelledBox from "../../view/molecules/LabelledBox";
 import L from "leaflet";
 
 const DEFAULT_CIRLE_RADIUS = 15;
@@ -74,6 +65,7 @@ export default function ShedView({
   extendedShed,
   fuelGroupID,
   maxDisplayRecencyHours,
+  onClickShed,
 }) {
   const theme = useTheme();
 
@@ -85,9 +77,6 @@ export default function ShedView({
   );
   const opacity = getStrokeOpacity(extendedShed, fuelGroupID);
 
-  const displayAddress = extendedShed.gmapsAddress;
-  const gmapsURL = extendedShed.gmapsURL;
-
   const faceIcon = new L.Icon({
     iconUrl: process.env.PUBLIC_URL + "/face.png",
     iconSize: [DEFAULT_CIRLE_RADIUS, DEFAULT_CIRLE_RADIUS],
@@ -97,6 +86,11 @@ export default function ShedView({
   const communityFeedbackIdx = extendedShed.hasCommunityFeedback;
 
   const center = extendedShed.latLng;
+
+  const onClick = function (e) {
+    onClickShed(extendedShed);
+  };
+
   return (
     <>
       {communityFeedbackIdx ? (
@@ -109,25 +103,10 @@ export default function ShedView({
           ...STYLE_CIRCLE,
           ...{ fillColor, fillOpacity, color: "black", opacity },
         }}
-      >
-        <Popup closeButton={false}>
-          <Box sx={{ maxHeight: "50vh", overflow: "scroll", width: 240 }}>
-            <AlignCenter>
-              <ShedAvatar extendedShed={extendedShed} />
-              <Typography variant="subtitle2">
-                {t(extendedShed.shedName)}
-              </Typography>
-            </AlignCenter>
-            <Link href={gmapsURL}>
-              <Typography variant="caption">{t(displayAddress)}</Typography>
-            </Link>
-            <FuelsView extendedShed={extendedShed} />
-            <LabelledBox label={t("When was the data updated?")}>
-              <HumanTime ut={extendedShed.timeLastUpdatedByShedUT} />
-            </LabelledBox>
-          </Box>
-        </Popup>
-      </CircleMarker>
+        eventHandlers={{
+          click: onClick,
+        }}
+      ></CircleMarker>
     </>
   );
 }
