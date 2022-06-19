@@ -3,7 +3,7 @@ import DispatchSchedule from "../../nonview/core/DispatchSchedule";
 import FuelGroup from "../../nonview/core/FuelGroup";
 import FuelStatus from "../../nonview/core/FuelStatus";
 
-export class ExtendedShedNew extends BaseShed {
+export default class ExtendedShed extends BaseShed {
   constructor(
     // BaseShed
     shedID,
@@ -17,7 +17,7 @@ export class ExtendedShedNew extends BaseShed {
     timeLastUpdatedByShedUT,
     dispatchScheduleList,
     fuelStatusIdx,
-    communityFeedbackIdx,
+    communityFeedbackIdx
   ) {
     // BaseShed constructor
     super(shedID, shedCode, shedName, shedType, address, latLng, gmapAddress);
@@ -30,10 +30,11 @@ export class ExtendedShedNew extends BaseShed {
 
   static fromMultipleData(rawD, communityFeedbackIdx) {
     const shedCode = rawD["shed_code"];
-    const communityFeedbackIdxForShed = communityFeedbackIdx[shedCode] ? communityFeedbackIdx[shedCode] : {};
+    const communityFeedbackIdxForShed = communityFeedbackIdx[shedCode]
+      ? communityFeedbackIdx[shedCode]
+      : {};
     const baseShed = BASE_SHED_IDX[shedCode];
-    return new ExtendedShedNew(
-
+    return new ExtendedShed(
       // BaseShed
       baseShed.shedID,
       baseShed.shedCode,
@@ -67,74 +68,54 @@ export class ExtendedShedNew extends BaseShed {
         }, {}),
 
       // communityFeedbackIdx
-      communityFeedbackIdxForShed,
+      communityFeedbackIdxForShed
     );
   }
-}
 
-export default class ExtendedShed {
-  static getLastDispatchTime(extendedShed, fuelGroupID) {
+  getTimeLastDispatchUT(fuelGroupID) {
     const fuelGroup = FuelGroup.construct(fuelGroupID);
 
-    let lastUpdateTime = undefined;
-    for (let dispatch of extendedShed["dispatch_schedule_list"]) {
-      if (!fuelGroup.includes(dispatch["fuel_type"])) {
+    let timeLastDispatchUT = undefined;
+    for (let dispatchSchedule of this.dispatchScheduleList) {
+      if (!fuelGroup.includes(dispatchSchedule.fuelType)) {
         continue;
       }
-      if (!lastUpdateTime || lastUpdateTime < dispatch["time_eta_ut"]) {
-        lastUpdateTime = dispatch["time_eta_ut"];
+      if (
+        !timeLastDispatchUT ||
+        timeLastDispatchUT < dispatchSchedule.timeETAUT
+      ) {
+        timeLastDispatchUT = dispatchSchedule.timeETAUT;
       }
     }
-    return lastUpdateTime;
+    return timeLastDispatchUT;
   }
 
-  static getLastUpdateTime(extendedShed, fuelGroupID) {
-    const lastUpdateTimeOnly = extendedShed["time_last_updated_by_shed_ut"];
-    const lastDispatchTime = ExtendedShed.getLastDispatchTime(
-      extendedShed,
-      fuelGroupID
-    );
-    if (lastDispatchTime && lastUpdateTimeOnly) {
-      return Math.max(lastDispatchTime, lastUpdateTimeOnly);
+  getTimeLastUpdatedUT(fuelGroupID) {
+    const timeLastUpdatedByShedUT = this.timeLastUpdatedByShedUT;
+    const timeLastDispatchUT = this.getTimeLastDispatchUT(fuelGroupID);
+    if (timeLastUpdatedByShedUT && timeLastDispatchUT) {
+      return Math.max(timeLastUpdatedByShedUT, timeLastDispatchUT);
     }
-    if (lastDispatchTime) {
-      return lastDispatchTime;
+    if (timeLastUpdatedByShedUT) {
+      return timeLastUpdatedByShedUT;
     }
-    if (lastUpdateTimeOnly) {
-      return lastUpdateTimeOnly;
+    if (timeLastDispatchUT) {
+      return timeLastDispatchUT;
     }
     return undefined;
   }
 
-  static getHasListedStock(extendedShed, fuelGroupID) {
+  getHasListedStock(fuelGroupID) {
     const fuelGroup = FuelGroup.construct(fuelGroupID);
 
-    for (let [fuelType, status] of Object.entries(
-      extendedShed["fuel_status_idx"]
-    )) {
-      if (!fuelGroup.includes(fuelType)) {
+    for (let fuelStatus of Object.values(this.fuelStatusIdx)) {
+      if (!fuelGroup.includes(fuelStatus.fuelType)) {
         continue;
       }
-      if (status.capacity > 0) {
+      if (fuelStatus.capacity > 0) {
         return true;
       }
     }
     return false;
-  }
-
-  static getDisplayAddress(extendedShed) {
-    if (extendedShed["gmaps_address"]) {
-      return extendedShed["gmaps_address"].replace(", Sri Lanka", "");
-    }
-    if (extendedShed["address"]) {
-      return extendedShed["address"];
-    }
-    return "Unknown";
-  }
-
-  static getURLGmaps(extendedShed) {
-    const URL_GMAPS_PREFIX = "https://www.google.com/maps/place";
-    const [lat, lng] = extendedShed["lat_lng"];
-    return `${URL_GMAPS_PREFIX}/${lat},${lng}`;
   }
 }
