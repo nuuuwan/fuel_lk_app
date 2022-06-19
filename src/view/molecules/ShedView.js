@@ -94,7 +94,7 @@ export default function ShedView({
     iconAnchor: [DEFAULT_CIRLE_RADIUS, DEFAULT_CIRLE_RADIUS],
   });
 
-  const communityFeedbackIdx = extendedShed.communityFeedbackIdx;
+  const communityFeedbackIdx = extendedShed.hasCommunityFeedback;
 
   const center = extendedShed.latLng;
   return (
