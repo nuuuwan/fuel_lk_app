@@ -12,7 +12,7 @@ export default class ExtendedShed extends BaseShed {
     shedType,
     address,
     latLng,
-    gmapAddress,
+    gmapsAddress,
     // ExtendedShedNew only
     timeLastUpdatedByShedUT,
     dispatchScheduleList,
@@ -20,7 +20,7 @@ export default class ExtendedShed extends BaseShed {
     communityFeedbackIdx
   ) {
     // BaseShed constructor
-    super(shedID, shedCode, shedName, shedType, address, latLng, gmapAddress);
+    super(shedID, shedCode, shedName, shedType, address, latLng, gmapsAddress);
 
     this.timeLastUpdatedByShedUT = timeLastUpdatedByShedUT;
     this.dispatchScheduleList = dispatchScheduleList;
@@ -42,7 +42,7 @@ export default class ExtendedShed extends BaseShed {
       baseShed.shedType,
       baseShed.address,
       baseShed.latLng,
-      baseShed.gmapAddress,
+      baseShed.gmapsAddress,
 
       // timeLastUpdatedByShedUT
       rawD["time_last_updated_by_shed_ut"],

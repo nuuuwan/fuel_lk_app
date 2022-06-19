@@ -12,7 +12,7 @@ export default class BaseShed {
     shedType,
     address,
     latLng,
-    gmapAddress
+    gmapsAddress
   ) {
     this.shedID = shedID;
     this.shedCode = shedCode;
@@ -21,7 +21,7 @@ export default class BaseShed {
     this.address = address;
 
     this.latLng = latLng;
-    this.gmapAddress = gmapAddress;
+    this.gmapsAddress = gmapsAddress;
   }
 
   get gmapsURL() {
