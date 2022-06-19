@@ -15,6 +15,7 @@ import ShedDrawer from "../../view/molecules/ShedDrawer";
 import ShedView from "../../view/molecules/ShedView";
 import TempSourceIsDown from "../../view/molecules/TempSourceIsDown";
 import GeoMap from "../../view/organisms/GeoMap";
+import CommunityFeed from "../../view/organisms/CommunityFeed";
 
 const DEFAULT_CENTER = [6.91, 79.86]; // Town Hall
 const DEFAULT_ZOOM = 15;
@@ -35,6 +36,7 @@ export default class HomePage extends Component {
     this.state = {
       extendedShedIdx: undefined,
       context: context,
+      isOpenFeed: false,
     };
     this.setContext(context);
   }
@@ -142,8 +144,16 @@ export default class HomePage extends Component {
     this.setContext({ shedCode: "" });
   }
 
+  onOpenDrawerFeed() {
+    this.setState({ isOpenFeed: true });
+  }
+
+  onCloseDrawerFeed() {
+    this.setState({ isOpenFeed: false });
+  }
+
   renderInner() {
-    const { extendedShedIdx, context } = this.state;
+    const { extendedShedIdx, context, isOpenFeed } = this.state;
     const { fuelGroupID, maxDisplayRecencyHours, shedCode } = context;
 
     if (!extendedShedIdx) {
@@ -168,6 +178,10 @@ export default class HomePage extends Component {
         <ShedDrawer
           onCloseDrawer={this.onCloseDrawer.bind(this)}
           extendedShed={extendedShedIdx[shedCode]}
+        />
+        <CommunityFeed
+          isOpenFeed={isOpenFeed}
+          onCloseDrawerFeed={this.onCloseDrawerFeed.bind(this)}
         />
       </Box>
     );
@@ -199,7 +213,9 @@ export default class HomePage extends Component {
         <CustomBottomNavigation
           onClickZoomOut={this.onClickZoomOut.bind(this)}
           onClickNearby={this.onClickNearby.bind(this)}
+          onOpenDrawerFeed={this.onOpenDrawerFeed.bind(this)}
         />
+
         <TempSourceIsDown />
       </Box>
     );
