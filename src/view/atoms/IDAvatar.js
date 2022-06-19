@@ -8,11 +8,11 @@ const ID_LENGTH = 32;
 const N = 3;
 const BITS_PER_COLOR = 6;
 const COLOR_BLANK = "808080";
-const P_RADIUS = 0.9;
+const P_RADIUS = 1;
 const N_COLORS = parseInt(ID_LENGTH / BITS_PER_COLOR);
 
 export default function IDAvatar({ size, id }) {
-  const cellSize = (size * 0.7) / N;
+  const cellSize = (size * 0.8) / N;
   const width = N * cellSize;
   const height = width;
 
@@ -37,7 +37,7 @@ export default function IDAvatar({ size, id }) {
         width: size,
         height: size,
         background: "white",
-        border: "3px solid lightgray",
+        border: "2px solid black",
       }}
     >
       <svg width={width} height={height}>
