@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fuel_lk_app/static/css/main.e6c13ad2.css",
-    "main.js": "/fuel_lk_app/static/js/main.4735418c.js",
+    "main.js": "/fuel_lk_app/static/js/main.fc52603d.js",
     "static/js/787.35bccb17.chunk.js": "/fuel_lk_app/static/js/787.35bccb17.chunk.js",
     "index.html": "/fuel_lk_app/index.html",
     "main.e6c13ad2.css.map": "/fuel_lk_app/static/css/main.e6c13ad2.css.map",
-    "main.4735418c.js.map": "/fuel_lk_app/static/js/main.4735418c.js.map",
+    "main.fc52603d.js.map": "/fuel_lk_app/static/js/main.fc52603d.js.map",
     "787.35bccb17.chunk.js.map": "/fuel_lk_app/static/js/787.35bccb17.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.4735418c.js"
+    "static/js/main.fc52603d.js"
   ]
 }
