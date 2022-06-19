@@ -4,8 +4,7 @@ import Box from "@mui/material/Box";
 
 import Copy from "../../nonview/base/Copy";
 import Geo from "../../nonview/base/Geo";
-import I18N from "../../nonview/base/I18N";
-import { BASE_LANG } from "../../nonview/base/I18N";
+import I18N, { BASE_LANG } from "../../nonview/base/I18N";
 import { HOURS_IN } from "../../nonview/base/TimeX";
 import URLContext from "../../nonview/base/URLContext";
 import FuelData from "../../nonview/core/FuelData";
