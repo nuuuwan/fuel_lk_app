@@ -1,8 +1,9 @@
 import Paper from "@mui/material/Paper";
-import PollOptionView from "../../view/molecules/PollOptionView";
-import IDAvatar from "../../view/atoms/IDAvatar";
+
 import AlignCenter from "../../view/atoms/AlignCenter";
 import HumanTime from "../../view/atoms/HumanTime";
+import IDAvatar from "../../view/atoms/IDAvatar";
+import PollOptionView from "../../view/molecules/PollOptionView";
 import ShedBlurb from "../../view/molecules/ShedBlurb";
 
 const STYLE = {
