@@ -1,6 +1,6 @@
 import IDX from "../../nonview/base/IDX";
 import { JSONWWW } from "../../nonview/base/WWW";
-import NuntiusServer from "../../nonview/core/NuntiusServer";
+import NuntiusServer from "../../nonview/base/NuntiusServer";
 
 const URL_DATA_ROOT = "https://raw.githubusercontent.com/nuuuwan/fuel_lk/data";
 
@@ -53,7 +53,6 @@ export default class FuelData {
         messageTimeUT: message.messageTimeUT,
         messageText: message.messageText,
       });
-      console.debug(extendedShedIdx[shedCode]["recentMessageList"]);
     }
 
     const extendedShedListWithMessages = Object.values(extendedShedIdx);
