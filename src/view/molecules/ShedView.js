@@ -6,7 +6,6 @@ import { useTheme } from "@mui/material/styles";
 
 import { t } from "../../nonview/base/I18N";
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
-import ExtendedShed from "../../nonview/core/ExtendedShed";
 
 import AlignCenter from "../../view/atoms/AlignCenter";
 import HumanTime from "../../view/atoms/HumanTime";
@@ -31,24 +30,15 @@ function getFillColorAndOpacity(
   maxDisplayRecencyHours,
   theme
 ) {
-  const lastUpdateTime = ExtendedShed.getLastUpdateTime(
-    extendedShed,
-    fuelGroupID
-  );
-  const lastDispatchTime = ExtendedShed.getLastDispatchTime(
-    extendedShed,
-    fuelGroupID
-  );
-  const hasListedStock = ExtendedShed.getHasListedStock(
-    extendedShed,
-    fuelGroupID
-  );
+  const timeLastUpdatedUT = extendedShed.getTimeLastUpdatedUT(fuelGroupID);
+  const timeLastDispatchUT = extendedShed.getTimeLastDispatchUT(fuelGroupID);
+  const hasListedStock = extendedShed.getHasListedStock(fuelGroupID);
 
   const currentTime = TimeX.getUnixTime();
   const maxDisplayRecencySeconds = maxDisplayRecencyHours * SECONDS_IN.HOUR;
 
-  const timeSinceLastUpdate = currentTime - lastUpdateTime;
-  const timeSinceLastDispatch = currentTime - lastDispatchTime;
+  const timeSinceLastUpdate = currentTime - timeLastUpdatedUT;
+  const timeSinceLastDispatch = currentTime - timeLastDispatchUT;
 
   if (!timeSinceLastUpdate || timeSinceLastUpdate > maxDisplayRecencySeconds) {
     return ["gray", FILL_OPACITY_HIDE];
@@ -66,11 +56,8 @@ function getFillColorAndOpacity(
 }
 
 function getStrokeOpacity(extendedShed, fuelGroupID) {
-  const lastUpdateTime = ExtendedShed.getLastUpdateTime(
-    extendedShed,
-    fuelGroupID
-  );
-  const timeSinceLastUpdate = TimeX.getUnixTime() - lastUpdateTime;
+  const timeLastUpdatedUT = extendedShed.getTimeLastUpdatedUT(fuelGroupID);
+  const timeSinceLastUpdate = TimeX.getUnixTime() - timeLastUpdatedUT;
 
   for (let [delta, opacity] of [
     [SECONDS_IN.HOUR, 1],
@@ -98,8 +85,8 @@ export default function ShedView({
   );
   const opacity = getStrokeOpacity(extendedShed, fuelGroupID);
 
-  const displayAddress = ExtendedShed.getDisplayAddress(extendedShed);
-  const gmapsURL = ExtendedShed.getURLGmaps(extendedShed);
+  const displayAddress = extendedShed.gmapsAddress;
+  const gmapsURL = extendedShed.gmapsURL;
 
   const faceIcon = new L.Icon({
     iconUrl: process.env.PUBLIC_URL + "/face.png",
@@ -107,12 +94,12 @@ export default function ShedView({
     iconAnchor: [DEFAULT_CIRLE_RADIUS, DEFAULT_CIRLE_RADIUS],
   });
 
-  const hasRecentMessageList = extendedShed["recentMessageList"];
+  const communityFeedbackIdx = extendedShed.communityFeedbackIdx;
 
-  const center = extendedShed["lat_lng"];
+  const center = extendedShed.latLng;
   return (
     <>
-      {hasRecentMessageList ? (
+      {communityFeedbackIdx ? (
         <Marker icon={faceIcon} position={center} />
       ) : null}
       <CircleMarker
@@ -128,7 +115,7 @@ export default function ShedView({
             <AlignCenter>
               <ShedAvatar extendedShed={extendedShed} />
               <Typography variant="subtitle2">
-                {t(extendedShed["shed_name"])}
+                {t(extendedShed.shedName)}
               </Typography>
             </AlignCenter>
             <Link href={gmapsURL}>
@@ -136,7 +123,7 @@ export default function ShedView({
             </Link>
             <FuelsView extendedShed={extendedShed} />
             <LabelledBox label={t("When was the data updated?")}>
-              <HumanTime ut={extendedShed["time_last_updated_by_shed_ut"]} />
+              <HumanTime ut={extendedShed.timeLastUpdatedByShedUT} />
             </LabelledBox>
           </Box>
         </Popup>
