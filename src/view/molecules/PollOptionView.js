@@ -14,7 +14,7 @@ export default function PollOptionView({ pollOptionID }) {
   return (
     <AlignCenter>
       <Icon sx={{ color: pollOption.color }} />
-      <Typography variant="body1" sx={{ color: pollOption.color }}>
+      <Typography variant="body2" sx={{ color: pollOption.color }}>
         {t(pollOption.label)}
       </Typography>
     </AlignCenter>
