@@ -27,7 +27,7 @@ export default function CustomAppBar({
         <Toolbar>
           <LogoAvatar />
           <Typography variant="subtitle1" sx={{ color: "black" }}>
-            {t("Fuel in SL")}
+            {t("Fuel")}
           </Typography>
           <Typography variant="body1" sx={{ flexGrow: 1 }}>
             {" "}
