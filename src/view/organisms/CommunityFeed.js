@@ -1,10 +1,12 @@
 import { Component } from "react";
 
+import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 import Drawer from "@mui/material/Drawer";
 
 import CommunityServer from "../../nonview/core/CommunityServer";
+
 import CommunityFeedStory from "../../view/molecules/CommunityFeedStory";
 
 const STYLE = { m: 1, p: 1, width: 250 };
@@ -17,28 +19,30 @@ export default class CommunityFeed extends Component {
 
   async componentDidMount() {
     this.setState({
-      communityFeedbackIdx: await CommunityServer.getCommunityFeedbackIdx(),
+      communityFeedbackList: await CommunityServer.getCommunityFeedbackList(),
     });
   }
 
   renderInner() {
-    const { communityFeedbackIdx } = this.state;
-    if (!communityFeedbackIdx) {
+    const { communityFeedbackList } = this.state;
+    if (communityFeedbackList === undefined) {
       return <CircularProgress />;
     }
 
-    return Object.entries(communityFeedbackIdx).map(function ([
-      shedCode,
-      idxForShed,
-    ]) {
-      return Object.entries(idxForShed).map(function ([
-        fuelType,
-        idxForFuelType,
-      ]) {
-        return Object.values(idxForFuelType).map(function (communityFeedback) {
-          return <CommunityFeedStory communityFeedback={communityFeedback} />;
-        });
-      });
+    if (communityFeedbackList.length === 0) {
+      return <Alert severity="info">No Recent Community Feedback</Alert>;
+    }
+
+    const { extendedShedIdx } = this.props;
+
+    return communityFeedbackList.map(function (communityFeedback, iStory) {
+      return (
+        <CommunityFeedStory
+          key={"feed-story-" + iStory}
+          communityFeedback={communityFeedback}
+          extendedShedIdx={extendedShedIdx}
+        />
+      );
     });
   }
 
