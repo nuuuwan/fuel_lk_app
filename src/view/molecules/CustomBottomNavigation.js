@@ -7,9 +7,9 @@ import Tooltip from "@mui/material/Tooltip";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
+import URLContext from "../../nonview/base/URLContext";
 
 import { t } from "../../nonview/base/I18N";
-import { URL_APP } from "../../nonview/constants/Constants";
 
 const STYLE = {
   position: "fixed",
@@ -24,7 +24,7 @@ export default function CustomBottomNavigation({
   onClickZoomOut,
 }) {
   const onClickCopy = function () {
-    navigator.clipboard.writeText(URL_APP);
+    navigator.clipboard.writeText(URLContext.getURL());
   };
 
   return (
