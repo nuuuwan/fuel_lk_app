@@ -5,16 +5,6 @@ import NuntiusServer from "../../nonview/core/NuntiusServer";
 const URL_DATA_ROOT = "https://raw.githubusercontent.com/nuuuwan/fuel_lk/data";
 
 export default class FuelData {
-  static async multigetRawExtendedShedList() {
-    return await new JSONWWW(
-      URL_DATA_ROOT + "/latest/extended_shed_list.json"
-    ).read();
-  }
-
-  // static async multigetExtendedShedListNew() {
-  //   const rawExtendedShedList = await FuelData.multigetRawExtendedShedList();
-  // }
-
   static async multigetExtendedShedList() {
     const rawDataList = await new JSONWWW(
       URL_DATA_ROOT + "/latest/extended_shed_list.json"
