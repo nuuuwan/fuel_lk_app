@@ -1,5 +1,5 @@
 import IDX from "../../nonview/base/IDX";
-import RAW_BASE_SHED_LIST from "../../data/RAW_BASE_SHED_LIST";
+import RAW_BASE_SHED_LIST from "../../nonview/data/RAW_BASE_SHED_LIST";
 
 const URL_GMAPS_PREFIX = "https://www.google.com/maps/place";
 
