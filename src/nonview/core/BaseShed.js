@@ -1,5 +1,7 @@
 import RAW_BASE_SHED_LIST from "../../data/RAW_BASE_SHED_LIST";
 
+const URL_GMAPS_PREFIX = "https://www.google.com/maps/place";
+
 export default class BaseShed {
   constructor(shedID, shedCode, shedName, address, latLng, gmapAddress) {
     this.shedID = shedID;
@@ -8,6 +10,11 @@ export default class BaseShed {
     this.address = address;
     this.latLng = latLng;
     this.gmapAddress = gmapAddress;
+  }
+
+  get gmapsURL() {
+    const [lat, lng] = this.latLng;
+    return `${URL_GMAPS_PREFIX}/${lat},${lng}`;
   }
 
   static fromDict(d) {
