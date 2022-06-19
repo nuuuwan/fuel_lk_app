@@ -738,6 +738,7 @@ Filling Station, Pallimunai Rd, Mannar
 Filling Station, Palugamuwa, Dummalasooriya
 Filter by Fuel Type
 Filter by Time Updated
+Fuel
 Fuel Station Moratuwa, Galle Rd, Moratuwa
 Fuel Station, A12, Anuradhapura
 Fuel Station, Dehiwela - Maharagama Road, Maharagama
@@ -1340,6 +1341,7 @@ Last 24 Hours
 Last 3 Hours
 Last 6 Hours
 Last Updated by Shed
+Last Week
 Laugfs Filling Station, Puttalam - Colombo Rd, Negombo
 Lenadora - Dambulla
 Less than 30 minutes
