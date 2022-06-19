@@ -11,6 +11,7 @@ import CombinedDataServer from "../../nonview/core/CombinedDataServer";
 
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
+import ShedDrawer from "../../view/molecules/ShedDrawer";
 import ShedView from "../../view/molecules/ShedView";
 import TempSourceIsDown from "../../view/molecules/TempSourceIsDown";
 import GeoMap from "../../view/organisms/GeoMap";
@@ -32,7 +33,7 @@ export default class HomePage extends Component {
     const context = this.getContext();
     this.isComponentMounted = false;
     this.state = {
-      extendedShedList: undefined,
+      extendedShedIdx: undefined,
       context: context,
     };
     this.setContext(context);
@@ -69,6 +70,9 @@ export default class HomePage extends Component {
     if (!context.zoom) {
       context.zoom = DEFAULT_ZOOM;
     }
+    if (!context.shedCode) {
+      context.shedCode = "";
+    }
     return context;
   }
 
@@ -93,9 +97,8 @@ export default class HomePage extends Component {
   }
 
   async reload() {
-    const extendedShedList =
-      await CombinedDataServer.multigetExtendedShedList();
-    this.setState({ extendedShedList });
+    const extendedShedIdx = await CombinedDataServer.getExtendedShedIdx();
+    this.setState({ extendedShedIdx });
   }
 
   async componentDidMount() {
@@ -131,23 +134,43 @@ export default class HomePage extends Component {
     this.setContext({ lang });
   }
 
-  renderInner() {
-    const { extendedShedList, context } = this.state;
-    const { fuelGroupID, maxDisplayRecencyHours } = context;
+  onClickShed(extendedShed) {
+    this.setContext({ shedCode: extendedShed.shedCode });
+  }
 
-    if (!extendedShedList) {
+  onCloseDrawer() {
+    this.setContext({ shedCode: "" });
+  }
+
+  renderInner() {
+    const { extendedShedIdx, context } = this.state;
+    const { fuelGroupID, maxDisplayRecencyHours, shedCode } = context;
+
+    if (!extendedShedIdx) {
       return null;
     }
-    return extendedShedList.map(function (extendedShed, iShed) {
-      return (
-        <ShedView
-          key={"shed-" + iShed}
-          extendedShed={extendedShed}
-          fuelGroupID={fuelGroupID}
-          maxDisplayRecencyHours={maxDisplayRecencyHours}
+
+    return (
+      <Box>
+        {Object.values(extendedShedIdx).map(
+          function (extendedShed, iShed) {
+            return (
+              <ShedView
+                key={"shed-" + iShed}
+                extendedShed={extendedShed}
+                fuelGroupID={fuelGroupID}
+                maxDisplayRecencyHours={maxDisplayRecencyHours}
+                onClickShed={this.onClickShed.bind(this)}
+              />
+            );
+          }.bind(this)
+        )}
+        <ShedDrawer
+          onCloseDrawer={this.onCloseDrawer.bind(this)}
+          extendedShed={extendedShedIdx[shedCode]}
         />
-      );
-    });
+      </Box>
+    );
   }
 
   render() {
