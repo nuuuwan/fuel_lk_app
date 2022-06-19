@@ -7,7 +7,7 @@ import Geo from "../../nonview/base/Geo";
 import I18N, { BASE_LANG } from "../../nonview/base/I18N";
 import { HOURS_IN } from "../../nonview/base/TimeX";
 import URLContext from "../../nonview/base/URLContext";
-import FuelData from "../../nonview/core/FuelData";
+import CombinedDataServer from "../../nonview/core/CombinedDataServer";
 
 import CustomAppBar from "../../view/molecules/CustomAppBar.js";
 import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.js";
@@ -93,7 +93,8 @@ export default class HomePage extends Component {
   }
 
   async reload() {
-    const extendedShedList = await FuelData.multigetExtendedShedList();
+    const extendedShedList =
+      await CombinedDataServer.multigetExtendedShedList();
     this.setState({ extendedShedList });
   }
 
@@ -176,7 +177,6 @@ export default class HomePage extends Component {
           onClickZoomOut={this.onClickZoomOut.bind(this)}
           onClickNearby={this.onClickNearby.bind(this)}
         />
-
         <TempSourceIsDown />
       </Box>
     );
