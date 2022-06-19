@@ -7,9 +7,9 @@ import Tooltip from "@mui/material/Tooltip";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
-import URLContext from "../../nonview/base/URLContext";
 
 import { t } from "../../nonview/base/I18N";
+import URLContext from "../../nonview/base/URLContext";
 
 const STYLE = {
   position: "fixed",
