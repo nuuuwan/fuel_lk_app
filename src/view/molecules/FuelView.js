@@ -20,11 +20,11 @@ export default function FuelView({
   label,
   isAvailable,
   capacity,
-  recentDispatch,
+  mostRecentDispatchSchedule,
   color,
 }) {
   const theme = useTheme();
-  if (!isAvailable && !recentDispatch) {
+  if (!isAvailable && !mostRecentDispatchSchedule) {
     return null;
   }
 
@@ -60,7 +60,7 @@ export default function FuelView({
         </LabelledBox>
       ) : null}
 
-      {recentDispatch ? (
+      {mostRecentDispatchSchedule ? (
         <LabelledBox
           label={
             <AlignCenter>
@@ -76,11 +76,11 @@ export default function FuelView({
           }
         >
           <FuelQuantity
-            quantity={recentDispatch["amount"]}
+            quantity={mostRecentDispatchSchedule.amount}
             color={theme.palette.success.main}
           />
-          <Place name={t(recentDispatch["plant_name"])} />
-          <HumanTime ut={recentDispatch["time_eta_ut"]} />
+          <Place name={t(mostRecentDispatchSchedule.plantName)} />
+          <HumanTime ut={mostRecentDispatchSchedule.timeETAUT} />
         </LabelledBox>
       ) : null}
       {showCommunityView ? (
