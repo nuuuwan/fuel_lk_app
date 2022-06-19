@@ -29,6 +29,12 @@ export default class BaseShed {
     return `${URL_GMAPS_PREFIX}/${lat},${lng}`;
   }
 
+  get city() {
+    let tokens = this.gmapsAddress.split(",").slice(-2);
+    tokens.pop();
+    return tokens.join(",");
+  }
+
   static fromDict(d) {
     return new BaseShed(
       d["shed_id"],
