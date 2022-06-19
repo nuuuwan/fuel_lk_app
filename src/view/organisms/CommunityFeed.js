@@ -5,6 +5,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Drawer from "@mui/material/Drawer";
 
 import CommunityServer from "../../nonview/core/CommunityServer";
+import CommunityFeedStory from "../../view/molecules/CommunityFeedStory";
 
 const STYLE = { m: 1, p: 1, width: 250 };
 
@@ -35,7 +36,7 @@ export default class CommunityFeed extends Component {
         idxForFuelType,
       ]) {
         return Object.values(idxForFuelType).map(function (communityFeedback) {
-          return JSON.stringify(communityFeedback);
+          return <CommunityFeedStory communityFeedback={communityFeedback} />;
         });
       });
     });
