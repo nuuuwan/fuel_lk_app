@@ -55,8 +55,7 @@ export default class TimeX {
   static getHumanTimeAbs(deltaOriginal) {
     const delta = Math.abs(deltaOriginal);
     if (delta < SECONDS_IN.MINUTE * 2) {
-      const x = parseInt(delta);
-      return x + ` ${t("seconds")}`;
+      return "Now";
     }
     if (delta < SECONDS_IN.HOUR * 2) {
       const x = parseInt(delta / SECONDS_IN.MINUTE);
