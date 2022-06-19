@@ -15,7 +15,7 @@ export default class CommunityView extends Component {
 
   async reload() {
     const { extendedShed, fuelType } = this.props;
-    const shedCode = extendedShed["shed_code"];
+    const shedCode = extendedShed.shedCode;
     const summaryFeedback = await PollWaitingTime.getSummaryFeedback(
       shedCode,
       fuelType
@@ -38,7 +38,7 @@ export default class CommunityView extends Component {
 
   async onSelectPoll(pollOptionID) {
     const { extendedShed, fuelType } = this.props;
-    const shedCode = extendedShed["shed_code"];
+    const shedCode = extendedShed.shedCode;
     await PollWaitingTime.addFeedback(shedCode, fuelType, pollOptionID);
     await this.onCloseModal();
   }
