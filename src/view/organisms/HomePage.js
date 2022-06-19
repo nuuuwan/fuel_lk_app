@@ -36,7 +36,7 @@ export default class HomePage extends Component {
     this.state = {
       extendedShedIdx: undefined,
       context: context,
-      isOpenFeed: false,
+      isOpenFeed: true,
     };
     this.setContext(context);
   }
@@ -137,7 +137,7 @@ export default class HomePage extends Component {
   }
 
   onClickShed(extendedShed) {
-    this.setContext({ shedCode: extendedShed.shedCode });
+    this.setContext({ shedCode: extendedShed.shedCode, isOpenFeed: false });
   }
 
   onCloseDrawer() {
@@ -145,7 +145,7 @@ export default class HomePage extends Component {
   }
 
   onOpenDrawerFeed() {
-    this.setState({ isOpenFeed: true });
+    this.setState({ isOpenFeed: true, shedCode: "" });
   }
 
   onCloseDrawerFeed() {
@@ -182,6 +182,7 @@ export default class HomePage extends Component {
         <CommunityFeed
           isOpenFeed={isOpenFeed}
           onCloseDrawerFeed={this.onCloseDrawerFeed.bind(this)}
+          extendedShedIdx={extendedShedIdx}
         />
       </Box>
     );
