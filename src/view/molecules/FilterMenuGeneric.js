@@ -32,12 +32,21 @@ export default function FilterMenuGeneric({
     setAnchorEl(null);
   };
 
+  const label = selectionOption.shortLabel
+    ? selectionOption.shortLabel
+    : selectionOption.label;
+
   return (
     <div>
       <IconButton size="large" onClick={onClick} sx={{ p: 1 }}>
-        <Typography variant="caption" sx={{ padding: 0.25, color: colorIcon }}>
-          {t(selectionOption.label, skipLabelTranslate)}
-        </Typography>
+        {isSelectedDefault ? null : (
+          <Typography
+            variant="caption"
+            sx={{ padding: 0.25, color: colorIcon }}
+          >
+            {t(label, skipLabelTranslate)}
+          </Typography>
+        )}
         {Icon ? <Icon sx={{ color: colorIcon }} /> : null}
       </IconButton>
       <Menu
@@ -55,7 +64,7 @@ export default function FilterMenuGeneric({
             onClose();
             onSelect(optionID);
           };
-          const isSelected = selectedOptionID === optionID;
+          const isSelected = selectedOptionID.toString() === optionID;
           const color = isSelected ? colorSelected : "neutral";
           const displayLabel = t(option.label, skipLabelTranslate);
           return (
