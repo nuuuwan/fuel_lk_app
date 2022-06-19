@@ -21,7 +21,7 @@ const THEME = createTheme({
   },
   typography: {
     fontFamily: ["Ubuntu", "sans-serif"].join(","),
-    fontSize: 12,
+    fontSize: 14,
   },
 });
 
