@@ -5,16 +5,17 @@ export const BASE_LANG = "en";
 const CACHE_KEY_LANG = "CACHE_KEY_LANG";
 
 class Lang {
-  constructor(lang, label) {
+  constructor(lang, label, shortLabel) {
     this.lang = lang;
     this.label = label;
+    this.shortLabel = shortLabel;
   }
 }
 
 export const LANG_LIST = [
-  new Lang("en", "English"),
-  new Lang("si", "සිංහල"),
-  new Lang("ta", "தமிழ்"),
+  new Lang("en", "English", "En"),
+  new Lang("si", "සිංහල", "සිං"),
+  new Lang("ta", "தமிழ்", "த"),
 ];
 
 export const LANG_IDX = IDX.build(
