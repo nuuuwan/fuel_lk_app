@@ -16,7 +16,8 @@ export class ExtendedShedNew extends BaseShed {
     // ExtendedShedNew only
     timeLastUpdatedByShedUT,
     dispatchScheduleList,
-    fuelStatusIdx
+    fuelStatusIdx,
+    communityFeedbackIdx,
   ) {
     // BaseShed constructor
     super(shedID, shedCode, shedName, shedType, address, latLng, gmapAddress);
@@ -24,12 +25,15 @@ export class ExtendedShedNew extends BaseShed {
     this.timeLastUpdatedByShedUT = timeLastUpdatedByShedUT;
     this.dispatchScheduleList = dispatchScheduleList;
     this.fuelStatusIdx = fuelStatusIdx;
+    this.communityFeedbackIdx = communityFeedbackIdx;
   }
 
-  static fromDict(d) {
-    const shedCode = d["shed_code"];
+  static fromMultipleData(rawD, communityFeedbackIdx) {
+    const shedCode = rawD["shed_code"];
+    const communityFeedbackIdxForShed = communityFeedbackIdx[shedCode] ? communityFeedbackIdx[shedCode] : {};
     const baseShed = BASE_SHED_IDX[shedCode];
     return new ExtendedShedNew(
+
       // BaseShed
       baseShed.shedID,
       baseShed.shedCode,
@@ -38,12 +42,17 @@ export class ExtendedShedNew extends BaseShed {
       baseShed.address,
       baseShed.latLng,
       baseShed.gmapAddress,
-      // ExtendedShed Only
-      d["time_last_updated_by_shed_ut"],
-      d["dispatch_schedule_list"].map(function (d1) {
+
+      // timeLastUpdatedByShedUT
+      rawD["time_last_updated_by_shed_ut"],
+
+      // dispatchScheduleList
+      rawD["dispatch_schedule_list"].map(function (d1) {
         return DispatchSchedule.fromDict(d1);
       }),
-      Object.entries(d["fuel_status_idx"])
+
+      // fuelStatusIdx
+      Object.entries(rawD["fuel_status_idx"])
         .map(function ([fuelType, d1]) {
           const d2 = {
             fuel_type: fuelType,
@@ -55,7 +64,10 @@ export class ExtendedShedNew extends BaseShed {
         .reduce(function (fuelStatusIdx, [fuelType, fuelStatus]) {
           fuelStatusIdx[fuelType] = fuelStatus;
           return fuelStatusIdx;
-        }, {})
+        }, {}),
+
+      // communityFeedbackIdx
+      communityFeedbackIdxForShed,
     );
   }
 }
