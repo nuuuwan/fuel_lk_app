@@ -56,4 +56,26 @@ export default class CommunityServer {
 
     return communityFeedbackIdx;
   }
+
+  static async getCommunityFeedbackList() {
+    const communityFeedbackIdx =
+      await CommunityServer.getCommunityFeedbackIdx();
+
+    return Object.values(communityFeedbackIdx)
+      .reduce(function (communityFeedbackList, idxForShed) {
+        return Object.values(idxForShed).reduce(function (
+          communityFeedbackList,
+          idxForFuelType
+        ) {
+          return [].concat(
+            communityFeedbackList,
+            Object.values(idxForFuelType)
+          );
+        },
+        communityFeedbackList);
+      }, [])
+      .sort(function (a, b) {
+        return b.timeFeedbackUT - a.timeFeedbackUT;
+      });
+  }
 }
