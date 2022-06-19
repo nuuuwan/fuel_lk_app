@@ -1,103 +1,730 @@
+#28A, Chilaw - Colombo Main Rd, Wennappuwa, Sri Lanka
+04 Ymma Cross Rd, Sri Lanka
+06 A6, Polgahawela, Sri Lanka
+06 South, Colombo, Sri Lanka
 07, Tissa Road, Ambalanthota
+09, JAYAMAWATHA, HIRIPITIYAWA, Galnewa, Sri Lanka
+1    , Badulla, Sri Lanka
+1 A26, Karalliyadda, Sri Lanka
+1 Avissawella Rd, Pannipitiya 10230, Sri Lanka
+1 High Level Rd, Hanwella, Sri Lanka
+1 Kandy Rd, Kiribathgoda 11600, Sri Lanka
+1 Old Batticaloa Rd, Mutur, Sri Lanka
+1 Samurdhi Mawatha, Heiyanthuduwa, Sri Lanka
+1 Sri Sumanatissa Mawatha, Colombo 01300, Sri Lanka
+1 st floor , Namal filling station, Galle 80000, Sri Lanka
+10 A6, Trincomalee, Sri Lanka
+10 Hirimbura Cross Rd, Galle 80000, Sri Lanka
+10 Kandy Rd, Kadawatha, Sri Lanka
+10 Mangala Road, Gampaha, Sri Lanka
 10, New Kandy Rd, Weliweriya
+100 B143, Batapola, Sri Lanka
+100 Mankuliya Rd, Negombo, Sri Lanka
+100 Pallimunai Rd, Mannar, Sri Lanka
+101 Rajapakse Broadway, Negombo, Sri Lanka
+102 Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Colombo 00500, Sri Lanka
+103 Negombo Rd, Ja-Ela, Sri Lanka
+103/1/B High Level Rd, Pannipitiya 10230, Sri Lanka
+105 Pannala-Kuliyapitiya Rd, Sri Lanka
 105, 1 Kandy Rd, Kiribathgoda
+105A Dickson Moters Rd, Kurunegala, Sri Lanka
 106, Negombo Rd, Katuwellegama
+1069 A9, Sri Lanka
+107 Kandy Rd, Vavuniya, Sri Lanka
 108 Colombo - Horana Rd, Polgasowita
 108-17 Kandy Rd, Nawalapitiya
 110 Sir James Pieris Mawatha, Colombo - 02
+110a Colombo - Kandy Rd, Kiribathgoda 11300, Sri Lanka
+111 1st Cross St, Colombo 01100, Sri Lanka
+111 B239, Pannipitiya, Sri Lanka
 111 Negombo Rd, Peliyagoda
+112 AB44, Nawa Madagama, Sri Lanka
 112 Ab44, Nawa Madagama Deiattakandiya
 112 Kandy - Jaffna Hwy, Matale
+116 Pamunugama Rd, Bopitiya, Sri Lanka
+117 Karamettiya Kandakettiya Road, Karametiya, Sri Lanka
 119 Peradeniya Rd, Kandy
+119 Peradeniya Rd, Kandy 20000, Sri Lanka
 12 Galle Rd, Ahungalla
+12 Galle Rd, Ahungalla, Sri Lanka
+120 B413, Rikillagaskada, Sri Lanka
+121 Negombo - Giriulla Rd, Katana, Sri Lanka
+121Th Km Post, Galkulama, Sri Lanka
 122 Avissawella Rd, Maharagama
+122 Avissawella Rd, Maharagama 10280, Sri Lanka
+122 Kegalle Bypass Rd, Kegalle, Sri Lanka
+122 Negombo Rd, Peliyagoda, Sri Lanka
+13 Point Pedro East Coast Rd, Point Pedro, Sri Lanka
 130 A2, Dehiwala-Mount Lavinia
+130 A2, Dehiwala-Mount Lavinia, Sri Lanka
+130c Colombo - Horana Rd, Piliyandala, Sri Lanka
 1322, Kankesanthurai, Road, Kokkuvil
+133 Stace Rd, Colombo, Sri Lanka
 134 Avissawella Rd, Maharagama
+134 High Level Rd, Maharagama 10280, Sri Lanka
 136, Nuwaraeliya Road, Dalpitiya Atabage
 137 Talawa Rd, Eppawala
+137 Talawa Rd, Eppawala, Sri Lanka
+138 A4, Colombo 00500, Sri Lanka
+139/1 Anagarika Dharmapala Mawatha, Matara, Sri Lanka
+14 Nittambuwa - Ruwanwella Rd, Ruwanwella, Sri Lanka
 140 Avissawella Rd, Homagama
+143 E L Senanayake Veediya, Kandy, Sri Lanka
 143 Negombo-colombo Main Rd, Ja-ela
+144 Katugastota-Kurunegala-Puttalam Highway, Kurunegala, Sri Lanka
 147 Avissawella Rd, Pannipitiya
+147 Kandy Rd, Gampola 20500, Sri Lanka
+148 A2, Dehiwala-Mount Lavinia, Sri Lanka
+148 High Level Rd, Nugegoda 10250, Sri Lanka
+148 Sri Bodhi Rd, Gampaha, Sri Lanka
 148/12, Pahala Hanwella, Hanwella
+151 Jayanthi Mawatha, Anuradhapura 50000, Sri Lanka
 151, New Kandy Rd
 151a Jayanthi Mawatha, Anuradhapura
+153 B235, Moratuwa, Sri Lanka
+153 Kasthuriyar Rd, Jaffna, Sri Lanka
+16 B419, Sri Lanka
+16 Haragama Rd, Rikillagaskada, Sri Lanka
+16/1/1, Kandy-Jaffna Highway, Matale, Sri Lanka
 161 Colombo Main Rd, Beruwala
+166 Egodawatta Rd, Chilaw, Sri Lanka
+16d Jayanthi Mawatha, Anuradhapura, Sri Lanka
+17 Ja Ela-Ekala-Gampaha-Yakkala Hwy, Ja-Ela, Sri Lanka
 170 High Level Rd, Nugegoda
+171 Avissawella - Hatton - Nuwara Eliya Hwy, Sri Lanka
+171 B247, Kurunegala 60000, Sri Lanka
+171 Maya Ave, Colombo 00500, Sri Lanka
 172 Nawala Rd, Nugegoda
 173 Galle Rd, Dehiwala-Mount Lavinia
+173 High Level Rd, Colombo 00500, Sri Lanka
+173a Galle Rd, Beruwala, Sri Lanka
+174 Nawala Rd, Sri Jayawardenepura Kotte 11222, Sri Lanka
 177 Colombo - Batticaloa Hwy, Balangoda
+18 Beragama Road, Ambalantota, Sri Lanka
+180 Kurunegala-Narammala-Madampe Rd, Galahitiyawa, Sri Lanka
+181 High Level Rd, Nugegoda 10250, Sri Lanka
+186 Outer Circular Rd, Puttalam, Sri Lanka
+187 A9, Akurana, Sri Lanka
+188A Ja Ela-Ekala-Gampaha-Yakkala Hwy, Gampaha, Sri Lanka
+189 Katuwana Rd, Homagama, Sri Lanka
+192 Ampara-Uhana-Maha Oya Hwy, Sri Lanka
+196 Hokandara - Kottawa Rd, Sri Jayawardenepura Kotte, Sri Lanka
 196 Prince Of Wales Ave, Colombo
+196 Prince of Wales Ave, Colombo, Sri Lanka
+1c Sri Sumangala S Rd, Kalutara 12000, Sri Lanka
+2 Bandaranaike Mawatha, Nuwara Eliya 22200, Sri Lanka
+2 C.A. Ariyatilaka Mawatha, Matara 81000, Sri Lanka
+2 Kandy Rd, Trincomalee 31000, Sri Lanka
 2, Havelock Rd, Colombo
+20 AB20, Valvettithurai, Sri Lanka
+200 Katugastota - Kurunegala - Puttalam Hwy, Kurunegala, Sri Lanka
 2012 Katunayake - Veyangoda Rd, Veyangoda
+2012 Katunayake-Veyangoda Rd, Veyangoda 11100, Sri Lanka
 203 Main St, Kalmunai
+203 Main Street, Kalmunai 32300, Sri Lanka
+204 Colombo-Galle-Hambantota-Wellawaya Highway Aluthgama A2, Aluthgama, Sri Lanka
+206 Kandy Rd, Dambulla, Sri Lanka
+207 Dimutu Mawata, Sri Lanka
 207/04/16, Wilimbula, Henegama
+21 Mahathma Gandhi Rd, Jaffna, Sri Lanka
 213 Main St, Kalmunai
+22 Panama Rd, Pottuvil, Sri Lanka
+220 A10, Pellandeniya, Sri Lanka
 220-196 Mahiyangana Rd, Badulla
+224 Hettipola Rd, Kuliyapitiya 60200, Sri Lanka
+225 Galle Rd, Moratuwa 10400, Sri Lanka
+2253 Port Access Road, Dondra, Sri Lanka
+226F+PM8, New Kandy Rd, Sri Lanka
+234 Negombo-Colombo Main Rd, Ja-Ela, Sri Lanka
+236 Gannoruwa Road, Sri Lanka
 237, Colombo - Batticaloa Hwy, Akkaraipattu
+23RH+F58, Pulastigama, Sri Lanka
+240 A2, Dehiwala-Mount Lavinia, Sri Lanka
+241 Kurunegala - Dambulla Rd, Galewela, Sri Lanka
+2423+CJM, Sri Lanka
+246 Negombo-Colombo Main Rd, Wattala 11300, Sri Lanka
+248-240 Katugastota-Kurunegala-Puttalam Hwy, Katugastota, Sri Lanka
+24RF+7MF, Colombo - Kandy Rd, 11730, Sri Lanka
+24VJ+GM6, Sri Lanka
+25   -    , Kotikawatta 10600, Sri Lanka
 251 Maithripala Senanayake Mawatha, Anuradhapura
+252 A2, Dehiwala-Mount Lavinia, Sri Lanka
 253, Nagoda. Kadana
+253a George R. De Silva Mawatha, Colombo 01300, Sri Lanka
+255 A1, Pilimathalawa, Sri Lanka
+257 A2, Dehiwala-Mount Lavinia, Sri Lanka
+257 A28, Sri Lanka
+259 Colombo - Kandy Rd, Warakapola 71600, Sri Lanka
+259 Galle Rd, Galle 80000, Sri Lanka
+25GQ+V27, Amithirigala, Sri Lanka
+25R8+3JV, Madulsima, Sri Lanka
 26, Piliyandala Rd, Piliyandala
+263 Katugastota Rd, Kandy 20000, Sri Lanka
 264 Galle Rd, Beruwala
+264 Galle Rd, Beruwala, Sri Lanka
 265-275 Katugastota Rd, Kandy
+266 A5, Passara, Sri Lanka
+267 Colombo - Galle Main Rd, Colombo 00400, Sri Lanka
 267 Colombo - Galle Main Rd, Colombo 4
+26H9+582,    , Galle 80000, Sri Lanka
+26J8+WX Galle, Sri Lanka
+26MW+G5Q, Access Road, Galle, Sri Lanka
+26PH+HGX, Galle 80000, Sri Lanka
+26PJ+C53, Galle 80000, Sri Lanka
+26R3+R73, Peradeniya-Badulla-Chenkaladi Hwy, Lunugala, Sri Lanka
+26X6+H4Q IOC Fuel Station, Wakwella Rd, Galle 80000, Sri Lanka
 27/8b Lake Rd, Boralesgamuwa
 270-278 Negombo - Colombo Main Rd, Ja-Ela
 272 Mile Post, Warnagiriya, Dombagahawela
+273 Negombo-Colombo Main Rd, Ragama, Sri Lanka
+274C+4CJ, Anuradhapura-Padeniya Highway, Galgamuwa, Sri Lanka
 278, Kandy Road, Nunavil, Chavakachcheri
 279, Dambulla Road, Kirigalpotta, Matale
+27QC+CR9, Bibile - Medagama - Nakkala Rd, Sri Lanka
+27WM+X7J, Mahagalkadawala, Sri Lanka
+28 New Kandy Rd, Weliweriya, Sri Lanka
+28 Polgahawela-Kegalle Hwy, Sri Lanka
 28 Polgahawela-kegalle Highway
+283 Kurunegala - Dambulla Rd, Melsiripura, Sri Lanka
+285 Pasyala - Giriulla Rd, Mirigama 11200, Sri Lanka
+29 Nallur-Oddumadam Rd, Jaffna, Sri Lanka
 290 A2, Hikkaduwa
+290 Galle Rd, Hikkaduwa, Sri Lanka
 291b, Sri Road, Hokandara
+293 A2, Galle, Sri Lanka
 293, Magalle,Galle
+295 Negombo-Colombo Main Rd, Negombo, Sri Lanka
+297/7 Dr Danister De Silva Mawatha, Colombo 00900, Sri Lanka
+29PQ+8F3, Imaduwa, Sri Lanka
+2CVW+PC6, Bulnewa, Sri Lanka
+2H68+VGR, Thihagoda, Sri Lanka
+2HPX+3X8, Kekirawa, Sri Lanka
+2HRW+6VP, Kekirawa, Sri Lanka
+2JR2+X6F, Kekirawa-Ganewalpola Rd, Kekirawa, Sri Lanka
+2M77+QV3, Pundaluoya, Sri Lanka
+2P2R+5J Mampuri, Sri Lanka
+2PWM+XP9, Beliatta, Sri Lanka
+2QFX+H6P, Sea Avenues, Tangalle, Sri Lanka
+2QGV+8JM, Tangalle, Sri Lanka
+2QHV+RHG, Tangalle, Sri Lanka
+2QPC+54F, Moragaswewa, Sri Lanka
+2QQ4+X65, Habarana Roundabout, Habarana, Sri Lanka
+2R4Q+G7H, Puttalam, Sri Lanka
+2RGP+WJ8, Katugastota-Kurunegala-Puttalam Hwy, Puttalam, Sri Lanka
+2RJH+6GJ, Puttalam, Sri Lanka
+2V4M+VX Mannar, Sri Lanka
+2V58+M6P, Wattala, Sri Lanka
+2V9X+9Q7, Magammana, Sri Lanka
+2VJ4+8WM, Senakudirippuwa, Sri Lanka
+2W7Q+7PR, Sri Lanka
+2WQ4+H63, Maradankadawala-Habarana-Thirukkondaiadimadu Hwy, Minneriya, Sri Lanka
+2X22+J5W, 12/E Kandy Rd, Kadawatha 11850, Sri Lanka
+2XGJ+WFF, Kadawatha, Sri Lanka
+2XPR+295, Sri Lanka
+2XR2+827, Hingurakgoda, Sri Lanka
+2d Avissawella Rd, Godagama, Sri Lanka
 30 minutes to 3 hours
+301 Avissawella Rd, Hanwella, Sri Lanka
+302 Dangedara Road, Galle 80000, Sri Lanka
+303 Negombo Rd, Wattala, Sri Lanka
+304 Dr Colvin R de Silva Mawatha, Colombo 01000, Sri Lanka
 304 Union Pl, Colombo
 306 Kotte Rd, Nugegoda
+306 Kotte Rd, Nugegoda 10100, Sri Lanka
+308 B308, Sri Lanka
 30mins - 3hrs
+311 Sri Sangaraja Mawatha, Colombo 01000, Sri Lanka
+312 Chilaw - Colombo Main Rd, Negombo 11500, Sri Lanka
+312 Galle Rd, Dehiwala-Mount Lavinia, Sri Lanka
 313 De Soysa Rd, Moratuwa
+315a Kandy Rd, Kadawatha 11850, Sri Lanka
+31a Hatton - Maskeliya - Dalhousie Rd, Hatton, Sri Lanka
+32 Castle Ln, Colombo 00400, Sri Lanka
 32 Coustom Rd, Beruwala
+32 Coustom Rd, Beruwala, Sri Lanka
+32 Kandy - Jaffna Hwy, Medawachchiya, Sri Lanka
+323 Havelock Rd, Colombo 00500, Sri Lanka
+32300, Kalmunai 32300, Sri Lanka
+328a New Kandy Rd, Sri Lanka
+32GC+R68, Gampaha, Sri Lanka
+32JQ+P5G, Yakkala - Radawana Rd, Yakkala, Sri Lanka
+32MH+F98, Unnamed Rd, Sungavila, Sri Lanka
+32RC+F3G, Gampaha, Sri Lanka
+33 Colombo - Galle Main Rd, Panadura, Sri Lanka
+33 D D. S. Senanayake Mawatha, Colombo 00700, Sri Lanka
+33 Kandy Rd, Yakkala, Sri Lanka
+3339+R23, Wathurugama Rd, Malwathu Hiripitiya, Sri Lanka
+337 Karukupone Rd, Bangadeniya, Sri Lanka
+34 Ampara Rd, Sammanthurai 32200, Sri Lanka
+340b Lake Rd, Boralesgamuwa 10290, Sri Lanka
+344 Galle Rd, Kalutara, Sri Lanka
+345 Puttalam - Anuradhapura - Trincomalee Hwy, Anuradhapura, Sri Lanka
+346 Dompe - Pugoda Road, Sri Lanka
+348 Yatiyana, Sri Lanka
+349F+FJ Wathurugama, Sri Lanka
+34RR+MF3, Rathgama, Sri Lanka
+35 Kandy Rd, 21300, Sri Lanka
 35, Aluthgama-mathugama Rd, Welipenna
+352 A1, Mawanella, Sri Lanka
+352 Kotte Rd, Sri Jayawardenepura Kotte 10100, Sri Lanka
+357 Pasyala - Giriulla Rd, Mirigama, Sri Lanka
 358/4 Colombo - Kandy Rd, Mawanella
+359 Dickson Moters Rd, Kurunegala, Sri Lanka
+35C6+QXF, Galle, Sri Lanka
 35w, Negombo-kurunegala Rd, Bopitiya
+363 Kandy Rd, Kelaniya, Sri Lanka
+364b High Level Rd, Nugegoda, Sri Lanka
+3653+JCM, Galle 80000, Sri Lanka
+366J+5RM,      , Galle 80000, Sri Lanka
 369, Ambepussa - Kurunegala - Trincomalee Hwy, Kurunegala
+36HX+9GC, Sri Lanka
+37 High Level Rd, Homagama 10250, Sri Lanka
+37 Maha Vihara Rd, Ambalangoda, Sri Lanka
 37, Station Cross Rd, Batticaloa
 370 Avissawella Rd, Pannipitiya
+370 High Level Rd, Pannipitiya 10230, Sri Lanka
+372 Matale Rd, Akurana, Sri Lanka
+372/4 04th Ln, Matara, Sri Lanka
 374-364 Avissawella Rd, Nugegoda
+378 B295, Moratuwa 10400, Sri Lanka
+3797+9X Ruwanwella, Sri Lanka
+38 Station Rd, Wattala 11300, Sri Lanka
+380 Al - Maslam N Rd, Kalmunai, Sri Lanka
+381 Kotte - Bope Rd, Sri Lanka
+383 Colombo - Batticaloa Hwy, Ratnapura, Sri Lanka
 384/54, Wakwella Rd, Galle
+386 Colombo - Kandy Rd, Pilimathalawa, Sri Lanka
+38Q3+2Q2, Akmeemana, Sri Lanka
 396, 4th Mile Stone, Mannar Road,Nelukkulan, Vavuniya
+398 Galagedara - Rambukkana Rd, Galagedara, Sri Lanka
+3FQJ+22G, Sri Lanka
+3G37+45 Kanakarayankulam, Sri Lanka
+3G4P+R4W, Nawalapitiya, Sri Lanka
+3G4P+R7X, Kandy Rd, Nawalapitiya, Sri Lanka
+3G8Q+XVV, Sri Lanka
+3G9P+GPX, Ipalogama, Sri Lanka
+3HH8+J3W, Matara - Hakmana Rd, Kamburupitiya 81000, Sri Lanka
+3HJ8+7FV, B415, Kamburupitiya 81100, Sri Lanka
+3JMW+9HC, Hakmana - Beliatte - Tangalle Rd, Hakmana, Sri Lanka
+3JMW+Q3W, Hakmana, Sri Lanka
+3JRJ+QGG, Ganewalpola, Sri Lanka
+3JRJ+R6 Ganewalpola, Sri Lanka
+3M76+HJ3, Nedunkeni, Sri Lanka
+3M9M+HW7, Tawalantenne, Sri Lanka
+3P2M+2HJ, Walasmulla Road, Beliatta, Sri Lanka
+3P2P+9HR, Norochcholai, Sri Lanka
+3RCG+QX Puttalam, Sri Lanka
+3RV2+R7P, Padiyapelella, Sri Lanka
+3VGX+PV Kalametiya, Sri Lanka
+3VMV+J3X, Ja-Ela, Sri Lanka
+3VMV+R68, Ja-Ela, Sri Lanka
+3VPR+R3R, Negombo-Colombo Main Rd, Ja-Ela, Sri Lanka
+3VR8+9XV, Ranna, Sri Lanka
+3VXP+H2X, Dandugama, Sri Lanka
+3W3P+4G5, Ragama Batuwatta Road, Narangoda Paluwa, Sri Lanka
+3X4G+GH Yatiyalpathana, Sri Lanka
+3X96+PFG, Ganemulla, Sri Lanka
+3XC6+6M9, Ganemulla, Sri Lanka
+3rd Mile Post, Ridiyagama Road, Bolana, Sri Lanka
+4 A4, Kalmunai 32300, Sri Lanka
 40 Colombo - Kandy Rd, Kalagedihena
+40 Colombo - Kandy Rd, Kalagedihena, Sri Lanka
 403 Udumulla Rd, Sri Jayawardenepura Kotte
+4030 Colombo - Batticaloa Hwy, Maruthamunai, Sri Lanka
 404/1, Negombo Road, Wattala.
+407 Udumulla Rd, Angoda 10620, Sri Lanka
 41 Chilaw - Colombo Main Rd, Chilaw
+41 Chilaw - Colombo Main Rd, Chilaw, Sri Lanka
 415 Galle Rd, Dehiwala - Mount Lavinia
+415 Galle Rd, Dehiwala-Mount Lavinia 10390, Sri Lanka
+421 Negombo Rd, Wattala 11300, Sri Lanka
+42CH+XP7, Aluthgama-Wigoda Rd, Bemmulla, Sri Lanka
+42FG+35R, Ambalantota, Sri Lanka
+42FH+49H, A2, Ambalantota, Sri Lanka
+42J9+G7Q, Diyasenpura, Sri Lanka
 43, Ahangama
+43GC+JCR, A1, Kalagedihena, Sri Lanka
+43PR+J7P, A1, Nittambuwa, Sri Lanka
+43RV+PQV, A1, Nittambuwa, Sri Lanka
+43VW+XFV, A1, Nittambuwa, Sri Lanka
+44 Negombo Rd, Kandana 11320, Sri Lanka
+44 Ratnapura Road, Horana, Sri Lanka
+444G+277, Dodanduwa, Sri Lanka
+447P+92F, Hunupola, Sri Lanka
+44FC+VFH, Main St, Hambantota, Sri Lanka
+44FG+RCV, Kachcheri Rd, Hambantota, Sri Lanka
+44FH+5G5, Hambantota, Sri Lanka
+44RP+PQ5, Hikkaduwa - Baddegama Rd, Gonapinuwala, Sri Lanka
+44VQ+574, Gonapinuwala, Sri Lanka
 45 Colombo - Horana Rd, Piliyandala
+45 Minuwangoda Rd, Kotugoda, Sri Lanka
+45/1 Main Street, Piliyandala, Moratuwa 10400, Sri Lanka
+452 debarawawe, Tissamaharama Rd, Debarawewa, Sri Lanka
+45B AB10, Colombo, Sri Lanka
+46 Kandy Rd, Matale, Sri Lanka
 468 Colombo - Kandy Rd, Kadawatha
+468 Kandy Rd, Kadawatha, Sri Lanka
+4687+8JV, B128, Poddala, Sri Lanka
+469 Kandy Road Sardhapura A6, Sardhapura, Sri Lanka
 469, Kandy Road Sardhapura A6, Sardhapura
+47 Mawanella - Hemmaththagama - Singhapitiya, Mawanella 71500, Sri Lanka
+47M3+XV2, Wanduramba, Sri Lanka
+48GH+R6 Mallavi, Sri Lanka
+48M6+XGH, Mankulam-Vellankulam Rd, Mallavi, Sri Lanka
+49 Hatton Rd, Ginigathhena 20680, Sri Lanka
+491 Colombo - Galle Main Rd, Wadduwa, Sri Lanka
 493 Puttalam Road, Wennappuwa
+4943+73G, B480, Yakkalamulla, Sri Lanka
+4CMV+2WF, Mankulam, Sri Lanka
+4CW6+V2J, Talawa Rd, Eppawala, Sri Lanka
+4F2G+3R6 IOC Filling Station, Ketanwila Road, Akuressa, Sri Lanka
+4GGH+PRP, Sri Lanka
+4HG5+67P, Urubokka Road, Ransagoda, Sri Lanka
+4HH9+2P Wadinagala, Sri Lanka
+4HJ6+CPP, Maradankadawala, Sri Lanka
+4JX4+GXX, B98, Deiyandara, Sri Lanka
+4P2H+6J Talaimannar, Sri Lanka
+4P4H+8PV, Talaimannar Pier, Sri Lanka
+4P85+CW Thalawila, Sri Lanka
+4QX6+HP5, Weeraketiya, Sri Lanka
+4QX7+6C7, Weeraketiya, Sri Lanka
+4QXM+HX8, Haragama Rd, Rikillagaskada, Sri Lanka
+4Th Mile Post, Peliyagoda, Sri Lanka
+4VC2+2V, Thambiluvil, Sri Lanka
+4VCH+VHV, Bandarawatta, West, Sri Lanka
+4VJG+Q8P, Negombo, Sri Lanka
+4VW4+4GX, Mahaweli Raja Mawatha, Keerthibandarapura, Sri Lanka
+4VWV+8Q3 Kuswala Fuel Station, Katunayake, Sri Lanka
+4W5J+W99, Hungama, Sri Lanka
+4WF9+742, Kotugoda Road, Katunayake, Sri Lanka
+4WJG+RGG, Gampaha, Sri Lanka
+4X5G+F5Q, Nonagama, Sri Lanka
+4XGJ+MCF, Udugampola, Sri Lanka
+4XR8+G2X, Medirigiriya, Sri Lanka
+4XR9+QQ9, Medirigiriya, Sri Lanka
+5 Colombo - Ratnapura - Wellawaya - Batticaloa Rd, Kalmunai 32300, Sri Lanka
+5 Peradeniya - Badulla - Chenkaladi Hwy, Udapalatha, Sri Lanka
+51, Main Street, Sri Lanka
 51, Meegahajandura Rd, Sooriyawewa
+524W+V9J, Rajamal Uyana Mawatha, Veyangoda 11100, Sri Lanka
+529 Bandarawela By Pass Rd, Bandarawela, Sri Lanka
+52A Rattagala - Gonagaldeniya Rd, Waharaka, Sri Lanka
+5335+MH2, Veyangoda 11100, Sri Lanka
+5337+H4Q Pubic Hospital(OPD), Veyangoda 11100, Sri Lanka
 534 New Hunupitiya Rd, Kelaniya
+539/3A B214, Sri Lanka
+53VW+4P4, Kahawa - Batapola Rd, Meetiyagoda 80330, Sri Lanka
+53XV+62X, Kaleliya - Medagampitiya Rd, Pallewela, Sri Lanka
+53XW+CR Kalaoya, Sri Lanka
 54 St Anthony's Mawatha, Colombo - 07
+542 Ambepussa - Kurunegala - Trincomalee Hwy, Dambulla, Sri Lanka
 542 Oddumadam Road, Jaffna
+542a B123, Talagala, Sri Lanka
+543W+C26, Hambantota, Sri Lanka
+549F+2GV, Pasyala, Sri Lanka
+54M8+472, Veyangoda, Sri Lanka
+54MQ+2FP Lanka Filing Station Aluthwala, Aluthwala, Sri Lanka
+559H+RM5, Baddegama, Sri Lanka
+55JR+8Q9, Nayapamulla - Unanwitiya - Nagoda, Baddegama, Sri Lanka
+55V2+7P2, Colombo - Kandy Rd, Weweldeniya, Sri Lanka
+55X3+5WC, A1, Weweldeniya, Sri Lanka
+55a S. De S. Jayasinghe Mawatha, Nugegoda, Sri Lanka
+561/60, Maithripala Senanayake Mawatha, Anuradhapura, Sri Lanka
+562 Negombo Rd, Ragama 11010, Sri Lanka
+562C+J7X, Rajanganaya, Sri Lanka
+564F+4HF, Bibile, Sri Lanka
+564F+4M3, Peradeniya-Badulla-Chenkaladi Hwy, Bibile, Sri Lanka
+566 Elvitigala Mawatha, Colombo 00700, Sri Lanka
+566G+24C, Bibile, Sri Lanka
+567C+P9X, Rajanganaya, Sri Lanka
+568 Trincomalee Hwy,  , Sri Lanka
+572F+GH8, Wanduramba - Mapalagama Rd, Aralliya Urala, Sri Lanka
+573W+WFV, Tambuttegama, Sri Lanka
+587, Pamunugama Road, Thalahena, Negombo, Sri Lanka
+593 Troop Centre, Sri Lanka
+598 Colombo - Galle - Hambantota - Wellawaya Hwy, Colombo 00300, Sri Lanka
+5FF5+J9V, Dippitiya, Sri Lanka
+5GC2+V4M, Horewala - Hemmathagama Rd, Hemmathagama, Sri Lanka
+5GF2+G8 Hemmathagama, Sri Lanka
+5H58+X3X, Gampola, Sri Lanka
+5H8C+JXW, Peradeniya - Badulla - Chenkaladi Hwy, Gampola, Sri Lanka
+5HQR+MQH, Sri Lanka
+5HXQ+PG5, Thihagoda - Kamburupitiya - Mawarala - Kotapola Rd, Mawarala, Sri Lanka
+5M54+R9X, Oddusuddan, Sri Lanka
+5M5X+97H, Walasmulla, Sri Lanka
+5MGX+4P2, Deltota, Sri Lanka
+5MHQ+935, Deltota, Sri Lanka
+5MX9+3X8, Galaha, Sri Lanka
+5QGH+393, Soysa Rd, Hanguranketa, Sri Lanka
+5RVC+JPJ, Negombo, Sri Lanka
+5V4W+WX Eraminiyaya, Sri Lanka
+5V5F+43J, Katunayake, Sri Lanka
+5V7X+W93, Angunakolapelessa Rd, Agunukolapelessa, Sri Lanka
+5VP6+386, Wanathavilluwa, Sri Lanka
+5VX3+9P6, Negombo, Sri Lanka
+5W9X+VH9, Siriwardhana Rd, Minuwangoda, Sri Lanka
+5WGC+8XQ, Yatiyana, Sri Lanka
+5X7W+3WC, Gampaha, Sri Lanka
+5a Shasanawardhanarama Rd, Homagama, Sri Lanka
+61360 Kalpitiya Rd, Kalpitiya, Sri Lanka
+616 Kandy-Jaffna Highway, Matale 21000, Sri Lanka
 618/b/1 Colombo - Batticaloa Hwy, Eheliyagoda 07
+618/b/1 Colombo - Batticaloa Hwy, Eheliyagoda, Sri Lanka
 626, Thirukkondaiadimadu Hwy, Polonnaruwa
 629 Dr Danister De Silva Mawatha, Colombo
+6297+CMR, Divulapitiya, Sri Lanka
+62F9+FFW, Divulapitiya, Sri Lanka
 630 Biyagama Rd, Peliyagoda
+639 Negombo - Giriulla Rd, Sri Lanka
+63H7+73R, Banduragoda, Sri Lanka
+63M3+3R3, Ambalangoda, Sri Lanka
 64 Kalpitiya Rd, Norochcholai
 64, S. De S. Jayasinghe Mawatha
+64CF+F4V, B143, Batapola, Sri Lanka
+64F7+WJQ, Kahawa - Batapola Rd, Batapola, Sri Lanka
+64WH+XPH, Mirigama, Sri Lanka
+64XJ+M6P,   -    , Mirigama, Sri Lanka
 65/2,urapolard, Pugoda
+66 Kandy Rd, Trincomalee, Sri Lanka
+662 Eriyawetiya Rd, Kiribathgoda, Sri Lanka
+66H2+23X, Warakapola, Sri Lanka
+66J2+5PQ, Warakapola, Sri Lanka
+66V6+XWW, Ambepussa - Kurunegala - Trincomalee Hwy, Ambepussa, Sri Lanka
+67 D S Senanayake Mawatha, Hingurakgoda, Sri Lanka
+67JH+9MG, Sri Lanka
+67M7+Q34, Nelundeniya, Sri Lanka
+67f Walter Gunasekara Mawatha, Sri Jayawardenepura Kotte 11222, Sri Lanka
 67p, Urubokka Road, Ransagoda
+68 Bandaranaike Mawatha, Ratnapura, Sri Lanka
+68P5+3XM Threeweel Park, Galigamuwa, Sri Lanka
+68QJ+MFJ, Tissa - Kirinde Rd, Kirinda, Sri Lanka
 692 Matale Rd, Akurana
+69Q3+C76, Talawa, Sri Lanka
+69W4+2H, Kegalle, Sri Lanka
+6FX5+J2H, Mawanella, Sri Lanka
+6H5X+RF4, Kovilakanda, Sri Lanka
+6HQJ+55 Polwatta, Sri Lanka
+6M58+3MF, Kirama, Sri Lanka
+6MGC+JCJ, Hingurana, Sri Lanka
+6P73+3WR, Epic Encounters Terminal Rd, Kandakuliya, Sri Lanka
+6Q92+XP8, Mailapitiya, Sri Lanka
+6QHX+4G Tanniyutttu, Sri Lanka
+6QHX+8M9, Tanniyutttu, Sri Lanka
+6QP8+PG8, Kalpitiya, Sri Lanka
+6QQ8+3Q, Kalpitiya, Sri Lanka
+6R3H+H28, Negombo, Sri Lanka
+6R3H+H3M, Negombo, Sri Lanka
+6R5J+Q74, Negombo, Sri Lanka
+6R5Q+FX8, Negombo, Sri Lanka
+6R5Q+HWJ, Negombo, Sri Lanka
+6R5X+CMR, Sinnamuhattuvaram, Sri Lanka
+6R7W+QPR, Negombo, Sri Lanka
+6RCC+WQQ, Sri Lanka
+6RCQ+MHP, Akkaraipattu, Sri Lanka
+6RCX+CQF, Akkaraipattu, Sri Lanka
+6RP2+4F Karative, Sri Lanka
+6RQX+97Q, Chilaw - Colombo Main Road, Negombo, Sri Lanka
+6V4W+G84, Kimbulapitiya Rd, Kimbulapitiya, Sri Lanka
+6V83+F22, Akkaraipattu, Sri Lanka
+6VFH+6RV, Negombo, Sri Lanka
+6VG2+987, Negombo, Sri Lanka
+6W6V+FCR, Dagonna Rd, Aluthepola, Sri Lanka
+6WJ5+85W, Miriswatte, Sri Lanka
+6X3W+4P8, Ballapana, Sri Lanka
+6XHQ+PW8, Marandagahamula, Sri Lanka
+6XHW+724, Negombo - Mirigama Rd, Marandagahamula, Sri Lanka
+6XJ8+VJ3, Dunagaha, Sri Lanka
+6XJF+HQQ, Dunagaha, Sri Lanka
 6th Mile Post, Yatagala Kanda Rd, Uragasmanhandiya
+6th Mile post, Hingurakdamana, Hingurakgoda, Sri Lanka
+7 Manampitiya Hospital Rd, Manampitiya  , Sri Lanka
 70 Mahakumarage Rd, Colombo
+702 A2, Panadura, Sri Lanka
 702 Colombo Main Rd, Panadura
+71/1/2 Avissawella Rd, Maharagama 10280, Sri Lanka
+712 Maradana Rd, Colombo 01000, Sri Lanka
+712 Waragoda Rd, Peliyagoda, Sri Lanka
+717 P De S Kularatne Mawatha, Colombo 01000, Sri Lanka
 717 P De S Kularatne Mawatha, Colombo 10
+739F+P8, Andaulpotha, Sri Lanka
+739X+CXV, Karandeniya, Sri Lanka
+73CV+CGH, Karandeniya, Sri Lanka
+73M8+Q24, Kotadeniyawa, Sri Lanka
 74 Anuradhapura - Padeniya Highway, Galgamuwa
+74 Anuradhapura-Padeniya Highway, Galgamuwa, Sri Lanka
+74 Hatton - Maskeliya - Dalhousie Rd, Hatton, Sri Lanka
+74/1 De La Salle St, Colombo, Sri Lanka
+742R+RCQ, Kumulamunai, Sri Lanka
+749P+RJ5, Sri Lanka
+74RM+HJ3,   -    , Mirigama, Sri Lanka
 75 Mankuliya Rd, Negombo
+75 Mankuliya Rd, Negombo, Sri Lanka
+75Q6+VJ4, B14, Elpitiya, Sri Lanka
+75W9+37V, Elpitiya, Sri Lanka
+762 Galle Rd, Colombo, Sri Lanka
+7664+J9X, Nochchiyagama, Sri Lanka
+766G+C97, Andalla - Tissa, Weerawila, Sri Lanka
+76VR+M34, B9, Alawwa, Sri Lanka
+76XF+2JW, B9, Alawwa, Sri Lanka
 777/e/2, Samurdhi Mawatha, Heiyanthuduwa
+77HP+58F, Tissamaharama, Sri Lanka
+77HP+762, Tissamaharama, Sri Lanka
+77J2+3M Sinharagama, Sri Lanka
+78 Canal Rd, Wattala, Sri Lanka
+782M+C84 Ceypetco Filling Station, Colombo - Kandy Rd, Kegalle, Sri Lanka
+783R+38H, Kegalle, Sri Lanka
+7892+36 Lukasgoda, Sri Lanka
+7932+H7 Kegalle, Sri Lanka
+793M+MM Molagoda, Sri Lanka
+7C2V+6JM, Mawanella, Sri Lanka
+7F6R+6VC, Deniyaya - Wiharahena Road, Morawaka, Sri Lanka
+7G49+RJX, Kadugannawa, Sri Lanka
+7GWR+JXM, Kotapola, Sri Lanka
+7JF5+JXF, Kandy, Sri Lanka
+7JH9+RX5, Kandy 20000, Sri Lanka
+7JMG+964, Kandy, Sri Lanka
+7JQP+HQ2, Sri Lanka
+7JVX+3JV, Kandy, Sri Lanka
+7JWP+C96, Kandy, Sri Lanka
+7M8R+4P2, Walasmulla - Katuwana - Middeniya Road, Katuwana, Sri Lanka
+7MHH+QG2, A26, Nattarampota 20168, Sri Lanka
+7MM7+VCH, Tennekumbura, Sri Lanka
+7MRF+R22, Ampara, Sri Lanka
+7MRG+FVW, Ampara, Sri Lanka
+7MVP+598, Ampara, Sri Lanka
+7MVR+GMW, A31, Ampara, Sri Lanka
+7PJ8+99 Galenbindunuwewa, Sri Lanka
+7PMC+6G9, Balagolla, Sri Lanka
+7PR9+64 Galenbindunuwewa, Sri Lanka
+7PXP+G4C, Digana, Sri Lanka
+7Q2J+JQ Middeniya, Sri Lanka
+7Q37+MRR, Middeniya-Panamure Rd, Middeniya, Sri Lanka
+7R8V+G72, Kammalthura, Sri Lanka
+7RJ7+PC, Udathenna, Sri Lanka
+7V33+9V3, Negombo, Sri Lanka
+7V33+GMM, Addalaichenai, Sri Lanka
+7V43+HR7, Addalaichenai, Sri Lanka
+7V75+423, Negombo, Sri Lanka
+7VC7+X8G, Gampaha, Sri Lanka
+7VF7+4P4, Palamunai, Sri Lanka
+7VG7+GH Sahana Gama, Sri Lanka
+7VP3+GH7, Chilaw - Colombo Main Rd, Bolawatta, Sri Lanka
+7VR2+JWV, Kammala, Sri Lanka
+7VVP+654, Embilipitiya, Sri Lanka
+7VWJ+343, Dankotuwa, Sri Lanka
+7VWM+V6H, Dankotuwa, Sri Lanka
+7VXM+F59, Dankotuwa, Sri Lanka
+7W6Q+8P9, Kochchikade - Halpe Rd, Katana, Sri Lanka
+7XF6+2M7, Badalgama, Sri Lanka
+7XJ9+7RJ,  -   , Sooriyawewa, Sri Lanka
+7XPH+97W, Badalgama, Sri Lanka
+7XPP+F24, Badalgama, Sri Lanka
+8 Esplanade Rd, Bandarawela, Sri Lanka
+8 Sri Gnavimala Mawatha, Gampaha, Sri Lanka
+820 AB38, Sri Lanka
+821 Kaduwela Rd, Malabe, Sri Lanka
+8253+F2C, Town, Sri Lanka
+82G2+Q67, Meegahajandura Rd, Sooriyawewa, Sri Lanka
+82H9+XJC, Negombo-Kurunegala Rd, Pannala, Sri Lanka
+82HC+FWR, Pannala Police Station Rd, Pannala, Sri Lanka
+82JG+4H8, Pannala, Sri Lanka
+83G9+35W, Negombo-Kurunegala Rd, Bopitiya, Sri Lanka
+83VJ+7W8, B55, Uragasmanhandiya, Sri Lanka
+84, St. Andrews Road, Mutuwal Dockland Mutuwal, Colombo, Sri Lanka
+8464+53 Loluwagoda, Sri Lanka
+84HC+RRW, Giriulla, Sri Lanka
+84HC+WXV, Giriulla, Sri Lanka
+84PR+CP6, Giriulla, Sri Lanka
+84Q7+9V Uragasmanhandiya, Sri Lanka
+85MG+W9R, Boyawalana, Sri Lanka
+865J+3Q8, Sandungama Rd, Pannegamuwa, Sri Lanka
+86GJ+J7P, Sri Lanka
+86V2+FJ Mattala, Sri Lanka
+87 Ratnapura - Horana - Panadura Hwy, Bandaragama, Sri Lanka
+87 Rest House Rd, Kitulgala, Sri Lanka
+87FX+HX4, Allai-Kantalai Rd, Serunuwara, Sri Lanka
+8865+J7W, Sri Lanka
+88G4+HW Beralihela, Sri Lanka
 88b S. De S. Jayasinghe Mawatha, Nugegoda
+89 Vavuniya-Parayanalankulam Hwy, Vavuniya 43000, Sri Lanka
+89G8+7HW, Anuradhapura, Sri Lanka
+89QW+M5W, Rambukkana, Sri Lanka
+8C25+4P Ariviyal Nagar, Sri Lanka
+8C7C+V74, Anuradhapura, Sri Lanka
+8CM6+WPJ, Anuradhapura, Sri Lanka
+8CQ6+VH2, Anuradhapura, Sri Lanka
+8CQ7+QWV, Anuradhapura, Sri Lanka
+8FM8+6RX, Sri Lanka
+8HGX+8MH, Nugawela, Sri Lanka
+8HJC+CCW, Aladeniya, Sri Lanka
+8HQ4+WC3, Hedeniya, Sri Lanka
+8HW5+6PP, Deniyaya - Wiharahena Rd, Deniyaya, Sri Lanka
+8J3P+23F, Kotapola - Urubokka Rd, Urubokka, Sri Lanka
+8J5P+XJ7, Kandy, Sri Lanka
+8JMC+9WR, Katugastota, Sri Lanka
+8M87+3WW, A27, Ampara, Sri Lanka
+8M87+V82, A27, Ampara, Sri Lanka
+8MGF+86C, Madawala, Sri Lanka
+8MXJ+WFP, Wattegama, Sri Lanka
+8P56+VX Menikhinna, Sri Lanka
+8P82+V2H, Madawala - Rajawella Rd, Menikhinna, Sri Lanka
+8Q67+6CH, Karalliyadda, Sri Lanka
+8R6P+JF Embilipitiya, Sri Lanka
+8RFW+77R, Nainamadama, Sri Lanka
+8RGW+X4C, Puttalam Road, Nainamadama, Sri Lanka
+8RHM+X2G, Wennappuwa, Sri Lanka
+8RPW+FQ Nintavur, Sri Lanka
+8VM3+W59, A18, Embilipitiya, Sri Lanka
+8VM5+VGF, Embilipitiya, Sri Lanka
+8VX7+H5J, Wennappuwa, Sri Lanka
+8X98+PXX, Sri Lanka
+8XJV+WCG, Mahiyanganaya, Sri Lanka
+8XQR+QQ9, Mahiyanganaya, Sri Lanka
+8XQR+WWF, Mahiyanganaya, Sri Lanka
 9 Yakkala Rd, Gampaha
+9293+5QJ, Kantale, Sri Lanka
+92J6+896, Sri Lanka
+93R9+QGJ, Kurunegala, Sri Lanka
+948 Kandy - Jaffna Hwy, Rambewa, Sri Lanka
+948X+333 Gas Station, B27, Dambadeniya, Sri Lanka
+95 Peradeniya-Badulla-Chenkaladi Hwy, Keppetipola, Sri Lanka
+96 A6, Mullipotana, Sri Lanka
+96H8+PG Nakalagamuwa, Sri Lanka
+96XR+5J3, Padiyatalawa, Sri Lanka
+9854+HHH, Divulkumbura, Sri Lanka
 998 Narammala - Kuliyapitiya Rd, Andiyagala
+998 Narammala-Kuliyapitiya Rd, Andiyagala, Sri Lanka
+9C48+787, Anuradhapura, Sri Lanka
+9C4C+H5 Anuradhapura, Sri Lanka
+9CHG+4G Anuradhapura, Sri Lanka
+9CR5+W45, Kandy - Jaffna Hwy, Kilinochchi, Sri Lanka
+9G56+66F, Puttalam - Anuradhapura - Trincomalee Hwy, Mihintale, Sri Lanka
+9GFG+R9X Madawala Junction (     ), Galagedara, Sri Lanka
+9GPX+P7Q, Parantan-Mullaitivu Hwy, Visuvamadu, Sri Lanka
+9HHP+XJV, Poojapitiya, Sri Lanka
+9HJQ+F6 Tammannewa, Sri Lanka
+9HV3+63R, Ambatenne-Bokkawela-Arambekade Rd, Bokkawala, Sri Lanka
+9J58+7XV, Kudugala, Sri Lanka
+9J5V+F93, Uhana, Sri Lanka
+9JPG+Q5R, Weranketagoda, Sri Lanka
+9R3W+8CJ, Nintavur, Sri Lanka
+9R5P+72C, Katuneriya, Sri Lanka
+9R5W+63G, Nintavur, Sri Lanka
+9R62+WX5, Karativu-Ampara Hwy, Sammanthurai, Sri Lanka
+9R73+8JX, Sammanthurai, Sri Lanka
+9R9G+RWM, Sri Lanka
+9RCC+M5H, Karativu-Ampara Highway, Karaitivu, Sri Lanka
+9RPJ+HJV, Marawila, Sri Lanka
+9RPP+5QH, Karaitivu 32250, Sri Lanka
+9RPP+JM4, Riyal Sawmill Rd, Karaitivu 32250, Sri Lanka
+9Th Mile Post, Kadawatha, Sri Lanka
+9V7J+55Q, Bothalegama, Sri Lanka
+9W38+H2 Sewanagala, Sri Lanka
+9WH3+W7 Yakdessawa, Sri Lanka
+9X22+MP3, Hasalaka New Town, Sri Lanka
+9XJV+XQW, Mahiyanganaya, Sri Lanka
+9XXH+R5R, Pannala, Sri Lanka
+9a Vallai-Tellippalai-Araly Rd, Kalaiyadi, Sri Lanka
 < 30mins
 <1 Hr Ago
 <1 Week Ago
@@ -161,33 +788,42 @@ A.W.BENETTE
 A.rasamany Fuel Station, Sinnapananakadu - Akkaraipattu
 A1, Gampaha
 A1, Kadawatha
+A1, Kajugama, Sri Lanka
 A1, Nittambuwa
+A1, Sri Lanka
 A14, Pesalai
 A17, Imaduwa
 A17, Pitabeddara
 A17, Rakwana
+A17, Sri Lanka
 A18, Embilipitiya
 A18, Godakawela
 A18, Kahawatta
 A18, Madampe
 A2, Beruwala
+A2, Dehiwala-Mount Lavinia, Sri Lanka
 A2, Dehiwala-mount Lavinia
 A2, Kalutara
 A2, Maggona
 A2, Matara
 A21, Ruwanwella
+A26, Hunnasgiriya, Sri Lanka
 A26, Mahiyanganaya
 A26, Nattarampota
 A27, Ampara
 A28, Daladagama
 A28, Talawa
 A3, Dandugama
+A3, Sri Lanka
 A3, Wattala - Mabola Rd, Wattala
+A4 Paradise Place, Kuruwita, Sri Lanka
 A5, Pussellawa
 A5-Peradeniya
 A7, Ginigathhena
 A7, Kotagala
+A7, Sri Lanka
 A8, Horana
+A9 A9, Sri Lanka
 A9, Chavakachcheri
 A9, Jaffna
 A9, Mankulam
@@ -201,6 +837,7 @@ ADA FRANCIS APPUHAMY LANKA PIRAVUMH
 AGALAWATTA MPCS LTD
 AGNSK ALKEGAMA,
 AGRA ENTERPRISES (PVT) LTD
+AH Dispensary, Mahiyangana-Badulla Road, Ambekandura, Kuruvithenna, Mahiyangana Rd, Sri Lanka
 AHAMED  SHAUL HAMEED
 AIRPORT & AVIATION SERVICES(SL) LTD
 AJITH PUTHA FILLING STATION (PVT) L
@@ -251,6 +888,7 @@ Addalachchanai
 Addalaichenai
 Addapallam, Nintavour
 Agalawatta
+Agalawatta, Agalawatta, Sri Lanka
 Ahangama
 Airport Road, Anuradhapura
 Akarawattha Nagollagoda Road,Nagollagoda
@@ -270,16 +908,22 @@ Alayadivembu
 All Fuels
 Allai-kantalai Rd, Serunuwara
 Alpitiya Rd, Karandeniya
+Alupothagama, J8J3+XXG, Sri Lanka
 Aluth Waththa-chilaw
 Aluthgama
 Aluthgama Road, Neboda
 Aluthmawatha, Colombo
+Aluthwewa Pubudu Pre School, Sri Lanka
 Aluthwewa, Angunukolapelessa
+Ambagaha Junction Bus Stop, Sri Lanka
 Ambagasdowa
 Ambalangoda
+Ambalangoda Clock Tower, A2, Ambalangoda, Sri Lanka
+Ambalangoda Fishshry Harbour, Market Rd, Ambalangoda, Sri Lanka
 Ambalangoda-elpitiy-pitigala Rd, Karandeniya
 Ambalantota
 Ambanpitiya, Galigamuwa
+Ambaraluwa Temple Bus Stop, Sri Lanka
 Ambathale
 Ambathanna, Katugastota
 Ambepussa - Kurunegala - Trincomalee Highway, Galewela
@@ -307,13 +951,16 @@ Anuradhapura - Rambewa Hwy
 Anuradhapura.
 Any Diesel
 Any Petrol
+Approach the rail road, Trincomalee, Sri Lanka
 Aralaganwila
 Arambekema-hambegamuwa
 Aranayake
+Arasadi School, Sri Lanka
 Arawwala Rd, Pannipitiya
 Ariviyal Nagar
 Army Camp-r, Sandunpura
 Athurugiriya
+Attanagalla - Ruwanwella Bust stop, Sri Lanka
 Auto Care Filling Station, A1, Kegalle
 Avissawella
 Avissawella - Hatton - Nuwara Eliya Hwy, Nanuoya
@@ -347,6 +994,7 @@ B.M GUNERATHHAMY
 B.M.S.BANDARANAYAKE
 B.S.I.JAYASENA
 B.V.JAYAWARDANA
+B111, Sri Lanka
 B128, Baddegama
 B128, Poddala
 B14, Kurundugahahetekma
@@ -355,10 +1003,17 @@ B149, Norwood
 B157 Horana - Anguruwatota - Mathugama - Aluthgama Road, Anguruwatota
 B158, Pitigala
 B167, Kobeigane
+B2, Sri Lanka
+B247, Sri Lanka
 B287, Hingurakgoda
 B288, Udugampola
 B304, Bulathsinhala
+B304, Sri Lanka
+B322, Sri Lanka
+B353, Boralanda, Sri Lanka
+B356, Sri Lanka
 B374, Panama Road, Pottuvil
+B415, Sri Lanka
 B427, Udawalawa
 B445, Veyangoda
 B47, Sri Jayawardenepura Kotte
@@ -399,6 +1054,7 @@ BUSINESS DEVELOPMENT COOP. SOCIETY
 BUTTALA MPCS LTD
 Badalgama
 Badalkumbura
+Badalkumbura, Badalkumbura, Sri Lanka
 Baddegama
 Baddegama Rd -Gonapinuwala
 Baddegama Road, Wanduramba, Galle
@@ -407,6 +1063,8 @@ Badulla Road, Bibile
 Badulle
 Balagolla
 Balangoda
+Balapitiya Primary College, Balapitiya, Sri Lanka
+Ballaketuwa, Balleketuwa, Sri Lanka
 Bambalapitiya, Colombo
 Bamunawala,kurunegala
 Bandaragama
@@ -415,6 +1073,7 @@ Bandarawela
 Bandarawela-Badulla Rd, Kumbalwela
 Bangadeniya
 Bangadeniya-andigama-anamaduwa Rd
+Bar Junction, Sri Lanka
 Barampola Junction
 Baseline Rd, Colombo
 Batepola, Dunagaha
@@ -427,6 +1086,7 @@ Batuwatte
 Bazaar St, Vavuniya
 Beach Road, Point Pedro
 Belek Kade Junction Bus Stop, Dehiwala-Mount Lavinia
+Belek Kade Junction Bus Stop, RV7H+PVJ, Dehiwala-Mount Lavinia, Sri Lanka
 Beliatta
 Belihuloya
 Bellapitiya,Aguruwathota
@@ -438,16 +1098,27 @@ Bibile
 Bibile - Medagama - Nakkala Rd Medagama
 Bibile-uraniya-mahiyangana Rd, Mahiyanganaya
 Bogahagoda Fuel Station, A17,akuressa Rd - Bogahagoda-Imaduwa
+Bogas Handiya, Sri Lanka
 Bogaswewa, Ikirigollewa
 Bokkawala
 Bolana
+Bollatha Church, Ja-Ela, Sri Lanka
 Boossa
 Bop 400, Somawathiya Rd, Pulastigama
 Borella Rd, Athurugiriya Rd
+Borella Rd, Athurugiriya Rd, Sri Lanka
 Browns Show Room, D.S. Senanayake Street, Ampara
 Bulathkohupitiya
 Bulnewa
+Bus Stop, Colombo 01000, Sri Lanka
+Bus Stop, Dandugama, Sri Lanka
 Bus Stop, Hanwella
+Bus Stop, Kadawatha, Sri Lanka
+Bus Stop, Moratuwa, Sri Lanka
+Bus Stop, Polgasowita, Sri Lanka
+Bus Stop, Ragala, Sri Lanka
+Bus Stop, Sri Lanka
+Bus Stop, Talawa, Sri Lanka
 Buttala
 C & A FILLING STATION (PVT)  LTD
 C B HALITH
@@ -473,11 +1144,26 @@ C.M.H.ENTERPRISES
 C.PARAMANATHA
 C.VETHANAYAKI
 C.WEERAKONE
+C2R8+GVW, Dharga Town, Sri Lanka
+C3FP+RFW, Sri Lanka
+C3HQ+M76, Ittapane, Sri Lanka
+C4PJ+4CP, Thanamalwila, Sri Lanka
+C639+Q22, Pelawatta, Sri Lanka
+C6J7+VW5, Narammala, Sri Lanka
+C6PC+8GW, Kurunegala-Narammala-Madampe Rd, Narammala, Sri Lanka
+C7R6+FXV, Trincomalee Hwy, Mutur, Sri Lanka
+C86G+4CW, Pothuhera, Sri Lanka
+C87J+CP6, Kandula Pl, Kataragama, Sri Lanka
+C88F+RQ9, Kandasuridugama Raja Mawatha, Kataragama, Sri Lanka
+C8CH+8C4, 41 Colombo Road, Pothuhera, Sri Lanka
 CADILLAC FILLING STATION (PVT) LTD.
 CAFFOOR & CO
 CANCEL-AGALAWATTA MPCS LTD
 CANCEL-MS.  MANSOOR JAINUL ABDEEN
 CANCEL-MS.GURUNAGAR FISHING
+CCG5+F5 Paranthan town-Kn/44, Sri Lanka
+CCMV+GJ3, Katugastota-Kurunegala-Puttalam Highway, Mawathagama, Sri Lanka
+CCP5+H4X, Parantan-Mullaitivu Hwy, Parantan, Sri Lanka
 CENTRAL AGENCY
 CEYLON FISHERIES CORPORATION
 CEYLON FISHERIES HARBOUR CORPORATIO
@@ -486,23 +1172,45 @@ CEYLON FISHERY HARBOUR CORPORATION
 CEYLON FISHERY HARBOURS CORP.
 CEYLON FISHERY HARBOURS CORPORATION
 CEYLON TRANSPORT BOARD
+CF8G+6G5, Katugastota - Kurunegala - Puttalam Hwy, Weuda, Sri Lanka
 CHAMARA SANDARUWAN RANAWEERA ARACHC
 CHANDANA FILLING STATION
 CHANDANI DHAMMEARACHCHI  MRS. D A
 CHANDRASENA  R A
 CHANKANAI MPCS LTD
 CHAVAKACHCHERI MPCS LTD
+CHG7+4J Galhinna, Sri Lanka
 CHILAW MPCS LTD
 CHUNNAKAM MPCS LTD
 CIMBA LANKA OIL DISTRIBUTORS (PVT)
 CITY AUTO SERVICES (PVT) LTD
+CJ55+VMV, Alawatugoda, Sri Lanka
+CJ56+C3Q, Alawatugoda, Sri Lanka
+CJGJ+4J8, Ukuwela, Sri Lanka
+CJQP+76C, Suriyakanda, Sri Lanka
+CM2R+HH Kolonna, Sri Lanka
+CMGP+445, Kahatagasdigiliya, Sri Lanka
+CMGR+R56, Kahatagasdigiliya, Sri Lanka
 COLOMBO NORTH REGION TRANSPORT BOAR
 COLOMBO SOUTH COOP. SOCIETY  LTD
 COLOMBO SOUTH MPCS LTD
 COLOMBO SOUTH MPCS LTD.
 COLONNE SARATH
 CONSOLIDATED FREIGHTERS & AGEN. LTD
+CP8J+QJM, Sri Lanka
+CQ6W+MMM, Udawalawa, Sri Lanka
+CQ7G+P92, Kalmunai, Sri Lanka
+CQJC+65P, A18, Sri Lanka
+CR7G+9RR, Kalmunai 32300, Sri Lanka
+CR7G+JGP, Kalmunai 32300, Sri Lanka
+CR7J+F7P, Chilaw - Colombo Main Rd, Marawila, Sri Lanka
+CR7J+XQG, Marawila, Sri Lanka
+CR85+RC9, Kalmunai-Chavalakadai Rd, Kalmunai, Sri Lanka
+CRCJ+43X, Chilaw - Colombo Main Rd, Marawila, Sri Lanka
 CRIS HARIS GASLINE PARK
+CV79+2CG, Nattandiya, Sri Lanka
+CXJX+7M7, Aluthgama, Sri Lanka
+Capital Junction VARIPATHANCHNAI, Siyambalanduwa-Damana-Ampara Hwy, Sri Lanka
 Central Camp - Ampara
 Ceypetco Filling Station - Parana Handiya
 Ceypetco Filling Station, Ambalangoda
@@ -534,6 +1242,7 @@ Chilaw - Colombo Main Rd, Marawila
 Chilaw - Colombo Main Road, Negombo
 Chilaw - Wariyapola Rd
 Chilaw - Wariyapola Rd, Bingiriya
+Chilaw Fish Market, Chilaw, Sri Lanka
 Chilaw Road, Marawila
 Chillaw - Colombo Main Road, Ja-ela Kandana
 Chunnakam
@@ -582,6 +1291,7 @@ Colombo Batticlor Hwy, Sewanapitiya
 Colombo Main Rd, Dehiwala - Mount Lavinia
 Colombo Main Rd, Wadduwa
 Colombo Plan Rd, Colombo
+Colombo Rd, 5W8W+JWW, Minuwangoda, Sri Lanka
 Colombo Road, Bomugammana, Divulapitiya
 Colombo Road, Gampaha
 Colombo- Batticaloa Hwy, Akkaraipattu
@@ -591,6 +1301,7 @@ Colombo-batticaloa Hwy, Passara
 Colombo-horana Rd, Piliyandala
 Community Feed
 Copy App Link
+Court Complex Mulathivu, Mullaitivu, Sri Lanka
 Ctb Filling Station, A2, Dehiwala-mount Lavinia,Rathmalana
 D & T ORGANIZATION
 D A CHULARATHNA
@@ -660,22 +1371,27 @@ DR.  SANJAYA SEDARA SENARATH
 DR.S.KETHESWARAM PILLAI
 Dalugama Kelaniya
 Daluwakotuwa-Kochchikade
+Dambadeniya B 27, Dambadeniya, Sri Lanka
 Dambulla
 Dambulla Road, Gokarella, Kurunegala
 Dambulla.
 Dambulugama Junction, Ambepussa - Kurunegala - Trincomalee Hwy, Dambulla
 Dankotuwa
+Darmapala Balika Maha Vidyalaya, Puwakdandawa, Sri Lanka
 De S Kularatne Mawatha, Colombo -10
 Dehiattakandiya Petrol Stand, B517, Dehiattakandiya
 Dehiowita - Deraniyagala - Noori Rd, Deraniyagala
 Dehiwala - Mount Lavinia
 Delgoda - Pugoda Rd
+Delkade, Koattagoda, Sri Lanka
 Deltota
 Demanhandiya - Miriswatta
 Denipitiya Fuel Station, , Denipitiya, Weligama
 Deniyaya - Wiharahena Rd, Deniyaya
 Deraniyagala
+Deraniyagala Bus Station, Deraniyagala, Sri Lanka
 Devata Junction
+Dewata Junction Katugoda, Galle, Sri Lanka
 Dickson Moters Rd, Kurunegala
 Dikowita
 Dikwella - Beliatte Rd, Walasgala
@@ -688,6 +1404,7 @@ Diyathalawa
 Dodanduwa
 Dodangaslanda
 Dudley Senanayake Mawatha, Colombo -08
+Dunkannawa Dialog, Marawila - Udubaddawa Rd, Sri Lanka
 E G P A RUPASINGHE
 E L Senanayake Veediya, Kandy
 E M N EKANAYAKE
@@ -726,19 +1443,53 @@ Elvitigala Mawatha, Colombo - 05
 Embilipitiya
 English
 Esplanade Rd, Bandarawela
+Etiyawala, Sri Lanka
 Express Way Entrance Road, Godagama, Matara
+Express Way Entrance Road, Godagama, XG8C+3G2, Matara, Sri Lanka
+F2F8+VPR, Girandurukotte, Sri Lanka
+F39G+WP Henpita, Sri Lanka
+F4C7+HG5, Welipenna, Sri Lanka
+F52G+CH Horombawa, Sri Lanka
 F56, Kalutara-matugama Rd, Katukurunda
+F5PF+Q5F, Kinniya, Sri Lanka
+F5XR+MJM, Trincomalee Hwy,  , Sri Lanka
+F727+28R, Dehikumbura, Sri Lanka
+F778+5W9, Mutur, Sri Lanka
+F8CX+8M5, Kurunegala, Sri Lanka
+F9GC+VRG, Kurunegala, Sri Lanka
+F9M3+5CW, Kurunegala-Narammala-Madampe Rd, Kurunegala, Sri Lanka
+F9M7+F4J, Kurunegala, Sri Lanka
+F9P8+2RH, Kurunegala, Sri Lanka
+F9Q2+H3R, Kurunegala, Sri Lanka
 FALAHI GROUP (PVT) LTD
+FC64+XV Kurunegala, Sri Lanka
+FCWM+3GM, B264, Barandana, Sri Lanka
 FELIX PEREIRA AND SONS
 FISHERIES DEPARTMENT
 FISHERY DEPARTMENT
 FISHERY HARBOURS CORPORATION
+FJJF+88R, Matale, Sri Lanka
+FPJ4+GRG, Pallebedda, Sri Lanka
+FQ92+CW5, Sri Lanka
+FQRX+JCM, Thoduwawa, Sri Lanka
+FR5G+GCP, Chilaw - Colombo Main Rd, Mahawewa, Sri Lanka
+FRF5+XH7, Periyakallar, Sri Lanka
+FRWV+3HP, B247, Madampe, Sri Lanka
+FWPQ+M9 Bunnehepola, Sri Lanka
+FWV7+CH2, Dummalasuriya, Sri Lanka
+FX5G+RQG, Beruwala, Sri Lanka
+FX5P+VPH, Hettimulla Railway, Beruwala, Sri Lanka
+FXCH+V9V, Beruwala, Sri Lanka
+FXM9+V34, Udubaddawa, Sri Lanka
+Filling Station Ududumbara Entrance, Sri Lanka
 Filling Station, A4, Pelmadulla
 Filling Station, George R. De Silva Rd, Colombo - 13
 Filling Station, Pallimunai Rd, Mannar
 Filling Station, Palugamuwa, Dummalasooriya
+Filling Station, Thalatuoya - Marassana Rd., Thalathuoya, Sri Lanka
 Filter by Fuel Type
 Filter by Time Updated
+Fishery Harbour, 689P+5GF, Kirinda, Sri Lanka
 Fuel
 Fuel Station Moratuwa, Galle Rd, Moratuwa
 Fuel Station, A12, Anuradhapura
@@ -762,6 +1513,21 @@ G.P.H.KANDAMBY &  SONS ( PVT ) LTD
 G.R.P.HETTIHEWA
 G.T.LINGANADAN
 G.WIJETUNGE
+G3M4+VW munamldeniya, Munamaldeniya, Sri Lanka
+G4F7+52P, Matugama, Sri Lanka
+G4F8+22V, Horana - Bulathsinhala - Mathugama Road, Matugama, Sri Lanka
+G4WF+W5 Moragane, Sri Lanka
+G52Q+RPH, Narammala Road, Siyambalagaskotuwa, Sri Lanka
+G52R+2MR, Kinniya, Sri Lanka
+G52R+WG2, Kinniya, Sri Lanka
+G5GC+J37, Tiruwanaketiya-Agalawatte Rd, Bellana, Sri Lanka
+G5MQ+J4Q, Kadahapola-Rambawewa Rd, Katupotha, Sri Lanka
+G645+FWH, Pooneryn, Sri Lanka
+G68J+W88, Baduraliya, Sri Lanka
+G8M9+RVC, Rathkarawwa, Sri Lanka
+G9J4+CF, Maha Oya, Sri Lanka
+G9JW+5M8, Kalawana, Sri Lanka
+G9JW+79J, Tiruwanaketiya-Agalawatte Rd, Kalawana, Sri Lanka
 GALAGEDERA MPCS LTD
 GALEWELA MPCS LTD
 GALGAMUVA MPCS LTD
@@ -780,9 +1546,28 @@ GANGA IHALAKORALE MPCS LTD
 GANGE KULARATNE
 GANTHERA INDHANA PIRAVUMHALA
 GAS AUTO LANKA (PVT) LTD
+GC8C+FQ6, Northwayrest, Kurunegala 60000, Sri Lanka
+GFXQ+4QR, Ridigama, Sri Lanka
+GFXR+QRX, Ridigama, Sri Lanka
+GHPV+74H, Kavuduwawa, Sri Lanka
 GINIGATHENA MPCS LTD
+GJ8F+RF5, Matale, Sri Lanka
+GJPG+MXR, Dambulla Rd,   21000, Sri Lanka
+GM33+H3F, Godakawela, Sri Lanka
+GMCG+8XC, Rattota, Sri Lanka
+GP7M+33 Mandur, Sri Lanka
+GQ7Q+V2V, Kaluwanchikudy, Sri Lanka
+GQF8+W8 Kaluwanchikudy, Sri Lanka
+GR5H+QMR, Madampe, Sri Lanka
+GRXJ+VWH, Horowupotana, Sri Lanka
 GUNARATHNE  ENTERPRISES
 GUNASIRI LANKA FILLING STATION
+GVJG+54 Madampe, Sri Lanka
+GWM2+X5V, Matale - Illukkumbura - Pallegama - Giradurukotte Road, Hettipola, Sri Lanka
+GX4J+58W, Maggona, Sri Lanka
+GX9W+X3V, Ilukhena, Sri Lanka
+GXQ3+99 Pokunutenna, Sri Lanka
+GXRC+FP6, Katukurunda, Sri Lanka
 Galagedara
 Galagedara - Rambukkana Rd
 Galagedera - Horana Rd, Padukka
@@ -814,8 +1599,10 @@ George R. De Silva Mawatha, Colombo -13
 Ginigathhena Road, Yatiyanthota
 Giritale Road, Bakamuna
 Giriulla
+Giriulla 1, Sri Lanka
 Godagama
 Godagama Lanka Fuel Station, A2, Godagama, Thelwatta
+Godagama Lanka Fuel Station, Godagama Lanka Fuel Station, Godagama, A2, Godagama, Sri Lanka
 Godakawela
 Gomarankadawala
 Gonapola
@@ -857,6 +1644,16 @@ H.P.D.R.K.WEERASINGHE
 H.R.DHARMAPALA
 H.W.PAGNADASA
 H.W.WILLIAM SILVA  ENTERPRISES
+H239+G75, Kalutara, Sri Lanka
+H25G+6P Divulgasanga, Sri Lanka
+H3WR+HCG, Horana - Anguruwatota - Mathugama - Aluthgama Road, Neboda, Sri Lanka
+H4WR+3V Telulla, Sri Lanka
+H52V+W3F, Neddumkudah, Sri Lanka
+H599+5V Sardhapura, Sri Lanka
+H59V+GM Trincomalee, Sri Lanka
+H6GM+JM2, Trincomalee, Sri Lanka
+H6W2+PM Gorokgasagara, Sri Lanka
+H94X+WV Pachchilapalli, Sri Lanka
 HABARADUWA MPCS LTD
 HABARANA
 HADJI SHL ABDUL CADER & SONS
@@ -881,6 +1678,16 @@ HEWAGAM KORALE EAST MPCS LTD
 HEWAGAM KORALE EAST MPCS LTD.
 HEWAGAMA - KADUWELA
 HEWAGAMKORALE WEST MPCS LTD
+HF3P+VG2, Medawachchiya, Sri Lanka
+HFC8+M66, Ipalawa, Sri Lanka
+HFW5+C84, Tiruwanaketiya-Agalawatte Rd, Nivithigala, Sri Lanka
+HFXJ+6GH, Kurunegala - Dambulla Rd, Gokarella, Sri Lanka
+HG96+3J3, Lihiniwehera, Sri Lanka
+HGCC+WFJ, Dodangaslanda, Sri Lanka
+HH5R+X6R, Yatawatta, Sri Lanka
+HH6R+55G, Yatawatta, Sri Lanka
+HHJF+2G3, Kahawatta, Sri Lanka
+HHMF+988, Kahawatta, Sri Lanka
 HI TECH CARBON
 HIGHWAY ENTERPRISES
 HINGURAKGODA MPCS LTD
@@ -890,8 +1697,21 @@ HIRIYALA MPCS LTD
 HIRUN ENTERPRIES
 HOMAGAMA MPCS LTD
 HONDAHITHA ENTERPRISES
+HPG3+VXV, Weligepola, Sri Lanka
+HQGV+PXR, Chilaw, Sri Lanka
+HQMR+PC Chilaw, Sri Lanka
+HQQG+P5 Kurukkalmadam, Sri Lanka
+HR2M+523, Horowupotana, Sri Lanka
+HR45+92H, Chilaw, Sri Lanka
+HRP8+88 Kurichchikadu, Sri Lanka
 HUNGAMA MPCS LTD
 HUNNASGIRIYA AGENCIES
+HVQF+PJW, Chilaw, Sri Lanka
+HVVX+RRG, Sri Lanka
+HWXR+8P2, Chilaw-Wariyapola Road, Bingiriya, Sri Lanka
+HX69+VHJ, Kalutara, Sri Lanka
+HXM6+H8M, Kalutara, Sri Lanka
+HXW3+Q52, Bowatta, Sri Lanka
 Habaraduwa
 Hakmana
 Hakmana - Beliatte - Tangalle Rd, Beliatta
@@ -912,15 +1732,18 @@ Hemmathagama
 Hettipola
 Hettipola Rd, Kuliyapitiya
 Hidellana - Rathnapura
+Hidellana, Ratnapura, Sri Lanka
 High Level Rd, Hanwella
 Highway, Siyambalanduwa
 Higurana Fuel Station, Siyambalanduwa - Damana - Ampara Hwy, Hingurana
+Hikkaduwa Bus Station, Hikkaduwa, Sri Lanka
 Hikkaduwa Harbor, Hikkaduwa
 Hikkaduwa-baddegama Rd, Gonapinuwala
 Hilevel Rd, Wattaraka,meegoda
 Hiripitiya South, Veyangoda
 Hokandara South
 Homagama
+Horagasdeka Junction, Weliweriya - Kirindiwela Rd, Sri Lanka
 Horana
 Horewala - Hemmathagama Rd, Hemmathagama
 Horowpathana
@@ -929,6 +1752,7 @@ Horton Pl, Colombo - 07
 Hospital Junction, Kolonna
 How long is the wait now?
 Hunnasgiriya
+Hunnasgiriya Town, Hunnasgiriya, Sri Lanka
 I CHARLES  NIRMALANATHAN
 I HENDAWITHARANA
 I M.JAYATILLEKE
@@ -959,6 +1783,7 @@ Inigodawela
 Inner Circular Rd, Ratnapura
 Ioc Filling Station, Warana Rd Nelligahamulla- Atthanagalla
 Ioc-payagala, Kuda Payagala South, Payagala
+Ipalawa, Ipalawa, Sri Lanka
 Irakkamam
 Irupalai
 J A C D JAYAKODY
@@ -987,6 +1812,18 @@ J.F.A.PINTO
 J.J.DIAS ENTERPRISES
 J.M.GUNATHILAKA
 J.NADARAJAH
+J22H+R2 Divulgasanga, Sri Lanka
+J2HW+GJX, Sandunpura, Sri Lanka
+J2RR+RVQ, B224, Keselhenawa, Sri Lanka
+J34G+5QX, Sri Lanka
+J34P+QQV, Sri Lanka
+J44W+HC Madige Midiyala, Sri Lanka
+J57H+587, Bandara Koswatta, Sri Lanka
+J697+V6W, Rambawewa, Sri Lanka
+J69X+45F, Wariyapola, Sri Lanka
+J6GV+44C, Wariyapola, Sri Lanka
+J6QJ+X9J, Katugastota-Kurunegala-Puttalam Hwy, Sri Lanka
+J84J+VXP, A9, Pachchilapalli, Sri Lanka
 JAELA MPCS LTD
 JAFFNA - GURUNAGAR-CANCEL
 JAFFNA MUNICIPALITY MPCS LTD
@@ -1001,11 +1838,27 @@ JAYASIRI AUTO CARE (PVT) LTD
 JAYASURIYA  AUTO SERVICE ( PVT ) LT
 JAYASURIYA ENTERPRISE
 JAYAWARDHANA D M
+JCH2+PJ Thalayadi, Sri Lanka
+JGFR+MX2, Pelmadulla, Sri Lanka
+JGGQ+2WH, Pelmadulla, Sri Lanka
+JGJG+RPW, Pelmadulla, Sri Lanka
+JHC3+CGH, A4, Pelmadulla, Sri Lanka
+JJH4+57P, Palapathwela - Galewela Rd, Pallepola, Sri Lanka
+JMR9+FWH, Padaviya Rd, Kebitigollewa, Sri Lanka
 JOE PERERA AND SONS
+JP46+3RX, Thalankudah, Sri Lanka
+JPV2+V6W, Balangoda, Sri Lanka
+JQ2Q+7W Kurichchikadu, Sri Lanka
+JQ2Q+9V Kurichchikadu, Sri Lanka
+JQC6+2F Kirankulam, Sri Lanka
+JRF9+QM4, Bangadeniya, Sri Lanka
+JWQ2+6V8, Valukkairaru-Punkudutivu-Kurikadduwan Rd, Velanai, Sri Lanka
+JXHG+Q6R, Kaluthara Horana Road, Waskaduwa, Sri Lanka
 Ja Ela - Ekala - Gampaha - Yakkala Hwy, Ja-Ela
 Ja-ela - Ganemulla Rd, Ja-ela, Ganemulla - Bollatte
 Jaffna - Manipay - Karainagar Rd, Manipay
 Jaffna - Point Pedro Road, Kopay
+Jaffna, Jaffna, Sri Lanka
 Jaffna-Point Pedro Rd Puttur
 Jaffna-manipay-karainagar Rd, Sandilipay
 Jayabodiya Road, Gandara
@@ -1123,6 +1976,7 @@ Kachcheri Rd, Hambantota
 Kadahapola
 Kadahapola - Rambawewa Rd, Katupotha
 Kadawalagedara - Witikuliya Road Kobeigane
+Kadawalagedara-Vitikuliya Rd, Sri Lanka
 Kadawatha
 Kadawatha - Ganemulla Rd
 Kaduwela
@@ -1158,6 +2012,7 @@ Kandakuliya,Kalpitiya
 Kandambi Fuel Station, Matara - Hakmana Rd, Kamburupitiya
 Kandanagedera
 Kandapola
+Kandapola Bus Stand, Kandapola, Sri Lanka
 Kandasuridugama Raja Mawatha, Kataragama
 Kandy
 Kandy - Jaffna Highway, Matale
@@ -1181,12 +2036,15 @@ Kandy-mahiyangane-padiyatalawa Hwy, Hunnasgiriya
 Kandy-mahiyangane-padiyatalawa Hwy, Udadumbara
 Kandy-mahiyangane-padiyatalawa Hwy, Udathenna
 Kantale
+Kapuwatha,, 3V7V+X6H, Ja-Ela, Sri Lanka
+Karadippokku, Kilinochchi, Sri Lanka
 Karainagar Circular Rd
 Karaitivu
 Karandupona - Kegalle
 Karativu - Ampara Hwy, Sammanthurai
 Karaveddy, Manmunai West
 Karukupone Rd, Bangadeniya
+Karuwalagaswewa, Karuwalagaswewa, Sri Lanka
 Kasthuriyar Rd, Jaffna
 Katana
 Katana Rd,madampella
@@ -1204,6 +2062,7 @@ Katugastota-kurunegala-puttalam Hwy, Paragahadeniya
 Katukele, Kandy
 Katukurunda Lanka Filing Station, A2, Kalutara
 Katunayake
+Katunayake, Negombo, Sri Lanka
 Katunayake-veyangoda Rd
 Katuwana
 Kayts
@@ -1232,30 +2091,40 @@ Kirindiwela
 Kirindiwela - Urapola Road, Hanwella
 Kirulapone, Colombo- 05
 Kithulgala
+Kobeigane Bus Station, B167, Kobeigane 60410, Sri Lanka
 Kobeigane Road, Welpothuwewa
 Kochchikade
 Kodikamam, Kandy - Jaffna Hwy
+Kodikamam, Kandy - Jaffna Hwy, Sri Lanka
+Kohuwala Bus Stop, Sri Lanka
 Kokkaddichcholai
 Kokkaddicholai, Batticaloa
 Kokkavila
 Kollonnawa
+Kopay Bus Stop, AB20, Sri Lanka
 Koralawella Rd, Moratuwa
 Korasagalla
+Korasagalla, Sri Lanka
 Kotadeniyawa
 Kotagala
 Kotapola
 Kothalawala -Kaduwela
 Kottawa - Talagala Rd
 Kotte - Bope Rd, Battaramulla
+Kotte-Bope Road, New Kandy Rd, Sri Lanka
 Kotugoda
 Kovilakanda
+Kovilkulam Junction, Thalankudah, Sri Lanka
 Kuchchaveli
+Kuchchaweli, Kuchchaveli, Sri Lanka
 Kudawella
 Kukkuvil
 Kuliyapitiya Gas Station, Kurunegala - Narammala - Madampe Rd, Kuliyapitiya
 Kuliyapitiya Rd, Rambukkana
 Kurichchikadu
+Kuruduwatta Junction Bus Stop, A2, Dondra, Sri Lanka
 Kurukkalmadam
+Kurundugahahetkma, Kurundugahahetekma, Sri Lanka
 Kurunduwatta, Colombo-07
 Kurunegala
 Kurunegala - Narammala - Madampe Rd, Madampe
@@ -1304,7 +2173,9 @@ LIYANAGE ASSOCIATES
 LOGESPARAN PRIYAPARAN
 LOKUGE DANASIRI
 LUMBINI ENTERPRISES
+Lake Road, Sedawatta - Ambatale Rd, Sri Lanka
 Lakruka Filling Station, Naula
+Lakruka filling sation, JJGP+RMR, Madawala Ulpotha, Sri Lanka
 Lakrukruka Filling Station, Koholanwela, Madawala Ulpotha
 Lanka Ceypetco Filling Station, Athurugiriya Rd, Malabe
 Lanka Filing Station Aluthwala, Aluthwala
@@ -1345,6 +2216,7 @@ Last Updated by Shed
 Last Week
 Laugfs Filling Station, Puttalam - Colombo Rd, Negombo
 Lenadora - Dambulla
+Lenadora Bus Stop, Lendora, Sri Lanka
 Less than 30 minutes
 Liyanwela-brook Side Road, Padiyapelella
 Loc Fuel Station, Tangalle Rd, Koattagoda
@@ -1419,6 +2291,28 @@ M.U.M.SUHOODI
 M.W.PETER SINGHO
 M.WEERASINGHE ARACHCHI
 M.Y.MOHAMAD FAROOK
+M248+G4J, Jaffna, Sri Lanka
+M26G+6V5, A9, Jaffna, Sri Lanka
+M296+MFR, 153 Kasthuriyar Rd, Jaffna 40000, Sri Lanka
+M2CR+CG2, Dehiattakandiya, Sri Lanka
+M2JQ+8GC, Jaffna, Sri Lanka
+M2JQ+GGQ, Adiyapatham Rd, Jaffna, Sri Lanka
+M2MF+3X6, Palali Rd, Jaffna, Sri Lanka
+M2PX+R7Q, Jaffna, Sri Lanka
+M2QH+V4H, Jaffna, Sri Lanka
+M2R9+HP5, Welpothuwewa, Sri Lanka
+M36H+XJH, Chavakachcheri, Sri Lanka
+M3CW+6JW, Chavakachcheri, Sri Lanka
+M3CX+HFJ, Chavakachcheri, Sri Lanka
+M3VG+R77, Horana - Anguruwatota - Mathugama - Aluthgama Road, Ballapitiya, Sri Lanka
+M47R+P8F, Chavakachcheri, Sri Lanka
+M52H+83F, Nagoda - Kalawellawa - Bellapitiya Rd, Bulathsinhala, Sri Lanka
+M53G+V6W, Bulathsinhala, Sri Lanka
+M557+RXQ, Chavakachcheri, Sri Lanka
+M72M+Q3 Pachchilapalli, Sri Lanka
+M857+M56, Sri Lanka
+M94C+GF7, Sri Lanka
+M9PW+F9Q, Ratnapura, Sri Lanka
 MACO LANKA FILLING STATION
 MADAMPE MPCS LTD
 MADAWALA ENTERPRISES
@@ -1433,6 +2327,7 @@ MAHAROOF HAJIYAR  M I
 MAHIYANGANE MPCS LTD
 MAHO MPCS
 MAHO MPCS LTD
+MAIN STREET NAGOLLAGAMA, Sri Lanka
 MAKUMBURA, PANNIPITIYA.
 MAL ENTERPRISES
 MALALATHUNGA CONSTRUCTION (PVT)LTD
@@ -1462,20 +2357,35 @@ MAWATHAGAMA MPCS LTD
 MAX HOLDINGS  KANDY (PVT) LTD
 MAYADUNNE FILLING CENTER
 MAYADUNNE SERVICE STATION
+MBI Building, Colombo - Batticaloa Hwy, Akkaraipattu 32400, Sri Lanka
+MCH2+MR4, Ratnapura, Sri Lanka
+MCHF+7P5, Ibbagamuwa-Kumbukgete-Madagalla Rd, Kumbukgete, Sri Lanka
+MCJ2+JJC, Ratnapura, Sri Lanka
 MEDAWACHCHIYA MPCS LTD
 MEDIRIGIRIYA
 MEDIRIGIRIYA MPCS LTD
 MELSIRIPURA
+MG28+QQ5, A6, Melsiripura, Sri Lanka
 MIDDLE EAST PETROLEUM DELEAR'S (PVT
 MINERAL SPRINGS (PVT) LTD
 MINUWANGODA MPCS LTD
 MIRIGAMA
 MIRIGAMA MPCS LTD
+MM3X+74H, A4, Balangoda, Sri Lanka
+MM66+PWG, Batticaloa, Sri Lanka
+MMW3+PQM, Batticaloa, Sri Lanka
+MMX3+X8H, Naula, Sri Lanka
+MMXF+44G, Batticaloa, Sri Lanka
 MONERAGALA KANDUKARA MPCS LTD
 MORATUWA MPCS LTD
 MORAWAKAKORALA TEA PRO.CO-OP.SO.LTD
 MORAWEWA
 MOTOR SERVICE STATION (PVT) LTD
+MP2W+34G, Colombo - Ratnapura - Wellawaya - Batticaloa Road, Kattankudy, Sri Lanka
+MP43+R29,   -      , Balangoda, Sri Lanka
+MPFJ+XQ7, Batticaloa, Sri Lanka
+MPFM+78Q, New Kalmunai Rd, Batticaloa, Sri Lanka
+MPQF+GMV, Kattankudy, Sri Lanka
 MR.  K.E.LEONARD PEIRIS
 MR.  K.P. A.WAHID
 MR.  T.RATNAVADIVEL
@@ -1484,6 +2394,7 @@ MR. MC PERERA/ MRS. CA WANNIARACHCH
 MR. R.A.GAYAN
 MR. VA.SUSANTHA / MRS. HRP MGUNARAT
 MR.S. PRIYA AMARASINGHE
+MR8P+V7H, Nalladarankattuwa, Sri Lanka
 MRS C R SAMARASINGHE
 MRS K A A H DE SILVA
 MRS M D PATHMA NILMINI
@@ -1528,12 +2439,21 @@ MUTHUIANKADDU MPCS LTD
 MUTHUR AGA DIVISION MPCS LTD,
 MUTTUR A G A DIVISION MPCS LTD
 MUTTUR A.G.A.DIVISION MPCS LTD
+MV6P+6GG, Kalthota, Sri Lanka
+MVV9+X6M, Kayts, Sri Lanka
+MW4M+3RX, Wadduwa, Sri Lanka
+MW8H+JJ3, A2, Wadduwa, Sri Lanka
+MWP9+MF4, Panadura, Sri Lanka
+MX2Q+HJF, Weerapokuna, Sri Lanka
+MX7C+8VC, Moronthuduwa, Sri Lanka
+MXF4+PG6, Gomarankadawala, Sri Lanka
 Mabima West, Welivita
 Maco Filling Station, Hirimbura Cross Rd, Galle ,Hiribura
 Madagalla Road, Alutwegedara
 Madapatha, Piliyandala
 Madawala - Rajawella Rd, Menikhinna
 Madawala Road, Digana
+Madmpe Junction, Madampe, Sri Lanka
 Madurankuliya
 Maha Oya
 Maha Vilachchiya
@@ -1555,9 +2475,16 @@ Main St, Kalpitiya
 Main St, Passara
 Main St, Tissamaharama
 Main St, Trincomalee
+Main Stree, 7RQX+WGH, Oluvil, Sri Lanka
+Main Street, 2PXP+8WC, Kalpitiya Rd, Norochcholai, Sri Lanka
 Main Street, Eravur
+Main Street, Madaththadi, M25C+G45, Jaffna, Sri Lanka
+Main street, 55000, Polonnaruwa, Sri Lanka
 Makola Rd, Peliyagoda
+Makulla Town,Dambagalla, X9HF+M8H, Madulla, Sri Lanka
+Makura, 6985+42C, Hettimulla, Sri Lanka
 Makura, Hettimulla
+Malabe, WXGJ+J2P, Kaduwela Rd, Kaduwela, Sri Lanka
 Maligawatte, Colombo -10
 Mallakam
 Mallavi
@@ -1565,14 +2492,17 @@ Mallawapitiya - Rambodagalla - Keppetigala Rd, Ridigama
 Mallehewa, Pasyala - Giriulla Rd
 Mampuriya
 Mamunuwa Fuel Station, Katugastota - Kurunegala - Puttalam Hwy Road Wariyapola
+Mamunuwa, Sri Lanka
 Manalembuwa Rd, Weerapokuna
 Manampitiya
 Mandur
 Mangala Road, Gampaha
 Mankulam - Vellankulam Rd, Mallavi
 Mannar Road, Murungan
+Mapalagama Road, New Town Rd, Thalgaswala, Sri Lanka
 Maradana - Beruwala
 Maradankadawala - Habarana - Thirukkondaiadimadu Hwy, Polonnaruwa
+Maradankadawala-Habarana-Thirukkondaiadimadu Hwy, Manampitiya  , Sri Lanka
 Maradankadawala-habarana-thirukkondaiadimadu Hwy, Minneriya
 Marassana Rd, Thalathuoya
 Marawila-udubaddawa Rd, Ilippugamuwa
@@ -1587,18 +2517,23 @@ Matara
 Matara - Hakmana Rd
 Mathagal
 Mathugama
+Mathugama, Matugama, Sri Lanka
 Mattakkuliya - Colombo -15
 Mattegoda
 Matugama
 Mawanella
 Mawathagama West, Mawathagama
+Mawathagama West, Mawathagama, Sri Lanka
 Maya Ave, Colombo
 Mbi Building, Colombo - Batticaloa Hwy, Akkaraipattu
 Medagama Handiya - Panirendawa
 Medagampola
 Medamawatha Filling Station, Wariyapola Road, BandaraKoswatta
 Meddawatta, Matara
+Meddawatta, WHRF+F5X, Matara, Sri Lanka
 Medirigiriya Rd, Medirigiriya
+Meegahakotuwa Bus Stop, Kurunegala-Narammala-Madampe Rd, Sri Lanka
+Meegalewa, Meegalewa, Sri Lanka
 Meegoda
 Meepe - Ingiriya Rd, Handapangoda
 Melfort Estate Rd, Pussellawa
@@ -1608,7 +2543,12 @@ Minneriya-Hingurakgoda Rd
 Minuwangate
 Minuwangoda
 Mirihana
+Mirisgoniyawa Junction, Dambulla, Sri Lanka
 Mirissa
+Miriswatta Junction Bus Stop, A1, Gampaha, Sri Lanka
+Miriswatte Junction, QWWJ+PCQ, Piliyandala, Sri Lanka
+Miyami Clothing Pitigala, Pitigala, Sri Lanka
+Mobitel network tower, Telekom Rd, Eravur, Sri Lanka
 Modara Port Rd, Moratuwa
 Moragahahena
 Moragaswewa
@@ -1634,6 +2574,7 @@ Munamaldeniya-katupotha Rd
 Munnakkara, Negombo
 Murungasyaya Junction
 Murunkan - Silavatturai Rd
+Murunkan Railway Station, Medawachchiya-Talaimannar Highway, Sri Lanka
 Muthurajawela
 Muttur
 Mutuwal Road Kalpitiya, Kalpitiya
@@ -1685,10 +2626,14 @@ NIKEWERATIYA MPCS LTD
 NIROSHANA ENTERPRISES (PVT) LTD
 NISALKI ENTRPRISE
 NIYAGAMA PITIGALA MPCS LTD
+NO.05 athulathmudali shopping complex,main road, Polonnaruwa, Sri Lanka
+NO.75 Puttalam - Colombo Rd, Chilaw, Sri Lanka
 NORTHERN  REGN  LORRY  OWNERS CO-OP
 Nagoda - Kalawellawa - Bellapitiya Rd, Bulathsinhala
+Nagoda Junction Bus Stop, 57XG+W47, Nagoda Rd, Nagoda, Sri Lanka
 Nagoda Junction Bus Stop, Nagoda Rd, Nagoda
 Najath Filling Station, Katugastota - Kurunegala - Puttalam Hwy, Puttalam
+Nakiyadeniya Thel Pirahumhala, Sri Lanka
 Namal Uyana Road, Pubbogama
 Nambapana, Ingiriya
 Namunukula
@@ -1699,7 +2644,9 @@ Narangoda
 Naranwala
 Nattandiya - Koswatta
 Naula
+Naula Clock Tower, The clock tower at the Center of Naula Town, PM53+4FX, A9, Naula, Sri Lanka
 Nawa Walapone Mpcs, Thennekumbura - Rikillagaskada - Ragala
+Nawagamuva, Sri Lanka
 Nawalapitiya
 Near The Harbour Duwa,Negambo
 Nearby
@@ -1724,8 +2671,10 @@ Negombo-giriulla Rd, Madampella
 Negombo-giriulla Rd, Nalla
 Negombo-kurunegala Rd
 Nelliady
+Nelligahamula Bus Stop, Yakkala - Radawana Rd, Sri Lanka
 Nelluwa Filling Station, B411, Neluwa
 Nelundeniya - Alawwa Rd, Nelundeniya
+Neluwa Bus Stop, 99H6+3G9, B411, Neluwa, Sri Lanka
 Nettipolagedara
 Never
 New Kalmunai Rd, Batticaloa
@@ -1744,23 +2693,45 @@ Nintavur
 Nittambuwa
 Nittambuwa - Nambadaluwa
 No 108/1, Tiruwanaketiya - Agalawatte Rd, Lathpandura
+No 117, Ambalangoda Rd, Elpitiya, Sri Lanka
 No 128 Main Street, Dummalasuriya
 No 237 60100, Kurunegala -Narammala - Madampe Rd, Narammala
+No 27, Thanayama Road, Inner Circular Rd, Ratnapura, Sri Lanka
 No 278, Moragahayata, Colombo Rd, Ratnapura
+No 295 Nuwara Eliya Road, Pussellawa, Sri Lanka
+No 3, 2/1 Yakkala Rd, Gampaha, Sri Lanka
 No 331, Kosgama
 No 362 Katugastota Rd, Kandy
+No 37-39, Colombo Road, Haputale, Sri Lanka
 No 50, Waikkal
 No 54 Avissawella Rd, Hanwella
+No 54 Sir Ernest de Silva Mawatha, Colombo 00700, Sri Lanka
+No 84 A Dickson Moters Rd, Polgahawela, Sri Lanka
 No 87 Raja Complex, Jaffna-kankesanturai Rd, Chunnakam
+No 87 Raja complex, Jaffna-Kankesanturai Rd, Chunnakam, Sri Lanka
 No Fuel
 No, 243, Main Street, Haldummulla Haldummulla
+No, 76, Main Street, Panwila, Sri Lanka
+No. 08, Baddegama Road, Wanduramba, Wanduramba, Sri Lanka
+No. 182/G, Divulapitiya Road, Minuwangoda, Sri Lanka
 No. 21/8, Buthgamuwa Road, Kalapaluwawa, Rajagiriya
+No. 258 Sri Sambuddhathva Jayanthi Mawatha, Colombo 00500, Sri Lanka
+No. 260 H, B240, Battaramulla, Sri Lanka
+No. 360/A, Jaffna Junction, Anuradhapura, Sri Lanka
 No. 362 4 Way Junction, Sooriyawewa
 No. 609a, Trinco Road, Urani,Batticaloa
+No. 63 & 67, Mawanella Road, Rambukkana, Rambukkana, Sri Lanka
+No. 70 Kalutara-Matugama Rd, Kalawana, Sri Lanka
+No.13, deniyaya road, rakwana, Rakwana, Sri Lanka
+No.19 Colombo Main Rd, Avissawella, Sri Lanka
 No.34, Mirisgoniyawa Trinco Road, Dambulla
+No2A, Petrol Shed junction, Ragama, Sri Lanka
+No: 195/2, Main Street, Akkaraipattu, Sri Lanka
 No: 296, Waththala, Enderamulla- Wattala
+No:02,3rd Floor,Nawinna Junction, Kurunegala, Sri Lanka
 No:82 Pasyala - Giriulla Rd, Mirigama
 Nochchiyagama
+Noor, Main Street, Sainthamaruthu 32300, Sri Lanka
 Norochcholai
 Nortonbridge
 Not Sure or Don't Know
@@ -1785,6 +2756,7 @@ Oluvil
 Opening Stock
 Outtalam-colombo Rd, Madampe
 Oyamaduwa, Thanthirimale Road Oyamaduwa
+Oyamduwa Junction, Sri Lanka
 P & P ENTERPRISE
 P A JAYANTHA UDAYA KUMARA
 P A K D JEEWANTHI
@@ -1828,6 +2800,31 @@ P.L.R..C.COORAY
 P.M.K.RAHUMAN
 P.PRADEEP MIHINATH FERNANDO
 P.T.ARASAN & SON
+P228+8CC, Jaffna, Sri Lanka
+P238+CWW, Jaffna, Sri Lanka
+P28V+RM3, Urumpirai West, Sri Lanka
+P2G8+MQ4, AB44, Siripura, Sri Lanka
+P2GM+CJW,   -   -      , Pokunuwita, Sri Lanka
+P2HF+WMJ, Jaffna, Sri Lanka
+P2RG+66Q, Chunnakam, Sri Lanka
+P2RG+G9Q, Chunnakam, Sri Lanka
+P2V9+M8G, Koslanda, Sri Lanka
+P2WH+VJV, Chunnakam, Sri Lanka
+P2XF+9CM, Gonapola, Sri Lanka
+P395+5JC, A8, Horana, Sri Lanka
+P395+CVJ Ceypetco Fuel Stations, Horana, Sri Lanka
+P3PX+P64, Siruppiddy, Sri Lanka
+P48X+H2R, Katugastota-Kurunegala-Puttalam Hwy, Nikaweratiya, Sri Lanka
+P4J2+9RG, Horana, Sri Lanka
+P4J3+R56, Wellawaya, Sri Lanka
+P4M3+3XH, Wellawaya, Sri Lanka
+P4PH+64Q, Katugastota-Kurunegala-Puttalam Hwy, Nikaweratiya, Sri Lanka
+P4X8+7WC, Nikaweratiya, Sri Lanka
+P5CF+4Q6, Irrakkakandi, Sri Lanka
+P5PP+V3, Ingiriya, Sri Lanka
+P5VG+HW Ingiriya, Sri Lanka
+P743+698, Nelumkulama, Sri Lanka
+P7JH+9Q6, A8, Idangoda, Sri Lanka
 PADAVI PARAKRAMAPURA MPCS LTD
 PADAVI SIRIPURA SEVA JANAPADA MPCS
 PALLEPOLA MPCS LTD
@@ -1846,9 +2843,15 @@ PEARL HOLDINGS ( PVT ) LTD
 PELMADULLA MPCS LTD
 PERERA & SONS  & CO.
 PETRO GAS (PVT) LTD
+PFFQ+328, A9, Vavuniya, Sri Lanka
 PGRAS WIJEWARDANA & BAM RANJITH BAN
 PILIYANDALA - BOKUNDARA MPCS LTD
 PINGHANE-KOTTAWA
+PM8X+VMH, Trinco Rd, Batticaloa, Sri Lanka
+PM9W+RX6, Batticaloa, Sri Lanka
+PM9X+7W6, Batticaloa, Sri Lanka
+PMHF+W95, Trincomalee Hwy, Batticaloa, Sri Lanka
+PMV4+2GM, Trincomalee Hwy, Batticaloa, Sri Lanka
 POINT PEDRO MPCS LTD
 POLGAHAWELA MPCS LTD
 POLONNARUWA MPCS LTD
@@ -1857,18 +2860,35 @@ POLPITIGAMA MPCS LTD
 POONAKARI MPCS LTD
 POONAKARY MPCS LTD
 POTTUVIL MPCS LTD
+PPF2+Q7H, Bailey 3rd Cross St, Batticaloa, Sri Lanka
+PQCP+98W, Sri Lanka
+PQJR+GC4, Elahara, Sri Lanka
+PR2H+4J9, Daluwa, Sri Lanka
 PREMACHANDRA  FILLING & SERVICES ST
 PREMACHANDRA FILLING STN
 PREMARATNE  H M
 PRESIDENT SERVICE INSTITUTE FUND
+PRF3+JP Belihuloya, Sri Lanka
 PRIYANKARA CONSTRUCTION
 PRODUCERS & MANUFACTURERS LTD
+PS Junction Bus Stop, Nagoda - Kalawellawa - Bellapitiya Road, Mahagama, Sri Lanka
 PULIYAMKULAM.
 PULOLY MPCS LTD
 PUNDALU OYA MPCS LTD
 PUNGUDUTIVU MPCS LTD
 PUTHUKUDIYIRUPPU MPCS LTD
 PUTTALAM MPCS LTD
+PV58+PH Kayts, Sri Lanka
+PVJW+7P6, Moratuwa, Sri Lanka
+PVQQ+QR6, Karainagar, Sri Lanka
+PW74+3X7, Panadura, Sri Lanka
+PW75+VQX, Panadura, Sri Lanka
+PW82+HPJ, Panadura, Sri Lanka
+PWQ3+99R, Panadura 12500, Sri Lanka
+PX5H+RQ6, Bandaragama, Sri Lanka
+PX7Q+JG7, A8, Bandaragama, Sri Lanka
+PX9W+CJP, Manipay, Sri Lanka
+PXRP+5H3, Sandilipay, Sri Lanka
 Pachchilapalli
 Pachchilapalli,Pallai
 Padavi Sripura, Welioya
@@ -1877,13 +2897,16 @@ Padeniya - Anuradhapura Highway, Daladagama
 Padiyanthalawa Road, Mahiyanganaya
 Padukka - Meepe Junction
 Padukka Rd, Padukka
+Pahathagama, Hanwella, Sri Lanka
 Pahathgama Gas Station, High Level Rd, Hanwella
 Palali Rd, Jaffna
 Palali Rd,jaffna
 Palameenmadhu
 Palapathwela - Galewela Rd, Pallepola
 Palavi - Kalpitiya Rd Etalai
+Pallekanda junc, GJ3V+V5W, Godakawela, Sri Lanka
 Pallimunai Rd, Mannar
+Palugasdamana South, W2PH+579, Polonnaruwa, Sri Lanka
 Pamunugama
 Panadura
 Panama Rd, Pottuvil
@@ -1891,14 +2914,17 @@ Panapitiya ,Kaluthara
 Pandatharippu
 Pannala Police Station Rd, Pannala
 Pannala Rd, Kuliyapitiya
+Pannala, Udawela, Sri Lanka
 Pannala-kuliyapitiya Rd
 Pannipitiya
 Pansal Godella,polonnaruwa
 Parantan - Mullaitivu Hwy, Parantan
 Parantan- Mullaitivu Hwy, Visuvamadu
+Parantan-Mullaitivu Hwy, Puthukkudiyiruppu, Sri Lanka
 Passara - Madulsima - Metigahatenna Rd, Madulsima
 Pasyala-giriulla Rd, Mirigama
 Payagala
+Payagala Station Road, Katukurunda, Sri Lanka
 Pbc Hwy, Nuwara Eliya 22200
 Pelawatte
 Peliyagoda
@@ -1906,6 +2932,7 @@ Peliyagoda - Negombo Road
 Peliyagoda - Puttalam Highway, Ja-Ela
 Pelmadulla
 Pelmadulla - Embilipitiya Hwy, Pallebedda
+Pemaduwa Mahawilachchiya, Mahawilachchiya, Sri Lanka
 Peradeniya
 Peradeniya - Badulla - Chenkaladi Hwy, Badulla
 Peradeniya - Badulla - Chenkaladi Hwy, Bibile
@@ -1914,18 +2941,22 @@ Peradeniya - Badulla - Chenkaladi Hwy, Keppetipola
 Peradeniya - Badulla - Chenkaladi Hwy, Lunugala
 Peradeniya - Badulla - Chenkaladi Hwy, Welimada
 Peradeniya, Gannoruwa Rd
+Peradeniya, Sri Lanka
 Peradeniya-badulla-chenkaladi Hwy, Padiyatalawa
 Periyakallar
+Periyakamam Bus Stop, Periyakamam, Medawachchiya-Talaimannar Highway, Mannar 41000, Sri Lanka
 Periyaporathvu
 Petrogas Lanka Ltd, Avissawella Rd, Maharagama
 Petrol Pump, Kandy Rd, Trincomalee
 Petrol Pump, Trincomalee
+Petrol Shead, Colombo - Batticaloa Hwy, Balangoda, Sri Lanka
 Petrol Shed Junction, Ragama
 Petrol Station, Puthukudiyiruppu
 Petrol-92
 Petrol-92 only
 Petrol-95
 Petrol-95 only
+Pettigalawatta Fuel Station, 105 D Old Matara Rd, Galle 80000, Sri Lanka
 Pilessa
 Pilimathalawa
 Pilimathalawwa
@@ -1933,6 +2964,7 @@ Piliyandala
 Pinnaduwa-akmeemana
 Pinwatta Gas Station, A2, Panadura
 Pitabadda Rd, Thawalama
+Pitabaddara School, Pitabeddara, Sri Lanka
 Pitipana - South
 Pohonnaruwa - Meerigama
 Point Pedro
@@ -1940,24 +2972,32 @@ Pokunuwita
 Polegoda
 Polgahawela
 Polgasowita
+Police Station, Middeniya, Sri Lanka
 Polonnaruwa
 Polonnaruwa - Kaduruwela
+Polonnaruwa Junction Bus Stop, Maradankadawala-Habarana-Thirukkondaiadimadu Hwy, Polonnaruwa, Sri Lanka
+Poruthota Road, Negombo, Sri Lanka
 Porutota, Kochchikade
 Poruwadanda
 Pothanegama
 Pottuvil
+Pradeshiya Sabha Pinnaduwa, Sri Lanka
 Prassana Filling Station, Baduragoda
 Pugoda
 Pujapitiya
+Puliyankulam Filling Station, Puliyankulam, Sri Lanka
+Puliyankulama Temple, Sri Lanka
 Pulmoddai
 Puloli
 Pungudutivu West, Kurichchikadu
 Punkudutivu
+Punnalaikadduvan North Junction Bus Stop, AB18, Jaffna, Sri Lanka
 Punnalaikaduvan
 Puranawella
 Pussella
 Puttalam
 Puttalam - Anuradhapura - Trincomalee Hwy
+Puttalam - Anuradhapura - Trincomalee Hwy, Nochchiyagama, Sri Lanka
 Puttalam - Colombo Rd
 Puttalam - Colombo Rd, Arachchikattuwa
 Puttalam - Colombo Rd, Dandugama
@@ -1972,6 +3012,56 @@ Puttalam-anuradhapura-trincomalee Main Road, Kahatagasdigiliya
 Puttalam-colombo Rd, Negombo
 Puwakgahawela Belihuloya, Balangoda
 Q & R ENTERPRISES
+Q27H+8P4, Earlalai, Sri Lanka
+Q2C3+2WP, Polgasowita, Sri Lanka
+Q2FH+WX4, Thurkkapuram, Sri Lanka
+Q2H7+C9 Tellippalai South West, Sri Lanka
+Q2MM+P67, AB16, Kankesanturai, Sri Lanka
+Q2QM+3HH, Tellippalai, Sri Lanka
+Q3W2+8VV, Talagala, Sri Lanka
+Q3XP+C5 Nikaweratiya, Sri Lanka
+Q458+77 Siruppiddy, Sri Lanka
+Q4H7+3R3, Vallai-Tellippalai-Araly Rd, Jaffna 40000, Sri Lanka
+Q4PV+FPH, Meepe - Ingiriya Rd, Handapangoda, Sri Lanka
+Q594+8Q Paraiyanalankulam, Sri Lanka
+Q5JM+5RM, Aralaganwila, Sri Lanka
+Q5W9+MF9, Jaffna-Point Pedro Rd, Nelliady, Sri Lanka
+Q629+X6F,   -      , Buttala, Sri Lanka
+Q64P+MJW, Buttala, Sri Lanka
+Q64Q+W2C, Buttala, Sri Lanka
+Q66X+89W, Main St, Buttala, Sri Lanka
+Q762+M3M, Main St, Buttala, Sri Lanka
+Q9H7+P8G, Kuruwita, Sri Lanka
+Q9MX+45C, Ibbagamuwa-Kumbukgete-Madagalla Rd, Alutwegedara, Sri Lanka
+QF3V+645, Vavuniya, Sri Lanka
+QF64+Q7R, Vavuniya-Parayanalankulam Hwy, Vavuniya, Sri Lanka
+QG25+4CQ, Vavuniya, Sri Lanka
+QG42+76J, Tharmalingam Rd, Vavuniya, Sri Lanka
+QGGQ+88 Bambaragaswewa, Sri Lanka
+QH28+JWP, Kayankudah, Sri Lanka
+QH38+854, Galewela, Sri Lanka
+QHMR+PWJ, Trincomalee Hwy, Chenkaladi, Sri Lanka
+QHMR+RQP, Trincomalee Hwy, Chenkaladi, Sri Lanka
+QJC6+CGH, Eravur 30300, Sri Lanka
+QJG3+GR9, Trincomalee Hwy, Eravur, Sri Lanka
+QM3P+F75, Batticaloa, Sri Lanka
+QRH8+55X, Bakamuna, Sri Lanka
+QRQ5+FM Bakamuna, Sri Lanka
+QV6Q+X7P, Beragala, Sri Lanka
+QVCP+G7M, B235, Moratuwa 10400, Sri Lanka
+QVCQ+PR4, Panadura 10400, Sri Lanka
+QVGJ+RRC, Galle Rd, Moratuwa 10400, Sri Lanka
+QVPM+GQ8, Moratuwa 10400, Sri Lanka
+QW9J+774, Piliyandala, Sri Lanka
+QWJX+6CJ, Andigama, Sri Lanka
+QWWR+383, Piliyandala, Sri Lanka
+QX22+J33, Silavathurai, Sri Lanka
+QX37+2R Kalaiyadi, Sri Lanka
+QX6H+95 Mudalakkuliya, Sri Lanka
+QXF9+9QQ, Mathagal Rd, Pandatharippu, Sri Lanka
+QXF9+CCG, Sillalai Main Road, Pandatharippu, Sri Lanka
+QXP7+XWV, Polgasowita Rd, Polgasowita, Sri Lanka
+QXR7+W8 Pandatharippu, Sri Lanka
 R A PREMADASA
 R A T A .MEDAGAMA
 R A U G JAYATISSA
@@ -2017,6 +3107,21 @@ R.RUWAN ASIRI DE SILVA
 R.S.WIJESOORIYA
 R.SHIVANARULSOTHY
 R.W.M.SUDHARSHANI WIJERATNE
+R2WV+49 Godagama, Sri Lanka
+R36C+HC6, Myliddy, Sri Lanka
+R3M2+M8H, Sri Lanka
+R3RV+387, Galagedera - Horana Rd, Padukka, Sri Lanka
+R3RV+X35, Padukka, Sri Lanka
+R5F9+9R7, Valvettithurai, Sri Lanka
+R5FC+G7W, Valvettithurai, Sri Lanka
+R5FG+R2C, Valvettithurai, Sri Lanka
+R65G+5QC, Point Pedro, Sri Lanka
+R67J+MJH, Point Pedro, Sri Lanka
+R67J+PHF, Point Pedro, Sri Lanka
+R6FX+3VJ, Daladagama, Sri Lanka
+R6GX+PHF, Padeniya - Anuradhapura Highway, Daladagama 60600, Sri Lanka
+R83M+P9F, Sri Lanka
+R8F5+J3H, Maduruketiya, Sri Lanka
 RAFFEEK STORES
 RAIGAM UDAGAHAPATTU MPCS LTD
 RAJAN UMAYAL (PVT) LTD
@@ -2034,28 +3139,55 @@ RANMUTHU ENTERPRISES
 RATHNA FILLING STATION
 RATNAM FILLING STATION
 RATNAPURA MPCS LTD
+RCF3+HPM, Kumbukulawa, Sri Lanka
 REAL LANKA FILLING STATION
 REGAL FILLING STATION (PVT) LTD
+RFRW+RX Mamaduwa, Sri Lanka
+RHPC+HQG, Maskeliya, Sri Lanka
+RHWH+5C4, Thoniyagala - Kalawewa - Galewela Rd, Makulugaswewa, Sri Lanka
 RIDIGAMA MPCS LTD
 RIKILLAGASKADA MPCS LTD
 RISIKI LANKA PIRAVUMHALA
 RITIGALA FILLING STATION
+RJ67+729, Dambulla, Sri Lanka
+RJQ6+WRW, Norwood, Sri Lanka
 ROHANA ENTERPRISES
 ROMICO GROUP ( PVT) LTD
+RQM9+C7H, Padaviya, Sri Lanka
+RR4G+G38, Colombo Road, Puttalam, Sri Lanka
 RUHUNU LANKA IOC FILLING STATION
 RUHUNUPUTHA FILLING STATION
 RUWAN SISIL DISSANAYAKE
 RUWANWELLA
 RUWANWELLA MPCS LTD
+RVJP+J2H, Dehiwala-Mount Lavinia, Sri Lanka
+RVXX+68C, Boralesgamuwa, Sri Lanka
+RW2F+V24, Piliyandala, Sri Lanka
+RW98+MV8,   -    , Piliyandala, Sri Lanka
+RWJM+9X9, B367, Pannipitiya, Sri Lanka
+RWVF+973, Maharagama 10280, Sri Lanka
+RX79+6V Diyatalawa, Sri Lanka
+RXF6+G6R, Pannipitiya, Sri Lanka
+RXG9+F3R, Sampath Uyana, Polgasowita, Sri Lanka
+RXJ7+Q94, Pannipitiya 10230, Sri Lanka
+RXJW+2H6, Bandarawela, Sri Lanka
+RXMP+462, Bandarawela, Sri Lanka
+RXP8+GMH, Moddaikadai, Sri Lanka
+RXQC+VJF, Pannipitiya, Sri Lanka
+RXR8+FC7, Avissawella Rd, Pannipitiya 10230, Sri Lanka
+RXV6+6G8, Pannipitiya 10230, Sri Lanka
+RXV9+QH9, Athurugiriya Rd, Pannipitiya 10230, Sri Lanka
 Ragama Batuwatta Road, Narangoda Paluwa
 Raigam Udagahapattu MPCS LTD-B
 Rajanganaya Road, Rajanganaya
 Rajawella
 Rambawewa
 Rambewa
+Rangama, H977+QVV, Sri Lanka
 Ranna
 Ranna - Ebilipitiya Rd, Agunukolapelessa
 Ranpokunugama
+Ranpokunugama Bus Stand, B445, Nittambuwa, Sri Lanka
 Rathgama
 Rathkarawwa Bus Stop, Katugastota-kurunegala-puttalam Hwy
 Rathmalana
@@ -2224,12 +3356,16 @@ SUNRAY ENGINEERING
 SUPER SERVICE STATION (PVT) LTD
 SUPPIAH YOGESWARAM
 SWASTHIKA MILLS LTD
+Salamanage Watta, Bandaramulla, WFV6+HM2, Mirissa, Sri Lanka
+Salawa, Sri Lanka
 Saliya Ashokapura
 Saliyawewa
 Samagi Mawatha, Kamburupitiya
 Samanthurai
+Sammanthurai, Sammanthurai, Sri Lanka
 Sandalankawa
 Sapugaskhanda
+Saranga Holiday Inn,Old Ella Road, Wellawaya-Ella-Kumbalwela Hwy, Wellawaya, Sri Lanka
 Sarasaviuyana
 Sathurukkondan, Batticaloa
 School Rd, Sooriyawewa
@@ -2244,11 +3380,13 @@ Sir Jayathilake Mawatha, Nuwara Eliya
 Sirimalwatta - Amunugama - Madawala Rd, Madawala
 Siripura - Dehiattakandiya
 Sirupiddy East
+Siruththoppu, Sri Lanka
 Siyambalanduwa
 Siyambalape
 Skinners's Rd, Colombo - 13
 Somawathiya - Hingurakgoda Rd
 Somawathiya Rd, Polonnaruwa
+Songster S.N. Centre, Bandaragama, Sri Lanka
 South-coast Rd, Silavathurai
 Southern Petroleum (Pvt) Ltd - 06
 Southern Petroleum (Pvt) Ltd -1
@@ -2280,6 +3418,7 @@ T.G.MALA MALKANTHI
 TALAIMANNAR PIER-CANCEL
 TALATUOYA - MARASSANA MPCS LTD
 TALATUOYA MARASSANA MPCS LTD
+TALAWAKELLE CENTRAL BUS STAND, Avissawella - Hatton - Nuwara Eliya Hwy, Talawakelle 22100, Sri Lanka
 TANGALLE MPCS LTD
 TASMA INTERNATIONAL MANPOWER SPLS (
 TELDENIYA MPCS LTD
@@ -2320,17 +3459,21 @@ Thalahena Gas Station, B240,Thalahena
 Thalaimannar
 Thalangamuwa
 Thalatuoya - Marassana Rd., Mailapitiya
+Thalawila Rd, Sri Lanka
 Thalei Mannar Road, Madhu, Paraiyanalankulam
 Thalgaswala
+Thalowita Junction, Sri Lanka
 Thambarawila
 Thampalakama Kinniya Road, Kinniya
 Thanamalwila
 Thannahena Rd, Ankumbura
+Thawalama Junction, Udugama - Hiniduma Rd, Thawalama, Sri Lanka
 Thawalanthenna No.05 Kothai Nagar Thawalanthenna New Town Kotmale
 Thiavaddavan,Oddamavadi
 Thibirigaskatuwa
 Thihagoda - Kamburupitiya - Mawarala - Kotapola Rd, Mawarala
 Thihagoda Fuel Station, Matara - Hakmana Rd, Thihagoda
+Thiriyaya Junction, Sri Lanka
 Thirukatheeswaram - Mannar
 Thirukkondaiadimadu Hwy, Girithale
 Thirukkondaiadimadu Hwy, Welikanda
@@ -2338,6 +3481,7 @@ Thissamaharamaya
 Thoduwawa Road, Madurankuli, Kandathoduwawa
 Thoniyagala - Kalawewa - Galewela Rd, Makulugaswewa
 Thopputota, Waikkal
+Thoppuwa Juction Clock Tower, Puttalam Road, Sri Lanka
 Thulhiriya
 Thumpane, Galagedara
 Thunkama Filling Station, A18 Embilipitiya - Nonagama Hwy, Road Thunkama-Embilipitiya
@@ -2403,6 +3547,20 @@ V L GUNATHILAKE
 V PARAMESHWARY
 V.R.H LANKA IOC FILLING STATION
 V.W.M.GAMINI ANURA
+V22J+GG4, Colombo - Batticaloa Hwy, Godagama, Sri Lanka
+V2G6+QR4, Anamaduwa, Sri Lanka
+V2H6+RQF, B19, Anamaduwa, Sri Lanka
+V2PR+P7P, Sri Lanka
+V2RP+3JV, Jaya Mawatha, Sri Lanka
+V345+4R4, Sri Lanka
+V35R+8GR, Padukka, Sri Lanka
+V3PQ+G2W, Hanwella, Sri Lanka
+V4G6+4WJ, Namunukula, Sri Lanka
+V6FW+35G, Eheliyagoda, Sri Lanka
+V736+JF8, Eheliyagoda, Sri Lanka
+V84Q+CV8, Colombo - Batticaloa Hwy, Hulandawa, Sri Lanka
+V87V+CWV, A4, Monaragala, Sri Lanka
+V8CX+QXH, Monaragala, Sri Lanka
 VALI EAST NORTHERN DIVISION MPCS LT
 VALLI EAST SOUTHERN DIVISION MPCS L
 VAVUNAYA  SOUTH  MPCS  LTD
@@ -2411,6 +3569,9 @@ VAVUNIYA NORTH MPCS LTD
 VELANAI MPCS LTD
 VELRO ENTERPRISES (PVT) LTD
 VENGALA  CHEDDIKULAM   MPCS  LTD
+VG4V+G8 Thavapuram, Sri Lanka
+VG6Q+PR5, Sri Lanka
+VG93+F3Q, Omanthai, Sri Lanka
 VICTORIA FUEL MERCHANT (PVT) LTD
 VIHANGA DISTRIBUTORS (PVT) LTD
 VIJAYA SERVICE STATION (PVT) LTD
@@ -2418,8 +3579,28 @@ VIJITHA MPCS LTD
 VILATHTHAWA -PULIYAMKADAWALA
 VISVAMADHU FARMER'SMPCSLTD
 VIYALUWA MPCS LTD
+VJRX+23P, Dambulla, Sri Lanka
+VMP2+2F4, Dambulla, Sri Lanka
+VQV5+46 Viruthodai, Sri Lanka
+VR8M+Q32, B374, Pottuvil, Sri Lanka
+VRFH+MXH, Pottuvil, Sri Lanka
+VRHH+3HP, Pottuvil, Sri Lanka
+VRXC+H3 Madurankuli, Sri Lanka
+VV38+H9P, Dehiwala-Mount Lavinia, Sri Lanka
+VVV9+Q2H, Peradeniya-Badulla-Chenkaladi Hwy, Keppetipola, Sri Lanka
+VW37+PJW, Maharagama 10280, Sri Lanka
+VW45+VHF, Nugegoda, Sri Lanka
+VW7R+RQG, Battaramulla - Pannipitiya Rd, Sri Jayawardenepura Kotte 10230, Sri Lanka
+VWFP+CX2, B47, Sri Jayawardenepura Kotte, Sri Lanka
+VWG2+F9J, Nugegoda, Sri Lanka
+VWJ8+CGP, Sri Jayawardenepura Kotte 10100, Sri Lanka
+VWRH+JF7, Battaramulla, Sri Lanka
+VXQW+CQW, Sri Lanka
+VXR7+M8X, Malabe, Sri Lanka
+VXVR+2R Adampan, Sri Lanka
 Vadiyadi
 Valachchenai
+Valaichchena Junction, Oddamavadi, Sri Lanka
 Valanthalai Junction,Karainagar
 Valavaithakulam Junction, Cheddikulam
 Valukkairaru - Punkudutivu - Kurikadduwan Rd, Velanai
@@ -2427,11 +3608,13 @@ Valvettithurai
 Vappankulam, Kandy Road, Omanthi
 Vavunia-Horowpotana Hwy, Vavuniya
 Vavuniya
+Vavuniya Tower, Clock Tower Roundabout, Vavuniya, Sri Lanka
 Veppankulam, Vavuniya
 Veyangoda - Ruwanwella Rd, Veyangoda
 Veyangoda - Ruwanwella Rd, Waharaka
 Veyangoda - Ruwanwella Rd,Urapola
 Vihara Mawatha, Rajanganaya
+Vindya Salon, 67/9 Bandaranayake Ave, Panadura, Sri Lanka
 W A G FERNANDO
 W A I N P A WIJAYASINGHE
 W A PERERA & SON
@@ -2475,6 +3658,18 @@ W.M.Y.N.WEERASINGHE
 W.P.S.K.CHANDRASIRI
 W.S.S.AUTO FUELS ( PRIVATE ) LTD
 W.UPALI PERERA
+W2R7+QR7, Maradankadawala-Habarana-Thirukkondaiadimadu Hwy, Polonnaruwa, Sri Lanka
+W35F+2PQ, Colombo - Hanwella Low Level Rd, Hanwella, Sri Lanka
+W3WR+9Q6, Kirindiwela - Urapola Road, Hanwella, Sri Lanka
+W5CJ+GG4, Sewanapitiya, Sri Lanka
+W5P6+CQ Passara, Sri Lanka
+W5R6+2Q2, Avissawella, Sri Lanka
+W69C+4X5, Madola, Sri Lanka
+W6JV+V8 Ambanpola, Sri Lanka
+W6Q7+PPC, Avissawella, Sri Lanka
+W6WV+4X9, Welikanda, Sri Lanka
+W82R+F3W, Monaragala, Sri Lanka
+W8HR+6QF, Deraniyagala, Sri Lanka
 WADAMARACHCHI EAST FISHERMEN COOP S
 WALASMULLA MPCS LTD
 WANDURAMBA
@@ -2485,6 +3680,8 @@ WATTALA
 WATTALA MPCS LTD
 WATTAWALA PLANTATIONS PLC
 WATTAWALA.
+WC2R+32 Dombagahawela, Sri Lanka
+WCXX+48 Mirissa, Sri Lanka
 WEERAKETIYA MPCS LTD
 WELDISI PVT LTD
 WELFARE ASSOCIATION SL AIR FORCE
@@ -2493,23 +3690,82 @@ WELLAWAYA
 WELLINGTON FUEL MART (PVT) LTD
 WENNAPPUWA
 WENNAPPUWA MPCS LTD
+WFRQ+5R9, Kamburugamuwa, Sri Lanka
 WG FRANCIS APPUHAMY SAMUHA VIYAPARA
+WG6G+XG Oddamavadi, Sri Lanka
+WG79+GWJ, Nortonbridge, Sri Lanka
+WG7G+25W, Oddamavadi, Sri Lanka
+WGG7+3C3, Oddamavadi, Sri Lanka
+WGJW+9C Kalkudah, Sri Lanka
+WGXR+J33, Matara, Sri Lanka
+WGXW+36Q, Matara, Sri Lanka
+WH42+PC Siyambalanduwa, Sri Lanka
+WH44+JRP, Siyambalanduwa, Sri Lanka
+WHGV+QQ Madatugama, Sri Lanka
+WHW4+6GV, Matara, Sri Lanka
 WICKRAMASIRI ENTERPRISES (PVT) LTD
 WICRAMASINGHE W D
 WIJAYA LANKA TRADING (PVT) LTD
 WIJERAMA ENTERPRISES
 WIJESINGHE ENTERPRICES
 WITHNAGE ENTERPRISES
+WJF3+23M, Kotagala, Sri Lanka
+WJP6+628, Gandara, Sri Lanka
+WJP6+CGG, Gandara, Sri Lanka
+WJWR+6Q Koattagoda, Sri Lanka
+WJXQ+P6H, Koattagoda, Sri Lanka
+WM3C+82 Dambulla, Sri Lanka
+WMPR+454, Dambulla, Sri Lanka
+WMQ6+4HG, Talawakelle, Sri Lanka
+WMQ6+XFF, Talawakelle, Sri Lanka
+WPRV+2HP, Nanuoya, Sri Lanka
+WR6F+9GX, Madurankuli, Sri Lanka
+WR6F+QCH, Puttalam - Colombo Road, Madurankuli, Sri Lanka
+WRF5+4C8, Welioya, Sri Lanka
+WRHX+5V5 Filling Station, Colombo 00200, Sri Lanka
+WV5X+FC5, Sri Jayawardenepura Kotte, Sri Lanka
+WV67+HX2, Colombo 00700, Sri Lanka
+WV6G+JVW, Colombo 00700, Sri Lanka
+WV88+52R, Dr CWW Kannangara Mawatha, Colombo 00700, Sri Lanka
+WVC3+65P, Colombo 00200, Sri Lanka
+WVHH+74F, Colombo 01000, Sri Lanka
+WVHH+P3P, Colombo 01000, Sri Lanka
+WVHX+5J2, Ambagasdowa, Sri Lanka
+WVQ7+WQ5, Srimath Bandaranayake Mawatha, Colombo 01000, Sri Lanka
+WVQV+HX2, Wellampitiya, Sri Lanka
+WVV7+FRR, Colombo 01300, Sri Lanka
+WVVH+3JX, Baseline Rd, Colombo, Sri Lanka
+WVVH+V62, Colombo 01300, Sri Lanka
+WVW7+3HG, Skinners's Rd, Colombo 01300, Sri Lanka
+WVX5+HXF, Kotahena St, Colombo 01300, Sri Lanka
+WVXC+546, Colombo, Sri Lanka
+WW28+VV2, Kotte - Bope Rd, Battaramulla 10120, Sri Lanka
+WW34+P43, Sri Jayawardenepura Kotte, Sri Lanka
+WW45+3R9, Peradeniya-Badulla-Chenkaladi Hwy, Welimada, Sri Lanka
+WW5P+32C, Battaramulla, Sri Lanka
+WWCW+364, Thiruketheeswaram Rd, Thiruketheeswaram, Sri Lanka
+WWP8+8V5, Colombo, Sri Lanka
+WWPM+G4M, Sri Lanka
+WXPF+G8C, AB10, Kaduwela, Sri Lanka
+WXPJ+M9C, AB10, Kaduwela, Sri Lanka
+WXPM+CP2, Kaduwela, Sri Lanka
+WXPR+MXH, Badulla, Sri Lanka
+WXV6+C6V, Avissawella Rd, Welivita, Sri Lanka
+WXXR+FPF, Kaduwela, Sri Lanka
 WYMAN EDIRISINGHE
 Wakwella Rd, Galle
 Walasmulla
+Walasmulla North, 5M3X+W29, Walasmulla, Sri Lanka
 Walasmulla Rd ,Weeraketiya
+Walgama Junction Bus Stop, Aturugiriya Rd, Sri Lanka
 Walgama Junction-Athrugiriya
 Walpita, Kotadeniyawa
 Wanathamulla, Colombo
 Waragoda Rd, Peliyagoda
 Warakapola
+Waralla, Galle-Deniyaya-Madampe Highway, Sri Lanka
 Wariyagoda Filling Station, Kurunegala Rd Alawwa
+Wariyagoda, Alawwaththa, Sri Lanka
 Wariyapola
 Wathurugama Rd, Malwathu Hiripitiya
 Wattala
@@ -2523,7 +3779,12 @@ Weligepola, Balangoda
 Welikanda
 Welimada
 Welimada Clock Tower, Peradeniya - Badulla - Chenkaladi Hwy, Welimada
+Welimada Clock Tower, Peradeniya-Badulla-Chenkaladi Hwy, Welimada, Sri Lanka
+Welimada, Bandarawela - Welimada Rd, Sri Lanka
+Welioya Junction, Rambewa, Sri Lanka
 Welipennagahamulla
+Welipennagahamulla Marawila - Udubaddawa Rd, 60240, Sri Lanka
+Welipennagahamulla, Sri Lanka
 Weliweriya
 Wella, Chilaw
 Wellamankara
@@ -2533,12 +3794,58 @@ Wellawaya
 Wellawaya Rd, Monaragala
 Wennappuwa
 Weralabada, Chilaw
+Werellana, Sri Lanka
 Weweldeniya
 When was the data updated?
 When was the shed's last update?
 Wilgamuwa
 Wipula Dharmadasa
 Withikuliya Junction
+X26P+C7C, Hali-ela, Sri Lanka
+X2CJ+JH7, Polonnaruwa, Sri Lanka
+X3M5+6C4, Lower King Street, Badulla, Sri Lanka
+X3M8+8XQ, Demodera - Spring Valley - Badulla Rd, Badulla, Sri Lanka
+X3X4+HPV, Mahiyangana Rd, Badulla, Sri Lanka
+X486+PRV, Nikawala, Sri Lanka
+X4G9+5JR, B18, Pugoda, Sri Lanka
+X636+8R3, Avissawella, Sri Lanka
+X87P+PW Kayankerni, Sri Lanka
+X8V5+8W2, Habaraduwa, Sri Lanka
+X999+RV, Ahangama, Sri Lanka
+X9C8+M63, Ahangama, Sri Lanka
+XCCH+WG3, Weligama, Sri Lanka
+XCFJ+F5H, Matara Rd, Weligama, Sri Lanka
+XFM3+92G, Weligama, Sri Lanka
+XG5W+273, B275, Matara, Sri Lanka
+XGG9+39G, Godagama, Sri Lanka
+XJ73+V5F, Kekanadura, Sri Lanka
+XM7R+RGM, Dikwella, Sri Lanka
+XM7V+F8J Bamunusinghe Fuel Station, Tangalle Rd, Dikwella 81200, Sri Lanka
+XMPX+2C4, Walasgala, Sri Lanka
+XP89+G4Q, Nilwella, Sri Lanka
+XPGM+P9V, Kudawella, Sri Lanka
+XPRG+VF2, Pahajjawa, Sri Lanka
+XQ88+RWX, PBC Hwy, Nuwara Eliya 22200, Sri Lanka
+XQH4+VR Karamba, Sri Lanka
+XV4H+4X4, AB10, Peliyagoda, Sri Lanka
+XV4P+9H2, Kandy Rd,  , Sri Lanka
+XV5R+83C, Kandy Rd, Peliyagoda, Sri Lanka
+XV7J+8HX, Chilaw - Colombo Main Rd, Wattala, Sri Lanka
+XVFH+WQ8, Colombo, Sri Lanka
+XVQR+5VR, Wattala 11300, Sri Lanka
+XVQV+CCV, Wattala 11300, Sri Lanka
+XW24+GGP, Peliyagoda, Sri Lanka
+XW2M+JFH, Peliyagoda, Sri Lanka
+XW93+387, Peliyagoda, Sri Lanka
+XWGV+HHP, Makola Rd, Peliyagoda, Sri Lanka
+XWH7+85P, Mannar, Sri Lanka
+XWRQ+FXH, Colombo - Kandy Rd, Kadawatha, Sri Lanka
+XWV7+VRW, Wattala, Sri Lanka
+XWWG+6FP, Girithale, Sri Lanka
+XWX3+WFQ, Udupussellawa, Sri Lanka
+XX6J+WHM, Polonnaruwa, Sri Lanka
+XXP6+V4 Polonnaruwa, Sri Lanka
+XXPF+JRF, Gonawala, Sri Lanka
 Y V A JANAKA
 YAKKALAMULLA MPCS LTD
 YASARATNA ENTERPRISES
@@ -2550,6 +3857,7 @@ YATIYANTOTA MPCS LTD
 YOGESWARY SINNAIAH
 YOMAL FILLING STATION (PVT) LTD
 Yakalla, Ibbagamuwa, Bakmeegolla
+Yakalla, Ibbagamuwa, GCJP+X6V, Bakmeegolla, Sri Lanka
 Yakkala
 Yakkala - Radawana Rd, Yakkala
 Yakkalamulla
@@ -2558,12 +3866,22 @@ Yatinuwara St, Kandy
 Yatiyana Fuel Station
 Yatiyana Rd, Kekanadura
 Yatiyana-Minuwangoda
+Yatiyanthota Clock Tower, A7, Yatiyanthota, Sri Lanka
 Yelakkara Junction,yatawatta,matale
 Zoom Out
+[Invalid LatLng]
+a18 Pelmadulla - Embilipitiya Hwy, Embilipitiya 70200, Sri Lanka
+a21 Kegalle-Bulathkohupitiya-Karawanella Hwy, Bulathkohupitiya 71230, Sri Lanka
 ago
+b157 Horana - Anguruwatota - Mathugama - Aluthgama Road, Anguruwatota, Sri Lanka
+ceypetco Gas Station Pussellawa, Pussellawa, Sri Lanka
 days
+filling station, Colombo Rd, Ratnapura, Sri Lanka
 fuel.gov.lk
 has been temporary shut down. Since this App sources data from fuel.gov.lk, dynamic data will be out of date. Sorry
 hours
+main streer (opposite to base hospital, WXRM+76X, Pulmoddai, Sri Lanka
 minutes
+mutuwal road, 6QQ7+CQJ, Kalpitiya, Sri Lanka
+no 362 Katugastota Rd, Kandy, Sri Lanka
 seconds
