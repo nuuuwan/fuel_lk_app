@@ -6,13 +6,13 @@ import EquiPolygon from "../../view/atoms/EquiPolygon";
 
 const ID_LENGTH = 32;
 const N = 3;
-const BITS_PER_COLOR = 6;
+const BITS_PER_COLOR = 3;
 const COLOR_BLANK = "808080";
 const P_RADIUS = 1;
 const N_COLORS = parseInt(ID_LENGTH / BITS_PER_COLOR);
 
 export default function IDAvatar({ size, id }) {
-  const cellSize = (size * 0.8) / N;
+  const cellSize = (size * 1) / N;
   const width = N * cellSize;
   const height = width;
 
@@ -25,19 +25,19 @@ export default function IDAvatar({ size, id }) {
   });
 
   const colorMatrix = [
-    [colorList[0], null, colorList[1]],
-    [null, colorList[2], null],
-    [colorList[3], colorList[4], COLOR_BLANK],
+    [colorList[0], colorList[1], colorList[2]],
+    [colorList[3], colorList[4], colorList[5]],
+    [colorList[6], colorList[7], colorList[8]],
   ];
 
   return (
     <Avatar
-      variant="circular"
+      variant="square"
       sx={{
         width: size,
         height: size,
         background: "white",
-        border: "2px solid black",
+        border: "2px solid #" + colorList[9],
       }}
     >
       <svg width={width} height={height}>
