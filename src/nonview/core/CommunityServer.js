@@ -1,6 +1,6 @@
 import NuntiusServer from "../../nonview/base/NuntiusServer";
-import CommunityFeedback from "../../nonview/core/CommunityFeedback";
 import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
+import CommunityFeedback from "../../nonview/core/CommunityFeedback";
 
 const MAX_COMMUNITY_FEEDBACK_AGE_HOURS = 1;
 
