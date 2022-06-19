@@ -1,6 +1,8 @@
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import CloseIcon from "@mui/icons-material/Close";
 
 import { t } from "../../nonview/base/I18N";
 
@@ -11,7 +13,7 @@ import ShedAvatar from "../../view/atoms/ShedAvatar";
 import FuelsView from "../../view/molecules/FuelsView";
 import LabelledBox from "../../view/molecules/LabelledBox";
 
-const STYLE = { minWidth: 300, maxWidth: "90%", m: 1, p: 1 };
+const STYLE = { m: 1, p: 1, width: 250 };
 
 export default function ShedDrawer({ extendedShed, onCloseDrawer }) {
   if (!extendedShed) {
@@ -26,6 +28,11 @@ export default function ShedDrawer({ extendedShed, onCloseDrawer }) {
           <Typography variant="subtitle2">
             {t(extendedShed.shedName)}
           </Typography>
+          <Box display="flex" justifyContent="flex-end">
+            <IconButton onClick={onCloseDrawer}>
+              <CloseIcon />
+            </IconButton>
+          </Box>
         </AlignCenter>
         <Link href={extendedShed.gmapsURL}>
           <Typography variant="caption">
