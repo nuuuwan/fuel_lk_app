@@ -31,7 +31,7 @@ export default function FuelView({
   const showCommunityView = process.env.REACT_APP_SHOW_COMMUNITY_VIEW === "1";
 
   return (
-    <Paper elevation={2} sx={{ m: 1, p: 1, width: "80%" }}>
+    <Paper elevation={2} sx={{ m: 1, p: 1 }}>
       <AlignCenter>
         <LocalGasStationIcon sx={{ color }} />
         <Typography variant="subtitle1" sx={{ color }}>
