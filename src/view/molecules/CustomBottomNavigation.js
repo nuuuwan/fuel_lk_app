@@ -5,6 +5,7 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Paper from "@mui/material/Paper";
 import Tooltip from "@mui/material/Tooltip";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import ForumIcon from "@mui/icons-material/Forum";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import ZoomOutMapIcon from "@mui/icons-material/ZoomOutMap";
 
@@ -22,6 +23,7 @@ const STYLE = {
 export default function CustomBottomNavigation({
   onClickNearby,
   onClickZoomOut,
+  onOpenDrawerFeed,
 }) {
   const onClickCopy = function () {
     navigator.clipboard.writeText(URLContext.getURL());
@@ -36,7 +38,12 @@ export default function CustomBottomNavigation({
             onClick={onClickCopy}
           />
         </Tooltip>
-
+        <Tooltip title={t("Community Feed")}>
+          <BottomNavigationAction
+            icon={<ForumIcon />}
+            onClick={onOpenDrawerFeed}
+          />
+        </Tooltip>
         <Tooltip title={t("Zoom Out")}>
           <BottomNavigationAction
             icon={<ZoomOutMapIcon />}
