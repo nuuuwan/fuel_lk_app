@@ -38,6 +38,9 @@ export default class I18N {
   }
 
   static translate(s) {
+    if (!s) {
+      return "";
+    }
     const currentLang = I18N.getLang();
     s = s.trim();
     if (!s || !s.trim() || currentLang === BASE_LANG) {
