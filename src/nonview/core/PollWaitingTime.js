@@ -1,5 +1,5 @@
 import CancelIcon from "@mui/icons-material/Cancel";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
 import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
@@ -31,8 +31,8 @@ export const POLL_OPTION_IDX = {
     color: "black",
   },
   notSure: {
-    Icon: QuestionMarkIcon,
-    label: "Not Sure or Don't Know",
+    Icon: HelpOutlineIcon,
+    label: "Don't Know or Not Sure",
     color: "gray",
   },
 };
