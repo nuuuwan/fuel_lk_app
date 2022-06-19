@@ -1,13 +1,25 @@
+import IDX from "../../nonview/base/IDX";
 import RAW_BASE_SHED_LIST from "../../data/RAW_BASE_SHED_LIST";
 
 const URL_GMAPS_PREFIX = "https://www.google.com/maps/place";
 
 export default class BaseShed {
-  constructor(shedID, shedCode, shedName, address, latLng, gmapAddress) {
+  constructor(
+    //
+    shedID,
+    shedCode,
+    shedName,
+    shedType,
+    address,
+    latLng,
+    gmapAddress
+  ) {
     this.shedID = shedID;
     this.shedCode = shedCode;
     this.shedName = shedName;
+    this.shedType = shedType;
     this.address = address;
+
     this.latLng = latLng;
     this.gmapAddress = gmapAddress;
   }
@@ -33,3 +45,9 @@ export default class BaseShed {
 export const BASE_SHED_LIST = RAW_BASE_SHED_LIST.map(function (d) {
   return BaseShed.fromDict(d);
 });
+
+export const BASE_SHED_IDX = IDX.build(
+  BASE_SHED_LIST,
+  (x) => x.shedCode,
+  (x) => x
+);
