@@ -4,11 +4,9 @@ import CommunityFeedback from "../../nonview/core/CommunityFeedback";
 export default class CommunityServer {
   static async getCommunityFeedbackIdx() {
     const recentMessageList = await NuntiusServer.multigetRecent();
-    const sortedRecentMessageList = recentMessageList.sort(
-      function(a, b) {
-        return a.messageTimeUT - b.messageTimeUT;
-      },
-    );
+    const sortedRecentMessageList = recentMessageList.sort(function (a, b) {
+      return a.messageTimeUT - b.messageTimeUT;
+    });
 
     let communityFeedbackIdx = {};
 
@@ -31,14 +29,13 @@ export default class CommunityServer {
       }
 
       const userID = message.sourceID;
-      communityFeedbackIdx[shedCode][fuelType][userID] =
-        new CommunityFeedback(
-          shedCode,
-          fuelType,
-          userID,
-          message.messageTimeUT, // timeFeedbackUT
-          message.messageText, // pollOptionID
-        );
+      communityFeedbackIdx[shedCode][fuelType][userID] = new CommunityFeedback(
+        shedCode,
+        fuelType,
+        userID,
+        message.messageTimeUT, // timeFeedbackUT
+        message.messageText // pollOptionID
+      );
     }
 
     return communityFeedbackIdx;
