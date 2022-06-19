@@ -10,6 +10,9 @@ import ShedAvatar from "../../view/atoms/ShedAvatar";
 export default function ShedBlurb({ extendedShed }) {
   return (
     <Box>
+      <Link href={extendedShed.gmapsURL}>
+        <Typography variant="subtitle1">{t(extendedShed.city)}</Typography>
+      </Link>
       <AlignCenter>
         <ShedAvatar extendedShed={extendedShed} />
         <Typography variant="subtitle2">{t(extendedShed.shedName)}</Typography>
