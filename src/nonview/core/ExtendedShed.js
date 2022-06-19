@@ -118,4 +118,8 @@ export default class ExtendedShed extends BaseShed {
     }
     return false;
   }
+
+  get hasCommunityFeedback() {
+    return Object.keys(this.communityFeedbackIdx).length > 0;
+  }
 }
