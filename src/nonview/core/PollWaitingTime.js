@@ -6,8 +6,8 @@ import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDiss
 
 import GhostUser from "../../nonview/base/GhostUser";
 import ID from "../../nonview/base/ID";
-import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 import NuntiusServer from "../../nonview/base/NuntiusServer";
+import TimeX, { SECONDS_IN } from "../../nonview/base/TimeX";
 
 export const POLL_OPTION_IDX = {
   lessThan30Mins: {
