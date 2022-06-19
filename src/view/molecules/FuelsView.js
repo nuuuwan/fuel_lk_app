@@ -11,16 +11,16 @@ export default function FuelsView({ extendedShed }) {
   return (
     <List>
       {Object.entries(FUEL_IDX).map(function ([fuelType, fuel]) {
-        const shedFuel = extendedShed["fuel_status_idx"][fuelType];
+        const fuelStatus = extendedShed.fuelStatusIdx[fuelType];
 
-        let recentDispatch = null;
-        for (let dispatch of extendedShed["dispatch_schedule_list"]) {
-          if (dispatch["fuel_type"] !== fuelType) {
+        let mostRecentDispatchSchedule = null;
+        for (let dispatchSchedule of extendedShed.dispatchScheduleList) {
+          if (dispatchSchedule.fuelType !== fuelType) {
             continue;
           }
-          const deltaToDispatch = dispatch["time_eta_ut"] - currentTime;
+          const deltaToDispatch = dispatchSchedule.timeETAUT - currentTime;
           if (deltaToDispatch > -SECONDS_IN.HOUR * MAX_RECENCY_HOURS) {
-            recentDispatch = dispatch;
+            mostRecentDispatchSchedule = dispatchSchedule;
           }
         }
 
@@ -30,9 +30,9 @@ export default function FuelsView({ extendedShed }) {
             fuelType={fuelType}
             key={"fuel-" + fuelType}
             label={fuel.name}
-            isAvailable={shedFuel["is_available"]}
-            capacity={shedFuel.capacity}
-            recentDispatch={recentDispatch}
+            isAvailable={fuelStatus.isAvailable}
+            capacity={fuelStatus.capacity}
+            mostRecentDispatchSchedule={mostRecentDispatchSchedule}
             color={fuel.color}
           />
         );
