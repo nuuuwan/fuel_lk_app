@@ -36,7 +36,7 @@ export default class HomePage extends Component {
     this.state = {
       extendedShedIdx: undefined,
       context: context,
-      isOpenFeed: true,
+      isOpenFeed: false,
     };
     this.setContext(context);
   }
