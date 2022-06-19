@@ -29,7 +29,7 @@ export class ExtendedShedNew extends BaseShed {
   static fromDict(d) {
     const shedCode = d["shed_code"];
     const baseShed = BASE_SHED_IDX[shedCode];
-    return new ExtendedShed(
+    return new ExtendedShedNew(
       // BaseShed
       baseShed.shedID,
       baseShed.shedCode,
@@ -44,8 +44,13 @@ export class ExtendedShedNew extends BaseShed {
         return DispatchSchedule.fromDict(d1);
       }),
       Object.entries(d["fuel_status_idx"])
-        .map(function (fuelType, d1) {
-          return [fuelType, FuelStatus.fromDict(d1)];
+        .map(function ([fuelType, d1]) {
+          const d2 = {
+            fuel_type: fuelType,
+            is_available: d1["is_available"],
+            capacity: d1["capacity"],
+          };
+          return [fuelType, FuelStatus.fromDict(d2)];
         })
         .reduce(function (fuelStatusIdx, [fuelType, fuelStatus]) {
           fuelStatusIdx[fuelType] = fuelStatus;
