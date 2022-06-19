@@ -1,8 +1,10 @@
 import { Component } from "react";
-import Drawer from "@mui/material/Drawer";
+
 import Box from "@mui/material/Box";
-import CommunityServer from "../../nonview/core/CommunityServer";
 import CircularProgress from "@mui/material/CircularProgress";
+import Drawer from "@mui/material/Drawer";
+
+import CommunityServer from "../../nonview/core/CommunityServer";
 
 const STYLE = { m: 1, p: 1, width: 250 };
 

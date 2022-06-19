@@ -14,8 +14,8 @@ import CustomBottomNavigation from "../../view/molecules/CustomBottomNavigation.
 import ShedDrawer from "../../view/molecules/ShedDrawer";
 import ShedView from "../../view/molecules/ShedView";
 import TempSourceIsDown from "../../view/molecules/TempSourceIsDown";
-import GeoMap from "../../view/organisms/GeoMap";
 import CommunityFeed from "../../view/organisms/CommunityFeed";
+import GeoMap from "../../view/organisms/GeoMap";
 
 const DEFAULT_CENTER = [6.91, 79.86]; // Town Hall
 const DEFAULT_ZOOM = 15;
